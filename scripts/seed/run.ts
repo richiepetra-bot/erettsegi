@@ -10,6 +10,8 @@ import { magyarLatasmodokTopics } from "./data/magyar-latasmodok";
 import { magyarNyelvtanTopics } from "./data/magyar-nyelvtan";
 import { tortenelemOkorTopics } from "./data/tortenelem-okor";
 import { tortenelemKozepkorTopics } from "./data/tortenelem-kozepkor";
+import { tortenelemKoraUjkorTopics } from "./data/tortenelem-kora-ujkor";
+import { tortenelem19SzazadTopics } from "./data/tortenelem-19szazad";
 import type { TopicSeed } from "./data/angol";
 
 dotenv.config({ path: path.resolve(process.cwd(), ".env.local") });
@@ -44,7 +46,12 @@ const SEED_SETS: { subjectKey: string; topics: TopicSeed[] }[] = [
   },
   {
     subjectKey: "tortenelem",
-    topics: [...tortenelemOkorTopics, ...tortenelemKozepkorTopics],
+    topics: [
+      ...tortenelemOkorTopics,
+      ...tortenelemKozepkorTopics,
+      ...tortenelemKoraUjkorTopics,
+      ...tortenelem19SzazadTopics,
+    ],
   },
 ];
 
