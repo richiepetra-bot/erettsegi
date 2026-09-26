@@ -5,6 +5,7 @@ import { angolTopics } from "./data/angol";
 import { satTopics } from "./data/sat";
 import { actTopics } from "./data/act";
 import { magyarTopics } from "./data/magyar";
+import { magyarPortrekTopics } from "./data/magyar-portrek";
 import type { TopicSeed } from "./data/angol";
 
 dotenv.config({ path: path.resolve(process.cwd(), ".env.local") });
@@ -28,7 +29,7 @@ const SEED_SETS: { subjectKey: string; topics: TopicSeed[] }[] = [
   { subjectKey: "angol", topics: angolTopics },
   { subjectKey: "sat", topics: satTopics },
   { subjectKey: "act", topics: actTopics },
-  { subjectKey: "magyar", topics: magyarTopics },
+  { subjectKey: "magyar", topics: [...magyarTopics, ...magyarPortrekTopics] },
 ];
 
 async function seedSubject(subjectKey: string, topics: TopicSeed[]) {

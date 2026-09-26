@@ -1,7 +1,7 @@
 # Érettségi Felkészítő
 
 Tanulást segítő webapp érettségi tételekhez (magyar, matek, történelem, angol,
-informatika), az angol előrehozott érettségihez, és a SAT/ACT felvételi
+gazdasági ismeretek), az angol előrehozott érettségihez, és a SAT/ACT felvételi
 tesztekhez. Duolingo-szerű gamifikációval (XP, napi sorozat, csillagok).
 
 ## 1. Supabase projekt
@@ -80,7 +80,7 @@ tételeket és kvízkérdéseket. Bármikor újra futtatható (a meglévő téte
 frissíti, nem duplikálja).
 
 **Új tantárgy tartalom hozzáadásához** (pl. magyar, matek, történelem,
-informatika): hozz létre egy új fájlt a `scripts/seed/data/` mappában, ugyanazt
+gazdasági ismeretek): hozz létre egy új fájlt a `scripts/seed/data/` mappában, ugyanazt
 a `TopicSeed[]` formátumot követve, majd vedd fel a `scripts/seed/run.ts`
 `SEED_SETS` tömbjébe.
 
@@ -120,5 +120,7 @@ pontosodnak a hivatalos időpontok.
 - ✅ SAT: Reading (Command of Evidence), Writing (Standard English
   Conventions), Math (Heart of Algebra).
 - ✅ ACT: English (Grammar and Usage), Science (Data Representation).
-- ⏳ Magyar, matek, történelem, informatika — még nincs feltöltve tartalom,
+- 🔄 Magyar: Életművek és Portrék köteg feltöltve (irodalom témakörök), a
+  nyelvtan/kommunikáció és a további témakörök folyamatban.
+- ⏳ Matek, történelem, gazdasági ismeretek — még nincs feltöltve tartalom,
   ezek a következő körben készülnek el, a fenti `TopicSeed` formátum szerint.

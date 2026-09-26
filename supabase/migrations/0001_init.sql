@@ -14,7 +14,7 @@ create extension if not exists "pgcrypto";
 -- ---------------------------------------------------------------------------
 create table erettsegi.subjects (
   id uuid primary key default gen_random_uuid(),
-  key text not null unique,              -- 'magyar', 'matek', 'tortenelem', 'angol', 'informatika', 'sat', 'act'
+  key text not null unique,              -- 'magyar', 'matek', 'tortenelem', 'angol', 'gazdasagi-ismeretek', 'sat', 'act'
   name text not null,                    -- megjeleniteshez
   category text not null default 'erettsegi', -- 'erettsegi' | 'felveteli'
   has_level boolean not null default true,     -- SAT/ACT-nel false
@@ -135,7 +135,7 @@ insert into erettsegi.subjects (key, name, category, has_level, color, icon, sor
   ('magyar', 'Magyar', 'erettsegi', true, '#dc2626', 'book-open', 4),
   ('matek', 'Matematika', 'erettsegi', true, '#059669', 'calculator', 5),
   ('tortenelem', 'Történelem', 'erettsegi', true, '#b45309', 'landmark', 6),
-  ('informatika', 'Informatika', 'erettsegi', true, '#0891b2', 'cpu', 7);
+  ('gazdasagi-ismeretek', 'Gazdasági ismeretek', 'erettsegi', true, '#0891b2', 'trending-up', 7);
 
 -- ---------------------------------------------------------------------------
 -- jogosultsagok: a service_role szamara (a PostgREST/Supabase API ezt hasznalja
