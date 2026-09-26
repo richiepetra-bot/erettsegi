@@ -21,6 +21,7 @@ import { gazdasagiIsmeretekMikroTopics } from "./data/gazdasagi-ismeretek-mikro"
 import { gazdasagiIsmeretekMakroTopics } from "./data/gazdasagi-ismeretek-makro";
 import { matekAlgebraTopics } from "./data/matek-algebra";
 import { matekFuggvenyekGeometriaTopics } from "./data/matek-fuggvenyek-geometria";
+import { matekKoordinatageometriaTopics } from "./data/matek-koordinatageometria";
 import type { TopicSeed } from "./data/angol";
 
 dotenv.config({ path: path.resolve(process.cwd(), ".env.local") });
@@ -70,7 +71,11 @@ const SEED_SETS: { subjectKey: string; topics: TopicSeed[] }[] = [
   },
   {
     subjectKey: "matek",
-    topics: [...matekAlgebraTopics, ...matekFuggvenyekGeometriaTopics],
+    topics: [
+      ...matekAlgebraTopics,
+      ...matekFuggvenyekGeometriaTopics,
+      ...matekKoordinatageometriaTopics,
+    ],
   },
 ];
 
