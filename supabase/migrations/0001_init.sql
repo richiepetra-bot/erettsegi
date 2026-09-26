@@ -146,3 +146,17 @@ grant all on all tables in schema erettsegi to service_role;
 grant all on all sequences in schema erettsegi to service_role;
 alter default privileges in schema erettsegi grant all on tables to service_role;
 alter default privileges in schema erettsegi grant all on sequences to service_role;
+
+-- ---------------------------------------------------------------------------
+-- RLS: minden tablan bekapcsolva, policy nelkul (deny-all az anon/authenticated
+-- szamara). A service_role mindig megkeruli az RLS-t, szoval a szerver oldali
+-- hozzaferest ez nem erinti - csak vedelmi halo, ha a jovoben veletlenul jogot
+-- kapna az anon/authenticated szerep ezekre a tablakra.
+-- ---------------------------------------------------------------------------
+alter table erettsegi.subjects enable row level security;
+alter table erettsegi.exams enable row level security;
+alter table erettsegi.topics enable row level security;
+alter table erettsegi.quiz_questions enable row level security;
+alter table erettsegi.topic_progress enable row level security;
+alter table erettsegi.quiz_attempts enable row level security;
+alter table erettsegi.user_progress enable row level security;
