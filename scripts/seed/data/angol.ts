@@ -7,6 +7,11 @@ export type QuestionSeed = {
   difficulty: 1 | 2 | 3;
 };
 
+export type SourceRefSeed = {
+  label: string;
+  url: string;
+};
+
 export type TopicSeed = {
   slug: string;
   title: string;
@@ -16,6 +21,7 @@ export type TopicSeed = {
   summary_markdown: string;
   content_markdown: string;
   key_concepts: string[];
+  source_refs?: SourceRefSeed[];
   questions: QuestionSeed[];
 };
 

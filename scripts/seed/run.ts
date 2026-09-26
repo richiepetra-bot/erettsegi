@@ -4,6 +4,7 @@ import { createClient } from "@supabase/supabase-js";
 import { angolTopics } from "./data/angol";
 import { satTopics } from "./data/sat";
 import { actTopics } from "./data/act";
+import { magyarTopics } from "./data/magyar";
 import type { TopicSeed } from "./data/angol";
 
 dotenv.config({ path: path.resolve(process.cwd(), ".env.local") });
@@ -27,6 +28,7 @@ const SEED_SETS: { subjectKey: string; topics: TopicSeed[] }[] = [
   { subjectKey: "angol", topics: angolTopics },
   { subjectKey: "sat", topics: satTopics },
   { subjectKey: "act", topics: actTopics },
+  { subjectKey: "magyar", topics: magyarTopics },
 ];
 
 async function seedSubject(subjectKey: string, topics: TopicSeed[]) {
@@ -55,7 +57,7 @@ async function seedSubject(subjectKey: string, topics: TopicSeed[]) {
           summary_markdown: topic.summary_markdown,
           content_markdown: topic.content_markdown,
           key_concepts: topic.key_concepts,
-          source_refs: [],
+          source_refs: topic.source_refs ?? [],
           updated_at: new Date().toISOString(),
         },
         { onConflict: "subject_id,slug" }
