@@ -6,7 +6,7 @@ export const magyarNyelvtanTopics: TopicSeed[] = [
     title: "Kommunikáció alapjai",
     level: "mindketto",
     theme: "Nyelvtan és kommunikáció",
-    order_index: 1,
+    order_index: 22,
     summary_markdown:
       "A kommunikáció tényezői (feladó, vevő, üzenet, kód, csatorna, kontextus) és funkciói (tájékoztató, felszólító, érzelemkifejező, kapcsolatteremtő stb.), valamint a verbális és nem verbális kifejezőeszközök rendszere.",
     content_markdown: `
@@ -130,7 +130,7 @@ A kommunikáció tényezőinek és funkcióinak ismerete alapvető ahhoz, hogy e
     title: "A magyar nyelv eredete és rokonsága",
     level: "mindketto",
     theme: "Nyelvtan és kommunikáció",
-    order_index: 2,
+    order_index: 23,
     summary_markdown:
       "A magyar nyelv az uráli nyelvcsalád finnugor ágához tartozik. A rokonságot hangmegfelelések, alapszókincs-egyezések és nyelvtipológiai hasonlóságok bizonyítják, amit Sajnovics János és Gyarmathi Sámuel kutatásai alapoztak meg.",
     content_markdown: `
@@ -238,7 +238,7 @@ A magyar nyelv finnugor eredetének és rokonságának ismerete alapvető a magy
     title: "Nyelvtörténet és nyelvújítás",
     level: "mindketto",
     theme: "Nyelvtan és kommunikáció",
-    order_index: 3,
+    order_index: 24,
     summary_markdown:
       "A magyar nyelv történetének korszakai és legrégebbi nyelvemlékei, valamint a 18-19. századi nyelvújítás mozgalma, amely Kazinczy Ferenc vezetésével alkalmassá tette a magyar nyelvet a modern tudomány és irodalom kifejezésére.",
     content_markdown: `
@@ -340,7 +340,7 @@ A nyelvújítás a magyar nyelvtörténet egyik legmeghatározóbb korszaka: en�
     title: "Szövegtípusok",
     level: "mindketto",
     theme: "Nyelvtan és kommunikáció",
-    order_index: 4,
+    order_index: 25,
     summary_markdown:
       "A szöveg mondatoknál nagyobb, összefüggő egység, amely a kommunikáció résztvevőinek száma, funkciója, megjelenési formája és kommunikációs színtere szerint különböző típusokba sorolható: elbeszélő, leíró, érvelő szövegek, gyakorlati szövegfajták.",
     content_markdown: `
@@ -456,7 +456,7 @@ A szövegtípusok ismerete azért alapvető, mert egy konkrét szöveg (legyen a
     title: "Retorika – a meggyőzés eszközei",
     level: "mindketto",
     theme: "Nyelvtan és kommunikáció",
-    order_index: 5,
+    order_index: 26,
     summary_markdown:
       "A retorika (szónoklattan) az ókori Görögországban kialakult tudomány és művészet, amely a hallgatóság meggyőzésének eszközeit tanulmányozza. Arisztotelész éthosz-pátosz-logosz hármassága és a beszéd felépítésének öt szakasza a mai napig meghatározó modell.",
     content_markdown: `
@@ -574,7 +574,7 @@ A retorika ismerete nemcsak történeti-irodalmi érdekesség, hanem gyakorlati 
     title: "Stílusrétegek és stíluseszközök",
     level: "mindketto",
     theme: "Nyelvtan és kommunikáció",
-    order_index: 6,
+    order_index: 27,
     summary_markdown:
       "A stílus a nyelvi elemek kiválasztásának és elrendezésének módja. A hat hagyományos stílusréteg (társalgási, tudományos, hivatalos, publicisztikai, szónoki, szépirodalmi) és a stíluseszközök (szóképek és alakzatok) rendszere.",
     content_markdown: `

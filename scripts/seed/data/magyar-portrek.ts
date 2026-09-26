@@ -6,7 +6,7 @@ export const magyarPortrekTopics: TopicSeed[] = [
     title: "Balassi Bálint szerelmi és vitézi költészete",
     level: "mindketto",
     theme: "Portrék",
-    order_index: 1,
+    order_index: 7,
     summary_markdown:
       "Az első jelentős magyar nyelvű lírikus, a reneszánsz katonaköltő. Költészete három nagy témakörre tagolódik: szerelmi, vitézi és istenes versek — mindezt saját maga alkotta, jellegzetes strófaformában, a Balassi-strófában.",
     content_markdown: `
@@ -111,7 +111,7 @@ Balassi Bálint a magyar nyelvű reneszánsz líra megteremtője: ő honosított
     title: "Csokonai Vitéz Mihály költészete",
     level: "mindketto",
     theme: "Portrék",
-    order_index: 2,
+    order_index: 8,
     summary_markdown:
       "A felvilágosodás korának sokoldalú, rövid életű zsenije. Rokokó könnyedség, filozofikus mélység és komikus eposzi hagyomány ötvöződik költészetében, amelynek középpontjában a Lilla-szerelem verscsokra áll.",
     content_markdown: `
@@ -213,7 +213,7 @@ Csokonai Vitéz Mihály a magyar felvilágosodás korának egyik legsokoldalúbb
     title: "Berzsenyi Dániel ódaköltészete",
     level: "mindketto",
     theme: "Portrék",
-    order_index: 3,
+    order_index: 9,
     summary_markdown:
       "A klasszicizmus magyar ódaköltészetének mestere, a \"niklai remete\". Antikizáló versformákban fogalmazza meg a nemzet erkölcsi hanyatlása fölötti aggodalmát és a mulandóság fölötti elégikus elmélkedését.",
     content_markdown: `
@@ -318,7 +318,7 @@ Berzsenyi Dániel a magyar klasszicista ódaköltészet csúcsteljesítménye: a
     title: "Vörösmarty Mihály: Szózat és Csongor és Tünde",
     level: "mindketto",
     theme: "Portrék",
-    order_index: 4,
+    order_index: 10,
     summary_markdown:
       "A magyar reformkor nagy költője, a nemzeti romantika egyik megteremtője. A Szózat a nemzeti önazonosság máig élő himnikus verse, a Csongor és Tünde pedig a magyar drámairodalom egyik legfilozofikusabb tündérjátéka.",
     content_markdown: `
@@ -417,7 +417,7 @@ Vörösmarty Mihály a magyar romantika és a reformkori nemzeti költészet meg
     title: "Mikszáth Kálmán novellisztikája",
     level: "mindketto",
     theme: "Portrék",
-    order_index: 5,
+    order_index: 11,
     summary_markdown:
       "A magyar novella és társadalmi regény nagymestere. Anekdotikus, humoros-ironikus elbeszélésmódja a paraszti és dzsentri világot egyszerre idealizálja és kritizálja, a romantika és a realizmus határán mozogva.",
     content_markdown: `
@@ -520,7 +520,7 @@ Mikszáth Kálmán a magyar novella és a társadalmi regény egyik legnagyobb m
     title: "Móricz Zsigmond: parasztábrázolás és a Légy jó mindhalálig",
     level: "mindketto",
     theme: "Portrék",
-    order_index: 6,
+    order_index: 12,
     summary_markdown:
       "A 20. századi magyar realista próza vezéralakja. Móricz élesen kritikus, naturalista vonásokkal átszőtt parasztábrázolása szakított a korábbi idilli népábrázolással, miközben önéletrajzi ihletésű regényében (Légy jó mindhalálig) a gyermeki lélek kiszolgáltatottságát is megrendítően mutatta be.",
     content_markdown: `
@@ -617,7 +617,7 @@ Móricz Zsigmond a 20. századi magyar realista/naturalista próza vezéralakja:
     title: "Radnóti Miklós költészete",
     level: "mindketto",
     theme: "Portrék",
-    order_index: 7,
+    order_index: 13,
     summary_markdown:
       "A holokauszt egyik legmegrendítőbb magyar költő-áldozata és -krónikása. Antik formák (eklogák) modern tartalommal való megtöltése, valamint a bori munkaszolgálat és az erőltetett menet alatt írt utolsó versei (Razglednicák) teszik életművét egyedülállóvá.",
     content_markdown: `
@@ -725,7 +725,7 @@ Radnóti Miklós a magyar líra és a holokauszt-irodalom egyik legmegrendítőb
     title: "Örkény István groteszkje (Egyperces novellák)",
     level: "mindketto",
     theme: "Portrék",
-    order_index: 8,
+    order_index: 14,
     summary_markdown:
       "A magyar groteszk dráma és novella megújítója. Az Egyperces novellák rendkívül tömör, abszurd-filozofikus formában dolgozzák fel a 20. század embertelenségeit, a Tóték című dráma pedig a totalitárius abszurditás emblematikus magyar darabja.",
     content_markdown: `

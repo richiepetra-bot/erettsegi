@@ -6,7 +6,7 @@ export const magyarLatasmodokTopics: TopicSeed[] = [
     title: "Zrínyi Miklós: Szigeti veszedelem",
     level: "mindketto",
     theme: "Látásmódok",
-    order_index: 1,
+    order_index: 15,
     summary_markdown:
       "A magyar barokk eposz megteremtője, hadvezér és költő egy személyben. A Szigeti veszedelem dédapja, a szigetvári hős Zrínyi Miklós önfeláldozó halálát emeli a nemzet bűneiért hozott vallásos-erkölcsi áldozattá.",
     content_markdown: `
@@ -113,7 +113,7 @@ Zrínyi Miklós a magyar barokk irodalom és a nemzeti eposzi hagyomány megtere
     title: "Madách Imre: Az ember tragédiája",
     level: "mindketto",
     theme: "Látásmódok",
-    order_index: 2,
+    order_index: 16,
     summary_markdown:
       "A magyar irodalom egyik legnagyobb filozófiai drámai költeménye. Ádám álomutazása az emberi történelem nagy korszakain át azt a kérdést járja körül, van-e értelme a küzdelemnek egy olyan világban, ahol a nagy eszmék újra és újra megbuknak.",
     content_markdown: `
@@ -208,7 +208,7 @@ Az ember tragédiája a magyar irodalom egyik legnagyobb filozófiai igényű al
     title: "Krúdy Gyula prózája",
     level: "mindketto",
     theme: "Látásmódok",
-    order_index: 3,
+    order_index: 17,
     summary_markdown:
       "A \"lírai novella\" magyar megteremtője. Krúdy Szindbád-novellái az emlékezés, az álom és a valóság összemosódó, nosztalgikus, impresszionista-szecessziós prózanyelvén idézik fel a századforduló letűnt, úri Magyarországát.",
     content_markdown: `
@@ -308,7 +308,7 @@ Krúdy Gyula a modern magyar próza egyik legeredetibb, legsajátosabb hangú al
     title: "Weöres Sándor költészete",
     level: "mindketto",
     theme: "Látásmódok",
-    order_index: 4,
+    order_index: 18,
     summary_markdown:
       "A 20. századi magyar líra egyik legsokoldalúbb, \"proteuszi\" alakváltó költője. Filozofikus mélységű nagyversei, mitikus-misztikus költeményei és generációk óta szeretett gyermekversei egyaránt életműve szerves részei.",
     content_markdown: `
@@ -409,7 +409,7 @@ Weöres Sándor a 20. századi magyar líra egyik legsokoldalúbb, legnehezebben
     title: "Homérosz: Iliász és Odüsszeia",
     level: "mindketto",
     theme: "Világirodalom",
-    order_index: 5,
+    order_index: 19,
     summary_markdown:
       "Az európai epikus hagyomány alapköve. Az Iliász a trójai háború Akhilleusz haragja köré épülő epizódját, az Odüsszeia Odüsszeusz kalandos hazatérését meséli el — mindkettő a homéroszi eposzi technika (hasonlatok, állandó jelzők, istenek beavatkozása) klasszikus mintapéldája.",
     content_markdown: `
@@ -517,7 +517,7 @@ A homéroszi eposzok az európai irodalom legkorábbi fennmaradt, teljes terjede
     title: "Szophoklész: Antigoné",
     level: "mindketto",
     theme: "Világirodalom",
-    order_index: 6,
+    order_index: 20,
     summary_markdown:
       "Az antik görög tragédia egyik csúcsműve. Antigoné és Kreón összeütközése az isteni/erkölcsi törvény és az állami hatalom parancsa között a világirodalom egyik legmegrendítőbb tragikus konfliktusát fogalmazza meg.",
     content_markdown: `
@@ -629,7 +629,7 @@ Az Antigoné a világirodalom egyik legmegrendítőbb, azóta is folyamatosan ú
     title: "Shakespeare: Hamlet",
     level: "mindketto",
     theme: "Világirodalom",
-    order_index: 7,
+    order_index: 21,
     summary_markdown:
       "Az angol reneszánsz dráma csúcsteljesítménye. A tétovázó, töprengő dán királyfi bosszútörténete a cselekvésre képtelen, önmagával viaskodó modern ember egyik legelső, legmélyebb irodalmi ábrázolása.",
     content_markdown: `
