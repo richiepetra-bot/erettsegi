@@ -16,6 +16,8 @@ import { tortenelem20SzazadVilagTopics } from "./data/tortenelem-20szazad-vilag"
 import { tortenelem20SzazadMagyarorszagTopics } from "./data/tortenelem-20szazad-magyarorszag";
 import { gazdasagiIsmeretekMikroTopics } from "./data/gazdasagi-ismeretek-mikro";
 import { gazdasagiIsmeretekMakroTopics } from "./data/gazdasagi-ismeretek-makro";
+import { matekAlgebraTopics } from "./data/matek-algebra";
+import { matekFuggvenyekGeometriaTopics } from "./data/matek-fuggvenyek-geometria";
 import type { TopicSeed } from "./data/angol";
 
 dotenv.config({ path: path.resolve(process.cwd(), ".env.local") });
@@ -62,6 +64,10 @@ const SEED_SETS: { subjectKey: string; topics: TopicSeed[] }[] = [
   {
     subjectKey: "gazdasagi-ismeretek",
     topics: [...gazdasagiIsmeretekMikroTopics, ...gazdasagiIsmeretekMakroTopics],
+  },
+  {
+    subjectKey: "matek",
+    topics: [...matekAlgebraTopics, ...matekFuggvenyekGeometriaTopics],
   },
 ];
 
