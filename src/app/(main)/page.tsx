@@ -1,0 +1,118 @@
+export const dynamic = "force-dynamic";
+
+import Link from "next/link";
+import { getSubjects } from "@/lib/db/subjects";
+import { getExamsWithSubjects } from "@/lib/db/exams";
+import { getTopicsBySubjectId } from "@/lib/db/topics";
+import { daysUntil, formatCountdown, EXAM_TYPE_LABELS, LEVEL_LABELS } from "@/lib/gamification";
+
+export default async function DashboardPage() {
+  const [subjects, exams] = await Promise.all([getSubjects(), getExamsWithSubjects()]);
+
+  const subjectsWithProgress = await Promise.all(
+    subjects.map(async (subject) => {
+      const topics = await getTopicsBySubjectId(subject.id);
+      const mastered = topics.filter((t) => t.progress?.status === "elsajatitott").length;
+      return { subject, topicCount: topics.length, masteredCount: mastered };
+    })
+  );
+
+  const sortedExams = [...exams].sort((a, b) => {
+    const da = daysUntil(a.written_date) ?? Number.MAX_SAFE_INTEGER;
+    const db = daysUntil(b.written_date) ?? Number.MAX_SAFE_INTEGER;
+    return da - db;
+  });
+
+  return (
+    <div className="space-y-10">
+      <section>
+        <div className="mb-3 flex items-center justify-between">
+          <h2 className="text-lg font-semibold text-slate-900">Közelgő vizsgák</h2>
+          <Link href="/exams" className="text-sm font-medium text-indigo-600 hover:underline">
+            Vizsgák kezelése →
+          </Link>
+        </div>
+
+        {sortedExams.length === 0 ? (
+          <p className="rounded-xl border border-dashed border-slate-300 p-6 text-sm text-slate-500">
+            Még nincs felvéve vizsga.{" "}
+            <Link href="/exams" className="text-indigo-600 hover:underline">
+              Adj hozzá egyet
+            </Link>
+            .
+          </p>
+        ) : (
+          <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
+            {sortedExams.map((exam) => {
+              const days = daysUntil(exam.written_date);
+              const urgent = days !== null && days <= 14 && days >= 0;
+              return (
+                <div
+                  key={exam.id}
+                  className="rounded-xl border border-slate-200 bg-white p-4 shadow-sm"
+                  style={{ borderLeftColor: exam.subject.color, borderLeftWidth: 4 }}
+                >
+                  <div className="flex items-start justify-between">
+                    <div>
+                      <p className="font-semibold text-slate-900">{exam.subject.name}</p>
+                      <p className="text-xs text-slate-500">
+                        {EXAM_TYPE_LABELS[exam.exam_type]}
+                        {exam.level ? ` · ${LEVEL_LABELS[exam.level]} szint` : ""}
+                      </p>
+                    </div>
+                    <span
+                      className={`rounded-full px-2.5 py-1 text-xs font-medium ${
+                        urgent ? "bg-red-50 text-red-600" : "bg-slate-100 text-slate-600"
+                      }`}
+                    >
+                      {formatCountdown(days)}
+                    </span>
+                  </div>
+                  <p className="mt-3 text-xs text-slate-500">
+                    Írásbeli: {exam.written_date ?? "nincs megadva"}
+                    {exam.oral_date ? ` · Szóbeli: ${exam.oral_date}` : ""}
+                  </p>
+                </div>
+              );
+            })}
+          </div>
+        )}
+      </section>
+
+      <section>
+        <h2 className="mb-3 text-lg font-semibold text-slate-900">Tantárgyak</h2>
+        <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
+          {subjectsWithProgress.map(({ subject, topicCount, masteredCount }) => {
+            const pct = topicCount > 0 ? Math.round((masteredCount / topicCount) * 100) : 0;
+            return (
+              <Link
+                key={subject.id}
+                href={`/subjects/${subject.key}`}
+                className="rounded-xl border border-slate-200 bg-white p-4 shadow-sm transition hover:shadow-md"
+              >
+                <div className="flex items-center justify-between">
+                  <p className="font-semibold text-slate-900">{subject.name}</p>
+                  <span
+                    className="h-3 w-3 rounded-full"
+                    style={{ backgroundColor: subject.color }}
+                  />
+                </div>
+                <p className="mt-1 text-xs text-slate-500">
+                  {topicCount === 0
+                    ? "Még nincs feltöltött tétel"
+                    : `${masteredCount} / ${topicCount} elsajátítva`}
+                </p>
+                <div className="mt-2 h-2 w-full overflow-hidden rounded-full bg-slate-100">
+                  <div
+                    className="h-full rounded-full"
+                    style={{ width: `${pct}%`, backgroundColor: subject.color }}
+                  />
+                </div>
+              </Link>
+            );
+          })}
+        </div>
+      </section>
+    </div>
+  );
+}
