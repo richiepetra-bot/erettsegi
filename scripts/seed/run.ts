@@ -12,6 +12,8 @@ import { tortenelemOkorTopics } from "./data/tortenelem-okor";
 import { tortenelemKozepkorTopics } from "./data/tortenelem-kozepkor";
 import { tortenelemKoraUjkorTopics } from "./data/tortenelem-kora-ujkor";
 import { tortenelem19SzazadTopics } from "./data/tortenelem-19szazad";
+import { tortenelem20SzazadVilagTopics } from "./data/tortenelem-20szazad-vilag";
+import { tortenelem20SzazadMagyarorszagTopics } from "./data/tortenelem-20szazad-magyarorszag";
 import type { TopicSeed } from "./data/angol";
 
 dotenv.config({ path: path.resolve(process.cwd(), ".env.local") });
@@ -51,6 +53,8 @@ const SEED_SETS: { subjectKey: string; topics: TopicSeed[] }[] = [
       ...tortenelemKozepkorTopics,
       ...tortenelemKoraUjkorTopics,
       ...tortenelem19SzazadTopics,
+      ...tortenelem20SzazadVilagTopics,
+      ...tortenelem20SzazadMagyarorszagTopics,
     ],
   },
 ];
