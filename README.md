@@ -4,19 +4,39 @@ Tanulást segítő webapp érettségi tételekhez (magyar, matek, történelem, 
 informatika), az angol előrehozott érettségihez, és a SAT/ACT felvételi
 tesztekhez. Duolingo-szerű gamifikációval (XP, napi sorozat, csillagok).
 
-## 1. Supabase projekt létrehozása
+## 1. Supabase projekt
 
+Ez az app egy **külön Postgres sémát** (`erettsegi`) használ, ezért nyugodtan
+befér egy már meglévő Supabase projektbe is (pl. a "továbbtanulás-2027"
+projektbe) — nem ütközik a másik app tábláival, mert azok más sémában
+(jellemzően `public`) élnek.
+
+**Ha új projektet hozol létre:**
 1. Regisztrálj / jelentkezz be a [supabase.com](https://supabase.com) oldalon
-   (van ingyenes tier, bőven elég egy felhasználóhoz).
-2. Hozz létre egy új projektet (pl. `erettsegi`).
+   (ingyenes tier bőven elég).
+2. Hozz létre egy új projektet.
+
+**Ha egy meglévő projektet (pl. továbbtanulás-2027) használsz, ugorj ide:**
+
 3. A projekten belül nyisd meg a **SQL Editor**-t, illeszd be a
    `supabase/migrations/0001_init.sql` fájl teljes tartalmát, és futtasd le.
-   Ez létrehozza az összes táblát és feltölti a 7 alap tantárgyat.
-4. A **Project Settings → API** oldalon másold ki:
+   Ez létrehoz egy különálló `erettsegi` sémát, abban minden táblát, és
+   feltölti a 7 alap tantárgyat — **a meglévő (pl. `public` sémabeli)
+   tábláidhoz nem nyúl.**
+4. Fontos külön lépés: a **Project Settings → Data API** (régebbi Supabase
+   UI-ban **API Settings**) oldalon, az **"Exposed schemas"** listához add
+   hozzá az `erettsegi` sémát is (pl. `public, erettsegi`). Enélkül az API
+   nem fogja látni az új táblákat, mert alapból csak a `public` séma van
+   kitéve.
+5. A **Project Settings → API** oldalon másold ki:
    - `Project URL` → ez lesz a `SUPABASE_URL`
    - `service_role` kulcs (⚠️ ne a `anon` kulcsot használd, és ezt soha ne
      tedd ki nyilvánosan / kliens oldali kódba) → ez lesz a
      `SUPABASE_SERVICE_ROLE_KEY`
+
+Ha bármi miatt más néven szeretnéd futtatni a sémát (nem `erettsegi`), állítsd
+be a `SUPABASE_SCHEMA` környezeti változót is — de a migrációban is át kell
+írni ilyenkor az `erettsegi.` előtagokat.
 
 ## 2. Környezeti változók
 

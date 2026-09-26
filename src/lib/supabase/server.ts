@@ -16,6 +16,7 @@ export function getSupabaseServerClient(): SupabaseClient {
 
   cachedClient = createClient(url, serviceRoleKey, {
     auth: { persistSession: false },
+    db: { schema: (process.env.SUPABASE_SCHEMA || "erettsegi") as "public" },
   });
   return cachedClient;
 }

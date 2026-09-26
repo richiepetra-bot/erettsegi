@@ -20,6 +20,7 @@ if (!SUPABASE_URL || !SERVICE_ROLE_KEY) {
 
 const supabase = createClient(SUPABASE_URL, SERVICE_ROLE_KEY, {
   auth: { persistSession: false },
+  db: { schema: process.env.SUPABASE_SCHEMA || "erettsegi" },
 });
 
 const SEED_SETS: { subjectKey: string; topics: TopicSeed[] }[] = [
