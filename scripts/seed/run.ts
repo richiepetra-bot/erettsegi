@@ -2,8 +2,11 @@ import path from "node:path";
 import dotenv from "dotenv";
 import { createClient } from "@supabase/supabase-js";
 import { angolTopics } from "./data/angol";
+import { angolTovabbiTemakorokTopics } from "./data/angol-tovabbi-temakorok";
 import { satTopics } from "./data/sat";
+import { satTovabbiTemakTopics } from "./data/sat-tovabbi-temak";
 import { actTopics } from "./data/act";
+import { actTovabbiTemakTopics } from "./data/act-tovabbi-temak";
 import { magyarTopics } from "./data/magyar";
 import { magyarPortrekTopics } from "./data/magyar-portrek";
 import { magyarLatasmodokTopics } from "./data/magyar-latasmodok";
@@ -38,9 +41,9 @@ const supabase = createClient(SUPABASE_URL, SERVICE_ROLE_KEY, {
 });
 
 const SEED_SETS: { subjectKey: string; topics: TopicSeed[] }[] = [
-  { subjectKey: "angol", topics: angolTopics },
-  { subjectKey: "sat", topics: satTopics },
-  { subjectKey: "act", topics: actTopics },
+  { subjectKey: "angol", topics: [...angolTopics, ...angolTovabbiTemakorokTopics] },
+  { subjectKey: "sat", topics: [...satTopics, ...satTovabbiTemakTopics] },
+  { subjectKey: "act", topics: [...actTopics, ...actTovabbiTemakTopics] },
   {
     subjectKey: "magyar",
     topics: [
