@@ -44,7 +44,7 @@ export default async function StudentDetailPage({ params }: PageProps) {
     <div className="space-y-8">
       <div className="flex items-center justify-between">
         <div>
-          <h2 className="text-lg font-semibold text-slate-900">{data.studentName} haladása</h2>
+          <h2 className="text-lg font-extrabold tracking-tight text-slate-900">{data.studentName} haladása</h2>
           <p className="text-sm text-slate-500">
             Csak olvasható összegzés: eredményesség, tétel-áttekintés, gyakorlási rendszeresség és
             gyenge területek.
@@ -58,36 +58,36 @@ export default async function StudentDetailPage({ params }: PageProps) {
       </div>
 
       <section className="grid grid-cols-2 gap-3 sm:grid-cols-4">
-        <div className="rounded-xl border border-slate-200 bg-white p-4 shadow-sm">
+        <div className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
           <p className="text-xs font-medium uppercase tracking-wide text-slate-400">Sorozat</p>
-          <p className="mt-1 text-2xl font-bold text-orange-600">
+          <p className="mt-1 text-3xl font-extrabold text-orange-600">
             🔥 {data.userProgress.current_streak}
           </p>
           <p className="mt-1 text-xs text-slate-500">leghosszabb: {data.userProgress.longest_streak} nap</p>
         </div>
-        <div className="rounded-xl border border-slate-200 bg-white p-4 shadow-sm">
+        <div className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
           <p className="text-xs font-medium uppercase tracking-wide text-slate-400">Szint</p>
-          <p className="mt-1 text-2xl font-bold text-indigo-600">⭐ {data.level}.</p>
+          <p className="mt-1 text-3xl font-extrabold text-indigo-600">⭐ {data.level}.</p>
           <p className="mt-1 text-xs text-slate-500">{data.userProgress.total_xp} XP összesen</p>
         </div>
-        <div className="rounded-xl border border-slate-200 bg-white p-4 shadow-sm">
+        <div className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
           <p className="text-xs font-medium uppercase tracking-wide text-slate-400">
             Legutóbbi aktivitás
           </p>
-          <p className={`mt-1 text-lg font-bold ${activityColor(data.daysSinceLastActivity)}`}>
+          <p className={`mt-1 text-xl font-extrabold ${activityColor(data.daysSinceLastActivity)}`}>
             {activityLabel(data.daysSinceLastActivity)}
           </p>
         </div>
-        <div className="rounded-xl border border-slate-200 bg-white p-4 shadow-sm">
+        <div className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
           <p className="text-xs font-medium uppercase tracking-wide text-slate-400">
             Elmúlt 30 nap
           </p>
-          <p className="mt-1 text-2xl font-bold text-slate-900">{data.activeDaysLast30} nap</p>
+          <p className="mt-1 text-3xl font-extrabold text-slate-900">{data.activeDaysLast30} nap</p>
           <p className="mt-1 text-xs text-slate-500">amikor gyakorolt</p>
         </div>
       </section>
 
-      <section className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
+      <section className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
         <p className="text-xs font-semibold uppercase tracking-wide text-slate-400">
           Összesített eredményesség
         </p>
@@ -102,14 +102,15 @@ export default async function StudentDetailPage({ params }: PageProps) {
       </section>
 
       <section>
-        <h3 className="mb-3 text-base font-semibold text-slate-900">Tétel-áttekintés tantárgyanként</h3>
+        <h3 className="mb-3 text-base font-extrabold tracking-tight text-slate-900">Tétel-áttekintés tantárgyanként</h3>
         <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
           {data.subjectProgress.map(({ subject, topicCount, masteredCount }) => {
             const pct = topicCount > 0 ? Math.round((masteredCount / topicCount) * 100) : 0;
             return (
-              <div
+              <Link
                 key={subject.id}
-                className="rounded-xl border border-slate-200 bg-white p-4 shadow-sm"
+                href={`/felugyelet/${studentId}/subjects/${subject.key}`}
+                className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm transition hover:shadow-md hover:-translate-y-0.5"
               >
                 <div className="flex items-center justify-between">
                   <p className="font-semibold text-slate-900">{subject.name}</p>
@@ -123,36 +124,37 @@ export default async function StudentDetailPage({ params }: PageProps) {
                     ? "Még nincs feltöltött tétel"
                     : `${masteredCount} / ${topicCount} elsajátítva`}
                 </p>
-                <div className="mt-2 h-2 w-full overflow-hidden rounded-full bg-slate-100">
+                <div className="mt-2 h-2.5 w-full overflow-hidden rounded-full bg-slate-100">
                   <div
                     className="h-full rounded-full"
                     style={{ width: `${pct}%`, backgroundColor: subject.color }}
                   />
                 </div>
-              </div>
+                <p className="mt-2 text-xs font-semibold text-indigo-600">Tételek megtekintése →</p>
+              </Link>
             );
           })}
         </div>
       </section>
 
       <section>
-        <h3 className="mb-1 text-base font-semibold text-slate-900">Gyenge területek</h3>
+        <h3 className="mb-1 text-base font-extrabold tracking-tight text-slate-900">Gyenge területek</h3>
         <p className="mb-3 text-xs text-slate-500">
           Azok a tételek, amiken a legtöbbet érdemes még gyakorolni (legalább 3 megválaszolt kérdés
           alapján).
         </p>
         {data.weakTopics.length === 0 ? (
-          <p className="rounded-xl border border-dashed border-slate-300 p-6 text-sm text-slate-500">
+          <p className="rounded-2xl border-2 border-dashed border-slate-300 p-6 text-sm text-slate-500">
             Még nincs elég gyakorlási előzmény ahhoz, hogy gyenge területeket lehessen azonosítani.
           </p>
         ) : (
-          <div className="overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm">
+          <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
             <table className="w-full text-sm">
               <thead className="bg-slate-50 text-left text-xs uppercase tracking-wide text-slate-500">
                 <tr>
-                  <th className="px-4 py-2 font-medium">Tétel</th>
-                  <th className="px-4 py-2 font-medium">Tantárgy</th>
-                  <th className="px-4 py-2 text-right font-medium">Pontosság</th>
+                  <th className="px-4 py-2 font-bold">Tétel</th>
+                  <th className="px-4 py-2 font-bold">Tantárgy</th>
+                  <th className="px-4 py-2 text-right font-bold">Pontosság</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-slate-100">

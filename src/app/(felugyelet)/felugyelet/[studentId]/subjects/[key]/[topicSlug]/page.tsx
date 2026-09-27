@@ -5,31 +5,32 @@ import { notFound } from "next/navigation";
 import { marked } from "marked";
 import { getSubjectByKey } from "@/lib/db/subjects";
 import { getTopicBySlug } from "@/lib/db/topics";
-import { getQuizQuestions } from "@/lib/db/quiz";
 import { getCurrentUser } from "@/lib/db/users";
+import { getLinkRole } from "@/lib/db/supervision";
 
-export default async function TopicDetailPage({
-  params,
-}: {
-  params: Promise<{ key: string; topicSlug: string }>;
-}) {
-  const { key, topicSlug } = await params;
+type PageProps = { params: Promise<{ studentId: string; key: string; topicSlug: string }> };
+
+export default async function SupervisorTopicDetailPage({ params }: PageProps) {
+  const { studentId, key, topicSlug } = await params;
   const user = await getCurrentUser();
+
+  const role = await getLinkRole(user.id, studentId);
+  if (!role) notFound();
+
   const subject = await getSubjectByKey(key);
   if (!subject) notFound();
 
-  const topic = await getTopicBySlug(subject.id, topicSlug, user.id);
+  const topic = await getTopicBySlug(subject.id, topicSlug, studentId);
   if (!topic) notFound();
 
-  const questions = await getQuizQuestions(topic.id);
   const contentHtml = topic.content_markdown ? await marked.parse(topic.content_markdown) : "";
 
   return (
     <article className="space-y-6">
       <div>
         <Link
-          href={`/subjects/${subject.key}`}
-          className="text-sm text-indigo-600 hover:underline"
+          href={`/felugyelet/${studentId}/subjects/${subject.key}`}
+          className="text-sm font-semibold text-indigo-600 hover:underline"
         >
           ← {subject.name} tételek
         </Link>
@@ -37,6 +38,9 @@ export default async function TopicDetailPage({
         {topic.summary_markdown && (
           <p className="mt-1 text-slate-600">{topic.summary_markdown}</p>
         )}
+        <p className="mt-2 inline-flex items-center gap-1.5 rounded-full bg-indigo-50 px-3 py-1 text-xs font-semibold text-indigo-600">
+          👀 Csak olvasható nézet — a megtekintés nem számít bele a haladásba
+        </p>
       </div>
 
       {topic.key_concepts.length > 0 && (
@@ -74,20 +78,6 @@ export default async function TopicDetailPage({
               </li>
             ))}
           </ul>
-        </div>
-      )}
-
-      {questions.length > 0 && (
-        <div className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
-          <p className="text-sm text-slate-600">
-            {questions.length} kérdéses kvíz vár rád ehhez a tételhez.
-          </p>
-          <Link
-            href={`/subjects/${subject.key}/${topic.slug}/quiz`}
-            className="mt-3 inline-block rounded-xl bg-indigo-600 px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-indigo-700 hover:shadow-md active:scale-[0.98]"
-          >
-            Kvíz indítása
-          </Link>
         </div>
       )}
     </article>

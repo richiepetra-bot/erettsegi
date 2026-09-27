@@ -16,12 +16,12 @@ export default async function FelugyeletListPage() {
   return (
     <div className="space-y-6">
       <div>
-        <h2 className="text-lg font-semibold text-slate-900">Hozzád kapcsolt diákok</h2>
+        <h2 className="text-lg font-extrabold tracking-tight text-slate-900">Hozzád kapcsolt diákok</h2>
         <p className="text-sm text-slate-500">Válassz egy diákot a részletes haladás megtekintéséhez.</p>
       </div>
 
       {students.length === 0 ? (
-        <p className="rounded-xl border border-dashed border-slate-300 p-6 text-sm text-slate-500">
+        <p className="rounded-2xl border-2 border-dashed border-slate-300 p-6 text-sm text-slate-500">
           Még nincs hozzád kapcsolt diák. Kérj meghívó linket a diáktól, akinek a haladását szeretnéd
           követni.
         </p>
@@ -31,7 +31,7 @@ export default async function FelugyeletListPage() {
             <Link
               key={student.studentId}
               href={`/felugyelet/${student.studentId}`}
-              className="rounded-xl border border-slate-200 bg-white p-4 shadow-sm transition hover:shadow-md"
+              className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm transition hover:shadow-md hover:-translate-y-0.5"
             >
               <p className="font-semibold text-slate-900">{student.displayName}</p>
               <p className="mt-1 text-xs text-slate-500">Részletek megtekintése →</p>

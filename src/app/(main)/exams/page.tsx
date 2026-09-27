@@ -19,7 +19,7 @@ const LEVELS = [
 ];
 
 const inputClass =
-  "w-full rounded-md border border-slate-300 px-2.5 py-1.5 text-sm outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-100";
+  "w-full rounded-lg border border-slate-300 px-2.5 py-1.5 text-sm outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-100";
 
 export default async function ExamsPage() {
   const user = await getCurrentUser();
@@ -28,7 +28,7 @@ export default async function ExamsPage() {
   return (
     <div className="space-y-8">
       <div>
-        <h1 className="text-lg font-semibold text-slate-900">Vizsgák kezelése</h1>
+        <h1 className="text-lg font-extrabold tracking-tight text-slate-900">Vizsgák kezelése</h1>
         <p className="mt-1 text-sm text-slate-500">
           Itt vehetsz fel új vizsgát (érettségi, előrehozott érettségi, SAT, ACT), és
           bármikor módosíthatod a dátumokat, ahogy pontosodnak a hivatalos időpontok.
@@ -36,16 +36,18 @@ export default async function ExamsPage() {
       </div>
 
       <section className="space-y-3">
-        <h2 className="font-medium text-slate-800">Felvett vizsgák</h2>
+        <h2 className="font-extrabold tracking-tight text-slate-900">Felvett vizsgák</h2>
         {exams.length === 0 && (
-          <p className="text-sm text-slate-500">Még nincs felvéve vizsga.</p>
+          <p className="rounded-2xl border-2 border-dashed border-slate-300 p-6 text-sm text-slate-500">
+            Még nincs felvéve vizsga.
+          </p>
         )}
         <div className="space-y-3">
           {exams.map((exam) => (
             <form
               key={exam.id}
               action={updateExamAction}
-              className="grid grid-cols-2 gap-3 rounded-xl border border-slate-200 bg-white p-4 shadow-sm sm:grid-cols-6"
+              className="grid grid-cols-2 gap-3 rounded-2xl border border-slate-200 bg-white p-4 shadow-sm sm:grid-cols-6"
             >
               <input type="hidden" name="id" value={exam.id} />
               <div className="col-span-2 sm:col-span-1">
@@ -93,14 +95,14 @@ export default async function ExamsPage() {
               <div className="col-span-2 flex items-end gap-2 sm:col-span-1">
                 <button
                   type="submit"
-                  className="rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-medium text-white hover:bg-indigo-700"
+                  className="rounded-lg bg-indigo-600 px-3 py-1.5 text-sm font-semibold text-white transition hover:bg-indigo-700 hover:shadow-md active:scale-[0.98]"
                 >
                   Mentés
                 </button>
                 <button
                   type="submit"
                   formAction={deleteExamAction}
-                  className="rounded-md px-3 py-1.5 text-sm font-medium text-red-500 hover:bg-red-50"
+                  className="rounded-lg px-3 py-1.5 text-xs font-semibold text-red-600 transition hover:bg-red-50"
                 >
                   Törlés
                 </button>
@@ -111,10 +113,10 @@ export default async function ExamsPage() {
       </section>
 
       <section className="space-y-3">
-        <h2 className="font-medium text-slate-800">Új vizsga hozzáadása</h2>
+        <h2 className="font-extrabold tracking-tight text-slate-900">Új vizsga hozzáadása</h2>
         <form
           action={createExamAction}
-          className="grid grid-cols-2 gap-3 rounded-xl border border-dashed border-slate-300 bg-white p-4 sm:grid-cols-6"
+          className="grid grid-cols-2 gap-3 rounded-2xl border border-dashed border-slate-300 bg-white p-4 sm:grid-cols-6"
         >
           <div>
             <label className="text-xs font-medium text-slate-500">Tantárgy</label>
@@ -157,7 +159,7 @@ export default async function ExamsPage() {
           <div className="flex items-end">
             <button
               type="submit"
-              className="rounded-md bg-emerald-600 px-3 py-1.5 text-sm font-medium text-white hover:bg-emerald-700"
+              className="rounded-xl bg-emerald-600 px-4 py-2.5 font-semibold text-white transition hover:bg-emerald-700 hover:shadow-md active:scale-[0.98]"
             >
               Hozzáadás
             </button>

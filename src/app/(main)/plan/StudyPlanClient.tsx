@@ -36,7 +36,7 @@ export default function StudyPlanClient({ subjectPlans }: { subjectPlans: Subjec
       {subjectPlans.map((sp) => (
         <section
           key={sp.subjectKey}
-          className="overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm"
+          className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm"
         >
           <div
             className="flex flex-wrap items-center justify-between gap-2 border-b border-slate-100 px-5 py-4"
@@ -64,12 +64,18 @@ export default function StudyPlanClient({ subjectPlans }: { subjectPlans: Subjec
                 {sp.weeks.map((week) => (
                   <div key={week.weekIndex}>
                     <div className="mb-2 flex items-center gap-2">
-                      <p className="text-xs font-semibold uppercase tracking-wide text-slate-400">
+                      <span
+                        className={`inline-flex items-center rounded-full px-3 py-1 text-xs font-bold uppercase tracking-wide ${
+                          week.weekIndex === sp.currentWeekIndex
+                            ? "bg-indigo-100 text-indigo-700"
+                            : "bg-slate-100 text-slate-500"
+                        }`}
+                      >
                         {weekLabel(week.weekIndex, sp.currentWeekIndex, week.startDate, week.endDate)}
-                      </p>
+                      </span>
                       {week.isPastDue && (
-                        <span className="rounded-full bg-red-100 px-2 py-0.5 text-xs font-medium text-red-700">
-                          bekésett
+                        <span className="inline-flex items-center gap-1 rounded-full bg-red-100 px-2.5 py-1 text-xs font-bold text-red-700">
+                          🔴 bekésett
                         </span>
                       )}
                     </div>
@@ -79,7 +85,7 @@ export default function StudyPlanClient({ subjectPlans }: { subjectPlans: Subjec
                         return (
                           <li
                             key={topic.id}
-                            className={`flex items-center gap-2 rounded-lg border px-3 py-2 text-sm transition ${
+                            className={`flex items-center gap-2 rounded-lg border px-3 py-2 text-sm transition-all duration-200 ${
                               checked
                                 ? "border-emerald-200 bg-emerald-50 text-emerald-800"
                                 : "border-slate-100 bg-slate-50 text-slate-700"
@@ -89,7 +95,7 @@ export default function StudyPlanClient({ subjectPlans }: { subjectPlans: Subjec
                               type="checkbox"
                               checked={checked}
                               onChange={() => handleToggle(topic.id, checked)}
-                              className="h-4 w-4 rounded border-slate-300 text-indigo-600 focus:ring-indigo-500"
+                              className="h-5 w-5 rounded border-slate-300 text-indigo-600 focus:ring-indigo-500"
                             />
                             <span className={checked ? "line-through" : ""}>{topic.title}</span>
                             {topic.isWeak && (

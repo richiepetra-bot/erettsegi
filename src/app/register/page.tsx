@@ -14,9 +14,13 @@ export default async function RegisterPage({ searchParams }: RegisterPageProps) 
   const errorMessage = params.error ? ERROR_MESSAGES[params.error] ?? "Hiba történt." : null;
 
   return (
-    <main className="flex flex-1 items-center justify-center p-6">
-      <div className="w-full max-w-sm rounded-2xl bg-white p-8 shadow-sm ring-1 ring-slate-200">
-        <h1 className="text-xl font-semibold text-slate-900">Diák regisztráció</h1>
+    <main className="flex flex-1 items-center justify-center bg-gradient-to-br from-indigo-600 via-indigo-600 to-purple-700 p-6">
+      <div className="w-full max-w-sm rounded-2xl bg-white p-8 shadow-2xl">
+        <div className="flex items-center gap-2">
+          <span className="text-2xl">🎓</span>
+          <span className="text-xl font-extrabold text-slate-900">Érettségi Felkészítő</span>
+        </div>
+        <h1 className="mt-3 text-lg font-bold text-slate-900">Diák regisztráció</h1>
         <p className="mt-1 text-sm text-slate-500">
           Hozz létre egy fiókot a tanuláshoz. Szülőt/tanárt a regisztráció után tudsz meghívni.
         </p>
@@ -27,24 +31,26 @@ export default async function RegisterPage({ searchParams }: RegisterPageProps) 
             name="displayName"
             autoFocus
             placeholder="Neved"
-            className="w-full rounded-lg border border-slate-300 px-4 py-2.5 outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-100"
+            className="w-full rounded-xl border border-slate-300 px-4 py-3 outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-100"
           />
           <input
             type="email"
             name="email"
             placeholder="Email cím"
-            className="w-full rounded-lg border border-slate-300 px-4 py-2.5 outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-100"
+            className="w-full rounded-xl border border-slate-300 px-4 py-3 outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-100"
           />
           <input
             type="password"
             name="password"
             placeholder="Jelszó (min. 6 karakter)"
-            className="w-full rounded-lg border border-slate-300 px-4 py-2.5 outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-100"
+            className="w-full rounded-xl border border-slate-300 px-4 py-3 outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-100"
           />
-          {errorMessage && <p className="text-sm text-red-600">{errorMessage}</p>}
+          {errorMessage && (
+            <p className="rounded-lg bg-red-50 px-3 py-2 text-sm text-red-600">{errorMessage}</p>
+          )}
           <button
             type="submit"
-            className="w-full rounded-lg bg-indigo-600 px-4 py-2.5 font-medium text-white transition hover:bg-indigo-700"
+            className="w-full rounded-xl bg-indigo-600 px-4 py-2.5 font-semibold text-white transition hover:bg-indigo-700 hover:shadow-md active:scale-[0.98]"
           >
             Regisztráció
           </button>
@@ -52,7 +58,7 @@ export default async function RegisterPage({ searchParams }: RegisterPageProps) 
 
         <p className="mt-4 text-center text-sm text-slate-500">
           Már van fiókod?{" "}
-          <Link href="/login" className="font-medium text-indigo-600 hover:underline">
+          <Link href="/login" className="font-semibold text-indigo-600 hover:underline">
             Belépés
           </Link>
         </p>

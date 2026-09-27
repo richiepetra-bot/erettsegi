@@ -5,6 +5,7 @@ import { notFound } from "next/navigation";
 import { getSubjectByKey } from "@/lib/db/subjects";
 import { getTopicsBySubjectId } from "@/lib/db/topics";
 import { getCurrentUser } from "@/lib/db/users";
+import { getLinkRole } from "@/lib/db/supervision";
 
 const STATUS_LABELS: Record<string, string> = {
   nem_kezdett: "Nem kezdett",
@@ -12,17 +13,19 @@ const STATUS_LABELS: Record<string, string> = {
   elsajatitott: "Elsajátítva",
 };
 
-export default async function SubjectTopicsPage({
-  params,
-}: {
-  params: Promise<{ key: string }>;
-}) {
-  const { key } = await params;
+type PageProps = { params: Promise<{ studentId: string; key: string }> };
+
+export default async function SupervisorSubjectTopicsPage({ params }: PageProps) {
+  const { studentId, key } = await params;
   const user = await getCurrentUser();
+
+  const role = await getLinkRole(user.id, studentId);
+  if (!role) notFound();
+
   const subject = await getSubjectByKey(key);
   if (!subject) notFound();
 
-  const topics = await getTopicsBySubjectId(subject.id, user.id);
+  const topics = await getTopicsBySubjectId(subject.id, studentId);
 
   const grouped = new Map<string, typeof topics>();
   for (const topic of topics) {
@@ -33,13 +36,26 @@ export default async function SubjectTopicsPage({
 
   return (
     <div className="space-y-8">
-      <div className="flex items-center gap-3">
-        <span className="h-4 w-4 rounded-full" style={{ backgroundColor: subject.color }} />
-        <h1 className="text-lg font-extrabold tracking-tight text-slate-900">{subject.name} tételek</h1>
+      <div>
+        <Link
+          href={`/felugyelet/${studentId}`}
+          className="text-sm font-semibold text-indigo-600 hover:underline"
+        >
+          ← Vissza a haladáshoz
+        </Link>
+        <div className="mt-2 flex items-center gap-3">
+          <span className="h-4 w-4 rounded-full" style={{ backgroundColor: subject.color }} />
+          <h1 className="text-lg font-extrabold tracking-tight text-slate-900">
+            {subject.name} tételek
+          </h1>
+        </div>
+        <p className="mt-1 text-xs text-slate-500">
+          Csak olvasható betekintés — a megnyitás nem befolyásolja a diák haladását.
+        </p>
       </div>
 
       {topics.length === 0 ? (
-        <p className="rounded-2xl border border-dashed border-slate-300 p-6 text-sm text-slate-500">
+        <p className="rounded-2xl border-2 border-dashed border-slate-300 p-6 text-sm text-slate-500">
           Ehhez a tantárgyhoz még nincs feltöltött tétel.
         </p>
       ) : (
@@ -55,7 +71,7 @@ export default async function SubjectTopicsPage({
                 return (
                   <Link
                     key={topic.id}
-                    href={`/subjects/${subject.key}/${topic.slug}`}
+                    href={`/felugyelet/${studentId}/subjects/${subject.key}/${topic.slug}`}
                     className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm transition hover:shadow-md hover:-translate-y-0.5"
                   >
                     <div className="flex items-center justify-between">

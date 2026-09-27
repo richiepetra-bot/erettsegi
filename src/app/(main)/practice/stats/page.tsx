@@ -37,11 +37,11 @@ export default async function StatsPage() {
         </p>
       ) : (
         <>
-          <section className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm">
+          <section className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
             <p className="text-xs font-semibold uppercase tracking-wide text-slate-400">
               Összesített pontosság
             </p>
-            <p className={`mt-1 text-3xl font-bold ${accuracyColor(stats.overallAccuracy)}`}>
+            <p className={`mt-1 text-4xl font-extrabold ${accuracyColor(stats.overallAccuracy)}`}>
               {overallPct}%
             </p>
             <p className="mt-1 text-sm text-slate-500">
@@ -57,7 +57,7 @@ export default async function StatsPage() {
                 return (
                   <div
                     key={s.subjectKey}
-                    className="rounded-xl border border-slate-200 bg-white p-4 shadow-sm"
+                    className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm"
                   >
                     <div className="flex items-center justify-between">
                       <span className="flex items-center gap-2 font-medium text-slate-900">
@@ -71,7 +71,7 @@ export default async function StatsPage() {
                         {pct}%
                       </span>
                     </div>
-                    <div className="mt-2 h-2 w-full overflow-hidden rounded-full bg-slate-100">
+                    <div className="mt-2 h-2.5 w-full overflow-hidden rounded-full bg-slate-100">
                       <div
                         className="h-full rounded-full"
                         style={{ width: `${pct}%`, backgroundColor: s.subjectColor }}
@@ -91,7 +91,7 @@ export default async function StatsPage() {
             <p className="mb-3 text-xs text-slate-500">
               A leggyengébb eredményű témák szerepelnek elöl — ezekre érdemes gyakorlást tervezni.
             </p>
-            <div className="overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm">
+            <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
               <table className="w-full text-sm">
                 <thead className="bg-slate-50 text-left text-xs uppercase tracking-wide text-slate-500">
                   <tr>

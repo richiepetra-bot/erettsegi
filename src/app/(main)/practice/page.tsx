@@ -16,9 +16,9 @@ export default async function PracticeHubPage() {
         <div className="grid grid-cols-1 gap-3 sm:grid-cols-3">
           <Link
             href="/practice/daily"
-            className="rounded-xl border border-slate-200 bg-white p-5 shadow-sm transition hover:shadow-md"
+            className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:shadow-md hover:-translate-y-0.5"
           >
-            <p className="text-2xl">🗓️</p>
+            <p className="text-3xl">🗓️</p>
             <p className="mt-2 font-semibold text-slate-900">Napi 15 kérdés</p>
             <p className="mt-1 text-xs text-slate-500">
               Vegyesen minden tantárgyból, kiegyensúlyozottan elosztva.
@@ -26,16 +26,16 @@ export default async function PracticeHubPage() {
           </Link>
           <Link
             href="/practice/weak"
-            className="rounded-xl border border-slate-200 bg-white p-5 shadow-sm transition hover:shadow-md"
+            className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:shadow-md hover:-translate-y-0.5"
           >
-            <p className="text-2xl">🎯</p>
+            <p className="text-3xl">🎯</p>
             <p className="mt-2 font-semibold text-slate-900">Gyakorlásra ajánlott</p>
             <p className="mt-1 text-xs text-slate-500">
               A korábbi eredményeid alapján összeállított, célzott kérdések.
             </p>
           </Link>
-          <div className="rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
-            <p className="text-2xl">📚</p>
+          <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+            <p className="text-3xl">📚</p>
             <p className="mt-2 font-semibold text-slate-900">Tantárgyankénti kvíz</p>
             <p className="mt-1 text-xs text-slate-500">Válassz egy tantárgyat alább.</p>
           </div>
