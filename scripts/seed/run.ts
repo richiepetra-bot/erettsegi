@@ -11,6 +11,7 @@ import { magyarTopics } from "./data/magyar";
 import { magyarPortrekTopics } from "./data/magyar-portrek";
 import { magyarLatasmodokTopics } from "./data/magyar-latasmodok";
 import { magyarNyelvtanTopics } from "./data/magyar-nyelvtan";
+import { magyarTovabbiSzerzokTopics } from "./data/magyar-tovabbi-szerzok";
 import { tortenelemOkorTopics } from "./data/tortenelem-okor";
 import { tortenelemKozepkorTopics } from "./data/tortenelem-kozepkor";
 import { tortenelemKoraUjkorTopics } from "./data/tortenelem-kora-ujkor";
@@ -54,6 +55,7 @@ const SEED_SETS: { subjectKey: string; topics: TopicSeed[] }[] = [
       ...magyarPortrekTopics,
       ...magyarLatasmodokTopics,
       ...magyarNyelvtanTopics,
+      ...magyarTovabbiSzerzokTopics,
     ],
   },
   {
