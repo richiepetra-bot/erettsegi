@@ -40,7 +40,7 @@ A mértani sorozat egyik legfontosabb gyakorlati alkalmazása a **kamatos kamat 
 
 ## Vegyes feladatok sorozatokra
 
-Az érettségi feladatok gyakran kombinálják a számtani és mértani sorozatok tulajdonságait: pl. olyan feladatok, ahol egy sorozat egyszerre számtani és mértani résszorozatokból épül fel, vagy ahol a feladat szövege alapján kell eldönteni, hogy az adott probléma számtani vagy mértani modellel írható-e le pontosabban (additív vagy multiplikatív jellegű-e a változás).
+Az érettségi feladatok gyakran kombinálják a számtani és mértani sorozatok tulajdonságait: pl. olyan feladatok, ahol egy sorozat egyszerre számtani és mértani részsorozatokból épül fel, vagy ahol a feladat szövege alapján kell eldönteni, hogy az adott probléma számtani vagy mértani modellel írható-e le pontosabban (additív vagy multiplikatív jellegű-e a változás).
 
 ## Jelentősége
 
@@ -215,7 +215,7 @@ Egy függvény egy adott intervallumon **monoton növekvő**, ha az intervallumo
 
 ## A szélsőérték
 
-Egy függvénynek egy adott pontban **maximuma (legnagyobb értéke)** van, ha ott a függvényérték nem kisebb, mint bármely más pontban felvett értéke egy környezetben (vagy az egész értelmezési tartományon, ha globális szélsőértékről van szó); hasonlóan definiálható a **minimum (legkisebb érték)** is. A szélsőértékek meghatározása kulcsfontosságú optimalizálási feladatokban (pl. maximális terület, minimális költség meghatározása).
+Egy függvénynek egy adott pontban akkor van **maximuma (legnagyobb értéke)**, ha ott a függvényérték nem kisebb, mint a pont egy környezetében (vagy — globális szélsőérték esetén — az egész értelmezési tartományon) felvett bármely más érték; hasonlóan definiálható a **minimum (legkisebb érték)** is. A szélsőértékek meghatározása kulcsfontosságú optimalizálási feladatokban (pl. maximális terület, minimális költség meghatározása).
 
 ## A paritás: páros és páratlan függvények
 
@@ -305,12 +305,12 @@ A függvények és alapvető tulajdonságaik (értelmezési tartomány, értékk
         question_type: "multiple_choice",
         question_text: "Mit nevezünk egy függvény értékkészletének?",
         options: [
-          "azon y értékek halmazát, amelyeket a függvény tényleges felvesz",
+          "azon y értékek halmazát, amelyeket a függvény ténylegesen felvesz",
           "azon x értékek halmazát, amelyekre a függvény értelmezve van",
           "a függvény grafikonjának alakját",
           "a függvény szélsőértékét"
         ],
-        correct_answer: "azon y értékek halmazát, amelyeket a függvény tényleges felvesz",
+        correct_answer: "azon y értékek halmazát, amelyeket a függvény ténylegesen felvesz",
         explanation: "Az értékkészlet azoknak az y értékeknek a halmaza, amelyeket a függvény valóban felvesz.",
         difficulty: 1,
       },
@@ -463,7 +463,7 @@ A **téglalap** területe: T = a · b (a szomszédos oldalak szorzata). A **para
 
 ## A hasonlóság és a háromszögek hasonlósági tételei
 
-Két alakzat **hasonló**, ha egyik a másiknak nagyítással vagy kicsinyítéssel (arányos nagyítással) megkapható. A háromszögek hasonlóságának eldöntésére szolgálnak a **hasonlósági alapesetek** (két szög egyenlősége, két oldal aránya és a közbezárt szög egyenlősége, három oldal aránya egyenlő). Hasonló háromszögeknél a megfelelő oldalak aránya állandó (hasonlósági arány), a területek aránya pedig a hasonlósági arány négyzetével egyezik meg.
+Két alakzat **hasonló**, ha az egyik a másikból nagyítással vagy kicsinyítéssel (arányos nagyítással) megkapható. A háromszögek hasonlóságának eldöntésére szolgálnak a **hasonlósági alapesetek** (két szög egyenlősége, két oldal aránya és a közbezárt szög egyenlősége, három oldal aránya egyenlő). Hasonló háromszögeknél a megfelelő oldalak aránya állandó (hasonlósági arány), a területek aránya pedig a hasonlósági arány négyzetével egyezik meg.
 
 ## Jelentősége
 
@@ -644,7 +644,7 @@ A szögfüggvények között több alapvető azonosság áll fenn. A **Pitagoras
 
 ## A szögfüggvények kiterjesztése
 
-A szögfüggvények eredetileg csak hegyesszögekre (0° és 90° között) voltak értelmezve a derékszögű háromszög oldalainak arányaként, de a matematika kiterjeszti ezeket **tetszőleges szögekre** az egységsugarú körben (egységkörben) történő értelmezéssel: egy tetszőleges szög szinusza és koszinusza az egységkörön a szöghöz tartozó pont y-, illetve x-koordinátája.
+A szögfüggvények eredetileg csak hegyesszögekre (0° és 90° között) voltak értelmezve a derékszögű háromszög oldalainak arányaként, a matematika azonban az egységsugarú körben (egységkörben) történő értelmezéssel **tetszőleges szögekre** is kiterjeszti őket: egy tetszőleges szög szinusza és koszinusza az egységkörön a szöghöz tartozó pont y-, illetve x-koordinátája.
 
 ## A szinusztétel
 

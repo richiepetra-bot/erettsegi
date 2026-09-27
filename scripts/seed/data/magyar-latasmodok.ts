@@ -835,7 +835,7 @@ Weöres Sándor a 20. századi magyar líra egyik legsokoldalúbb, legnehezebben
     content_markdown: `
 ## A szerző és a "homéroszi kérdés"
 
-Homérosz alakja, léteének pontos körülményei a mai napig vitatottak — az irodalomtörténet ezt a problémakört nevezi **"homéroszi kérdésnek"**. A hagyomány szerint vak énekes volt, aki kis-ázsiai görög (ión) területről származott, és a Kr.e. 8. század körül élhetett. Sokan felvetik, hogy az Iliász és az Odüsszeia nem feltétlenül egyetlen szerző műve (a két eposz világszemlélete és nyelvezete között jelentős különbségek mutathatók ki), hanem egy hosszú, szóbeli epikus hagyomány (a vándorénekesek, "aoidoszok" gyakorlata) lezáró, írásba foglaló szintézise.
+Homérosz alakja, létének pontos körülményei a mai napig vitatottak — az irodalomtörténet ezt a problémakört nevezi **"homéroszi kérdésnek"**. A hagyomány szerint vak énekes volt, aki kis-ázsiai görög (ión) területről származott, és a Kr.e. 8. század körül élhetett. Sokan felvetik, hogy az Iliász és az Odüsszeia nem feltétlenül egyetlen szerző műve (a két eposz világszemlélete és nyelvezete között jelentős különbségek mutathatók ki), hanem egy hosszú, szóbeli epikus hagyomány (a vándorénekesek, "aoidoszok" gyakorlata) lezáró, írásba foglaló szintézise.
 
 ## Az Iliász
 

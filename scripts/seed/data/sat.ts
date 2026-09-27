@@ -264,7 +264,7 @@ When practising, for every question you get wrong, write down **which trap** cau
     theme: "SAT Reading & Writing",
     order_index: 2,
     summary_markdown:
-      "A leggyakrabban tesztelt nyelvtani szabályok, amiket a SAT Writing kérdései minden alkalommal ellenőriznek: mondatszerkezet, igeidő-egyeztetés, írásjelek.",
+      "A SAT Writing kérdései által leggyakrabban vizsgált nyelvtani szabályok: mondatszerkezet, igeidő-egyeztetés, írásjelek.",
     content_markdown: `
 ## Top grammar rules tested on the SAT
 

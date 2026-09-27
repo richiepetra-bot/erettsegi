@@ -8,7 +8,7 @@ export const actTopics: TopicSeed[] = [
     theme: "ACT English",
     order_index: 1,
     summary_markdown:
-      "Az ACT English szekció szoros rokona a SAT Writingnek: 75 kérdés 45 perc alatt, elsősorban nyelvtan, mondatszerkezet és stílus.",
+      "Az ACT English szekció szoros rokonságban áll a SAT Writinggel: 75 kérdés 45 perc alatt, elsősorban nyelvtan, mondatszerkezet és stílus.",
     content_markdown: `
 ## What makes ACT English different from SAT Writing
 
@@ -232,7 +232,7 @@ Time yourself doing English passages in **9 minutes each** (75 questions / 5 pas
     theme: "ACT Science",
     order_index: 2,
     summary_markdown:
-      "Az ACT Science szekció nem lexikális tudást mér, hanem azt, mennyire tudsz gyorsan grafikonokat, táblázatokat értelmezni és kísérleti adatokból következtetni — ez SAT-on nincs benne.",
+      "Az ACT Science szekció nem lexikális tudást mér, hanem azt, mennyire tudsz gyorsan grafikonokat, táblázatokat értelmezni és kísérleti adatokból következtetni — ilyen szekció a SAT-on nincs is.",
     content_markdown: `
 ## Key insight: it's a reading/reasoning test, not a science-knowledge test
 

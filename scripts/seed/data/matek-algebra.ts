@@ -12,7 +12,7 @@ export const matekAlgebraTopics: TopicSeed[] = [
     content_markdown: `
 ## A halmaz fogalma
 
-A **halmaz** a matematika egyik alapfogalma: jól meghatározott, egymástól különböző dolgok (elemek) összessége, amelyről minden objektumról egyértelműen eldönthető, hogy hozzátartozik-e a halmazhoz vagy sem. Egy halmazt megadhatunk elemeinek felsorolásával (pl. A = {1, 2, 3, 4}), egy tulajdonság megadásával (pl. B = {páros számok, amelyek 10-nél kisebbek}), vagy Venn-diagrammal (szemléltető ábrával).
+A **halmaz** a matematika egyik alapfogalma: jól meghatározott, egymástól különböző dolgok (elemek) összessége; bármely objektumról egyértelműen eldönthető, hogy hozzátartozik-e a halmazhoz vagy sem. Egy halmazt megadhatunk elemeinek felsorolásával (pl. A = {1, 2, 3, 4}), egy tulajdonság megadásával (pl. B = {páros számok, amelyek 10-nél kisebbek}), vagy Venn-diagrammal (szemléltető ábrával).
 
 ## Halmazok közötti alapvető viszonyok
 
@@ -224,7 +224,7 @@ A halmazok és a halmazműveletek ismerete alapvető matematikai gondolkodási e
     theme: "Algebra és számelmélet",
     order_index: 2,
     summary_markdown:
-      "A matematikai logika az igaz vagy hamis értékkel rendelkező kijelentésekkel (állításokkal) és azok logikai műveletekkel (negáció, konjunkció, diszjunkció, implikáció) történő összekapcsolásával foglalkozik, megalapozva a matematikai bizonyítások szigorú felépítését.",
+      "A matematikai logika az igaz vagy hamis értékkel rendelkező kijelentésekkel (állításokkal) és a rájuk alkalmazott logikai műveletekkel (negáció, konjunkció, diszjunkció, implikáció) foglalkozik, megalapozva a matematikai bizonyítások szigorú felépítését.",
     content_markdown: `
 ## A kijelentés (állítás) fogalma
 

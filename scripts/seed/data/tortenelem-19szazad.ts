@@ -28,7 +28,7 @@ Az ipari forradalom alapvetően átalakította a társadalmi szerkezetet: tömeg
 
 ## A második ipari forradalom
 
-A 19. század utolsó harmadától (kb. 1870-től) kezdve új technológiai hullám, a **második ipari forradalom** bontakozott ki: az **elektromosság**, a **vegyipar**, az **acélgyártás** (Bessemer-eljárás) és a **tömegtermelés** (futószalag-elvű gyártás előfutárai) jellemezték. Ez a korszak minőségileg és mennyiségileg is jelentős fejlődést hozott az első ipari forradalomhoz képest, és gyors ütemben terjedt túl Angliánk határain, elsősorban Németországban és az Egyesült Államokban.
+A 19. század utolsó harmadától (kb. 1870-től) kezdve új technológiai hullám, a **második ipari forradalom** bontakozott ki: az **elektromosság**, a **vegyipar**, az **acélgyártás** (Bessemer-eljárás) és a **tömegtermelés** (futószalag-elvű gyártás előfutárai) jellemezték. Ez a korszak minőségileg és mennyiségileg is jelentős fejlődést hozott az első ipari forradalomhoz képest, és gyors ütemben terjedt túl Anglia határain, elsősorban Németországban és az Egyesült Államokban.
 
 ## Jelentősége
 
@@ -576,7 +576,7 @@ A szabadságharc leverése után Magyarországot évekig szigorú **önkényural
 
 ## A kiegyezés (1867)
 
-**1867-ben** megszülettek a kiegyezési törvények, amelyek létrehozták a **dualista** államberendezkedést: Magyarország és Ausztria (a birodalom másik fele) közös uralkodó (Ferenc József, aki 1867. június 8-án koronázták meg magyar királlyá is), közös külügy, hadügy és az ezekhez kapcsolódó pénzügy mellett, egyébként önálló kormánnyal és parlamenttel rendelkezett. Az így létrejött állam neve **Osztrák–Magyar Monarchia** lett, két fővárossal (Bécs és Budapest). Magyarország első miniszterelnöke a kiegyezés után **Andrássy Gyula** gróf lett.
+**1867-ben** megszülettek a kiegyezési törvények, amelyek létrehozták a **dualista** államberendezkedést: Magyarországnak és Ausztriának (a birodalom másik felének) közös uralkodója (Ferenc József, akit 1867. június 8-án koronáztak meg magyar királlyá is), közös külügye, hadügye és az ezekhez kapcsolódó pénzügye volt, egyébként azonban mindkét fél önálló kormánnyal és parlamenttel rendelkezett. Az így létrejött állam neve **Osztrák–Magyar Monarchia** lett, két fővárossal (Bécs és Budapest). Magyarország első miniszterelnöke a kiegyezés után **Andrássy Gyula** gróf lett.
 
 ## A dualista állam működése
 

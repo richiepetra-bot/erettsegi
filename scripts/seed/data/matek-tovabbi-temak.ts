@@ -28,7 +28,7 @@ A gyökvonás felírható **törtkitevős hatványként** is: **a^(1/n) = ⁿ√
 
 ## A nevezetes azonosságok és a gyöktelenítés
 
-A gyökös kifejezések egyszerűsítéséhez gyakran alkalmazzuk a **nevezetes azonosságokat** (pl. (a+b)² = a²+2ab+b², (a-b)(a+b) = a²-b²) gyökös kifejezésekre is. A **nevező gyöktelenítése** olyan technika, amellyel egy törtben a nevezőben szereplő gyökös kifejezést eltávolítjuk (a számláló és a nevező egyaránt megszorzásával a nevező "konjugáltjával"), például: 1/√2 = √2/2.
+A gyökös kifejezések egyszerűsítéséhez gyakran alkalmazzuk a **nevezetes azonosságokat** (pl. (a+b)² = a²+2ab+b², (a-b)(a+b) = a²-b²) gyökös kifejezésekre is. A **nevező gyöktelenítése** olyan technika, amellyel egy törtben a nevezőben szereplő gyökös kifejezést eltávolítjuk (úgy, hogy a számlálót és a nevezőt is megszorozzuk a nevező "konjugáltjával"), például: 1/√2 = √2/2.
 
 ## Négyzetgyökös egyenletek
 
@@ -212,7 +212,7 @@ A gráfelmélet a matematika egyik viszonylag fiatal ága, amelynek születése 
 
 ## Alapfogalmak: fokszám, egyszerű gráf, teljes gráf
 
-Egy csúcsba befutó élek száma a csúcs **fokszáma**. Egy csúcs, amelynek fokszáma nulla, **izolált csúcs**. **Egyszerű gráfnak** nevezzük azt a gráfot, amelyben nincs hurokél (egy csúcsot önmagával összekötő él) és két csúcs között legfeljebb egy él fut. **Teljes gráfnak** nevezzük azt az egyszerű gráfot, amelyben minden csúcspár között fut él.
+Egy csúcsra illeszkedő élek száma a csúcs **fokszáma**. Egy csúcs, amelynek fokszáma nulla, **izolált csúcs**. **Egyszerű gráfnak** nevezzük azt a gráfot, amelyben nincs hurokél (egy csúcsot önmagával összekötő él) és két csúcs között legfeljebb egy él fut. **Teljes gráfnak** nevezzük azt az egyszerű gráfot, amelyben minden csúcspár között fut él.
 
 ## A fokszámok összegére vonatkozó tétel
 

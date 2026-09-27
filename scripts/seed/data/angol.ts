@@ -46,7 +46,7 @@ Ebben a témakörben a vizsgáztató tipikusan rákérdez a családodra, a szűk
 - **to get along (with someone)** – jól kijönni valakivel
 - **to look up to someone** – felnézni valakire
 - **only child / the youngest / the eldest** – egyke / a legfiatalabb / a legidősebb
-- **to be raised / brought up** – felnevelkedni
+- **to be raised / brought up** – nevelkedni
 - **household chores** – házimunka
 - **to run in the family** – a családban örökletes/jellemző
 
@@ -642,7 +642,7 @@ A vizsgáztató kíváncsi arra, hogyan töltöd a szabadidődet, milyen hobbija
     content_markdown: `
 ## Mire figyelj a szóbelin?
 
-Ez a témakör gyakran kapcsolódik képleíráshoz is (egy utazással kapcsolatos kép alapján). Fontos, hogy tudj mesélni egy **konkrét útról**, ne csak általánosságban beszélj.
+Ez a témakör gyakran kapcsolódik a képleíráshoz is (egy utazással kapcsolatos kép alapján). Fontos, hogy tudj mesélni egy **konkrét útról**, ne csak általánosságban beszélj.
 
 ## Key vocabulary
 

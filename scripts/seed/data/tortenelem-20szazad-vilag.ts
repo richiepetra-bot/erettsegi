@@ -227,7 +227,7 @@ A radikális baloldali **bolsevik párt**, élén a Németország által hazaseg
 
 ## Az októberi forradalom
 
-**1917. október 25-én (a nyugati naptár szerint november 7-én)** a bolsevikok vezette Vörös Gárda fegyveres felkeléssel átvette a hatalmat Petrográdon, elfoglalva a stratégiai pontokat és a Téli Palotát. Az **II. összoroszországi szovjetkongresszus** jóváhagyta a hatalomátvételt, és Lenin vezetésével megalakult a bolsevik kormány (Népbiztosok Tanácsa). A bolsevikok azonnal kiadták a **béke- és a földdekrétumot**.
+**1917. október 25-én (a nyugati naptár szerint november 7-én)** a bolsevikok vezette Vörös Gárda fegyveres felkeléssel átvette a hatalmat Petrográdon, elfoglalva a stratégiai pontokat és a Téli Palotát. A **II. összoroszországi szovjetkongresszus** jóváhagyta a hatalomátvételt, és Lenin vezetésével megalakult a bolsevik kormány (Népbiztosok Tanácsa). A bolsevikok azonnal kiadták a **béke- és a földdekrétumot**.
 
 ## A polgárháború és a hatalom megszilárdítása
 

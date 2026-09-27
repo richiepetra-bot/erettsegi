@@ -12,7 +12,7 @@ export const magyarPortrekTopics: TopicSeed[] = [
     content_markdown: `
 ## Élete és pályaképe
 
-Balassi Bálint 1554-ben született főúri családban. Élete kalandos és viharos volt: birtokpereket folytatott, több házasságot kötött (köztük unokahúgával, Dobó Krisztinával, ami komoly botrányt és egyházi eljárást is eredményezett), és végvári vitézként harcolt a törökök ellen. Sokszor váltott hitet, politikai és katonai szövetségest (volt Habsburg-, majd Báthory-párti is), ami korának jellemző, kiszámíthatatlan főúri-katonai léthelyzetét tükrözi. 1594-ben, Esztergom visszafoglalásának ostrománál szerzett sebesülésébe halt bele — élete és halála egyaránt a kor végvári, harcokkal teli valóságát testesíti meg.
+Balassi Bálint 1554-ben született főúri családban. Élete kalandos és viharos volt: birtokpereket folytatott, több házasságot kötött (köztük unokahúgával, Dobó Krisztinával, ami komoly botrányt és egyházi eljárást is eredményezett), és végvári vitézként harcolt a törökök ellen. Sokszor váltott hitet, politikai és katonai szövetségest (volt Habsburg-, majd Báthory-párti is), ami korának jellemző, kiszámíthatatlan főúri-katonai élethelyzetét tükrözi. 1594-ben, Esztergom visszafoglalásának ostrománál szerzett sebesülésébe halt bele — élete és halála egyaránt a kor végvári, harcokkal teli valóságát testesíti meg.
 
 Balassi költészete életében nem jelent meg nyomtatásban: versei kéziratban, az ún. **Balassi-kódexben** maradtak fenn, amelyet csak jóval később, 1874-ben fedeztek fel és adtak ki nyomtatásban — így életműve évszázadokon át gyakorlatilag ismeretlen maradt a magyar irodalmi köztudat számára, és csak a 19. század végétől kezdve épült be az irodalomtörténeti kánonba.
 
@@ -20,7 +20,7 @@ Balassi költészete életében nem jelent meg nyomtatásban: versei kéziratban
 
 Balassi maga rendezte kötetbe verseit egy tudatos, szimbolikus életút-elbeszélés szerint, amely az ifjúkori szerelemtől a férfikori hősiességen át az öregkori megtérésig ível:
 
-- **Szerelmi versek**: az Anna-versek (a viszonzatlan szerelem és az udvarló hagyomány szerint megszólított hölgy, "Júlia" álnéven is szerepel) és a későbbi Célia-versek (egy másik, érettebb szerelmi kapcsolat versciklusa) — ezekben Balassi az európai reneszánsz szerelmi líra (petrarkizmus) formakincsét (idealizált nőalak, a szerelem mint szenvedés és üdvözülés egyszerre) honosítja meg magyar nyelven.
+- **Szerelmi versek**: az Anna-versek (a viszonzatlan szerelem versciklusa, amelyben a megszólított hölgy az udvarló hagyomány szerint "Júlia" álnéven is szerepel) és a későbbi Célia-versek (egy másik, érettebb szerelmi kapcsolat versciklusa) — ezekben Balassi az európai reneszánsz szerelmi líra (petrarkizmus) formakincsét (idealizált nőalak, a szerelem mint szenvedés és üdvözülés egyszerre) honosítja meg magyar nyelven.
 - **Vitézi versek**: a végvári élet dicsőítése, a katonai hivatás és a hazáért/hitért vívott harc eszményítése — legismertebb ilyen verse az *Egy katonaének* ("Vitézek, mi lehet ez széles föld felett szebb dolog a végeknél..."), amely a végvári vitézi életet a kor legszebb, legdicsőbb hivatásaként állítja be, annak minden veszélyével együtt.
 - **Istenes versek**: bűnbánó, könyörgő, Istenhez forduló énekek, amelyek a szerelmi és vitézi élet "bűneinek" beismerése után a megtérés és a kegyelemért való könyörgés hangját szólaltatják meg.
 
@@ -224,7 +224,7 @@ Balassi Bálint a magyar nyelvű reneszánsz líra megteremtője: ő honosított
 
 Csokonai Vitéz Mihály 1773-ban született Debrecenben. Rendkívüli tehetsége már gyerekként megmutatkozott: a Debreceni Református Kollégium diákjaként, majd fiatal tanáraként is kiemelkedett, de radikális, felvilágosult nézetei és rendhagyó életvitele miatt végül eltávolították tanári posztjáról. Ezután vándorló, bizonytalan egzisztenciájú életet élt: hol Debrecenben, hol vidéki birtokokon (nevelőként), hol Pesten próbált megélhetést találni, sikertelenül pályázva állandó álláshelyekre és irodalmi elismerésre.
 
-1796-ban Komáromban ismerte meg Vajda Juliannát, akit "Lilla" néven örökített meg szerelmi költészetében; a kapcsolat a lány családjának ellenállása miatt (Csokonai anyagi bizonytalansága miatt) végül nem vezetett házassághoz, ez a csalódás ihlette a Lilla-versek fájdalmasabb, elégikus darabjait. Élete végéig szegénységben, gyakran betegen (tüdőbajjal küzdve) élt, és 1805-ben, mindössze 32 évesen halt meg szülővárosában, Debrecenben.
+1796-ban Komáromban ismerte meg Vajda Juliannát, akit "Lilla" néven örökített meg szerelmi költészetében; a kapcsolat a lány családjának ellenállása miatt (elsősorban Csokonai anyagi bizonytalansága okán) végül nem vezetett házassághoz, ez a csalódás ihlette a Lilla-versek fájdalmasabb, elégikus darabjait. Élete végéig szegénységben, gyakran betegen (tüdőbajjal küzdve) élt, és 1805-ben, mindössze 32 évesen halt meg szülővárosában, Debrecenben.
 
 ## Korszakok és stílusirányzatok
 
@@ -429,7 +429,7 @@ Csokonai Vitéz Mihály a magyar felvilágosodás korának egyik legsokoldalúbb
     content_markdown: `
 ## Élete és pályaképe
 
-Berzsenyi Dániel 1776-ban született dunántúli nemesi családban. Tanulmányait Sopronban végezte, majd — apjával való konfliktusa után rövid katonáskodást követően — Somogy megyei birtokán, Niklán gazdálkodott, jórészt visszavonultan, a szélesebb irodalmi élettől távol. Ez a magányos, elzárkózó életforma szerezte meg számára a "niklai remete" elnevezést. Verseit sokáig csak kéziratban, szűk baráti körben ismerték, mígnem Kölcsey Ferenc közbenjárására megjelent első kötete 1813-ban.
+Berzsenyi Dániel 1776-ban született dunántúli nemesi családban. Tanulmányait Sopronban végezte, majd — apjával való konfliktusa, majd rövid katonáskodása után — Somogy megyei birtokán, Niklán gazdálkodott, jórészt visszavonultan, a szélesebb irodalmi élettől távol. Ez a magányos, elzárkózó életforma szerezte meg számára a "niklai remete" elnevezést. Verseit sokáig csak kéziratban, szűk baráti körben ismerték, mígnem Kölcsey Ferenc közbenjárására megjelent első kötete 1813-ban.
 
 Pályáját megrázó fordulat érte 1817-ben, amikor Kölcsey Ferenc szigorú, formai és tartalmi hibákat is felvető kritikát írt költészetéről a Tudományos Gyűjteményben. Bár a kritika ma már inkább a fiatal, más esztétikai elveket valló nemzedék és az idősebb költő közötti szemléletbeli különbségként értékelhető, Berzsenyit mélyen megrendítette: évekig szinte elnémult, és később verseit is átdolgozta, felülvizsgálta. 1836-ban hunyt el.
 

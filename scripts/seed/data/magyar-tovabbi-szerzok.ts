@@ -238,7 +238,7 @@ Jókai Mór 1825-ben született Komáromban. Az 1848-49-es forradalom és szabad
 
 ## Jókai írói stílusa
 
-Jókai prózáját a **romantika** jellemzi: fordulatos, kalandos cselekményszövés, éles jó-rossz szembeállítás, idealizált és démonikus jellemek, véletlenek és sorsfordulatok gazdag alkalmazása, valamint gazdag, színes leírások (tájak, egzotikus helyszínek). Írói pályájának későbbi szakaszában — így **Az arany ember** (1872) megírásakor is — fokozatosan közeledett a **realizmus** felé: a jellemek árnyaltabbá váltak, a társadalmi valóság éleslátóbb ábrázolása jelent meg.
+Jókai prózáját a **romantika** jellemzi: fordulatos, kalandos cselekményszövés, éles jó-rossz szembeállítás, idealizált és démonikus jellemek, a véletlenek és sorsfordulatok bőséges alkalmazása, valamint gazdag, színes leírások (tájak, egzotikus helyszínek). Írói pályájának későbbi szakaszában — így **Az arany ember** (1872) megírásakor is — fokozatosan közeledett a **realizmus** felé: a jellemek árnyaltabbá váltak, a társadalmi valóság éleslátóbb ábrázolása jelent meg.
 
 ## Az arany ember cselekménye
 
@@ -1095,7 +1095,7 @@ Szabó Lőrinc a 20. századi magyar líra egyik legjelentősebb, legösszetette
     content_markdown: `
 ## Élete és pályaképe
 
-Pilinszky János 1921-ben született Budapesten, mélyen vallásos katolikus családban. A második világháború végén, 1944-45-ben katonai szolgálat során **közvetlen szemtanúja lett a náci koncentrációs táborok borzalmainak** (Németországban vezényelték, ahol lágereket, deportáltakat látott) — ez az élmény egész későbbi költészetét meghatározó traumaként végigkíséri. A háború után a Newman-kör katolikus szellemi köréhez, majd az Újhold folyóirat köréhez kapcsolódott, later hosszabb ideig publikálási nehézségekkel küzdött a szocialista kultúrpolitika miatt.
+Pilinszky János 1921-ben született Budapesten, mélyen vallásos katolikus családban. A második világháború végén, 1944-45-ben katonai szolgálat során **közvetlen szemtanúja lett a náci koncentrációs táborok borzalmainak** (Németországban vezényelték, ahol lágereket, deportáltakat látott) — ez az élmény egész későbbi költészetét meghatározó traumaként végigkíséri. A háború után a Newman-kör katolikus szellemi köréhez, majd az Újhold folyóirat köréhez kapcsolódott, később pedig hosszabb ideig publikálási nehézségekkel küzdött a szocialista kultúrpolitika miatt.
 
 ## A lágerélmény mint alapélmény
 

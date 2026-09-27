@@ -203,7 +203,7 @@ A közgazdaságtan alapfogalmainak (szükséglet, javak, szűkösség, alternat�
         options: [
           "nem hatékony, kihasználatlan erőforrásokat jelző állapotot",
           "az adott erőforrásokkal elérhetetlen kombinációkat",
-          "a hatékony, trade-off választásokat",
+          "a hatékony, egymással szemben álló (trade-off) választásokat",
           "a piaci egyensúlyi árat"
         ],
         correct_answer: "nem hatékony, kihasználatlan erőforrásokat jelző állapotot",
@@ -261,7 +261,7 @@ A **kínálat** azt mutatja meg, hogy a termelők mekkora mennyiséget hajlandó
 
 ## A piaci egyensúly
 
-A piac akkor van **egyensúlyban**, amikor egy adott áron a kereslet és a kínálat mennyisége megegyezik — ezt az árat **egyensúlyi (piactisztító) árnak** nevezzük. Ha a piaci ár az egyensúlyi ár felett van, **túlkínálat** (felesleg) alakul ki, ami lefelé nyomja az árat; ha az ár az egyensúlyi szint alatt van, **túlkereslet** (hiány) keletkezik, ami felfelé nyomja az árat. A piaci mechanizmus így — külső beavatkozás nélkül is — az egyensúly felé mozdítja el az árakat és a mennyiségeket ("láthatatlan kéz" — Adam Smith fogalma).
+A piac akkor van **egyensúlyban**, amikor egy adott áron a kereslet és a kínálat mennyisége megegyezik — ezt az árat **egyensúlyi (piactisztító) árnak** nevezzük. Ha a piaci ár az egyensúlyi ár felett van, **túlkínálat** (felesleg) alakul ki, ami lefelé nyomja az árat; ha az ár az egyensúlyi szint alatt van, **túlkereslet** (hiány) keletkezik, ami felfelé nyomja az árat. A piaci mechanizmus így — külső beavatkozás nélkül is — az egyensúly felé mozdítja el az árakat és a mennyiségeket („láthatatlan kéz” — Adam Smith fogalma).
 
 ## A kereslet és a kínálat eltolódása
 
@@ -997,7 +997,7 @@ A **tőke** azokat a tartós javakat jelenti, amelyeket azért hoztak létre, ho
 
 ## A vállalkozói készség
 
-A **vállalkozói készség (vállalkozói tudás)** a negyedik termelési tényező: az a képesség, amellyel a vállalkozó összekapcsolja a földet, a munkát és a tőkét egy termelési folyamatban, innovatív megoldásokat visz be a gazdaságba, és kockázatot vállal a bizonytalan jövőbeli eredmény reményében. Ennek "ára" a **profit (vállalkozói nyereség)**.
+A **vállalkozói készség (vállalkozói tudás)** a negyedik termelési tényező: az a képesség, amellyel a vállalkozó összekapcsolja a földet, a munkát és a tőkét egy termelési folyamatban, innovatív megoldásokat visz be a gazdaságba, és kockázatot vállal a bizonytalan jövőbeli eredmény reményében. Ennek „ára” a **profit (vállalkozói nyereség)**.
 
 ## A termelési tényezők piacai (tényezőpiacok)
 

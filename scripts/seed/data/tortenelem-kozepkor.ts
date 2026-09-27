@@ -28,7 +28,7 @@ Az **uradalom** volt a középkori gazdaság és igazgatás alapegysége: a róm
 
 ## Az egyház szerepe
 
-A középkori nyugat-európai társadalomban a **katolikus egyház** kiemelkedő hatalommal rendelkezett: hatalmas földbirtokai voltak, **tizedet** szedett a lakosságtól, és a szellemi-kulturális élet (oktatás, könyvmásolás, tudományok művelése) szinte kizárólagos letéteményese volt a kolostorokon és székesegyházi iskolákon keresztül. A világi és egyházi hatalom viszonya sokszor konfliktusos volt — ennek egyik csúcspontja az **invesztitúraharc** (a 11. század végén zajló küzdelem a német-római császár és a pápaság között azért, hogy ki nevezhet ki egyházi méltóságokat), amely a pápaság megerősödő önállóságát eredményezte.
+A középkori nyugat-európai társadalomban a **katolikus egyház** kiemelkedő hatalommal rendelkezett: hatalmas földbirtokai voltak, **tizedet** szedett a lakosságtól, és a szellemi-kulturális élet (oktatás, könyvmásolás, tudományok művelése) szinte kizárólagos letéteményese volt a kolostorokon és székesegyházi iskolákon keresztül. A világi és egyházi hatalom viszonya sokszor konfliktusos volt — ennek egyik csúcspontja az **invesztitúraharc** (a 11. század végén zajló küzdelem a német-római császár és a pápaság között azon, hogy ki nevezhet ki egyházi méltóságokat), amely a pápaság megerősödő önállóságát eredményezte.
 
 ## Városok, céhek és egyetemek
 
@@ -36,7 +36,7 @@ A 11-13. századtól kezdve Nyugat-Európában fellendült a kereskedelem és ú
 
 ## A keresztes hadjáratok
 
-1096-tól kezdve a nyugat-európai keresztény hatalmak (pápai kezdeményezésre) sorozatos **keresztes hadjáratokat** indítottak a Szentföld (Jeruzsálem és környéke) muszlim uralom alóli "felszabadítására" — ezek a hadjáratok jelentős kulturális és kereskedelmi kapcsolatokat is teremtettek Nyugat-Európa és a Közel-Kelet között, miközben tartós politikai eredményt csak átmenetileg hoztak.
+1096-tól kezdve a nyugat-európai keresztény hatalmak (pápai kezdeményezésre) sorozatos **keresztes hadjáratokat** indítottak a Szentföld (Jeruzsálem és környéke) muszlim uralom alóli "felszabadítására" — ezek a hadjáratok jelentős kulturális és kereskedelmi kapcsolatokat is teremtettek Nyugat-Európa és a Közel-Kelet között, miközben politikai eredményeik csak átmenetinek bizonyultak.
 
 ## Jelentősége
 

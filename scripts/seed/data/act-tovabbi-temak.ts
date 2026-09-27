@@ -8,7 +8,7 @@ export const actTovabbiTemakTopics: TopicSeed[] = [
     theme: "ACT Math",
     order_index: 3,
     summary_markdown:
-      "Az ACT Math szekció 60 kérdése 60 perc alatt: az algebrai és függvényes feladatok (egyenletek, egyenlőtlenségek, függvényértékek) adják a pontszám gerincét, és — a SAT-tól eltérően — itt nincs elkülönített szöveges rész.",
+      "Az ACT Math szekció 60 kérdése 60 perc alatt: az algebrai és függvényes feladatok (egyenletek, egyenlőtlenségek, függvényértékek) adják a feladatsor gerincét, és — a SAT-tól eltérően — itt nincs elkülönített szöveges rész.",
     content_markdown: `
 ## How ACT Math differs from SAT Math
 
@@ -423,7 +423,7 @@ After each practice passage, for every inference question, write the **specific 
     theme: "ACT English",
     order_index: 5,
     summary_markdown:
-      "Az ACT English kérdéseinek kb. fele nem nyelvtant, hanem retorikai készségeket tesztel: bekezdések sorrendje, mondatok elhelyezése, stílusbeli tömörség és relevancia — vagyis a szöveg mint egész hatékonysága.",
+      "Az ACT English kérdéseinek kb. fele nem nyelvtant, hanem retorikai készségeket tesztel: bekezdések sorrendje, mondatok elhelyezése, stílusbeli tömörség és relevancia — vagyis a szöveg egészének hatékonysága.",
     content_markdown: `
 ## Rhetorical skills vs. grammar questions
 
@@ -653,7 +653,7 @@ For every "add this sentence?" question, explicitly ask: "Does this serve THIS p
     theme: "ACT Science",
     order_index: 6,
     summary_markdown:
-      "Az ACT Science szekció nem elsősorban tananyagot, hanem tudományos érvelést tesztel: kísérletek felépítésének, változóinak és kontrollcsoportjainak megértése, valamint ellentmondó tudósi álláspontok összehasonlítása.",
+      "Az ACT Science szekció nem elsősorban tananyagot, hanem tudományos érvelést tesztel: kísérletek felépítésének, változóinak és kontrollcsoportjainak megértése, valamint egymásnak ellentmondó tudományos álláspontok összehasonlítása.",
     content_markdown: `
 ## What ACT Science actually tests
 

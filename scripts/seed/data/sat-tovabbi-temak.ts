@@ -253,7 +253,7 @@ Time yourself: aim for under 70 seconds per question. If you're consistently goi
     theme: "SAT Reading & Writing",
     order_index: 5,
     summary_markdown:
-      "Logikus szövegszerkesztés, hatékony átvezető szavak és a rhetorical synthesis kérdéstípus: hogyan válasszuk ki a megadott jegyzetekből azt az információt, amely a legjobban szolgálja a megadott célt.",
+      "Logikus szövegszervezés, hatékony átvezető szavak és a rhetorical synthesis kérdéstípus: hogyan válasszuk ki a megadott jegyzetekből azt az információt, amely a legjobban szolgálja a megadott célt.",
     content_markdown: `
 ## What this question type tests
 

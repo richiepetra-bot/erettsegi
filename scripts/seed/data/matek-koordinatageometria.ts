@@ -12,7 +12,7 @@ export const matekKoordinatageometriaTopics: TopicSeed[] = [
     content_markdown: `
 ## A hatványozás azonosságai
 
-A **hatványozás** azonos tényezők szorzataként induló művelet (aⁿ = a·a·...·a, n darab a), amelyet fokozatosan kiterjesztünk. A legfontosabb **azonosságok**: aᵐ · aⁿ = aᵐ⁺ⁿ; aᵐ / aⁿ = aᵐ⁻ⁿ; (aᵐ)ⁿ = aᵐ·ⁿ; (a·b)ⁿ = aⁿ·bⁿ. A **nulladik kitevő**: a⁰ = 1 (ha a ≠ 0). A **negatív kitevő**: a⁻ⁿ = 1/aⁿ. A **törtkitevő**: a^(1/n) = ⁿ√a (az n-edik gyök), általánosan a^(m/n) = ⁿ√(aᵐ).
+A **hatványozás** olyan művelet, amely azonos tényezők szorzataként indul (aⁿ = a·a·...·a, n darab a), és amelyet fokozatosan kiterjesztünk. A legfontosabb **azonosságok**: aᵐ · aⁿ = aᵐ⁺ⁿ; aᵐ / aⁿ = aᵐ⁻ⁿ; (aᵐ)ⁿ = aᵐ·ⁿ; (a·b)ⁿ = aⁿ·bⁿ. A **nulladik kitevő**: a⁰ = 1 (ha a ≠ 0). A **negatív kitevő**: a⁻ⁿ = 1/aⁿ. A **törtkitevő**: a^(1/n) = ⁿ√a (az n-edik gyök), általánosan a^(m/n) = ⁿ√(aᵐ).
 
 ## Az exponenciális függvény
 
@@ -222,7 +222,7 @@ Egy egyenes egyenlete egy **kétismeretlenes, elsőfokú egyenlet**: **Ax + By +
 
 ## A meredekség (iránytangens)
 
-Az egyenes **meredeksége (iránytangense, m)** az egyenesnek az x-tengely pozitív irányával bezárt szögének tangense: m = tg(α). Két pont — P₁(x₁,y₁) és P₂(x₂,y₂) — ismeretében a meredekség: **m = (y₂-y₁) / (x₂-x₁)**. Az egyenes **iránytangenős egyenlete**: y = mx + b, ahol b az y-tengellyel vett metszéspont (kezdőérték).
+Az egyenes **meredeksége (iránytangense, m)** az egyenesnek az x-tengely pozitív irányával bezárt szögének tangense: m = tg(α). Két pont — P₁(x₁,y₁) és P₂(x₂,y₂) — ismeretében a meredekség: **m = (y₂-y₁) / (x₂-x₁)**. Az egyenes **iránytangens alakú egyenlete**: y = mx + b, ahol b az y-tengellyel vett metszéspont (kezdőérték).
 
 ## Párhuzamos és merőleges egyenesek
 
@@ -308,7 +308,7 @@ Az egyenes koordinátageometriai egyenletének, valamint a hozzá kapcsolódó �
         question_text: "Mit ad meg az egyenes m paramétere az y = mx + b egyenletben?",
         options: ["a meredekséget (iránytangenst)", "az y-tengellyel vett metszéspontot", "az x-tengellyel vett metszéspontot", "a normálvektor hosszát"],
         correct_answer: "a meredekséget (iránytangenst)",
-        explanation: "Az egyenes iránytangenős egyenletében y = mx + b, az m a meredekséget (iránytangenst) adja meg.",
+        explanation: "Az egyenes iránytangens alakú egyenletében y = mx + b, az m a meredekséget (iránytangenst) adja meg.",
         difficulty: 1,
       },
       {
@@ -425,7 +425,7 @@ Két kör egymáshoz viszonyított helyzete a középpontjaik távolsága és a 
 
 ## Gyakorlati alkalmazások
 
-A kör koordinátageometriai egyenletének és a kör-egyenes viszony vizsgálatának számos gyakorlati alkalmazása van: a navigációtól (lefedettségi körzetek) a számítógépes grafikán át (ütközésdetektálás) a mérnöki tervezésig (íves pályák, csővezetékek metszéspontjai) számos területen felmerül.
+A kör koordinátageometriai egyenletének és a kör-egyenes viszony vizsgálatának számos gyakorlati alkalmazása van: a navigációtól (lefedettségi körzetek) a számítógépes grafikán át (ütközésdetektálás) a mérnöki tervezésig (íves pályák, csővezetékek metszéspontjai) terjedő területeken merül fel.
 
 ## Jelentősége
 
@@ -820,7 +820,7 @@ A **keverési feladatok** jellemzően két vagy több különböző koncentráci
 
 ## Munkavégzési feladatok
 
-A **munkavégzési feladatok** (pl. "hány nap alatt végeznek el egy munkát ketten együtt, ha külön-külön ennyi és ennyi idő alatt végeznék el") jellemzően a **munkasebességek (munkavégzés per időegység) összeadásával** oldhatók meg: ha az egyik munkás a munka 1/a részét, a másik az 1/b részét végzi el egy nap alatt, együtt naponta 1/a + 1/b részt végeznek el, így a közös munkaidő az (1/a + 1/b) reciproka.
+A **munkavégzési feladatok** (pl. "hány nap alatt végeznek el egy munkát ketten együtt, ha külön-külön ennyi és ennyi idő alatt végeznék el") jellemzően a **munkasebességek (az időegység alatt elvégzett munkarész) összeadásával** oldhatók meg: ha az egyik munkás a munka 1/a részét, a másik az 1/b részét végzi el egy nap alatt, együtt naponta 1/a + 1/b részt végeznek el, így a közös munkaidő az (1/a + 1/b) reciproka.
 
 ## A grafikonos ábrázolás szerepe
 

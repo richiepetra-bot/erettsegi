@@ -21,10 +21,12 @@ import { tortenelem20SzazadMagyarorszagTopics } from "./data/tortenelem-20szazad
 import { gazdasagiIsmeretekMikroTopics } from "./data/gazdasagi-ismeretek-mikro";
 import { gazdasagiIsmeretekMakroTopics } from "./data/gazdasagi-ismeretek-makro";
 import { gazdasagiIsmeretekTovabbiTopics } from "./data/gazdasagi-ismeretek-tovabbi";
+import { gazdasagiIsmeretekTovabbi2Topics } from "./data/gazdasagi-ismeretek-tovabbi-2";
 import { matekAlgebraTopics } from "./data/matek-algebra";
 import { matekFuggvenyekGeometriaTopics } from "./data/matek-fuggvenyek-geometria";
 import { matekKoordinatageometriaTopics } from "./data/matek-koordinatageometria";
 import { matekTovabbiTemakTopics } from "./data/matek-tovabbi-temak";
+import { matekTovabbiTemak2Topics } from "./data/matek-tovabbi-temak-2";
 import type { TopicSeed } from "./data/angol";
 
 dotenv.config({ path: path.resolve(process.cwd(), ".env.local") });
@@ -75,6 +77,7 @@ const SEED_SETS: { subjectKey: string; topics: TopicSeed[] }[] = [
       ...gazdasagiIsmeretekMikroTopics,
       ...gazdasagiIsmeretekMakroTopics,
       ...gazdasagiIsmeretekTovabbiTopics,
+      ...gazdasagiIsmeretekTovabbi2Topics,
     ],
   },
   {
@@ -84,6 +87,7 @@ const SEED_SETS: { subjectKey: string; topics: TopicSeed[] }[] = [
       ...matekFuggvenyekGeometriaTopics,
       ...matekKoordinatageometriaTopics,
       ...matekTovabbiTemakTopics,
+      ...matekTovabbiTemak2Topics,
     ],
   },
 ];

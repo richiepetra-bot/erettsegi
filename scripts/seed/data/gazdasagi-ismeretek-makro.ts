@@ -12,7 +12,7 @@ export const gazdasagiIsmeretekMakroTopics: TopicSeed[] = [
     content_markdown: `
 ## A munkaerőpiac működése
 
-A **munkaerőpiac** a munkaerő mint termelési tényező piaca, ahol a **munkakeresletet** a munkaerőt alkalmazó vállalatok, a **munkakínálatot** pedig a munkát vállalni képes és akaró háztartások (munkavállalók) alkotják. A munkaerőpiacon kialakuló ár a **bér (munkabér)**, amely — a klasszikus piaci mechanizmushoz hasonlóan — a munkakereslet és a munkakínálat találkozásából alakul ki. A munkaerőpiac sajátossága, hogy a bérek "lefelé rugalmatlanok" lehetnek (nehezen csökkennek), ami tartós munkanélküliséghez vezethet még akkor is, ha a piac egyébként egyensúlyba kerülne.
+A **munkaerőpiac** a munkaerő mint termelési tényező piaca, ahol a **munkakeresletet** a munkaerőt alkalmazó vállalatok, a **munkakínálatot** pedig a munkát vállalni képes és akaró háztartások (munkavállalók) alkotják. A munkaerőpiacon kialakuló ár a **bér (munkabér)**, amely — a klasszikus piaci mechanizmushoz hasonlóan — a munkakereslet és a munkakínálat találkozásából alakul ki. A munkaerőpiac sajátossága, hogy a bérek „lefelé rugalmatlanok” lehetnek (nehezen csökkennek), ami tartós munkanélküliséghez vezethet még akkor is, ha a piac egyébként egyensúlyba kerülne.
 
 ## A munkanélküliség fogalma és mérése
 
@@ -32,7 +32,7 @@ Az állam több eszközzel avatkozhat be a munkaerőpiac működésébe: **passz
 
 ## A természetes munkanélküliségi ráta
 
-A közgazdaságtan elismeri, hogy a teljes (0%-os) munkanélküliség egy dinamikus gazdaságban nem reális és nem is kívánatos cél: mindig lesz bizonyos mértékű súrlódásos és strukturális munkanélküliség. Az ezt a szintet jelző **természetes munkanélküliségi rátát** tekintjük a "teljes foglalkoztatottság" gazdaságpolitikai céljának, amely fölött már a konjunkturális munkanélküliség jelenik meg.
+A közgazdaságtan elismeri, hogy a teljes (0%-os) munkanélküliség egy dinamikus gazdaságban nem reális és nem is kívánatos cél: mindig lesz bizonyos mértékű súrlódásos és strukturális munkanélküliség. Az ezt a szintet jelző **természetes munkanélküliségi rátát** tekintjük a „teljes foglalkoztatottság” gazdaságpolitikai céljának, amely fölött már a konjunkturális munkanélküliség jelenik meg.
 
 ## A munkanélküliség és az infláció kapcsolata
 
@@ -496,7 +496,7 @@ Az **infláció** az árszínvonal tartós, általános (nem csak egyes terméke
 
 ## Az infláció mérése: a fogyasztói árindex
 
-Az inflációt jellemzően a **fogyasztói árindexszel (KSH: fogyasztói árindex, angolul CPI)** mérik, amely egy jellemző fogyasztói "kosár" (élelmiszerek, szolgáltatások, közüzemi díjak stb.) árváltozását követi nyomon egy meghatározott bázisidőszakhoz képest. Az infláció mértékét jellemzően éves szinten, százalékos formában fejezik ki.
+Az inflációt jellemzően a **fogyasztói árindexszel (KSH: fogyasztói árindex, angolul CPI)** mérik, amely egy jellemző fogyasztói „kosár” (élelmiszerek, szolgáltatások, közüzemi díjak stb.) árváltozását követi nyomon egy meghatározott bázisidőszakhoz képest. Az infláció mértékét jellemzően éves szinten, százalékos formában fejezik ki.
 
 ## Az infláció fajtái mértéke szerint
 
@@ -1232,7 +1232,7 @@ A modern bankrendszerben a pénz jelentős részét a **kereskedelmi bankok** te
 
 ## A jegybank szerepe és feladatai
 
-A **jegybank** (Magyarországon a **Magyar Nemzeti Bank, MNB**) a monetáris rendszer csúcsintézménye, amelynek elsődleges célja jellemzően az **árstabilitás** fenntartása. A jegybank feladatai közé tartozik a bankjegy- és érmekibocsátás monopóliuma, a kereskedelmi bankok felügyelete és "bankok bankjaként" való működése (végső hitelezői szerep), a devizatartalékok kezelése, valamint a **monetáris politika** irányítása.
+A **jegybank** (Magyarországon a **Magyar Nemzeti Bank, MNB**) a monetáris rendszer csúcsintézménye, amelynek elsődleges célja jellemzően az **árstabilitás** fenntartása. A jegybank feladatai közé tartozik a bankjegy- és érmekibocsátás monopóliuma, a kereskedelmi bankok felügyelete és „bankok bankjaként” való működése (végső hitelezői szerep), a devizatartalékok kezelése, valamint a **monetáris politika** irányítása.
 
 ## A monetáris politika eszközei
 

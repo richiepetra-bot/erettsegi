@@ -214,7 +214,7 @@ A vizsgáztató itt tipikusan a nemzedékek közti viszonyra, a barátságra, a 
     theme: "Szóbeli témakörök",
     order_index: 7,
     summary_markdown:
-      "Ez a témakör a lakóhelyed leírásától a globális környezetvédelmi problémákig terjed: a lakókörnyezet, a városi és vidéki élet összehasonlítása, valamint a klímaváltozás és a fenntarthatóság témái kerülnek elő.",
+      "Ez a témakör a lakóhelyed leírásától a globális környezetvédelmi problémákig terjed: a lakókörnyezet bemutatása, a városi és vidéki élet összehasonlítása, valamint a klímaváltozás és a fenntarthatóság témái kerülnek elő.",
     content_markdown: `
 ## Mire figyelj a szóbelin?
 
@@ -617,7 +617,7 @@ A vizsgáztató jellemzően rákérdez a terveidre (továbbtanulás, jövőbeli 
     content_markdown: `
 ## Mire figyelj a szóbelin?
 
-A vizsgáztató itt gyakran a saját technológiahasználatodra (okostelefon, közösségi média) és az újabb technológiai jelenségek (mesterséges intelligencia, online tanulás) megítélésére kérdez rá. Fontos, hogy ne csak leírd, hanem **kritikusan is értékeld** ezeket.
+A vizsgáztató itt gyakran a saját technológiahasználatodra (okostelefon, közösségi média) kérdez rá, valamint arra, hogyan ítéled meg az újabb technológiai jelenségeket (mesterséges intelligencia, online tanulás). Fontos, hogy ne csak leírd, hanem **kritikusan is értékeld** ezeket.
 
 ## Key vocabulary
 

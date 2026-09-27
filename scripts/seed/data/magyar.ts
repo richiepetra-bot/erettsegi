@@ -8,11 +8,11 @@ export const magyarTopics: TopicSeed[] = [
     theme: "Életművek",
     order_index: 1,
     summary_markdown:
-      "A magyar romantika és a népiesség legnagyobb alakja. Rövid, alig 26 éves életműve alatt megújította a magyar lírát: népdalszerű egyszerűség, szenvedélyes szerelmi és tájköltészet, valamint a forradalmi-politikai vers válik jellemzővé rá.",
+      "A magyar romantika és a népiesség legnagyobb alakja. Rövid, alig 26 éves életműve alatt megújította a magyar lírát: népdalszerű egyszerűség, szenvedélyes szerelmi és tájköltészet, valamint forradalmi-politikai vers jellemzi.",
     content_markdown: `
 ## Élete és pályaképe
 
-Petőfi Sándor 1823-ban született (a hagyomány szerint Kiskőrösön, bár Kiskunfélegyháza is felmerül születési helyként) Petrovics István mészáros és Hrúz Mária gyermekeként. Iskolái (Aszód, Selmecbánya) után 1839-ben megszökött otthonról, és éveken át vándorszínészként, majd önkéntes katonaként (Sopronban, egészségügyi okból elbocsátva) küzdötte át magát rendkívüli nélkülözések között. 1844-ben Pestre érkezve Vörösmarty Mihály karolta fel: kiadták első kötetét (*Versek 1842–1844*), és hamarosan a Nemzeti Kör titkára lett. Rendkívül gyors karriert futott be — alig néhány év alatt a kor legnépszerűbb, ugyanakkor legtöbbet vitatott (közönséges, "póriasnak" bélyegzett stílusa miatt sokak által támadott) költőjévé vált.
+Petőfi Sándor 1823-ban született (a hagyomány szerint Kiskőrösön, bár Kiskunfélegyháza is felmerül születési helyként) Petrovics István mészáros és Hrúz Mária gyermekeként. Iskolái (Aszód, Selmecbánya) után 1839-ben megszökött otthonról, és éveken át vándorszínészként, majd önkéntes katonaként (Sopronban, egészségügyi okból elbocsátva) küzdötte át magát rendkívüli nélkülözések között. 1844-ben Pestre érkezve Vörösmarty Mihály karolta fel: kiadták első kötetét (*Versek 1842–1844*), és hamarosan a Nemzeti Kör titkára lett. Rendkívül gyors pályát futott be — alig néhány év alatt a kor legnépszerűbb, ugyanakkor legtöbbet vitatott (közönséges, "póriasnak" bélyegzett stílusa miatt sokak által támadott) költőjévé vált.
 
 1846 szeptemberében Nagykárolyban ismerkedett meg Szendrey Júliával; a család (elsősorban az apa) ellenállása dacára 1847 szeptemberében házasodtak össze Erdődön. A Pilvax kávéházban összegyűlő "márciusi ifjak" körének vezéralakjaként 1848. március 15-én a pesti forradalom egyik fő szervezője és szónoka volt. A szabadságharc alatt politikai nézetei miatt (radikális köztársaság-pártisága) többször konfliktusba került a hatalommal — így vesztette el 1848 nyarán a szabadszállási képviselő-választást is. Belépett a honvédseregbe, és Bem József tábornok ("Bem apó") erdélyi hadseregének törzskarában szolgált. 1849. július 31-én, a segesvári csatában tűnt el; holtteste sosem került elő, ami legendák sorát (orosz fogság, szibériai száműzetés mítosza) indította el.
 
@@ -41,7 +41,7 @@ Petőfi verselése jellemzően könnyed, dalszerű: gyakran magyaros, ütemhangs
 
 ## Jelentősége
 
-Petőfi a magyar líra egyik legnagyobb megújítója: a népi és a "magas" költészet határait eltüntetve teremtett új, közérthető, mégis művészileg igényes hangot, amely generációkra hatott (pl. Arany János barátsága és pályája is innen indul, a *Toldi* pályázati sikere és Petőfi elismerő kritikája alapozta meg kettejük később élethosszig tartó barátságát). Alig egy évtizedes alkotói pályája ellenére életműve a magyar nemzeti identitás egyik legfontosabb irodalmi referenciapontjává vált, és korán, még életében megkezdődött nemzetközi recepciója (elsőként fordították számos európai nyelvre a kortárs magyar költők közül).
+Petőfi a magyar líra egyik legnagyobb megújítója: a népi és a "magas" költészet határait eltüntetve teremtett új, közérthető, mégis művészileg igényes hangot, amely generációkra hatott (pl. Arany János barátsága és pályája is innen indul, a *Toldi* pályázati sikere és Petőfi elismerő kritikája alapozta meg kettejük később élethosszig tartó barátságát). Alig egy évtizedes alkotói pályája ellenére életműve a magyar nemzeti identitás egyik legfontosabb irodalmi referenciapontjává vált, és korán, még életében megkezdődött nemzetközi recepciója (a kortárs magyar költők közül elsőként fordították számos európai nyelvre).
 `,
     key_concepts: [
       "népiesség",
@@ -211,7 +211,7 @@ Az 1848–49-es szabadságharc bukása mély depresszióba, ún. "hallgatás év
 
 ## A Toldi-trilógia
 
-- **Toldi** (1846) — az ifjú Miklós története: a parasztsorba taszított, testvére (György) által megalázott, de rendkívüli erejével és igazságérzetével kitűnő hős felemelkedése a királyi udvarba, Nagy Lajos szolgálatába. Népi hőse a nemzeti eposzi hagyományt folytatja, miközben a mű a társadalmi igazságtalanság és a veleszületett érdem-jogosultság kérdését is felveti.
+- **Toldi** (1846) — az ifjú Miklós története: a parasztsorba taszított, testvére (György) által megalázott, de rendkívüli erejével és igazságérzetével kitűnő hős felemelkedése a királyi udvarba, Nagy Lajos szolgálatába. Népi hőse a nemzeti eposzi hagyományt folytatja, miközben a mű a társadalmi igazságtalanság és a származás, illetve az érdem szerint járó jogosultság kérdését is felveti.
 - **Toldi estéje** (1854) — az öregkori Toldi kiszorulása a megváltozott, lovagiaskodó, franciás udvari szokásokat követő világból; melankolikus, elégikus hangvétel, amely a régi, "hőskori" értékek és az új, idegenszerű udvari kultúra szembenállását dolgozza fel.
 - **Toldi szerelme** (1879, évtizedekig húzódó munka után fejezte be) — a trilógia legterjedelmesebb, záró darabja: Toldi és Piroska szerelmének, valamint a hűbéri-lovagi világ intrikáinak, cselszövéseinek története — formailag és tartalmilag is a legösszetettebb rész.
 
@@ -414,7 +414,7 @@ Léda-kapcsolata 1912 körül fokozatosan megromlott és véget ért; 1915-ben f
 
 ## Kiemelt versek részletesebben
 
-**Góg és Magóg fia vagyok én** — az Új versek nyitóverse, programadó vers: a lírai én magát "új, énekes Vazul"-ként, betörő, a régi rendet felforgató prófétaként határozza meg, aki a "Duna-Tisza összefolyásánál" akarja "új time"-ot, új szellemi tartalmat meghonosítani a maradi magyar valóságban — a vers egyszerre kihívás és programnyilatkozat.
+**Góg és Magóg fia vagyok én** — az Új versek nyitóverse, programadó vers: a lírai én magát "új, énekes Vazul"-ként, betörő, a régi rendet felforgató prófétaként határozza meg, aki a "Duna-Tisza összefolyásánál" akar új korszakot, új szellemi tartalmat meghonosítani a maradi magyar valóságban — a vers egyszerre kihívás és programnyilatkozat.
 
 **A magyar Ugar** — a posványos, terméketlen, a modernséget elutasító magyar valóság szimbóluma; a "virág" (a tehetség, az újító szellem) itt csak "vad indák gyümölcse" formájában bújhat elő, hogy aztán elfojtsák — a vers a tehetség és a haladás elfojtásának allegóriája.
 
@@ -622,7 +622,7 @@ Babits kiemelkedő **műfordító** is: legnagyobb vállalkozása Dante *Isteni 
 
 ## Jelentősége
 
-Babits Mihály a Nyugat első nemzedékének egyik legnagyobb formaművésze és erkölcsi tekintélye, akinek életműve a tiszta esztétikai igényesség és a társadalmi-morális felelősségvállalás összekapcsolását példázza. Fiatal tehetségek (József Attila, Radnóti Miklós) felkarolása, a Nyugat szerkesztőjeként betöltött szerepe és saját életműve együtt tették a 20. századi magyar szellemi élet egyik legmeghatározőbb alakjává.
+Babits Mihály a Nyugat első nemzedékének egyik legnagyobb formaművésze és erkölcsi tekintélye, akinek életműve a tiszta esztétikai igényesség és a társadalmi-morális felelősségvállalás összekapcsolását példázza. Fiatal tehetségek (József Attila, Radnóti Miklós) felkarolása, a Nyugat szerkesztőjeként betöltött szerepe és saját életműve együtt tették a 20. századi magyar szellemi élet egyik legmeghatározóbb alakjává.
 `,
     key_concepts: [
       "Nyugat első nemzedéke",
@@ -975,9 +975,9 @@ Kosztolányi Dezső a magyar próza és líra egyik legsokoldalúbb, legnyelvér
 
 József Attila 1905-ben született Budapesten, Ferencvárosban, szegény munkáscsaládban. Apja, József Áron szappanfőző munkás, a család elszegényedése után, amikor Attila még kisgyermek volt, elhagyta őket és Romániába (majd Amerikába) távozott — ez a veszteség egész életében visszatérő téma lett költészetében. Édesanyja, Pőcze Borbála mosónőként, rendkívül nehéz körülmények között nevelte gyermekeit, és korán, 1919-ben meghalt — ennek feldolgozása a kései *Mama* és *Kései sirató* című versek témája. A kisgyermek Attilát rövid ideig Öcsödön nevelőszülőknél helyezték el, ez az időszak is mély nyomot hagyott benne.
 
-Tehetségére már középiskolás korában felfigyelt Juhász Gyula, aki felkarolta és publikálási lehetőséget biztosított számára. Első kötete a *Szépség koldusa* (1922) volt. A *Tiszta szívvel* (1925) című, botrányosnak számító verse miatt (amelyben a kitaszított, nincstelen fiatal dackal vállalja "bűnösségét") eltanácsolták a szegedi egyetemről — a vers híres, gúnyos-provokatív fogadtatásáról Horger Antal nyelvész-professzor véleménye vált szállóigévé, aki szerint az ilyen verseket író embereknek nem lehet tanári diplomát adni. Ezt követően Bécsben, majd Párizsban folytatta tanulmányait, ahol megismerkedett a francia költészettel és a marxista eszmékkel.
+Tehetségére már középiskolás korában felfigyelt Juhász Gyula, aki felkarolta és publikálási lehetőséget biztosított számára. Első kötete a *Szépség koldusa* (1922) volt. A *Tiszta szívvel* (1925) című, botrányosnak számító verse miatt (amelyben a kitaszított, nincstelen fiatal dackal vállalja "bűnösségét") eltanácsolták a szegedi egyetemről — a vers fogadtatásának egyik leghíresebb mozzanataként Horger Antal nyelvész-professzor véleménye vált szállóigévé, aki szerint az ilyen verseket író embereknek nem lehet tanári diplomát adni. Ezt követően Bécsben, majd Párizsban folytatta tanulmányait, ahol megismerkedett a francia költészettel és a marxista eszmékkel.
 
-Súlyos lelki válságaival (amelyeket a mai orvostudomány valószínűleg skizofréniaként vagy hasonló pszichés zavarként diagnosztizálna) freudi pszichoanalitikus kezeléssel próbált megküzdeni — kezelőorvosai közül Rapaport Samu és később Gyömrői Edit neve emelkedik ki; Gyömrői Edit, akinek kezelte magát, egyben viszonzatlan szerelme tárgya is lett, ami több megrázó vers (pl. *Íme, hát megleltem hazámat...*) ihletője volt. Politikailag a kommunista mozgalomhoz csatlakozott, de 1933-ban ideológiai nézeteltérések miatt kizárták a pártból. Élete utolsó szakaszában Illyés Gyula feleségéhez, Flórához fűződő, viszonzatlan vonzalma adta a "szárszói versek" ihletét. Egyre súlyosbodó lelki betegsége és magánya közepette, 1937. december 3-án Balatonszárszón vonat elé vetette magát.
+Súlyos lelki válságaival (amelyeket a mai orvostudomány valószínűleg skizofréniaként vagy hasonló pszichés zavarként diagnosztizálna) freudi pszichoanalitikus kezeléssel próbált megküzdeni — kezelőorvosai közül Rapaport Samu és később Gyömrői Edit neve emelkedik ki; Gyömrői Edit, akinél kezeltette magát, egyben viszonzatlan szerelme tárgya is lett, ami több megrázó vers (pl. *Íme, hát megleltem hazámat...*) ihletője volt. Politikailag a kommunista mozgalomhoz csatlakozott, de 1933-ban ideológiai nézeteltérések miatt kizárták a pártból. Élete utolsó szakaszában Illyés Gyula feleségéhez, Flórához fűződő, viszonzatlan vonzalma adta a "szárszói versek" ihletét. Egyre súlyosbodó lelki betegsége és magánya közepette, 1937. december 3-án Balatonszárszón vonat elé vetette magát.
 
 ## Alkotói korszakok
 
@@ -1100,7 +1100,7 @@ József Attila életműve a 20. századi magyar líra egyik csúcsteljesítmény
         question_text: "Kihez fűződő, kezelőorvosi és egyben viszonzatlan szerelmi kapcsolata ihlette az Íme, hát megleltem hazámat... című verset?",
         options: ["Gyömrői Edithez", "Szántó Judithoz", "Flórához (Illyés Gyulánéhoz)", "Vágó Mártához"],
         correct_answer: "Gyömrői Edithez",
-        explanation: "Gyömrői Edit, akinél kezelte magát, egyben viszonzatlan szerelme tárgya is lett.",
+        explanation: "Gyömrői Edit, akinél kezeltette magát, egyben viszonzatlan szerelme tárgya is lett.",
         difficulty: 3,
       },
       {
