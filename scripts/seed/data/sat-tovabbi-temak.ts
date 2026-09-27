@@ -109,6 +109,141 @@ Time yourself: aim for under 70 seconds per question. If you're consistently goi
         explanation: "This question type specifically tests whether students can adapt their understanding of a word to fit its actual use in context.",
         difficulty: 2,
       },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "In the sentence 'The team's novel approach to recycling attracted international attention,' the word 'novel' most nearly means:",
+        options: ["new and original", "a long fictional book", "expensive", "traditional"],
+        correct_answer: "new and original",
+        explanation:
+          "Here 'novel' is used as an adjective meaning new and original, not as a noun referring to a book.",
+        difficulty: 1,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "A paragraph follows a claim with specific statistics from a recent study. What is the function of this paragraph?",
+        options: [
+          "to provide supporting evidence for the claim",
+          "to introduce a counterargument",
+          "to transition to an unrelated topic",
+          "to restate the claim without evidence",
+        ],
+        correct_answer: "to provide supporting evidence for the claim",
+        explanation: "Specific statistics following a claim serve to support and substantiate that claim with data.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "A question asks for the purpose of a single sentence that gives one specific example supporting a broader claim. Which answer choice describes this purpose too broadly (a common wrong-answer trap)?",
+        options: [
+          "to provide general support for the passage's argument",
+          "to give one specific example illustrating the broader claim",
+          "to introduce the topic of the passage",
+          "to summarize the entire passage",
+        ],
+        correct_answer: "to provide general support for the passage's argument",
+        explanation:
+          "This description is too vague compared to the more precise correct function: giving one specific example.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "Passage 1 claims that social media improves social connection. Passage 2 claims it isolates people. How do the two passages relate?",
+        options: [
+          "They present directly opposing views on the same topic.",
+          "They completely agree with each other.",
+          "Passage 2 only repeats Passage 1.",
+          "They are unrelated in topic.",
+        ],
+        correct_answer: "They present directly opposing views on the same topic.",
+        explanation: "Both passages address the same topic (social media's social effect) but reach opposite conclusions.",
+        difficulty: 1,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "In the sentence 'Investors were pleased when the company's stock rose sharply after the earnings report,' the word 'stock' most nearly means:",
+        options: ["shares of ownership in a company", "a supply of goods", "a type of soup base", "livestock"],
+        correct_answer: "shares of ownership in a company",
+        explanation:
+          "The financial context (investors, earnings report) points to the meaning 'shares of ownership,' not the other common meanings of 'stock.'",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "Passage 1 argues that urban gardens reduce food costs for families. Passage 2 argues that urban gardens mainly benefit the environment, not household budgets. A question asks how the passages relate. Which answer is a 'one-sided' trap?",
+        options: [
+          "Passage 1 argues that urban gardens reduce food costs for families.",
+          "Passage 2 mainly emphasizes environmental benefits, contradicting Passage 1's economic focus.",
+          "Both passages disagree on the primary benefit of urban gardens.",
+          "The passages present different emphases on the same subject.",
+        ],
+        correct_answer: "Passage 1 argues that urban gardens reduce food costs for families.",
+        explanation:
+          "This restates only Passage 1's claim without addressing how it relates to Passage 2, making it a one-sided (incomplete) answer to a cross-text relationship question.",
+        difficulty: 3,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "A short sentence shifts the discussion from causes of a problem to possible solutions. What is this sentence's function?",
+        options: [
+          "to transition between ideas",
+          "to provide a counterargument",
+          "to restate the main claim",
+          "to give a specific example",
+        ],
+        correct_answer: "to transition between ideas",
+        explanation: "A sentence that shifts focus from one part of the discussion to another is functioning as a transition.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "In the sentence 'The critic's remarks were pointed, leaving no doubt about her disapproval,' a student choosing 'physically sharp' as the meaning of 'pointed' has fallen for which kind of error?",
+        options: [
+          "choosing a common meaning that doesn't fit this specific context",
+          "choosing the correct contextual meaning",
+          "misreading the passage's structure",
+          "confusing cross-text connections",
+        ],
+        correct_answer: "choosing a common meaning that doesn't fit this specific context",
+        explanation:
+          "'Pointed' here means direct/critical in tone, not physically sharp — a classic 'right word, wrong context' trap.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "What are the three skills tested by 'Craft and Structure' questions?",
+        options: [
+          "words in context, text structure and purpose, and cross-text connections",
+          "grammar, punctuation, and spelling",
+          "algebra, geometry, and data analysis",
+          "reading speed, memorization, and vocabulary lists",
+        ],
+        correct_answer: "words in context, text structure and purpose, and cross-text connections",
+        explanation: "These are the three related skills this question type is designed to test.",
+        difficulty: 1,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "Passage 1 states that a historical figure's decision was courageous given the risks at the time. Passage 2, written centuries later, argues the same decision was reckless by modern safety standards. The relationship between the two passages is best described as which of the following?",
+        options: [
+          "Passage 2 reevaluates Passage 1's judgment using a different standard of evaluation.",
+          "Passage 2 completely agrees with Passage 1's assessment.",
+          "Passage 1 and Passage 2 discuss unrelated historical events.",
+          "Passage 2 simply repeats the facts stated in Passage 1.",
+        ],
+        correct_answer: "Passage 2 reevaluates Passage 1's judgment using a different standard of evaluation.",
+        explanation:
+          "Passage 2 doesn't dispute the facts but reinterprets the same decision through a different lens (modern safety standards).",
+        difficulty: 3,
+      },
     ],
   },
   {
@@ -219,6 +354,130 @@ For every transition-word question you get wrong, say the relationship out loud 
         explanation: "Rhetorical synthesis questions require matching a specific purpose, not just picking any true statement from the notes.",
         difficulty: 2,
       },
+      {
+        question_type: "multiple_choice",
+        question_text: "Which transition word signals addition of a similar idea?",
+        options: ["furthermore", "however", "therefore", "for instance"],
+        correct_answer: "furthermore",
+        explanation: "'Furthermore' adds another supporting point; the others signal contrast, cause/effect, and example.",
+        difficulty: 1,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Which transition word signals that an example is about to be given?",
+        options: ["for instance", "moreover", "nevertheless", "consequently"],
+        correct_answer: "for instance",
+        explanation: "'For instance' introduces a specific example; the other options signal addition, contrast, and cause/effect.",
+        difficulty: 1,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "'The film received glowing reviews from critics. _____, ticket sales were disappointingly low.' Which transition fits best?",
+        options: ["However", "Furthermore", "For instance", "As a result"],
+        correct_answer: "However",
+        explanation: "The second sentence contrasts with the first (good reviews vs. low sales), so a contrast transition is needed.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "Notes: (1) Coral reefs cover less than 1% of the ocean floor. (2) They support around 25% of all marine species. (3) Rising sea temperatures cause coral bleaching. Goal: 'to introduce the topic to an audience unfamiliar with coral reefs.' Which sentence best fulfils this goal?",
+        options: [
+          "Coral reefs, which cover less than 1% of the ocean floor, support around a quarter of all marine species.",
+          "Rising sea temperatures cause coral bleaching.",
+          "Coral bleaching is a well-known environmental issue.",
+          "Marine biologists have studied coral reefs for decades.",
+        ],
+        correct_answer:
+          "Coral reefs, which cover less than 1% of the ocean floor, support around a quarter of all marine species.",
+        explanation:
+          "This sentence introduces what coral reefs are and why they matter, which suits readers unfamiliar with the topic; the others assume prior knowledge or focus on an unrelated detail.",
+        difficulty: 3,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "Which is the most concise way to combine these two sentences without losing meaning: 'The report was long. The report was also very detailed.'?",
+        options: [
+          "The report was long and detailed.",
+          "The report was long, and in addition to being long, it was also very detailed.",
+          "The report, which was long, was also a report that was detailed.",
+          "The report was long; furthermore, it was also detailed in nature.",
+        ],
+        correct_answer: "The report was long and detailed.",
+        explanation: "This preserves both facts using the fewest words, without repetition.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "'The bridge was closed for repairs. However, traffic flowed smoothly on the detour route.' Is 'however' used correctly here?",
+        options: [
+          "No — the sentences aren't in contrast; 'as a result' or a similar transition would fit better",
+          "Yes — the sentences clearly contradict each other",
+          "Yes — 'however' always signals a positive outcome",
+          "No — this pair of sentences needs no transition at all",
+        ],
+        correct_answer:
+          "No — the sentences aren't in contrast; 'as a result' or a similar transition would fit better",
+        explanation:
+          "The second sentence describes how the closure was handled, not a contrasting idea, so 'however' misrepresents the logical relationship.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "What is a 'rhetorical synthesis' question on the SAT?",
+        options: [
+          "A question that gives bullet-point notes and asks which sentence best accomplishes a specific stated goal",
+          "A question that only tests spelling",
+          "A question about correcting subject-verb agreement",
+          "A question that asks you to summarize an entire passage",
+        ],
+        correct_answer:
+          "A question that gives bullet-point notes and asks which sentence best accomplishes a specific stated goal",
+        explanation: "Rhetorical synthesis questions test whether you can select or construct a sentence that fulfils a specific purpose using given information.",
+        difficulty: 1,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "Notes: (1) The bakery opened in 1990. (2) It now has 12 locations. (3) Its signature product is a sourdough loaf. Goal: 'to highlight the bakery's growth over time.' Which answer is accurate but fails to meet the stated goal?",
+        options: [
+          "The bakery's signature product is a sourdough loaf.",
+          "Since opening in 1990, the bakery has grown to 12 locations.",
+          "Opened in 1990, the bakery now operates 12 locations.",
+          "From a single shop in 1990, the bakery expanded to 12 locations.",
+        ],
+        correct_answer: "The bakery's signature product is a sourdough loaf.",
+        explanation:
+          "This is a true fact from the notes, but it says nothing about growth over time, so it fails the stated goal despite being accurate.",
+        difficulty: 3,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "'The factory adopted new safety protocols. _____, workplace injuries decreased by 30%.' Which transition fits best?",
+        options: ["As a result", "In contrast", "For instance", "Similarly"],
+        correct_answer: "As a result",
+        explanation: "The second sentence describes a consequence of the first, so a cause/effect transition fits best.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Before picking a transition word, what should you determine first?",
+        options: [
+          "the logical relationship between the two sentences, without looking at the answer choices",
+          "which answer choice is grammatically longest",
+          "the total word count of the passage",
+          "whether the sentence uses passive voice",
+        ],
+        correct_answer:
+          "the logical relationship between the two sentences, without looking at the answer choices",
+        explanation:
+          "Determining the relationship first prevents being misled by a transition that sounds natural but is logically wrong.",
+        difficulty: 2,
+      },
     ],
   },
   {
@@ -310,6 +569,114 @@ For every data-display question, before looking at the answer choices, **write d
         correct_answer: "(original − new) / original × 100",
         explanation: "Percent decrease always divides the change by the ORIGINAL value, not the new value.",
         difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "A laptop's price dropped from $800 to $680. What was the percent decrease?",
+        options: ["15%", "12%", "20%", "17.6%"],
+        correct_answer: "15%",
+        explanation: "Percent decrease = (800 - 680) / 800 × 100 = 120/800 × 100 = 15%.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "A recipe requires flour to sugar in a ratio of 4:1. If you use 12 cups of flour, how many cups of sugar are needed?",
+        options: ["3", "4", "12", "1"],
+        correct_answer: "3",
+        explanation: "12 cups of flour is 3 times the '4' part of the ratio, so sugar = 3 × 1 = 3 cups.",
+        difficulty: 1,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "A two-way table shows 30 students who play soccer and 20 who play basketball, with no overlap, out of 50 total students surveyed. What percent of all surveyed students play soccer?",
+        options: ["60%", "30%", "40%", "50%"],
+        correct_answer: "60%",
+        explanation: "30 out of 50 total students play soccer: 30/50 × 100 = 60%.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "A scatterplot shows points trending downward from left to right, closely following a line. This best describes:",
+        options: [
+          "a strong negative correlation",
+          "a strong positive correlation",
+          "no correlation",
+          "an outlier pattern",
+        ],
+        correct_answer: "a strong negative correlation",
+        explanation: "A downward trend where points closely follow a line indicates a strong negative correlation.",
+        difficulty: 1,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "A car travels at 60 miles per hour. How many miles does it travel in 45 minutes?",
+        options: ["45", "60", "30", "75"],
+        correct_answer: "45",
+        explanation: "45 minutes is 3/4 of an hour, so distance = 60 × (45/60) = 45 miles.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "A price increases by 20%, then decreases by 20%. Compared to the original price, the final price is:",
+        options: [
+          "lower than the original price",
+          "equal to the original price",
+          "higher than the original price",
+          "impossible to determine",
+        ],
+        correct_answer: "lower than the original price",
+        explanation:
+          "Starting at 100: up 20% gives 120, then down 20% of 120 gives 96 — the two percentages apply to different bases, so the net result is a 4% decrease, not zero.",
+        difficulty: 3,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "A jar contains marbles in a ratio of 2 red to 3 blue, with no other colors. What is the ratio of red marbles to the TOTAL number of marbles?",
+        options: ["2:5", "2:3", "3:5", "3:2"],
+        correct_answer: "2:5",
+        explanation: "Total parts = 2 + 3 = 5, so red to total is 2:5, not 2:3 (which is red to blue only).",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Which equation correctly expresses 'part = percent × whole'?",
+        options: [
+          "part = (percent/100) × whole",
+          "part = percent × 100 × whole",
+          "whole = percent × part",
+          "part = whole / percent",
+        ],
+        correct_answer: "part = (percent/100) × whole",
+        explanation: "Percent must be converted to a decimal (divided by 100) before multiplying by the whole.",
+        difficulty: 1,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "A two-way table shows 25 of 100 surveyed adults prefer tea, and among tea drinkers, 15 are women. What percent of TEA DRINKERS are women?",
+        options: ["60%", "15%", "25%", "40%"],
+        correct_answer: "60%",
+        explanation: "15 out of the 25 tea drinkers are women: 15/25 × 100 = 60%. The denominator must be the tea-drinker total, not the grand total.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "A scatterplot of study hours vs. test scores shows a strong positive correlation, except for one student who studied very little but scored very high. This student's point is best described as:",
+        options: [
+          "an outlier that doesn't fit the overall trend",
+          "proof that there is no correlation",
+          "evidence the correlation is negative",
+          "a typical data point",
+        ],
+        correct_answer: "an outlier that doesn't fit the overall trend",
+        explanation: "A point that clearly breaks from the general pattern of the data is called an outlier.",
+        difficulty: 3,
       },
     ],
   },

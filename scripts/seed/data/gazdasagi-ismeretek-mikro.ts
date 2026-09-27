@@ -106,6 +106,136 @@ A közgazdaságtan alapfogalmainak (szükséglet, javak, szűkösség, alternat�
         explanation: "A piacgazdaságban a kereslet és kínálat, valamint a magántulajdon alapján decentralizáltan születnek a gazdasági döntések, szemben a központi tervezéssel.",
         difficulty: 2,
       },
+      {
+        question_type: "multiple_choice",
+        question_text: "Mit jelent a szükséglet fogalma?",
+        options: [
+          "valamilyen hiányérzet, amely cselekvésre ösztönöz",
+          "egy már teljesen kielégített igény",
+          "az erőforrások korlátlan mennyisége",
+          "a piaci ár csökkenése"
+        ],
+        correct_answer: "valamilyen hiányérzet, amely cselekvésre ösztönöz",
+        explanation: "A szükséglet olyan hiányérzet, amely a hiány megszüntetésére irányuló cselekvésre ösztönöz.",
+        difficulty: 1,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Mi jellemzi a gazdasági javakat a szabad javakkal szemben?",
+        options: [
+          "korlátozottan állnak rendelkezésre, ezért piaci áruk van",
+          "korlátlanul állnak rendelkezésre, mint a levegő",
+          "nincs szükség gazdálkodásra velük",
+          "mindig az állam tulajdonában vannak"
+        ],
+        correct_answer: "korlátozottan állnak rendelkezésre, ezért piaci áruk van",
+        explanation: "A gazdasági javak — ellentétben a szabad javakkal — korlátozottan állnak rendelkezésre a szükségletekhez képest, ezért piaci áruk alakul ki, és elosztásukról dönteni kell.",
+        difficulty: 1,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Mit vizsgál a mikroökonómia?",
+        options: [
+          "az egyes gazdasági szereplők döntéseit és az egyes piacok működését",
+          "a nemzetgazdaság egészének aggregált mutatóit",
+          "kizárólag az állami költségvetést",
+          "a nemzetközi valutaárfolyamokat"
+        ],
+        correct_answer: "az egyes gazdasági szereplők döntéseit és az egyes piacok működését",
+        explanation: "A mikroökonómia a háztartások és vállalatok döntéseit, illetve az egyes piacok működését vizsgálja, szemben a makroökonómiával, amely az aggregált mutatókat elemzi.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Mit vizsgál a makroökonómia?",
+        options: [
+          "a nemzetgazdaság egészét és az aggregált mutatókat (GDP, infláció, munkanélküliség)",
+          "egyetlen vállalat termelési döntéseit",
+          "egyetlen termék piacának egyensúlyát",
+          "egy háztartás fogyasztási szokásait"
+        ],
+        correct_answer: "a nemzetgazdaság egészét és az aggregált mutatókat (GDP, infláció, munkanélküliség)",
+        explanation: "A makroökonómia a nemzetgazdaság egészét és az összesített (aggregált) mutatókat, illetve azok összefüggéseit tanulmányozza.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Mi jellemzi a hagyományos (tradicionális) gazdaságot?",
+        options: [
+          "a szokások és hagyományok alapján osztja el az erőforrásokat és javakat",
+          "a piaci árak alapján dönt decentralizáltan",
+          "a központi állami tervezés dönt mindenről",
+          "a magántulajdon teljes hiánya jellemzi"
+        ],
+        correct_answer: "a szokások és hagyományok alapján osztja el az erőforrásokat és javakat",
+        explanation: "A hagyományos (tradicionális) gazdaságban a szokások és a hagyományok alapján döntenek az alapkérdésekről.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Mi jellemzi a parancsuralmi (tervgazdasági) rendszert?",
+        options: [
+          "a központi állami tervezés dönt a mit-hogyan-kinek kérdésekről",
+          "a kereslet és kínálat összjátéka dönt decentralizáltan",
+          "a szokások határozzák meg a döntéseket",
+          "kizárólag a magánvállalkozások döntenek"
+        ],
+        correct_answer: "a központi állami tervezés dönt a mit-hogyan-kinek kérdésekről",
+        explanation: "A parancsuralmi (tervgazdasági) rendszerben a központi állami tervezés hozza meg a gazdasági alapkérdésekre vonatkozó döntéseket, például a szocialista tervgazdaságokban.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Mit jelent a vegyes gazdaság fogalma?",
+        options: [
+          "a piaci mechanizmust állami szabályozással és beavatkozással kombinálja",
+          "kizárólag a piaci mechanizmusra épül, állami beavatkozás nélkül",
+          "kizárólag állami tervezésre épül",
+          "a hagyományok alapján osztja el a javakat"
+        ],
+        correct_answer: "a piaci mechanizmust állami szabályozással és beavatkozással kombinálja",
+        explanation: "A legtöbb modern gazdaság vegyes gazdaság, amely a piaci mechanizmust állami szabályozással és beavatkozással egyesíti.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Mit jeleznek a termelési lehetőségek határán (görbéjén) belüli pontok?",
+        options: [
+          "nem hatékony, kihasználatlan erőforrásokat jelző állapotot",
+          "az adott erőforrásokkal elérhetetlen kombinációkat",
+          "a hatékony, trade-off választásokat",
+          "a piaci egyensúlyi árat"
+        ],
+        correct_answer: "nem hatékony, kihasználatlan erőforrásokat jelző állapotot",
+        explanation: "A termelési lehetőségek határán belüli pontok azt jelzik, hogy a gazdaság nem használja ki teljes mértékben a rendelkezésre álló erőforrásait.",
+        difficulty: 3,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Mit jeleznek a termelési lehetőségek határán kívüli pontok?",
+        options: [
+          "az adott erőforrásokkal és technológiával elérhetetlen kombinációkat",
+          "a hatékony, egymással szemben álló választásokat",
+          "a kihasználatlan erőforrásokat",
+          "a piaci túlkínálatot"
+        ],
+        correct_answer: "az adott erőforrásokkal és technológiával elérhetetlen kombinációkat",
+        explanation: "A görbén kívüli pontok az adott erőforrásokkal és technológiával nem elérhető termelési kombinációkat jelölik.",
+        difficulty: 3,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Mit jelent a gazdálkodás fogalma a közgazdaságtanban?",
+        options: [
+          "a szűkös erőforrások leghatékonyabb felhasználása a legfontosabb szükségletek kielégítésére",
+          "a javak korlátlan előállítása",
+          "az állami tervezés folyamata",
+          "a piaci ár rögzítése"
+        ],
+        correct_answer: "a szűkös erőforrások leghatékonyabb felhasználása a legfontosabb szükségletek kielégítésére",
+        explanation: "A gazdálkodás a szűkösségből fakadó kényszer: a rendelkezésre álló szűkös erőforrások leghatékonyabb felhasználása a legfontosabb szükségletek kielégítése érdekében.",
+        difficulty: 1,
+      },
     ],
   },
   {
@@ -213,6 +343,136 @@ A kereslet-kínálat modellje és a piaci mechanizmus megértése a mikroökonó
         correct_answer: "Adam Smith",
         explanation: "Adam Smith klasszikus közgazdász alkotta meg a „láthatatlan kéz” metaforát a piac önszabályozó mechanizmusának leírására.",
         difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Mi a piac fogalma?",
+        options: [
+          "a tényleges és potenciális eladók és vevők cserekapcsolatainak rendszere",
+          "kizárólag az állam által működtetett elosztási rendszer",
+          "egyetlen vállalat termelési folyamata",
+          "a kormány gazdaságpolitikai intézkedéseinek összessége"
+        ],
+        correct_answer: "a tényleges és potenciális eladók és vevők cserekapcsolatainak rendszere",
+        explanation: "A piac a tényleges és potenciális eladók és vevők, valamint cserekapcsolataik rendszere egy adott termékre vagy piacra vonatkozóan.",
+        difficulty: 1,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Milyen meredekségű jellemzően a kínálati függvény?",
+        options: [
+          "pozitív meredekségű: magasabb ár nagyobb kínált mennyiséget eredményez",
+          "negatív meredekségű: magasabb ár kisebb kínálatot eredményez",
+          "függőleges, az ártól független",
+          "vízszintes, állandó mennyiséget jelöl"
+        ],
+        correct_answer: "pozitív meredekségű: magasabb ár nagyobb kínált mennyiséget eredményez",
+        explanation: "A kínálati függvény jellemzően pozitív meredekségű, mivel a magasabb ár nagyobb profitot ígér a termelőknek.",
+        difficulty: 1,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Mit fejez ki a kínálat fogalma?",
+        options: [
+          "hogy a termelők mekkora mennyiséget hajlandóak és képesek piacra vinni különböző árszinteken",
+          "hogy a vevők mennyit hajlandóak megvásárolni",
+          "az állam által meghatározott termelési kvótát",
+          "a piaci egyensúlyi árat"
+        ],
+        correct_answer: "hogy a termelők mekkora mennyiséget hajlandóak és képesek piacra vinni különböző árszinteken",
+        explanation: "A kínálat azt mutatja meg, hogy a termelők mekkora mennyiséget hajlandóak és képesek piacra vinni egy adott terméknél, különböző árszinteken.",
+        difficulty: 1,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Mi történik, ha a piaci ár az egyensúlyi ár alá csökken?",
+        options: [
+          "túlkereslet (hiány) alakul ki",
+          "túlkínálat (felesleg) alakul ki",
+          "a kereslet megszűnik",
+          "nincs változás a piacon"
+        ],
+        correct_answer: "túlkereslet (hiány) alakul ki",
+        explanation: "Az egyensúlyi ár alatti áron a keresett mennyiség meghaladja a kínált mennyiséget, ami túlkeresletet (hiányt) eredményez.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Mi okozza a mennyiség (elmozdulás) változását a keresleti görbe mentén?",
+        options: [
+          "kizárólag a termék árának megváltozása",
+          "a fogyasztók jövedelmének változása",
+          "a technológiai fejlődés",
+          "a termelők számának változása"
+        ],
+        correct_answer: "kizárólag a termék árának megváltozása",
+        explanation: "A keresleti görbe mentén történő elmozdulást (a mennyiség változását) kizárólag az ár változása okozza, szemben a görbe egészének eltolódásával.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Melyik tényező NEM befolyásolja jellemzően a kínálatot?",
+        options: [
+          "a fogyasztók ízlése",
+          "a termelési költségek alakulása",
+          "a technológiai fejlődés",
+          "a termelők száma"
+        ],
+        correct_answer: "a fogyasztók ízlése",
+        explanation: "A kínálatot a termelési költségek, a technológia és a termelők száma befolyásolja; a fogyasztói ízlés a keresletre hat közvetlenül.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Mi jellemzi a tényezőpiacokat?",
+        options: [
+          "a munkaerő, a tőke és a föld mint termelési tényezők piacai",
+          "kizárólag a késztermékek piacai",
+          "csak a nemzetközi kereskedelem piacai",
+          "a szolgáltatások helyi piacai"
+        ],
+        correct_answer: "a munkaerő, a tőke és a föld mint termelési tényezők piacai",
+        explanation: "A tényezőpiacok (munkaerőpiac, tőkepiac, földpiac) a termelési tényezők adásvételének piacai, szemben a termékpiacokkal.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Melyik NEM tartozik a piaci kudarcok közé?",
+        options: [
+          "a tökéletes verseny kialakulása",
+          "az externáliák",
+          "a közjavak alulkínálata",
+          "az információs aszimmetria"
+        ],
+        correct_answer: "a tökéletes verseny kialakulása",
+        explanation: "A piaci kudarcok közé az externáliák, a közjavak, az információs aszimmetria és a monopóliumok tartoznak — a tökéletes verseny éppen a hatékony piaci működés esete.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Miért indokolhatja a piaci kudarc az állami beavatkozást?",
+        options: [
+          "mert a piaci mechanizmus önmagában nem tudja hatékonyan kezelni pl. az externáliákat vagy a közjavakat",
+          "mert a piac mindig tökéletesen működik",
+          "mert az állam célja mindig a piac megszüntetése",
+          "mert a piaci árak sosem tükrözik a szűkösséget"
+        ],
+        correct_answer: "mert a piaci mechanizmus önmagában nem tudja hatékonyan kezelni pl. az externáliákat vagy a közjavakat",
+        explanation: "A piaci kudarcok (externáliák, közjavak, információs aszimmetria, monopóliumok) olyan esetek, amikor a piac önmagában nem hatékony, ezért indokolt lehet az állami beavatkozás.",
+        difficulty: 3,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Mi a piaci mechanizmus egyik legfontosabb előnye?",
+        options: [
+          "decentralizáltan és gyorsan koordinálja a gazdasági szereplők döntéseit az árak révén",
+          "mindig tökéletesen igazságos jövedelemelosztást eredményez",
+          "kizárja az állami szerepvállalás szükségességét",
+          "megszünteti a szűkösséget"
+        ],
+        correct_answer: "decentralizáltan és gyorsan koordinálja a gazdasági szereplők döntéseit az árak révén",
+        explanation: "A piaci mechanizmus előnye, hogy decentralizáltan és hatékonyan koordinálja a döntéseket, jelezve az erőforrások szűkösségét az árak révén.",
+        difficulty: 3,
       },
     ],
   },
@@ -336,6 +596,136 @@ A fogyasztói magatartás és a kereslet megértése alapvető a mikroökonómi�
         explanation: "Válsághelyzetekben a fogyasztók jellemzően visszafogják a nem alapvető kiadásaikat, és nagyobb hangsúlyt fektetnek az ár-érték arányra és a megtakarításra.",
         difficulty: 2,
       },
+      {
+        question_type: "multiple_choice",
+        question_text: "Mit fejez ki a hasznosság fogalma?",
+        options: [
+          "az elégedettséget, szükségletkielégítést, amelyet egy jószág fogyasztása nyújt",
+          "a termék piaci árát",
+          "a vállalat profitját",
+          "a kínálat mennyiségét"
+        ],
+        correct_answer: "az elégedettséget, szükségletkielégítést, amelyet egy jószág fogyasztása nyújt",
+        explanation: "A hasznosság az egyén szükségletkielégítését, elégedettségét fejezi ki, amelyet egy jószág fogyasztása nyújt.",
+        difficulty: 1,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Milyen elv vezérli alapvetően a fogyasztói döntéseket?",
+        options: [
+          "a hasznosság-maximalizálás elve",
+          "a profit-maximalizálás elve",
+          "a kínálat-minimalizálás elve",
+          "a piaci ár rögzítésének elve"
+        ],
+        correct_answer: "a hasznosság-maximalizálás elve",
+        explanation: "A fogyasztó a korlátozott jövedelméből a lehető legnagyobb hasznosságot (elégedettséget) igyekszik elérni.",
+        difficulty: 1,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Melyik tényező NEM befolyásolja jellemzően a fogyasztói keresletet?",
+        options: [
+          "a vállalat gyártási technológiájának típusa",
+          "a termék ára",
+          "a fogyasztó jövedelme",
+          "a fogyasztó ízlése és preferenciái"
+        ],
+        correct_answer: "a vállalat gyártási technológiájának típusa",
+        explanation: "A fogyasztói keresletet az ár, a jövedelem, az ízlés, a helyettesítő/kiegészítő termékek ára és a várakozások befolyásolják, a gyártási technológia inkább a kínálatra hat.",
+        difficulty: 1,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Hogyan hat egy termék jövedelmi hatása a fogyasztásra árváltozás esetén?",
+        options: [
+          "megváltoztatja a fogyasztó reáljövedelmét (vásárlóerejét)",
+          "kizárólag a helyettesítő termékek árát változtatja meg",
+          "nincs hatással a fogyasztásra",
+          "csak a kínálatot érinti"
+        ],
+        correct_answer: "megváltoztatja a fogyasztó reáljövedelmét (vásárlóerejét)",
+        explanation: "A jövedelmi hatás azt mutatja, hogy egy árváltozás — a nominális jövedelem változatlansága mellett — hogyan befolyásolja a fogyasztó reáljövedelmét (vásárlóerejét).",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Mi jellemzi az inferior javakat a jövedelem növekedésekor?",
+        options: [
+          "a keresletük a jövedelem növekedésével csökkenhet, a keresletet befolyásoló tényezők általános szabályával ellentétben",
+          "a keresletük mindig párhuzamosan nő a jövedelemmel",
+          "áruk sosem változik",
+          "kizárólag luxustermékek tartoznak ide"
+        ],
+        correct_answer: "a keresletük a jövedelem növekedésével csökkenhet, a keresletet befolyásoló tényezők általános szabályával ellentétben",
+        explanation: "A jövedelem növekedése általában növeli a keresletet, kivéve az inferior javaknál, amelyek esetében a jövedelem növekedésével a kereslet csökkenhet.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Hogyan hat a helyettesítő termékek árának emelkedése egy adott termék keresletére?",
+        options: [
+          "növelheti az adott termék keresletét, mivel a fogyasztók elfordulnak a drágább helyettesítőtől",
+          "mindig csökkenti az adott termék keresletét",
+          "nincs rá hatással",
+          "csak a kínálatot érinti"
+        ],
+        correct_answer: "növelheti az adott termék keresletét, mivel a fogyasztók elfordulnak a drágább helyettesítőtől",
+        explanation: "Ha egy helyettesítő termék ára emelkedik, a fogyasztók a relatíve olcsóbbá váló másik termék felé fordulhatnak, ami növelheti annak keresletét.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Milyen marketingeszközökkel igyekeznek a vállalatok befolyásolni a fogyasztói döntéseket?",
+        options: [
+          "reklám, árazási stratégiák és termékdifferenciálás (márkaépítés)",
+          "kizárólag az állami szabályozás",
+          "a piaci verseny megszüntetése",
+          "a termelési tényezők árának csökkentése"
+        ],
+        correct_answer: "reklám, árazási stratégiák és termékdifferenciálás (márkaépítés)",
+        explanation: "A vállalatok reklámmal, árazási stratégiákkal (kedvezmények, csomagajánlatok) és termékdifferenciálással (márkaépítéssel) igyekeznek befolyásolni a fogyasztói döntéseket.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Milyen pszichológiai vagy társadalmi tényező befolyásolhatja a fogyasztói magatartást a modern felfogás szerint?",
+        options: [
+          "a referenciacsoportok hatása és a márkahűség",
+          "kizárólag a termék súlya",
+          "az állam adóbevétele",
+          "a munkanélküliségi ráta"
+        ],
+        correct_answer: "a referenciacsoportok hatása és a márkahűség",
+        explanation: "A modern fogyasztói magatartás vizsgálata figyelembe veszi a pszichológiai és társadalmi tényezőket is, mint a referenciacsoportok hatását vagy a márkahűséget.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Mi a fő különbség a helyettesítési és a jövedelmi hatás között egy árváltozás esetén?",
+        options: [
+          "a helyettesítési hatás a relatív árak, a jövedelmi hatás a reáljövedelem (vásárlóerő) változásán keresztül hat a fogyasztásra",
+          "a kettő pontosan ugyanazt jelenti",
+          "a jövedelmi hatás csak luxustermékeknél érvényesül",
+          "a helyettesítési hatás csak inferior javaknál érvényesül"
+        ],
+        correct_answer: "a helyettesítési hatás a relatív árak, a jövedelmi hatás a reáljövedelem (vásárlóerő) változásán keresztül hat a fogyasztásra",
+        explanation: "A helyettesítési hatás a relatív árak megváltozása miatt fordítja a fogyasztót a helyettesítő termékek felé, míg a jövedelmi hatás az árváltozás okozta reáljövedelem-változáson keresztül hat.",
+        difficulty: 3,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Miért nehéz a hasznosságot közvetlenül mérni?",
+        options: [
+          "mert szubjektív, egyénenként eltérő elégedettségérzetet fejez ki",
+          "mert mindig azonos minden fogyasztónál",
+          "mert csak pénzben fejezhető ki",
+          "mert a hasznosság állandó, nem függ a fogyasztott mennyiségtől"
+        ],
+        correct_answer: "mert szubjektív, egyénenként eltérő elégedettségérzetet fejez ki",
+        explanation: "A hasznosság szubjektív és nehezen mérhető közvetlenül, ezért a közgazdaságtan a határhasznosság fogalmával dolgozik.",
+        difficulty: 3,
+      },
     ],
   },
   {
@@ -448,6 +838,136 @@ A vállalkozások és a vállalkozási formák ismerete alapvető a piacgazdasá
         explanation: "Az idegen források olyan külső finanszírozási eszközök, mint a banki hitel vagy a kötvénykibocsátás, szemben a saját forrásokkal (tulajdonosi tőke, nyereség).",
         difficulty: 2,
       },
+      {
+        question_type: "multiple_choice",
+        question_text: "Mi jellemzi alapvetően a vállalkozói tevékenységet?",
+        options: [
+          "szükségszerűen kockázatvállalással jár, mivel a jövőbeli piaci feltételek bizonytalanok",
+          "sosem jár kockázattal",
+          "kizárólag az állam végezheti",
+          "mindig veszteséggel zárul"
+        ],
+        correct_answer: "szükségszerűen kockázatvállalással jár, mivel a jövőbeli piaci feltételek bizonytalanok",
+        explanation: "A vállalkozói tevékenység a bizonytalan jövőbeli piaci feltételek miatt szükségszerűen kockázatvállalással jár.",
+        difficulty: 1,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Mi tartozik a vállalkozás saját finanszírozási forrásai közé?",
+        options: [
+          "a tulajdonosok befektetett tőkéje és a visszaforgatott nyereség",
+          "a banki hitel",
+          "a kötvénykibocsátás",
+          "a szállítói hitel"
+        ],
+        correct_answer: "a tulajdonosok befektetett tőkéje és a visszaforgatott nyereség",
+        explanation: "A saját források a tulajdonosok befektetett tőkéjét és a visszaforgatott (fel nem osztott) nyereséget jelentik, szemben az idegen (külső) forrásokkal.",
+        difficulty: 1,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Mi a közös jellemzője a közkereseti társaságnak (kkt.) és a betéti társaságnak (bt.)?",
+        options: [
+          "mindkettő személyegyesítő társasági forma",
+          "mindkettő tőkeegyesítő társasági forma",
+          "mindkettő részvényeket bocsát ki",
+          "mindkettőben minden tag korlátozottan felel"
+        ],
+        correct_answer: "mindkettő személyegyesítő társasági forma",
+        explanation: "A kkt. és a bt. személyegyesítő társasági formák, amelyekben a tagok személyes közreműködése meghatározó.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Mi jellemzi a tőkeegyesítő társaságokat (pl. kft., rt.)?",
+        options: [
+          "a befektetett tőke a meghatározó, és a tagok felelőssége korlátozott",
+          "a tagok személyes közreműködése a meghatározó",
+          "a tagok mindig korlátlanul felelnek",
+          "kizárólag egyetlen tulajdonosuk lehet"
+        ],
+        correct_answer: "a befektetett tőke a meghatározó, és a tagok felelőssége korlátozott",
+        explanation: "A tőkeegyesítő társaságoknál a befektetett tőke a meghatározó tényező, és a tagok felelőssége jellemzően a befektetett tőkéjükre korlátozódik.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Hogyan gyűjt tőkét jellemzően a részvénytársaság (rt.)?",
+        options: [
+          "részvények kibocsátásával",
+          "kizárólag banki hitelből",
+          "állami támogatásból",
+          "a tagok személyes munkájából"
+        ],
+        correct_answer: "részvények kibocsátásával",
+        explanation: "A részvénytársaság jellemzően részvények kibocsátásával gyűjt tőkét nagyobb, tőkeigényes vállalkozásokhoz.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Milyen szerepet töltenek be a kis- és középvállalkozások (kkv-k) a gazdaságban?",
+        options: [
+          "jelentős szerepet játszanak a foglalkoztatásban és a GDP előállításában",
+          "elhanyagolható szerepük van a foglalkoztatásban",
+          "kizárólag exporttevékenységet végeznek",
+          "mindig könnyebben jutnak finanszírozáshoz, mint a nagyvállalatok"
+        ],
+        correct_answer: "jelentős szerepet játszanak a foglalkoztatásban és a GDP előállításában",
+        explanation: "A kkv-k a magyar és európai gazdaság gerincét alkotják, jelentős szerepet játszva a foglalkoztatásban és a GDP előállításában, ugyanakkor nehezebben jutnak finanszírozáshoz.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Milyen célt követhetnek a vállalkozások a profitmaximalizálás mellett?",
+        options: [
+          "a piaci részesedés növelését és a hosszú távú fennmaradás biztosítását",
+          "kizárólag a versenytársak kiszorítását törvénytelen eszközökkel",
+          "az állami támogatások megszerzését minden áron",
+          "a foglalkoztatottak számának csökkentését"
+        ],
+        correct_answer: "a piaci részesedés növelését és a hosszú távú fennmaradás biztosítását",
+        explanation: "A vállalkozások a profitmaximalizálás mellett további célokat is követhetnek, mint a piaci részesedés növelése vagy a hosszú távú stabilitás biztosítása.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Mi szükséges jellemzően egy vállalkozás alapításához az üzleti ötlet mellett?",
+        options: [
+          "üzleti terv kidolgozása és a jogszabályi követelmények (pl. cégbírósági bejegyzés) teljesítése",
+          "kizárólag állami engedély megszerzése",
+          "külföldi tőkebefektető bevonása minden esetben",
+          "a versenytársak megszüntetése"
+        ],
+        correct_answer: "üzleti terv kidolgozása és a jogszabályi követelmények (pl. cégbírósági bejegyzés) teljesítése",
+        explanation: "A vállalkozásalapításhoz szükséges egy üzleti terv kidolgozása, a megfelelő forma kiválasztása, a tőke előteremtése és a jogszabályi (cégbírósági bejegyzés, adószám) követelmények teljesítése.",
+        difficulty: 3,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Mi a fő különbség a bt. kültagja és a kkt. tagjai felelőssége között?",
+        options: [
+          "a bt. kültagja csak a vagyoni betétje erejéig felel, míg a kkt. minden tagja korlátlanul felel",
+          "mindkettő korlátlanul felel",
+          "a kkt. tagjai sosem felelnek a kötelezettségekért",
+          "a bt. kültagja is korlátlanul felel"
+        ],
+        correct_answer: "a bt. kültagja csak a vagyoni betétje erejéig felel, míg a kkt. minden tagja korlátlanul felel",
+        explanation: "A kkt.-ban minden tag korlátlanul felel, míg a bt.-ben csak a beltag felel korlátlanul, a kültag felelőssége a vagyoni betétjére korlátozódik.",
+        difficulty: 3,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Mi jellemzi a betéti társaság (bt.) kültagját?",
+        options: [
+          "csak a vagyoni betétje erejéig felel a társaság kötelezettségeiért",
+          "korlátlanul felel teljes vagyonával",
+          "kizárólag ő vezetheti a céget",
+          "nem fektethet be tőkét"
+        ],
+        correct_answer: "csak a vagyoni betétje erejéig felel a társaság kötelezettségeiért",
+        explanation: "A bt.-ben a kültag felelőssége a vagyoni betétje összegére korlátozódik, szemben a korlátlanul felelő beltaggal.",
+        difficulty: 1,
+      },
     ],
   },
   {
@@ -554,6 +1074,136 @@ A termelési tényezők és azok piacainak ismerete alapvető a mikroökonómiá
         correct_answer: "az explicit költség ténylegesen kifizetett kiadás, az implicit az elmaradt alternatív hozam",
         explanation: "Az explicit költségek a ténylegesen kifizetett kiadások, az implicit költségek pedig az alternatívaköltségek (pl. a tulajdonos elmaradt saját hozama).",
         difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Mi jellemzi a földet mint termelési tényezőt rövid távon?",
+        options: [
+          "kínálata rögzített, nem szaporítható",
+          "kínálata korlátlanul bővíthető",
+          "ára sosem változik",
+          "kizárólag ipari termelésben használható"
+        ],
+        correct_answer: "kínálata rögzített, nem szaporítható",
+        explanation: "A föld sajátossága, hogy rövid távon kínálata rögzített, nem szaporítható, ezért a hatékony földhasználat kiemelten fontos.",
+        difficulty: 1,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Mi tartozik a reáltőkéhez?",
+        options: [
+          "gépek, berendezések, épületek, infrastruktúra",
+          "a vállalat készpénzállománya",
+          "a munkavállalók képzettsége",
+          "a föld termékenysége"
+        ],
+        correct_answer: "gépek, berendezések, épületek, infrastruktúra",
+        explanation: "A reáltőke azokat a tartós javakat jelenti, amelyek más javak előállítását szolgálják, mint a gépek, berendezések és épületek.",
+        difficulty: 1,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Mi befolyásolja alapvetően a munka termelékenységét?",
+        options: [
+          "a képzettség (humán tőke), a technológiai ellátottság és a munkaszervezés hatékonysága",
+          "kizárólag a munkavállalók száma",
+          "az állami adóbevétel",
+          "a tőzsdei árfolyamok"
+        ],
+        correct_answer: "a képzettség (humán tőke), a technológiai ellátottság és a munkaszervezés hatékonysága",
+        explanation: "A munka termelékenységét a képzettség, a technológiai ellátottság és a munkaszervezés hatékonysága befolyásolja.",
+        difficulty: 1,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Kik alkotják a tényezőpiacokon a keresletet és a kínálatot?",
+        options: [
+          "a keresletet a vállalatok, a kínálatot a tényezők tulajdonosai (háztartások) alkotják",
+          "a keresletet a háztartások, a kínálatot a vállalatok alkotják",
+          "kizárólag az állam alkotja mindkettőt",
+          "a tényezőpiacokon nincs kereslet-kínálat viszony"
+        ],
+        correct_answer: "a keresletet a vállalatok, a kínálatot a tényezők tulajdonosai (háztartások) alkotják",
+        explanation: "A tényezőpiacokon a termelést folytató vállalatok alkotják a keresletet, míg a tényezők tulajdonosai (háztartások) a kínálatot.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Mi a gazdaság körforgásának alapja?",
+        options: [
+          "a háztartások termelési tényezőket adnak el a vállalatoknak, cserébe jövedelmet kapnak, amit javak vásárlására fordítanak",
+          "az állam osztja szét a termelési tényezőket",
+          "a vállalatok soha nem fizetnek jövedelmet a háztartásoknak",
+          "a külkereskedelem egyensúlya"
+        ],
+        correct_answer: "a háztartások termelési tényezőket adnak el a vállalatoknak, cserébe jövedelmet kapnak, amit javak vásárlására fordítanak",
+        explanation: "A körforgás alapja, hogy a háztartások termelési tényezőket adnak el a vállalatoknak, cserébe jövedelmet kapnak, amelyet a vállalatok javainak megvásárlására fordítanak.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Minek az „ára” a profit (vállalkozói nyereség)?",
+        options: [
+          "a vállalkozói készségnek",
+          "a földnek",
+          "a munkának",
+          "a tőkének"
+        ],
+        correct_answer: "a vállalkozói készségnek",
+        explanation: "A profit (vállalkozói nyereség) a vállalkozói készség — mint negyedik termelési tényező — „ára”.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Mi a földjáradék?",
+        options: [
+          "a föld termelési tényező használatáért járó ellenszolgáltatás",
+          "a munka ára",
+          "a tőke ára",
+          "az állami adóbevétel egy fajtája"
+        ],
+        correct_answer: "a föld termelési tényező használatáért járó ellenszolgáltatás",
+        explanation: "A földjáradék a föld mint termelési tényező tulajdonosának járó jövedelem, hasonlóan ahogyan a munka ára a bér, a tőkéé a kamat.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Mi a pénztőke?",
+        options: [
+          "a termeléshez szükséges, felhasználható pénzeszközök",
+          "a gépek és épületek összessége",
+          "a munkavállalók fizetése",
+          "az állam költségvetési bevétele"
+        ],
+        correct_answer: "a termeléshez szükséges, felhasználható pénzeszközök",
+        explanation: "A pénztőke a termeléshez szükséges pénzeszközöket jelenti, a reáltőkével (gépek, épületek) szemben.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Miért térhet el a gazdasági profit a puszta számviteli nyereségtől?",
+        options: [
+          "mert a gazdasági profit az implicit költségeket (alternatívaköltségeket) is figyelembe veszi",
+          "mert a gazdasági profit sosem vehető figyelembe",
+          "mert a számviteli nyereség mindig magasabb",
+          "mert a gazdasági profit kizárólag adóalap"
+        ],
+        correct_answer: "mert a gazdasági profit az implicit költségeket (alternatívaköltségeket) is figyelembe veszi",
+        explanation: "A gazdasági profit az explicit költségek mellett az implicit költségeket (pl. a tulajdonos elmaradt alternatív hozamát) is figyelembe veszi, ezért eltér a számviteli nyereségtől.",
+        difficulty: 3,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Miért kiemelten fontos a tényezőpiacok hatékony működése a gazdaság egésze számára?",
+        options: [
+          "mert a tényezőpiaci árak (bér, kamat, földjáradék, profit) egyben a háztartások jövedelmének forrásai is",
+          "mert csak az állam profitál belőle",
+          "mert megszünteti a szűkösséget",
+          "mert csak a külkereskedelemre van hatással"
+        ],
+        correct_answer: "mert a tényezőpiaci árak (bér, kamat, földjáradék, profit) egyben a háztartások jövedelmének forrásai is",
+        explanation: "A tényezőpiacokon kialakuló árak egyben a háztartások jövedelmének forrásai is, ami alapvető a gazdaság körforgásának és jóléti szintjének szempontjából.",
+        difficulty: 3,
       },
     ],
   },
@@ -667,6 +1317,136 @@ A piaci formák (tökéletes verseny, monopolisztikus verseny, oligopólium, mon
         correct_answer: "Gazdasági Versenyhivatal",
         explanation: "Magyarországon a Gazdasági Versenyhivatal felelős a versenykorlátozó magatartások (pl. kartellek) felügyeletéért és szankcionálásáért.",
         difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Melyik a négy alapvető piaci forma a verseny fokának csökkenő sorrendjében?",
+        options: [
+          "tökéletes verseny, monopolisztikus verseny, oligopólium, monopólium",
+          "monopólium, oligopólium, monopolisztikus verseny, tökéletes verseny",
+          "tökéletes verseny, oligopólium, monopólium, monopolisztikus verseny",
+          "oligopólium, tökéletes verseny, monopólium, monopolisztikus verseny"
+        ],
+        correct_answer: "tökéletes verseny, monopolisztikus verseny, oligopólium, monopólium",
+        explanation: "A négy piaci forma a verseny fokának csökkenő sorrendjében: tökéletes verseny, monopolisztikus verseny, oligopólium, monopólium.",
+        difficulty: 1,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Mit jelent, hogy a tökéletes versenyben a szereplők „árelfogadók”?",
+        options: [
+          "egyikük sem képes egyedül befolyásolni a piaci árat",
+          "mindegyikük szabadon szabhatja meg az árat",
+          "csak az állam szabhat árat",
+          "az árat kizárólag a legnagyobb vállalat határozza meg"
+        ],
+        correct_answer: "egyikük sem képes egyedül befolyásolni a piaci árat",
+        explanation: "A tökéletes versenyben olyan sok kicsi szereplő van, hogy egyikük sem tudja egyedül befolyásolni a piaci árat, ezért árelfogadók.",
+        difficulty: 1,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Mit biztosít a tökéletes verseny azonos költségszint mellett?",
+        options: [
+          "a legalacsonyabb árat és a legnagyobb termelési mennyiséget",
+          "a legmagasabb árat és a legkisebb mennyiséget",
+          "az állami árszabályozást",
+          "a piacra lépés teljes tilalmát"
+        ],
+        correct_answer: "a legalacsonyabb árat és a legnagyobb termelési mennyiséget",
+        explanation: "A tökéletes verseny biztosítja — azonos technikai és költségszint mellett — a legalacsonyabb árat és a legnagyobb termelési mennyiséget, valamint a legjobb erőforrás-allokációt.",
+        difficulty: 1,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Mi a monopólium definíciója?",
+        options: [
+          "egyetlen eladó látja el a teljes piaci keresletet, versenytárs nélkül",
+          "sok kicsi eladó verseng egymással",
+          "néhány nagy szereplő osztja fel a piacot",
+          "sok eladó differenciált termékekkel versenyzik"
+        ],
+        correct_answer: "egyetlen eladó látja el a teljes piaci keresletet, versenytárs nélkül",
+        explanation: "A monopólium olyan piac, ahol egyetlen eladó elégíti ki a teljes piaci keresletet, versenytárs nélkül.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Milyen szabály alapján határozza meg a monopolista a profitmaximalizáló termelési mennyiséget?",
+        options: [
+          "a határköltség megegyezik a határbevétellel",
+          "a teljes bevétel egyenlő a teljes költséggel",
+          "az ár egyenlő a határköltséggel",
+          "a kínálat egyenlő a kereslettel"
+        ],
+        correct_answer: "a határköltség megegyezik a határbevétellel",
+        explanation: "A monopolista úgy határozza meg a profitmaximalizáló mennyiséget, hogy a határköltsége megegyezzen a határbevételével.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Hogyan viszonyul a monopolista ára és mennyisége a társadalmilag optimálishoz?",
+        options: [
+          "magasabb árat szab és kevesebbet termel, mint amennyi társadalmilag optimális lenne",
+          "alacsonyabb árat szab és többet termel, mint a társadalmi optimum",
+          "pontosan a társadalmi optimumot állítja elő",
+          "az ár és a mennyiség nem függ a monopolista döntésétől"
+        ],
+        correct_answer: "magasabb árat szab és kevesebbet termel, mint amennyi társadalmilag optimális lenne",
+        explanation: "A monopolista magasabb árat szab és kevesebbet termel a társadalmilag optimálishoz képest, ami nem hatékony erőforrás-elosztást eredményez.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Melyik magyar példa a mesterséges monopóliumra a tananyag szerint?",
+        options: [
+          "a Paksi Atomerőmű az atomenergia-termelésben",
+          "egy kisváros zöldségpiaca",
+          "egy oligopol mobiltelefon-piac",
+          "egy tökéletesen versenyző mezőgazdasági piac"
+        ],
+        correct_answer: "a Paksi Atomerőmű az atomenergia-termelésben",
+        explanation: "A Paksi Atomerőmű az atomenergia-termelésben jogi-intézményi védelem (koncesszió) által biztosított mesterséges monopóliumra példa.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Mi jellemző a természetes monopóliumra jellemzően szolgáltatás szempontjából?",
+        options: [
+          "a vezetékes közműszolgáltatások, ahol a magas fix költségek miatt egy szereplőnek éri meg működnie",
+          "egy szabadalommal védett gyógyszergyártás",
+          "egy sok szereplős éttermi piac",
+          "egy versenyző mezőgazdasági termékpiac"
+        ],
+        correct_answer: "a vezetékes közműszolgáltatások, ahol a magas fix költségek miatt egy szereplőnek éri meg működnie",
+        explanation: "A természetes monopólium jellemzően a vezetékes közműszolgáltatásoknál alakul ki, ahol a magas fix költségek miatt egyetlen szereplőnek éri meg működnie.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Melyik uniós intézmény felügyeli a versenypolitikát az Európai Unióban?",
+        options: [
+          "az Európai Bizottság versenypolitikai főigazgatósága",
+          "az Európai Központi Bank",
+          "az Európai Parlament Költségvetési Bizottsága",
+          "az Európai Számvevőszék"
+        ],
+        correct_answer: "az Európai Bizottság versenypolitikai főigazgatósága",
+        explanation: "Az Európai Unióban az Európai Bizottság versenypolitikai főigazgatósága felügyeli a piacokat és a versenykorlátozó magatartásokat.",
+        difficulty: 3,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Miért vezethet gyakran kartellhez (összejátszáshoz) az oligopol piaci szerkezet?",
+        options: [
+          "mert a szereplők döntései kölcsönösen függenek egymástól, és az összejátszás magasabb közös profitot eredményezhet",
+          "mert az oligopol piacon nincs verseny sem árban, sem egyéb tényezőkben",
+          "mert az oligopóliumban törvény kötelezi a szereplőket az árak egységesítésére",
+          "mert az oligopol piacokon mindig csak egy szereplő van"
+        ],
+        correct_answer: "mert a szereplők döntései kölcsönösen függenek egymástól, és az összejátszás magasabb közös profitot eredményezhet",
+        explanation: "Az oligopolisták döntései kölcsönösen függnek egymástól, ami gyakran vezet hallgatólagos vagy kifejezett összejátszáshoz (kartellhez), mivel ez magasabb közös profitot eredményezhet.",
+        difficulty: 3,
       },
     ],
   },

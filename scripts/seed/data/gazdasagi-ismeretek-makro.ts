@@ -116,6 +116,136 @@ A munkaerőpiac és a munkanélküliség vizsgálata a makroökonómia egyik kö
         explanation: "A Phillips-görbe hagyományosan azt feltételezi, hogy alacsonyabb munkanélküliség jellemzően magasabb inflációval jár együtt, és fordítva.",
         difficulty: 2,
       },
+      {
+        question_type: "multiple_choice",
+        question_text: "Mihez viszonyítja a munkanélküliségi ráta a munkanélküliek számát?",
+        options: [
+          "a gazdaságilag aktív népességhez (foglalkoztatottak és munkanélküliek együttes létszámához)",
+          "a teljes népességhez, gyermekeket is beleértve",
+          "az állami költségvetés kiadásaihoz",
+          "a GDP nagyságához"
+        ],
+        correct_answer: "a gazdaságilag aktív népességhez (foglalkoztatottak és munkanélküliek együttes létszámához)",
+        explanation: "A munkanélküliségi ráta a munkanélküliek számát a gazdaságilag aktív népességhez, azaz a foglalkoztatottak és munkanélküliek együttes létszámához viszonyítja.",
+        difficulty: 1,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Melyik munkanélküliség-típus átmeneti, munkahelyváltás vagy a munkaerőpiacra való belépés idején jelentkezik?",
+        options: [
+          "a súrlódásos (frikciós) munkanélküliség",
+          "a strukturális munkanélküliség",
+          "a konjunkturális munkanélküliség",
+          "a szezonális munkanélküliség"
+        ],
+        correct_answer: "a súrlódásos (frikciós) munkanélküliség",
+        explanation: "A súrlódásos (frikciós) munkanélküliség átmeneti jellegű, amikor valaki munkahelyet vált vagy éppen belép a munkaerőpiacra.",
+        difficulty: 1,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Mely ágazatokban jellemző elsősorban a szezonális (idényjellegű) munkanélküliség?",
+        options: [
+          "mezőgazdaság, turizmus, építőipar",
+          "banki szolgáltatások",
+          "informatikai szektor",
+          "közigazgatás"
+        ],
+        correct_answer: "mezőgazdaság, turizmus, építőipar",
+        explanation: "A szezonális munkanélküliség olyan ágazatokban jelentkezik, ahol az évszakok váltakozása jelentősen befolyásolja a munkaerő-igényt, mint a mezőgazdaság, a turizmus vagy az építőipar.",
+        difficulty: 1,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Mi alakítja ki a bért a munkaerőpiacon?",
+        options: [
+          "a munkakereslet és a munkakínálat találkozása",
+          "kizárólag az állami rendelet",
+          "a fogyasztói árindex",
+          "a tőzsdei árfolyamok"
+        ],
+        correct_answer: "a munkakereslet és a munkakínálat találkozása",
+        explanation: "A munkaerőpiacon kialakuló ár, a bér, a munkakereslet (vállalatok igénye) és a munkakínálat (munkavállalók kínálata) találkozásából alakul ki.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Miért vezethet tartós munkanélküliséghez a bérek „lefelé rugalmatlansága”?",
+        options: [
+          "mert a bérek nehezen csökkennek, így a piac nem tud egyensúlyba kerülni még kínálati többlet esetén sem",
+          "mert a bérek mindig azonnal csökkennek egyensúly hiányában",
+          "mert az állam megtiltja a bérek emelését",
+          "mert a munkanélküliség sosem függ a bérek szintjétől"
+        ],
+        correct_answer: "mert a bérek nehezen csökkennek, így a piac nem tud egyensúlyba kerülni még kínálati többlet esetén sem",
+        explanation: "Ha a bérek nehezen csökkennek (lefelé rugalmatlanok), a munkaerőpiac nem tud egyensúlyba kerülni, ami tartós munkanélküliséghez vezethet.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Mi a különbség a regisztrált és a tényleges munkanélküliség között?",
+        options: [
+          "a tényleges munkanélküliség a rejtett munkanélkülieket (pl. az álláskeresést feladókat) is magában foglalhatja, a regisztrált csak a hivatalosan bejelentkezetteket",
+          "nincs közöttük különbség",
+          "a regisztrált munkanélküliség mindig magasabb",
+          "a tényleges munkanélküliség csak a fiatalokra vonatkozik"
+        ],
+        correct_answer: "a tényleges munkanélküliség a rejtett munkanélkülieket (pl. az álláskeresést feladókat) is magában foglalhatja, a regisztrált csak a hivatalosan bejelentkezetteket",
+        explanation: "A regisztrált munkanélküliség csak a hivatalosan bejelentkezett álláskeresőket számolja, míg a tényleges munkanélküliség a rejtett munkanélkülieket is magában foglalhatja.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Milyen következménnyel jár a munkanélküliség az egyén számára?",
+        options: [
+          "jövedelemkiesést, létbizonytalanságot és a képzettség leértékelődését okozhatja",
+          "automatikusan magasabb jövedelmet biztosít",
+          "nincs hatással az egyén életére",
+          "mindig gyors visszatérést jelent a munkaerőpiacra"
+        ],
+        correct_answer: "jövedelemkiesést, létbizonytalanságot és a képzettség leértékelődését okozhatja",
+        explanation: "A munkanélküliség az egyén szintjén jövedelemkiesést, létbizonytalanságot, valamint a képzettség és munkatapasztalat leértékelődését okozhatja.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Milyen hatással van a munkanélküliség a gazdaság egészére?",
+        options: [
+          "kihasználatlan termelési kapacitást (elmaradt GDP-t) jelent, és növeli az állami szociális kiadásokat",
+          "mindig növeli az adóbevételeket",
+          "csökkenti az állami kiadásokat",
+          "nincs hatással a GDP-re"
+        ],
+        correct_answer: "kihasználatlan termelési kapacitást (elmaradt GDP-t) jelent, és növeli az állami szociális kiadásokat",
+        explanation: "A munkanélküliség a gazdaság szintjén kihasználatlan termelési kapacitást (elmaradt GDP-t) jelent, miközben növeli a szociális kiadásokat és csökkenti az adóbevételeket.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Milyen kockázatot hordoz, ha a minimálbért a piaci egyensúlyi bér fölé állítják?",
+        options: [
+          "önmagában is munkanélküliséget okozhat",
+          "automatikusan megszünteti a munkanélküliséget",
+          "nincs hatással a foglalkoztatásra",
+          "csökkenti az állami kiadásokat"
+        ],
+        correct_answer: "önmagában is munkanélküliséget okozhat",
+        explanation: "Ha a minimálbér a piaci egyensúlyi bér fölé kerül megállapításra, önmagában is munkanélküliséget okozhat, mivel a vállalatok kevesebb munkaerőt hajlandóak felvenni.",
+        difficulty: 3,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Mit jelent a természetes munkanélküliségi ráta?",
+        options: [
+          "azt a szintet, amely a súrlódásos és strukturális munkanélküliségből mindig fennáll, és a teljes foglalkoztatottság célját jelzi",
+          "a 0%-os munkanélküliséget",
+          "a konjunkturális munkanélküliség szintjét",
+          "az államilag garantált munkanélküliségi rátát"
+        ],
+        correct_answer: "azt a szintet, amely a súrlódásos és strukturális munkanélküliségből mindig fennáll, és a teljes foglalkoztatottság célját jelzi",
+        explanation: "A természetes munkanélküliségi ráta azt a szintet jelzi, amely a dinamikus gazdaságban mindig meglévő súrlódásos és strukturális munkanélküliségből fakad, és a „teljes foglalkoztatottság” gazdaságpolitikai céljának tekintik.",
+        difficulty: 3,
+      },
     ],
   },
   {
@@ -219,6 +349,136 @@ A GDP és a GNI a nemzetgazdaság teljesítményének legfontosabb mérőszámai
         explanation: "A GDP nem tükrözi a jövedelmi egyenlőtlenségeket, a nem piaci (háztartási, önkéntes) tevékenységeket és a környezeti hatásokat sem.",
         difficulty: 2,
       },
+      {
+        question_type: "multiple_choice",
+        question_text: "Mi volt a GNI korábbi elnevezése?",
+        options: [
+          "GNP (bruttó nemzeti termék)",
+          "GDP (bruttó hazai termék)",
+          "CPI (fogyasztói árindex)",
+          "PPP (vásárlóerő-paritás)"
+        ],
+        correct_answer: "GNP (bruttó nemzeti termék)",
+        explanation: "A GNI korábbi neve GNP (bruttó nemzeti termék) volt.",
+        difficulty: 1,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Melyik mutatót használják jellemzően az országok gazdasági fejlettségének és életszínvonalának összehasonlítására?",
+        options: [
+          "az egy főre jutó GDP-t",
+          "a nominál GDP abszolút értékét",
+          "a költségvetési hiányt",
+          "a munkanélküliségi rátát"
+        ],
+        correct_answer: "az egy főre jutó GDP-t",
+        explanation: "Az egy főre jutó GDP a teljes GDP-t a lakosság létszámával osztva teszi lehetővé a különböző méretű országok teljesítményének összehasonlítását.",
+        difficulty: 1,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Melyik kiegészítő mutatót alkalmazzák egyre inkább a GDP mellett a jólét mérésére?",
+        options: [
+          "Human Development Index (HDI)",
+          "fogyasztói árindex (CPI)",
+          "munkanélküliségi ráta",
+          "államadósság-ráta"
+        ],
+        correct_answer: "Human Development Index (HDI)",
+        explanation: "A GDP korlátai miatt egyre inkább alkalmaznak kiegészítő mutatókat, mint a Human Development Index (HDI) vagy a boldogságindexek.",
+        difficulty: 1,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Hogyan számítja ki a GDP-t a termelési oldali megközelítés?",
+        options: [
+          "az egyes gazdasági ágazatokban létrehozott hozzáadott érték összegzésével",
+          "a fogyasztás, beruházás, állami kiadás és nettó export összegzésével",
+          "a bérek, kamatok, profitok összegzésével",
+          "az export és import különbségeként"
+        ],
+        correct_answer: "az egyes gazdasági ágazatokban létrehozott hozzáadott érték összegzésével",
+        explanation: "A termelési oldali megközelítés az egyes gazdasági ágazatokban létrehozott hozzáadott érték összegzésével számítja ki a GDP-t.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Mit összegez a jövedelmi oldali GDP-számítási megközelítés?",
+        options: [
+          "a termelési tényezők tulajdonosainak jövedelmeit (bérek, kamatok, profitok, földjáradékok)",
+          "a fogyasztási kiadásokat és a beruházásokat",
+          "az exportot és az importot",
+          "az állami költségvetés bevételeit"
+        ],
+        correct_answer: "a termelési tényezők tulajdonosainak jövedelmeit (bérek, kamatok, profitok, földjáradékok)",
+        explanation: "A jövedelmi oldali megközelítés a termelési tényezők tulajdonosainak jövedelmeit (bér, kamat, profit, földjáradék) összegzi.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Mit jelez a GDP és a GNI közötti különbség egy ország esetében?",
+        options: [
+          "mennyire nyitott a gazdaság a külföldi tőkebefektetések és a migráció felé",
+          "a gazdaság inflációs rátáját",
+          "az állam költségvetési hiányát",
+          "a munkanélküliségi ráta szintjét"
+        ],
+        correct_answer: "mennyire nyitott a gazdaság a külföldi tőkebefektetések és a migráció felé",
+        explanation: "A GDP és a GNI közötti különbség jól mutatja, mennyire nyitott egy ország gazdasága a külföldi tőkebefektetések és a migráció (munkaerő-mozgás) felé.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Mi az egy főre jutó GDP egyik fontos korlátja?",
+        options: [
+          "nem mutatja a jövedelem eloszlását (egyenlőtlenségeket) a lakosság körében",
+          "csak fejlődő országokra alkalmazható",
+          "nem lehet nemzetközileg összehasonlítani",
+          "kizárólag a mezőgazdasági termelést méri"
+        ],
+        correct_answer: "nem mutatja a jövedelem eloszlását (egyenlőtlenségeket) a lakosság körében",
+        explanation: "Az egy főre jutó GDP nem mutatja meg, hogyan oszlik el a jövedelem a lakosság körében, azaz nem tükrözi az egyenlőtlenségeket.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Miért nem tükrözi jól a GDP a nem piaci tevékenységeket?",
+        options: [
+          "mert figyelmen kívül hagyja a háztartási munkát, önkéntességet és a feketegazdaságot",
+          "mert csak az állami szektort méri",
+          "mert kizárólag a szolgáltatásokat veszi figyelembe",
+          "mert a GDP mindig alábecsüli az ipari termelést"
+        ],
+        correct_answer: "mert figyelmen kívül hagyja a háztartási munkát, önkéntességet és a feketegazdaságot",
+        explanation: "A GDP figyelmen kívül hagyja a nem piaci (háztartási, önkéntes, feketegazdasági) tevékenységeket, ezért nem teljes körű jóléti mutató.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Miért fontos, hogy a GDP három mérési módszere (termelési, jövedelmi, felhasználási oldal) elméletileg azonos eredményt adjon?",
+        options: [
+          "mert ez igazolja, hogy a gazdaság körforgásában a kibocsátás, a jövedelem és a kiadás értéke megegyezik",
+          "mert csak így számolható ki az államadósság",
+          "mert ez határozza meg a jegybanki alapkamatot",
+          "mert csak így mérhető az infláció"
+        ],
+        correct_answer: "mert ez igazolja, hogy a gazdaság körforgásában a kibocsátás, a jövedelem és a kiadás értéke megegyezik",
+        explanation: "A három megközelítés azonos eredménye azt tükrözi, hogy a gazdaság körforgásában a kibocsátás, a jövedelem és a felhasználás (kiadás) értéke egyensúlyban van egymással.",
+        difficulty: 3,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Mi az egyik fő tartalmi eltérés a GDP és a GNI között?",
+        options: [
+          "a GNI magában foglalja a külföldön dolgozó állampolgárok hazautalt jövedelmét, a GDP nem",
+          "a GDP mindig magasabb, mint a GNI minden országban",
+          "a GNI nem veszi figyelembe semmilyen külföldi jövedelmet",
+          "a GDP és a GNI mindig pontosan megegyezik"
+        ],
+        correct_answer: "a GNI magában foglalja a külföldön dolgozó állampolgárok hazautalt jövedelmét, a GDP nem",
+        explanation: "A GNI a tulajdoni elv alapján magában foglalja a külföldön dolgozó állampolgárok hazautalt jövedelmét is, amit a területi elvű GDP nem tartalmaz.",
+        difficulty: 3,
+      },
     ],
   },
   {
@@ -316,6 +576,136 @@ Az infláció a makrogazdaság egyik legfontosabb, a lakosság mindennapi élet�
         correct_answer: "az alapkamat emelésével",
         explanation: "A jegybank az alapkamat emelésével drágítja a hitelfelvételt, ami visszafogja a keresletet és mérsékli az inflációs nyomást.",
         difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Mi a defláció?",
+        options: [
+          "az árszínvonal tartós csökkenése",
+          "az árszínvonal tartós emelkedése",
+          "a munkanélküliség növekedése",
+          "a GDP növekedése"
+        ],
+        correct_answer: "az árszínvonal tartós csökkenése",
+        explanation: "A defláció az infláció ellentéte: az árszínvonal tartós csökkenése, amely halasztott fogyasztást és csökkenő beruházási kedvet okozhat.",
+        difficulty: 1,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Mit jelent a kúszó infláció?",
+        options: [
+          "évi néhány százalékos, viszonylag kezelhető mértékű áremelkedést",
+          "évi kétszámjegyű vagy magasabb áremelkedést",
+          "havi több tíz- vagy százszázalékos áremelkedést",
+          "az árszínvonal csökkenését"
+        ],
+        correct_answer: "évi néhány százalékos, viszonylag kezelhető mértékű áremelkedést",
+        explanation: "A kúszó infláció évi néhány százalékos, a gazdaság számára viszonylag kezelhető mértékű áremelkedést jelent.",
+        difficulty: 1,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Mit jelent a hiperinfláció?",
+        options: [
+          "extrém mértékű, gyakran havi több tíz- vagy százszázalékos áremelkedést",
+          "évi 2-3%-os, kezelhető áremelkedést",
+          "az árszínvonal csökkenését",
+          "a munkanélküliség csökkenését"
+        ],
+        correct_answer: "extrém mértékű, gyakran havi több tíz- vagy százszázalékos áremelkedést",
+        explanation: "A hiperinfláció extrém mértékű, gyakran havi több tíz- vagy százszázalékos áremelkedést jelent, amely ellehetetleníti a pénz funkcióinak betöltését.",
+        difficulty: 1,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Mit jelent a vágtató infláció?",
+        options: [
+          "évi kétszámjegyű vagy magasabb, már súlyosan torzító hatású áremelkedést",
+          "évi néhány százalékos áremelkedést",
+          "havi százszázalékos áremelkedést",
+          "az árszínvonal stagnálását"
+        ],
+        correct_answer: "évi kétszámjegyű vagy magasabb, már súlyosan torzító hatású áremelkedést",
+        explanation: "A vágtató infláció évi kétszámjegyű vagy magasabb, már súlyosan torzító hatású áremelkedést jelent.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Mi okozza a kínálati (költség-) inflációt?",
+        options: [
+          "a termelési költségek (nyersanyagárak, bérek, energiaárak) emelkedése, amit a vállalatok beépítenek az áraikba",
+          "az összkereslet túlzott bővülése",
+          "a jegybank alapkamat-emelése",
+          "a munkanélküliség csökkenése"
+        ],
+        correct_answer: "a termelési költségek (nyersanyagárak, bérek, energiaárak) emelkedése, amit a vállalatok beépítenek az áraikba",
+        explanation: "A kínálati (költség-) infláció akkor jelentkezik, amikor a termelési költségek emelkednek, és a vállalatok ezt beépítik az áraikba, például energiaválságok idején.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Mi az importált infláció?",
+        options: [
+          "amikor a külföldi árszínvonal-emelkedés vagy az árfolyam-gyengülés begyűrűzik a hazai árakba",
+          "amikor a hazai infláció exportálódik külföldre",
+          "amikor a jegybank importból fedezi az árstabilitást",
+          "amikor az állam importvámot vet ki"
+        ],
+        correct_answer: "amikor a külföldi árszínvonal-emelkedés vagy az árfolyam-gyengülés begyűrűzik a hazai árakba",
+        explanation: "Az importált infláció akkor jelentkezik, amikor a külföldi árszínvonal-emelkedés vagy a hazai valuta gyengülése begyűrűzik a hazai árakba.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Mit jelent az inflációs várakozásokból fakadó öngerjesztő infláció?",
+        options: [
+          "ha a szereplők magas inflációra számítanak, ez befolyásolja béralku- és árazási döntéseiket, ami önmagában is inflációt gerjeszthet",
+          "amikor az infláció mindig azonnal megszűnik várakozás nélkül",
+          "amikor a kormány garantálja az árstabilitást",
+          "amikor a defláció önmagát erősíti"
+        ],
+        correct_answer: "ha a szereplők magas inflációra számítanak, ez befolyásolja béralku- és árazási döntéseiket, ami önmagában is inflációt gerjeszthet",
+        explanation: "Ha a gazdasági szereplők magas inflációra számítanak, ez befolyásolja béralku- és árazási döntéseiket, ami önmagában is inflációt gerjeszthet.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Kik járnak rosszabbul jellemzően egy váratlan infláció esetén?",
+        options: [
+          "a fix jövedelműek (pl. nyugdíjasok, közalkalmazottak), ha jövedelmük nem követi az árak emelkedését",
+          "kizárólag a vállalatok tulajdonosai",
+          "az adósok minden esetben",
+          "a jegybank alkalmazottai"
+        ],
+        correct_answer: "a fix jövedelműek (pl. nyugdíjasok, közalkalmazottak), ha jövedelmük nem követi az árak emelkedését",
+        explanation: "Az infláció különösen a fix jövedelműek — nyugdíjasok, közalkalmazottak — számára hátrányos, ha jövedelmük nem követi az árak emelkedését.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Hogyan hat a nem várt infláció az adósok és a hitelezők helyzetére?",
+        options: [
+          "az adósok relatíve nyernek, a hitelezők és megtakarítók vesztenek rajta",
+          "a hitelezők mindig nyernek, az adósok mindig vesztenek",
+          "sem az adósokra, sem a hitelezőkre nincs hatással",
+          "csak az államra van hatással"
+        ],
+        correct_answer: "az adósok relatíve nyernek, a hitelezők és megtakarítók vesztenek rajta",
+        explanation: "A nem várt infláción az adósok relatíve nyernek (mivel reálértékben kevesebbet kell visszafizetniük), míg a hitelezők és megtakarítók vesztenek.",
+        difficulty: 3,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Milyen egyéb gazdaságpolitikai eszközzel mérsékelhető az infláció a monetáris politika mellett?",
+        options: [
+          "fiskális (költségvetési) politikával, például az állami kiadások visszafogásával",
+          "kizárólag a minimálbér emelésével",
+          "az export teljes betiltásával",
+          "a munkanélküliségi ráta növelésével törvényileg"
+        ],
+        correct_answer: "fiskális (költségvetési) politikával, például az állami kiadások visszafogásával",
+        explanation: "Az infláció mérséklésére a monetáris politika mellett a fiskális politika (az állami kiadások visszafogása) és extrém esetben közvetlen árszabályozás is alkalmazható.",
+        difficulty: 3,
       },
     ],
   },
@@ -439,6 +829,136 @@ A gazdasági növekedés és a gazdasági ciklusok megértése alapvető a makro
         explanation: "Recesszió idején a gazdaságpolitika jellemzően élénkítő intézkedésekkel (állami kiadások növelése, kamatcsökkentés) próbálja serkenteni a gazdaságot.",
         difficulty: 2,
       },
+      {
+        question_type: "multiple_choice",
+        question_text: "Mit jelöl a gazdasági ciklus csúcspontja?",
+        options: [
+          "a gazdasági aktivitás maximumát",
+          "a gazdasági aktivitás minimumát",
+          "az árszínvonal csökkenését",
+          "a munkanélküliség maximumát"
+        ],
+        correct_answer: "a gazdasági aktivitás maximumát",
+        explanation: "A csúcspont a gazdasági ciklus azon szakasza, amikor a gazdasági aktivitás eléri a maximumát, mielőtt a visszaesés megkezdődne.",
+        difficulty: 1,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Mit jelöl a gazdasági ciklus mélypontja?",
+        options: [
+          "azt a pontot, ahonnan újra megindulhat a fellendülés",
+          "a gazdasági aktivitás maximumát",
+          "az árstabilitás elérését",
+          "a teljes foglalkoztatottságot"
+        ],
+        correct_answer: "azt a pontot, ahonnan újra megindulhat a fellendülés",
+        explanation: "A mélypont a visszaesés legalsó pontja, ahonnan a gazdaság újra a fellendülés fázisába léphet.",
+        difficulty: 1,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Melyik történelmi esemény a depresszió klasszikus példája?",
+        options: [
+          "az 1929-33-as nagy gazdasági világválság",
+          "a 2020-as koronavírus-járvány",
+          "az 1945-46-os pengőinfláció",
+          "a 2008-as bankválság önmagában"
+        ],
+        correct_answer: "az 1929-33-as nagy gazdasági világválság",
+        explanation: "Az 1929-33-as nagy gazdasági világválság a depresszió klasszikus példája: elhúzódó, mély visszaesés súlyos munkanélküliséggel.",
+        difficulty: 1,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Melyik négy tényező határozza meg alapvetően a hosszú távú gazdasági növekedést?",
+        options: [
+          "a munkaerő, a tőkeállomány, a technológiai fejlődés és az intézményi környezet",
+          "az árszínvonal, a kamatláb, az adókulcs és a vámok",
+          "a fogyasztói bizalom, a tőzsdeindex, az export és az import",
+          "a munkanélküliségi ráta, az infláció, a GDP és a kamat"
+        ],
+        correct_answer: "a munkaerő, a tőkeállomány, a technológiai fejlődés és az intézményi környezet",
+        explanation: "A hosszú távú gazdasági növekedést a munkaerő mennyisége és minősége, a tőkeállomány bővülése, a technológiai fejlődés és az intézményi-szabályozási környezet minősége határozza meg.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Mi a keresleti sokk?",
+        options: [
+          "a fogyasztói vagy beruházási kedv hirtelen megváltozása",
+          "a nyersanyagárak hirtelen emelkedése",
+          "a technológiai fejlődés lassulása",
+          "az állami tervezés bevezetése"
+        ],
+        correct_answer: "a fogyasztói vagy beruházási kedv hirtelen megváltozása",
+        explanation: "A keresleti sokk a fogyasztói vagy beruházási kedv hirtelen megváltozását jelenti, amely a gazdasági ciklusok kialakulásának egyik oka.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Mi a kínálati sokk?",
+        options: [
+          "pl. nyersanyagár-robbanások, olajválságok, amelyek a kínálati oldalt érintik",
+          "a fogyasztói kedv hirtelen javulása",
+          "a jegybanki alapkamat csökkentése",
+          "a munkanélküliségi ráta csökkenése"
+        ],
+        correct_answer: "pl. nyersanyagár-robbanások, olajválságok, amelyek a kínálati oldalt érintik",
+        explanation: "A kínálati sokk olyan váratlan esemény (pl. olajválság, nyersanyagár-robbanás), amely a termelés kínálati oldalát érinti és ciklikus hullámzást okozhat.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Milyen mutatókkal követik nyomon a gazdasági ciklus fázisait?",
+        options: [
+          "a GDP növekedési ütemét, a munkanélküliségi rátát, az ipari termelést és a bizalmi indexeket",
+          "kizárólag az államadósság szintjét",
+          "csak a tőzsdeindexeket",
+          "kizárólag a fogyasztói árindexet"
+        ],
+        correct_answer: "a GDP növekedési ütemét, a munkanélküliségi rátát, az ipari termelést és a bizalmi indexeket",
+        explanation: "A ciklus fázisainak követésére a GDP növekedési ütemét, a munkanélküliségi rátát, az ipari termelést, a bizalmi indexeket és a tőzsdeindexeket egyaránt használják.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Mi jellemzi a restriktív gazdaságpolitikát túlfűtött fellendülés idején?",
+        options: [
+          "kamatemeléssel és kiadáscsökkentéssel próbálja megelőzni a túlzott inflációt",
+          "az állami kiadások növelésével serkenti a gazdaságot",
+          "a kamatok csökkentésével élénkíti a hitelezést",
+          "megszünteti az adózást"
+        ],
+        correct_answer: "kamatemeléssel és kiadáscsökkentéssel próbálja megelőzni a túlzott inflációt",
+        explanation: "Túlfűtött fellendülés idején a gazdaságpolitika szigorító (restriktív) intézkedésekkel — kamatemelés, kiadáscsökkentés — próbálja megelőzni a túlzott inflációt.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Miért fontos az intézményi és szabályozási környezet minősége a gazdasági növekedés szempontjából?",
+        options: [
+          "mert alapvetően befolyásolja, mennyire hatékonyan tudják a szereplők kihasználni a rendelkezésre álló erőforrásokat",
+          "mert kizárólag a külkereskedelmet érinti",
+          "mert csak a fejlődő országokban van jelentősége",
+          "mert nincs hatással a gazdasági teljesítményre"
+        ],
+        correct_answer: "mert alapvetően befolyásolja, mennyire hatékonyan tudják a szereplők kihasználni a rendelkezésre álló erőforrásokat",
+        explanation: "Az intézményi és szabályozási környezet (jogbiztonság, verseny, korrupció mértéke) alapvetően befolyásolja, mennyire hatékonyan tudják a gazdasági szereplők kihasználni az erőforrásaikat.",
+        difficulty: 3,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Mi a fő különbség a recesszió és a depresszió között?",
+        options: [
+          "a depresszió különösen elhúzódó és mély visszaesés, súlyos tartós munkanélküliséggel, szemben a rövidebb recesszióval",
+          "nincs közöttük különbség",
+          "a recesszió mindig súlyosabb, mint a depresszió",
+          "a depresszió az árszínvonal emelkedését jelenti"
+        ],
+        correct_answer: "a depresszió különösen elhúzódó és mély visszaesés, súlyos tartós munkanélküliséggel, szemben a rövidebb recesszióval",
+        explanation: "A depresszió a recessziónál különösen elhúzódó és mélyebb visszaesés, amely súlyos, tartós munkanélküliséggel és a kibocsátás drasztikus csökkenésével jár.",
+        difficulty: 3,
+      },
     ],
   },
   {
@@ -557,6 +1077,136 @@ Az állam gazdasági szerepvállalásának és a költségvetési politikának a
         explanation: "A költségvetési hiányt az állam jellemzően hitelfelvétellel (államkötvények kibocsátásával) fedezi, ami növeli az államadósságot.",
         difficulty: 2,
       },
+      {
+        question_type: "multiple_choice",
+        question_text: "Mi az állami költségvetés?",
+        options: [
+          "az állam éves pénzügyi terve, amely összeveti a várható bevételeket és kiadásokat",
+          "csak a nemzeti bank éves jelentése",
+          "kizárólag az adótörvények gyűjteménye",
+          "a GDP-t mérő statisztikai kimutatás"
+        ],
+        correct_answer: "az állam éves pénzügyi terve, amely összeveti a várható bevételeket és kiadásokat",
+        explanation: "Az állami költségvetés az állam éves pénzügyi terve, amely rendszerezett formában veti össze a várható állami bevételeket és kiadásokat.",
+        difficulty: 1,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Mi alkotja elsősorban az állami költségvetés bevételi oldalát?",
+        options: [
+          "az adóbevételek (SZJA, társasági adó, ÁFA, járulékok)",
+          "kizárólag az uniós támogatások",
+          "az állami vállalatok osztaléka",
+          "a devizatartalékok hozama"
+        ],
+        correct_answer: "az adóbevételek (SZJA, társasági adó, ÁFA, járulékok)",
+        explanation: "A költségvetés bevételi oldalát elsősorban az adóbevételek — SZJA, társasági adó, ÁFA, járulékok — alkotják.",
+        difficulty: 1,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Mikor beszélünk kiegyensúlyozott költségvetésről?",
+        options: [
+          "amikor az állam kiadásai megegyeznek a bevételeivel",
+          "amikor a kiadások meghaladják a bevételeket",
+          "amikor a bevételek meghaladják a kiadásokat",
+          "amikor megszűnik az adóztatás"
+        ],
+        correct_answer: "amikor az állam kiadásai megegyeznek a bevételeivel",
+        explanation: "Kiegyensúlyozott költségvetésről akkor beszélünk, ha az állam kiadásai megegyeznek a bevételeivel.",
+        difficulty: 1,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Mit jelent a költségvetési többlet?",
+        options: [
+          "amikor az állami bevételek meghaladják a kiadásokat",
+          "amikor a kiadások meghaladják a bevételeket",
+          "amikor a bevételek és kiadások megegyeznek",
+          "amikor megszűnik az államadósság"
+        ],
+        correct_answer: "amikor az állami bevételek meghaladják a kiadásokat",
+        explanation: "Költségvetési többlet akkor jön létre, ha az állam bevételei meghaladják a kiadásait.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Mi jellemzi a restriktív (szigorító) fiskális politikát?",
+        options: [
+          "az állami kiadások csökkentése és/vagy az adók emelése",
+          "az állami kiadások növelése és az adók csökkentése",
+          "a jegybanki alapkamat csökkentése",
+          "az államadósság korlátlan növelése"
+        ],
+        correct_answer: "az állami kiadások csökkentése és/vagy az adók emelése",
+        explanation: "A restriktív fiskális politika az állami kiadások csökkentésével és/vagy az adók emelésével próbálja visszafogni a túlfűtött gazdaságot vagy csökkenteni a hiányt.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Mit jelent az adóztatás fiskális funkciója?",
+        options: [
+          "az állami feladatok finanszírozásához szükséges bevétel biztosítását",
+          "a jövedelmi egyenlőtlenségek mérséklését",
+          "a dohányzás visszaszorítását",
+          "a piaci verseny szabályozását"
+        ],
+        correct_answer: "az állami feladatok finanszírozásához szükséges bevétel biztosítását",
+        explanation: "A fiskális funkció az állami feladatok (oktatás, egészségügy, honvédelem) finanszírozásához szükséges bevétel biztosítását jelenti.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Mit jelent az adóztatás újraelosztási funkciója?",
+        options: [
+          "a jövedelmi egyenlőtlenségek mérséklését, jellemzően progresszív adózással",
+          "az állami bevételek maximalizálását",
+          "a piaci kudarcok teljes megszüntetését",
+          "a külkereskedelem ösztönzését"
+        ],
+        correct_answer: "a jövedelmi egyenlőtlenségek mérséklését, jellemzően progresszív adózással",
+        explanation: "Az újraelosztási funkció a jövedelmi egyenlőtlenségek mérséklését célozza, jellemzően a progresszív adózás révén.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Mit jelent az adóztatás szabályozó (ösztönző) funkciója?",
+        options: [
+          "bizonyos magatartások (pl. dohányzás) visszaszorítását vagy éppen ösztönzését (pl. innováció adókedvezménye) az adórendszeren keresztül",
+          "kizárólag az állami bevételek növelését",
+          "a jövedelmi egyenlőtlenségek megszüntetését",
+          "a költségvetési hiány automatikus eltüntetését"
+        ],
+        correct_answer: "bizonyos magatartások (pl. dohányzás) visszaszorítását vagy éppen ösztönzését (pl. innováció adókedvezménye) az adórendszeren keresztül",
+        explanation: "A szabályozó funkció bizonyos magatartások visszaszorítását (pl. magas jövedéki adó a dohányra) vagy ösztönzését (pl. adókedvezmény innovációra) jelenti.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Mi jellemzi a jóléti állam koncepcióját, és melyik modell alkalmaz magasabb adóterhelést és kiterjedtebb szociális ellátást?",
+        options: [
+          "a skandináv jóléti modell magasabb adóterhelést és kiterjedtebb szociális ellátórendszert alkalmaz, mint az angolszász modellek",
+          "minden ország azonos jóléti modellt alkalmaz",
+          "az angolszász modell mindig magasabb adóterhelést jelent",
+          "a jóléti állam kizárólag a nyugdíjrendszerre korlátozódik"
+        ],
+        correct_answer: "a skandináv jóléti modell magasabb adóterhelést és kiterjedtebb szociális ellátórendszert alkalmaz, mint az angolszász modellek",
+        explanation: "A jóléti állam mértéke és formája országonként eltér: a skandináv modell magasabb adóterhelést és kiterjedtebb szociális ellátórendszert alkalmaz, mint az angolszász modellek.",
+        difficulty: 3,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Miért fontos az állam gazdasági stabilizáló szerepe?",
+        options: [
+          "mert segít tompítani a gazdasági ciklusok szélsőségeit és elősegíteni az árstabilitást és a teljes foglalkoztatottságot",
+          "mert megszünteti a piaci mechanizmust",
+          "mert kizárólag az államadósságot növeli",
+          "mert nincs hatással a gazdasági ingadozásokra"
+        ],
+        correct_answer: "mert segít tompítani a gazdasági ciklusok szélsőségeit és elősegíteni az árstabilitást és a teljes foglalkoztatottságot",
+        explanation: "Az állam gazdasági stabilizáló szerepe abban áll, hogy tompítja a gazdasági ciklusok szélsőségeit, és elősegíti az árstabilitást, illetve a teljes foglalkoztatottságot.",
+        difficulty: 3,
+      },
     ],
   },
   {
@@ -659,6 +1309,136 @@ A modern pénz és a jegybanki monetáris politika megértése alapvető a makro
         correct_answer: "a Monetáris Tanács",
         explanation: "Az MNB Monetáris Tanácsa dönt rendszeres üléseken többek között az alapkamat szintjéről.",
         difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Mit jelent a pénz csereeszköz (forgalmi eszköz) funkciója?",
+        options: [
+          "lehetővé teszi az árucserét anélkül, hogy a felek igényeinek pontosan egybe kellene esniük",
+          "megméri a javak értékét egységes mértékegységben",
+          "lehetővé teszi a vásárlóerő időbeli átvitelét",
+          "az árstabilitást biztosítja"
+        ],
+        correct_answer: "lehetővé teszi az árucserét anélkül, hogy a felek igényeinek pontosan egybe kellene esniük",
+        explanation: "A csereeszköz funkcióban a pénz lehetővé teszi az árucserét anélkül, hogy a felek igényeinek pontosan egybe kellene esniük, kiküszöbölve a barterkereskedelem nehézségeit.",
+        difficulty: 1,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Mit jelent a pénz értékmérő (elszámolási egység) funkciója?",
+        options: [
+          "a javak és szolgáltatások értékét egységes mértékegységben fejezi ki",
+          "lehetővé teszi a megtakarítást",
+          "kiküszöböli a barterkereskedelmet",
+          "biztosítja az árstabilitást"
+        ],
+        correct_answer: "a javak és szolgáltatások értékét egységes mértékegységben fejezi ki",
+        explanation: "Az értékmérő funkcióban a pénz a javak és szolgáltatások értékét egységes mértékegységben fejezi ki, lehetővé téve az árak összehasonlítását.",
+        difficulty: 1,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Mit jelent a pénz értékőrző (felhalmozási eszköz) funkciója?",
+        options: [
+          "lehetővé teszi a vásárlóerő időbeli átvitelét, azaz a megtakarítást",
+          "az árucserét egyszerűsíti le",
+          "a javak értékét méri",
+          "megszünteti az inflációt"
+        ],
+        correct_answer: "lehetővé teszi a vásárlóerő időbeli átvitelét, azaz a megtakarítást",
+        explanation: "Az értékőrző funkcióban a pénz lehetővé teszi a vásárlóerő időbeli átvitelét (megtakarítást), bár ezt a funkciót az infláció ronthatja.",
+        difficulty: 1,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Mi jellemzi a modern, fedezet nélküli (fiat) pénzt?",
+        options: [
+          "értékét nem nemesfém-fedezet, hanem a bizalom és a törvényes fizetőeszköz-jelleg biztosítja",
+          "minden bankjegyet arannyal fedeznek",
+          "csak elektronikus formában létezik",
+          "nincs jogszabályi háttere"
+        ],
+        correct_answer: "értékét nem nemesfém-fedezet, hanem a bizalom és a törvényes fizetőeszköz-jelleg biztosítja",
+        explanation: "A modern pénz fedezet nélküli (fiat) pénz: értékét nem nemesfém-fedezet, hanem a kibocsátó állam és a gazdasági szereplők közötti bizalom, illetve a törvényes fizetőeszköz-jelleg biztosítja.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Mi a kötelező tartalékráta szerepe?",
+        options: [
+          "korlátozza a bankok hitelezési, tehát pénzteremtő képességét",
+          "meghatározza az állami költségvetés kiadásait",
+          "rögzíti a munkanélküliségi rátát",
+          "az árfolyamot szabályozza"
+        ],
+        correct_answer: "korlátozza a bankok hitelezési, tehát pénzteremtő képességét",
+        explanation: "A jegybank által előírt tartalékráta korlátozza, hogy a bankok betéteik mekkora hányadát hitelezhetik ki, ezzel korlátozva a pénzteremtést.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Mit jelent a pénzmultiplikátor-hatás?",
+        options: [
+          "azt, hogy a bankrendszer a tartalékráta korlátai között a betétek többszörösét képes hitelezés révén pénzzé alakítani",
+          "azt, hogy a jegybank megsokszorozza a bankjegyek fizikai mennyiségét",
+          "azt, hogy az árfolyam megsokszorozódik",
+          "azt, hogy az állam megsokszorozza az adóbevételeit"
+        ],
+        correct_answer: "azt, hogy a bankrendszer a tartalékráta korlátai között a betétek többszörösét képes hitelezés révén pénzzé alakítani",
+        explanation: "A pénzmultiplikátor-hatás azt fejezi ki, hogy a bankrendszer a tartalékráta korlátai mellett a betétek többszörösét képes hitelezéssel pénzzé alakítani.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Melyik alapvető feladata a jegybanknak a bankjegykibocsátás terén?",
+        options: [
+          "a bankjegy- és érmekibocsátás monopóliuma",
+          "a kereskedelmi bankok versenyének megszüntetése",
+          "az állami költségvetés összeállítása",
+          "az adók beszedése"
+        ],
+        correct_answer: "a bankjegy- és érmekibocsátás monopóliuma",
+        explanation: "A jegybank egyik alapvető feladata a bankjegy- és érmekibocsátás monopóliuma egy adott országban.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Mit jelent, hogy a jegybank a „bankok bankjaként” működik?",
+        options: [
+          "felügyeli a kereskedelmi bankokat, és végső hitelezőként léphet fel szükség esetén",
+          "közvetlenül hitelt nyújt a lakosságnak",
+          "kizárólag a kormánynak nyújt hitelt",
+          "megszünteti a kereskedelmi bankok tevékenységét"
+        ],
+        correct_answer: "felügyeli a kereskedelmi bankokat, és végső hitelezőként léphet fel szükség esetén",
+        explanation: "A jegybank „bankok bankjaként” felügyeli a kereskedelmi bankokat, és szükség esetén végső hitelezőként léphet fel.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Mi a nyíltpiaci műveletek szerepe a monetáris politikában?",
+        options: [
+          "állampapírok vétele vagy eladása révén közvetlenül befolyásolják a pénzpiaci likviditást",
+          "az adókulcsok módosítása",
+          "az állami kiadások közvetlen szabályozása",
+          "a minimálbér megállapítása"
+        ],
+        correct_answer: "állampapírok vétele vagy eladása révén közvetlenül befolyásolják a pénzpiaci likviditást",
+        explanation: "A nyíltpiaci műveletek során a jegybank állampapírok vételével vagy eladásával közvetlenül befolyásolja a pénzpiaci likviditást.",
+        difficulty: 3,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Miért kulcsfontosságú a jegybank függetlensége?",
+        options: [
+          "mert lehetővé teszi, hogy a döntéseket a napi politikai befolyástól elzárva, szakmai szempontok alapján hozzák meg, ami hiteles az árstabilitás szempontjából",
+          "mert így a kormány közvetlenül irányíthatja az alapkamatot",
+          "mert megszünteti a monetáris politika szükségességét",
+          "mert csak így fizethetők ki az állami nyugdíjak"
+        ],
+        correct_answer: "mert lehetővé teszi, hogy a döntéseket a napi politikai befolyástól elzárva, szakmai szempontok alapján hozzák meg, ami hiteles az árstabilitás szempontjából",
+        explanation: "A jegybank függetlensége — hogy döntéseit a napi politikai befolyástól elzárva hozza meg — kulcsfontosságú az árstabilitás hiteles fenntartásához.",
+        difficulty: 3,
       },
     ],
   },

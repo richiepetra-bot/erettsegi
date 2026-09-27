@@ -96,6 +96,115 @@ A vizsgáztató itt tipikusan a nemzedékek közti viszonyra, a barátságra, a 
         explanation: "This shows a balanced argument using the contrasting linker 'on the other hand', which examiners value in opinion-based answers.",
         difficulty: 2,
       },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "The differences in opinions and values between older and younger people are often called the _____.",
+        options: ["generation gap", "peer pressure", "social norms", "role model"],
+        correct_answer: "generation gap",
+        explanation: "'Generation gap' describes differences in attitudes between older and younger generations.",
+        difficulty: 1,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "\"My little brother's constant complaining really _____.\"",
+        options: ["gets on my nerves", "gets along with me", "looks up to me", "raises my awareness"],
+        correct_answer: "gets on my nerves",
+        explanation: "'To get on someone's nerves' means to annoy or irritate someone.",
+        difficulty: 1,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "Treating someone unfairly because of their race, gender or background is called _____.",
+        options: ["discrimination", "volunteering", "peer pressure", "a generation gap"],
+        correct_answer: "discrimination",
+        explanation: "'Discrimination' is unfair treatment of people based on characteristics like race or gender.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "Unwritten rules about how people are expected to behave in a society are known as _____.",
+        options: ["social norms", "role models", "generation gaps", "volunteer work"],
+        correct_answer: "social norms",
+        explanation: "'Social norms' are the unwritten rules that govern expected behaviour in a society.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "According to the sample answer, what does the speaker say about the generation gap with their grandparents?",
+        options: [
+          "They actually agree on a lot of things, even though they disagree about technology.",
+          "They never agree on anything at all.",
+          "They only talk about technology.",
+          "They have never discussed the generation gap.",
+        ],
+        correct_answer: "They actually agree on a lot of things, even though they disagree about technology.",
+        explanation: "The sample answer says the generation gap is often exaggerated and that they agree on a lot, disagreeing mainly about technology.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "In the sample answer, where did the speaker volunteer last year?",
+        options: ["a local charity shop", "a hospital", "a school", "an animal shelter"],
+        correct_answer: "a local charity shop",
+        explanation: "The sample answer says 'Last year I volunteered at a local charity shop'.",
+        difficulty: 1,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "\"It is illegal in most countries to _____ someone because of their religion.\"",
+        options: ["discriminate against", "raise awareness of", "get on the nerves of", "look up to"],
+        correct_answer: "discriminate against",
+        explanation: "'To discriminate against someone' means to treat them unfairly because of a characteristic like religion.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "Which sentence best uses a contrasting linker to present a balanced view on peer pressure, as recommended for this topic?",
+        options: [
+          "Peer pressure can push people to make bad choices; however, it can also encourage healthy competition.",
+          "Peer pressure is always bad and has no positive side.",
+          "Peer pressure exists among teenagers.",
+          "I don't know anything about peer pressure.",
+        ],
+        correct_answer:
+          "Peer pressure can push people to make bad choices; however, it can also encourage healthy competition.",
+        explanation: "This answer uses the contrasting linker 'however' to present both a negative and a positive side, as the exam tips recommend.",
+        difficulty: 3,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "Why does the topic guide recommend preparing one personal example, such as volunteering, for social issue questions?",
+        options: [
+          "Because examiners respond well to specific, personal examples rather than generalities.",
+          "Because personal examples are not allowed at the oral exam.",
+          "Because only volunteering examples are accepted.",
+          "Because generalities always score higher than examples.",
+        ],
+        correct_answer: "Because examiners respond well to specific, personal examples rather than generalities.",
+        explanation: "The exam tips state that examiners respond well to specifics, not generalities.",
+        difficulty: 3,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "\"As far as I'm concerned, everyone deserves to be treated equally, regardless of their background.\" What does 'regardless of' mean here?",
+        options: [
+          "without being affected or influenced by",
+          "because of, due to",
+          "in addition to",
+          "instead of",
+        ],
+        correct_answer: "without being affected or influenced by",
+        explanation: "'Regardless of' means that something is true no matter what a particular factor is.",
+        difficulty: 2,
+      },
     ],
   },
   {
@@ -193,6 +302,111 @@ Itt egyaránt számíthatsz konkrét (Hol laksz? Milyen a lakásod/házad?) és 
         explanation: "'Semi-detached' describes a house sharing one wall with a neighbouring house; 'detached' means standing completely alone.",
         difficulty: 2,
       },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "An area located on the edge of a city, away from the centre, is called the _____.",
+        options: ["outskirts", "downtown", "countryside", "city centre"],
+        correct_answer: "outskirts",
+        explanation: "The 'outskirts' are the outer areas of a town or city, farthest from the centre.",
+        difficulty: 1,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "Separating waste like paper, glass and plastic so it can be reused is called _____.",
+        options: ["recycling", "pollution", "sustainability", "inflation"],
+        correct_answer: "recycling",
+        explanation: "'Recycling' is the process of processing used materials so they can be reused.",
+        difficulty: 1,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "The long-term rise in the Earth's average temperature is commonly known as _____.",
+        options: ["global warming", "carbon footprint", "air pollution", "renewable energy"],
+        correct_answer: "global warming",
+        explanation: "'Global warming' refers to the gradual increase in the Earth's overall temperature.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "Loud traffic and construction sounds in cities are a form of _____ pollution.",
+        options: ["noise", "air", "water", "plastic"],
+        correct_answer: "noise",
+        explanation: "'Noise pollution' refers to excessive or disturbing sound in the environment, such as traffic or construction.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "According to the sample answer, how does the speaker usually get to school instead of asking for a lift?",
+        options: ["by cycling", "by bus", "by walking", "by car"],
+        correct_answer: "by cycling",
+        explanation: "The sample answer says 'I usually cycle to school instead of asking for a lift'.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "According to the sample answer, how far is the speaker's house from the city centre by bus?",
+        options: ["about twenty minutes", "about five minutes", "about one hour", "about two hours"],
+        correct_answer: "about twenty minutes",
+        explanation: "The sample answer says the house is 'about twenty minutes from the city centre by bus'.",
+        difficulty: 1,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "\"I try to _____ everything I can — paper, glass and plastic.\"",
+        options: ["recycle", "pollute", "inflate", "discriminate"],
+        correct_answer: "recycle",
+        explanation: "'To recycle' means to process used materials so they can be used again.",
+        difficulty: 1,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "Which sentence correctly uses a comparative structure to compare city and countryside life, following the topic's exam tips?",
+        options: [
+          "The countryside offers more green space than the city, but the city is more convenient.",
+          "The countryside offer more green space then the city.",
+          "The countryside is more green space as the city.",
+          "The countryside has more green than the city has green.",
+        ],
+        correct_answer: "The countryside offers more green space than the city, but the city is more convenient.",
+        explanation: "This sentence uses correct comparative grammar ('more... than') to contrast city and countryside life.",
+        difficulty: 3,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "Why does the topic guide suggest mentioning one concrete personal action for the environment, such as recycling or cycling to school?",
+        options: [
+          "Because it makes the answer more memorable and authentic.",
+          "Because concrete actions are grammatically required.",
+          "Because examiners only ask about personal actions.",
+          "Because general environmental opinions are forbidden.",
+        ],
+        correct_answer: "Because it makes the answer more memorable and authentic.",
+        explanation: "The exam tips state that mentioning a concrete personal action makes the answer more memorable and authentic.",
+        difficulty: 3,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "What is the difference between 'renewable energy' and a 'sustainable lifestyle'?",
+        options: [
+          "'Renewable energy' refers to power sources that naturally replenish, while a 'sustainable lifestyle' is a broader way of living that avoids long-term harm to the environment.",
+          "They are exactly the same concept with no difference.",
+          "'Renewable energy' refers only to solar power.",
+          "A 'sustainable lifestyle' means using only fossil fuels.",
+        ],
+        correct_answer:
+          "'Renewable energy' refers to power sources that naturally replenish, while a 'sustainable lifestyle' is a broader way of living that avoids long-term harm to the environment.",
+        explanation: "'Renewable energy' is one specific resource type, while 'sustainable' describes a broader approach to living responsibly.",
+        difficulty: 2,
+      },
     ],
   },
   {
@@ -283,6 +497,111 @@ A vizsgáztató jellemzően rákérdez a terveidre (továbbtanulás, jövőbeli 
         options: ["work-life balance", "cover letter", "career path", "job interview"],
         correct_answer: "work-life balance",
         explanation: "'Work-life balance' refers to dividing time and energy appropriately between work and personal life.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "The sequence of jobs and progress someone makes throughout their working life is called their _____.",
+        options: ["career path", "cover letter", "job interview", "internship"],
+        correct_answer: "career path",
+        explanation: "A 'career path' is the progression of jobs and roles someone follows over their working life.",
+        difficulty: 1,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "Before starting a new job, candidates are usually invited to attend a _____.",
+        options: ["job interview", "cover letter", "internship", "CV"],
+        correct_answer: "job interview",
+        explanation: "A 'job interview' is a meeting where an employer assesses a candidate before hiring them.",
+        difficulty: 1,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "A short document sent along with your CV, explaining why you're a good fit for the job, is called a _____.",
+        options: ["cover letter", "career path", "internship", "promotion"],
+        correct_answer: "cover letter",
+        explanation: "A 'cover letter' accompanies a CV and explains why the applicant suits the job.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "A short period of supervised work, often unpaid, that gives students practical experience is called an _____.",
+        options: ["internship", "interview", "allowance", "application"],
+        correct_answer: "internship",
+        explanation: "An 'internship' is a period of work experience, often for students, sometimes unpaid.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "According to the sample answer, how long was the speaker's internship at the IT company?",
+        options: ["two weeks", "two months", "one week", "six months"],
+        correct_answer: "two weeks",
+        explanation: "The sample answer says 'Last summer I did a two-week internship at a small IT company'.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "According to the sample answer, what does the speaker say about attending their first job interview?",
+        options: [
+          "it was quite nerve-wracking",
+          "it was very relaxing",
+          "it was cancelled",
+          "it lasted five hours",
+        ],
+        correct_answer: "it was quite nerve-wracking",
+        explanation: "The sample answer describes the first job interview as 'quite nerve-wracking'.",
+        difficulty: 1,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "\"I don't want to _____ everything for my career, like my parents did with their long hours.\"",
+        options: ["sacrifice", "apply for", "get promoted", "rely on"],
+        correct_answer: "sacrifice",
+        explanation: "'To sacrifice something' means to give it up for the sake of something else, such as a career.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "According to the exam tips, why should collocations like 'apply for a job' or 'attend an interview' be learned directly, rather than translated word-for-word from Hungarian?",
+        options: [
+          "Because direct translation from Hungarian often produces incorrect collocations in English.",
+          "Because Hungarian and English collocations are always identical.",
+          "Because collocations are not tested at the oral exam.",
+          "Because only single words matter, not phrases.",
+        ],
+        correct_answer: "Because direct translation from Hungarian often produces incorrect collocations in English.",
+        explanation: "The exam tips recommend learning key collocations rather than translating word-for-word from Hungarian, which often produces mistakes.",
+        difficulty: 3,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "Why does the topic guide suggest preparing 2-3 sentences about any part-time job or internship experience?",
+        options: [
+          "Because real examples always score better than generic statements.",
+          "Because internships are compulsory for every student.",
+          "Because generic statements are not allowed in English.",
+          "Because examiners only ask about internships.",
+        ],
+        correct_answer: "Because real examples always score better than generic statements.",
+        explanation: "The exam tips state that real examples from a part-time job or internship always score better than generic statements.",
+        difficulty: 3,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "\"One advantage of remote work is that it gives employees more _____ over their schedule.\"",
+        options: ["flexibility", "promotion", "allowance", "curriculum"],
+        correct_answer: "flexibility",
+        explanation: "Remote work is often associated with greater 'flexibility' in how and when people work.",
         difficulty: 2,
       },
     ],
@@ -382,6 +701,106 @@ A vizsgáztató itt gyakran a saját technológiahasználatodra (okostelefon, k�
         explanation: "This answer shows both a positive and a critical perspective, which examiners value in opinion-based responses.",
         difficulty: 2,
       },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "Spending so much time on social media that it negatively affects your life is sometimes called _____.",
+        options: ["social media addiction", "online learning", "screen time", "cutting-edge technology"],
+        correct_answer: "social media addiction",
+        explanation: "'Social media addiction' describes excessive, compulsive use of social media that harms daily life.",
+        difficulty: 1,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "Studying through websites, videos and apps instead of a physical classroom is called _____.",
+        options: ["online learning", "artificial intelligence", "screen time", "innovation"],
+        correct_answer: "online learning",
+        explanation: "'Online learning' (or e-learning) means studying through digital platforms rather than in person.",
+        difficulty: 1,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "\"It can be hard to _____ technology when new apps and gadgets appear every month.\"",
+        options: ["keep up with", "rely on", "breach", "take up"],
+        correct_answer: "keep up with",
+        explanation: "'To keep up with technology' means to stay informed about and adapt to new developments.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "A brand-new, highly advanced piece of technology can be described as _____.",
+        options: ["cutting-edge", "sedentary", "compulsory", "disposable"],
+        correct_answer: "cutting-edge",
+        explanation: "'Cutting-edge technology' refers to the most advanced and up-to-date technology available.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "According to the sample answer, roughly how many hours a day does the speaker spend on their phone?",
+        options: ["about four hours", "about one hour", "about ten hours", "about thirty minutes"],
+        correct_answer: "about four hours",
+        explanation: "The sample answer says 'I probably spend around four hours a day on my phone'.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "According to the sample answer, what does the speaker notice if they don't check their phone for a while?",
+        options: ["they get anxious", "they feel more relaxed", "they sleep better", "they read more books"],
+        correct_answer: "they get anxious",
+        explanation: "The sample answer says 'I get anxious if I don't check my phone for a while'.",
+        difficulty: 1,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "A new idea, method or piece of technology that changes how something is done is called an _____.",
+        options: ["innovation", "invasion", "inflation", "institution"],
+        correct_answer: "innovation",
+        explanation: "'Innovation' refers to a new idea, method or technology that brings meaningful change.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "According to the sample answer, what specific concern does the speaker raise about artificial intelligence?",
+        options: [
+          "That it could take over many jobs and raises questions about privacy and data use.",
+          "That it is too slow to be useful in daily life.",
+          "That it has completely replaced online learning.",
+          "That it has no impact on employment at all.",
+        ],
+        correct_answer: "That it could take over many jobs and raises questions about privacy and data use.",
+        explanation: "The sample answer says AI 'could take over a lot of jobs in the future' and raises 'questions about privacy and how our data is being used'.",
+        difficulty: 3,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "Why do the exam tips recommend quantifying your own habits, e.g. 'I spend about... hours a day on...'?",
+        options: [
+          "Because specific numbers make your English sound more natural.",
+          "Because examiners require exact statistics to pass.",
+          "Because vague statements are grammatically incorrect.",
+          "Because numbers replace the need for any opinion.",
+        ],
+        correct_answer: "Because specific numbers make your English sound more natural.",
+        explanation: "The exam tips state that specific numbers make your English sound more natural.",
+        difficulty: 3,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "\"Some experts worry that constantly checking social media can become a form of _____.\"",
+        options: ["addiction", "innovation", "awareness", "sustainability"],
+        correct_answer: "addiction",
+        explanation: "Compulsively checking social media is often described as a form of 'addiction'.",
+        difficulty: 2,
+      },
     ],
   },
   {
@@ -473,6 +892,110 @@ Ez a témakör két szintet ötvöz: egyrészt a **saját pénzügyeidet** (zseb
         correct_answer: "budget",
         explanation: "'To budget' means to plan how to spend a limited amount of money carefully.",
         difficulty: 1,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "Money that parents regularly give to their children to spend as they wish is called _____.",
+        options: ["pocket money", "disposable income", "a bargain", "a budget"],
+        correct_answer: "pocket money",
+        explanation: "'Pocket money' (or allowance) is money given regularly, often by parents, for a child to spend freely.",
+        difficulty: 1,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "If you have borrowed money and haven't paid it back yet, you are _____.",
+        options: ["in debt", "on a budget", "a bargain", "disposable"],
+        correct_answer: "in debt",
+        explanation: "'To be in debt' means to owe money that has not yet been repaid.",
+        difficulty: 1,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "A product that is unusually cheap for its quality is called _____.",
+        options: ["a bargain", "a rip-off", "an allowance", "an inflation"],
+        correct_answer: "a bargain",
+        explanation: "'A bargain' is something bought for less than its usual or expected value.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "The money you have left to spend or save after paying taxes and essential bills is called your _____.",
+        options: ["disposable income", "pocket money", "budget", "inflation"],
+        correct_answer: "disposable income",
+        explanation: "'Disposable income' is the money remaining after taxes and essential expenses are paid.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "According to the sample answer, how does the speaker earn extra pocket money besides their allowance?",
+        options: [
+          "babysitting at weekends",
+          "working in a shop",
+          "tutoring younger students",
+          "selling old clothes",
+        ],
+        correct_answer: "babysitting at weekends",
+        explanation: "The sample answer says the speaker does 'some babysitting at weekends' for extra pocket money.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "According to the sample answer, how long has the speaker been saving up for a new laptop?",
+        options: ["about six months", "about two weeks", "about one year", "about ten months"],
+        correct_answer: "about six months",
+        explanation: "The sample answer says 'I've actually been saving up for a new laptop for the past six months'.",
+        difficulty: 1,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "Buying something suddenly, without planning, just because you want it in the moment, is called an _____.",
+        options: ["impulse purchase", "inflation rate", "disposable income", "entrance exam"],
+        correct_answer: "impulse purchase",
+        explanation: "An 'impulse purchase' is a spontaneous, unplanned buy made on the spur of the moment.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "According to the exam tips, what is the key difference in connotation between 'spend on' and 'waste on'?",
+        options: [
+          "'Waste on' suggests the money was used badly or unwisely, while 'spend on' is neutral.",
+          "They mean exactly the same thing with identical connotations.",
+          "'Spend on' is only used for savings accounts.",
+          "'Waste on' can only describe spending on food.",
+        ],
+        correct_answer: "'Waste on' suggests the money was used badly or unwisely, while 'spend on' is neutral.",
+        explanation: "The exam tips highlight that 'spend on' and 'waste on' have different connotations, with 'waste' implying poor use of money.",
+        difficulty: 3,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "Why does the topic guide recommend having concrete numbers or examples ready, such as how much pocket money you get?",
+        options: [
+          "Because vague answers score lower than specific, concrete ones.",
+          "Because examiners only accept exact numbers, never opinions.",
+          "Because concrete examples are grammatically required in English.",
+          "Because pocket money is the only acceptable topic.",
+        ],
+        correct_answer: "Because vague answers score lower than specific, concrete ones.",
+        explanation: "The exam tips state that vague answers score lower, so concrete numbers or examples are recommended.",
+        difficulty: 3,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "\"_____ has a huge influence on how much we spend, especially on social media.\"",
+        options: ["Advertising", "Budgeting", "Inflation", "Discrimination"],
+        correct_answer: "Advertising",
+        explanation: "The sample answer says advertisements 'have a huge influence on how much we spend', especially on social media.",
+        difficulty: 2,
       },
     ],
   },

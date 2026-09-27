@@ -121,6 +121,136 @@ A külkereskedelem és a fizetési mérleg ismerete alapvető a nyitott gazdasá
         explanation: "A tartós fizetésimérleg-hiány eladósodáshoz és a nemzetközi pénzügyi piacok bizalmának megingásával szembeni sebezhetőséghez vezethet.",
         difficulty: 2,
       },
+      {
+        question_type: "multiple_choice",
+        question_text: "Mit jelent a komparatív előny fogalma a külkereskedelemben?",
+        options: [
+          "azt, amiben egy ország relatíve hatékonyabban termel másokhoz képest",
+          "az ország teljes önellátását",
+          "a legmagasabb GDP-t elérő országot",
+          "a legalacsonyabb inflációt elérő országot"
+        ],
+        correct_answer: "azt, amiben egy ország relatíve hatékonyabban termel másokhoz képest",
+        explanation: "A komparatív előny azt jelenti, hogy egy ország relatíve hatékonyabban termel egy adott jószágot másokhoz képest, ami indokolja a külkereskedelmi specializációt.",
+        difficulty: 1,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Mi jellemzi Magyarország külkereskedelmi nyitottságát?",
+        options: [
+          "kifejezetten nyitott, exportorientált gazdaság",
+          "zárt, önellátó gazdaság",
+          "kizárólag importra épülő gazdaság",
+          "nincs is nemzetközi kereskedelme"
+        ],
+        correct_answer: "kifejezetten nyitott, exportorientált gazdaság",
+        explanation: "Magyarország kifejezetten nyitott, exportorientált gazdaság, amit a GDP-hez viszonyított magas export-import arány is jelez.",
+        difficulty: 1,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Mit jelent a külkereskedelmi többlet (aktívum)?",
+        options: [
+          "amikor az export meghaladja az importot",
+          "amikor az import meghaladja az exportot",
+          "amikor az export és az import megegyezik",
+          "amikor megszűnik a külkereskedelem"
+        ],
+        correct_answer: "amikor az export meghaladja az importot",
+        explanation: "Külkereskedelmi többletről (aktívumról) akkor beszélünk, ha egy ország exportja meghaladja az importját.",
+        difficulty: 1,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Mely tételek tartoznak a folyó fizetési mérleg elemei közé az áruforgalmi egyenlegen kívül?",
+        options: [
+          "a szolgáltatásforgalom, a jövedelmek egyenlege és a viszonzatlan folyó átutalások",
+          "kizárólag az állami költségvetés bevételei",
+          "a tőzsdei árfolyamok",
+          "a munkanélküliségi ráta"
+        ],
+        correct_answer: "a szolgáltatásforgalom, a jövedelmek egyenlege és a viszonzatlan folyó átutalások",
+        explanation: "A folyó fizetési mérleg az áruforgalmi egyenleg mellett tartalmazza a szolgáltatásforgalmi egyenleget, a jövedelmek egyenlegét és a viszonzatlan folyó átutalásokat (pl. uniós támogatások).",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Mi az akkreditív (okmányos meghitelezés)?",
+        options: [
+          "a nemzetközi kereskedelemben a felek közötti bizalmat és biztonságot szolgáló fizetési eszköz",
+          "egyfajta devizaárfolyam-jegyzés",
+          "az állami költségvetés bevételi tétele",
+          "a tőzsdei kereskedés egy formája"
+        ],
+        correct_answer: "a nemzetközi kereskedelemben a felek közötti bizalmat és biztonságot szolgáló fizetési eszköz",
+        explanation: "Az akkreditív (okmányos meghitelezés) a nemzetközi kereskedelemben a felek közötti bizalmat és biztonságot szolgáló fizetési mód.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Mi jellemzi Magyarország helyzetét az euróval kapcsolatban?",
+        options: [
+          "az Európai Unió tagja, de egyelőre nem vezette be az eurót, saját nemzeti valutával (forint) rendelkezik",
+          "már bevezette az eurót",
+          "nem tagja az Európai Uniónak",
+          "kizárólag dollárban kereskedik"
+        ],
+        correct_answer: "az Európai Unió tagja, de egyelőre nem vezette be az eurót, saját nemzeti valutával (forint) rendelkezik",
+        explanation: "Magyarország az Európai Unió tagja, de egyelőre nem vezette be az eurót, saját nemzeti valutával (forint) rendelkezik.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Mit eredményezhet a fizetési mérleg tartós többlete?",
+        options: [
+          "devizatartalék-felhalmozást és a nemzeti valuta erősödési nyomását",
+          "kizárólag eladósodást",
+          "a külkereskedelem teljes megszűnését",
+          "a fogyasztói árindex csökkenését"
+        ],
+        correct_answer: "devizatartalék-felhalmozást és a nemzeti valuta erősödési nyomását",
+        explanation: "A fizetési mérleg tartós többlete devizatartalék-felhalmozáshoz és a nemzeti valuta erősödési nyomásához vezethet.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Mit tartalmaz a fizetési mérleg tőkemérlege?",
+        options: [
+          "a tőketranszfereket",
+          "az áru- és szolgáltatáskereskedelem egyenlegét",
+          "a portfólióbefektetéseket",
+          "a devizatartalékok változását"
+        ],
+        correct_answer: "a tőketranszfereket",
+        explanation: "A tőkemérleg a tőketranszfereket foglalja magába, elkülönülve a folyó fizetési mérlegtől és a pénzügyi mérlegtől.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Mi tartozik a fizetési mérleg pénzügyi mérlegéhez?",
+        options: [
+          "a közvetlen tőkebefektetések, portfólióbefektetések, egyéb befektetések és a tartalékok változása",
+          "kizárólag a folyó fogyasztási kiadások",
+          "az állami adóbevételek",
+          "a munkabérek összessége"
+        ],
+        correct_answer: "a közvetlen tőkebefektetések, portfólióbefektetések, egyéb befektetések és a tartalékok változása",
+        explanation: "A pénzügyi mérleg a közvetlen tőkebefektetéseket, a portfólióbefektetéseket, az egyéb befektetéseket és a devizatartalékok változását tartalmazza.",
+        difficulty: 3,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Miért fontos a fizetési mérleg egyensúlyának fenntartása a nemzetközi pénzügyi piacok szempontjából?",
+        options: [
+          "mert a tartós hiány sebezhetővé teheti az országot a nemzetközi bizalom megingásával szemben",
+          "mert csak az exportőrök profitját érinti",
+          "mert nincs hatással a nemzetközi pénzügyi kapcsolatokra",
+          "mert kizárólag a belföldi árakat befolyásolja"
+        ],
+        correct_answer: "mert a tartós hiány sebezhetővé teheti az országot a nemzetközi bizalom megingásával szemben",
+        explanation: "A fizetési mérleg tartós, jelentős hiánya eladósodáshoz vezethet, és sebezhetővé teheti az országot a nemzetközi pénzügyi piacok bizalmának megingásával szemben.",
+        difficulty: 3,
+      },
     ],
   },
   {
@@ -239,6 +369,136 @@ Az árfolyamok és a devizapiac működésének ismerete alapvető a nyitott gaz
         explanation: "A konvertibilitás azt jelenti, hogy a valuta korlátozás nélkül átváltható más pénznemekre.",
         difficulty: 2,
       },
+      {
+        question_type: "multiple_choice",
+        question_text: "Mit fejez ki az árfolyam (devizaárfolyam) fogalma?",
+        options: [
+          "két valuta egymáshoz viszonyított cserearányát",
+          "egy ország teljes exportjának értékét",
+          "a jegybanki alapkamat szintjét",
+          "az államadósság mértékét"
+        ],
+        correct_answer: "két valuta egymáshoz viszonyított cserearányát",
+        explanation: "Az árfolyam két valuta egymáshoz viszonyított cserearányát fejezi ki: megmutatja, hogy egy pénznem egy egységéért mennyit kell fizetni egy másik pénznemben.",
+        difficulty: 1,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Mi jellemzi a közvetlen árfolyamjegyzést?",
+        options: [
+          "a hazai valuta a változó, a külföldi valuta az állandó tényező (pl. „1 euró = 400 forint”)",
+          "a külföldi valuta a változó tényező",
+          "csak külföldön alkalmazzák",
+          "kizárólag készpénzre vonatkozik"
+        ],
+        correct_answer: "a hazai valuta a változó, a külföldi valuta az állandó tényező (pl. „1 euró = 400 forint”)",
+        explanation: "A közvetlen jegyzésnél a hazai valuta a változó, a külföldi valuta az állandó tényező, például „1 euró = 400 forint”.",
+        difficulty: 1,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Mikor beszélünk egy pénznem felértékelődéséről (erősödéséről)?",
+        options: [
+          "amikor az adott pénznem iránti kereslet nő a devizapiacon",
+          "amikor a kereslet csökken",
+          "amikor a kínálat nő",
+          "amikor a jegybank megszünteti a monetáris politikát"
+        ],
+        correct_answer: "amikor az adott pénznem iránti kereslet nő a devizapiacon",
+        explanation: "Ha egy pénznem iránti kereslet nő a devizapiacon, a pénznem felértékelődik (erősödik).",
+        difficulty: 1,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Mi jellemzi a sávos lebegtetést mint köztes árfolyamrendszert?",
+        options: [
+          "az árfolyam egy meghatározott sávon belül szabadon mozoghat",
+          "az árfolyamot teljesen szabadon, jegybanki beavatkozás nélkül alakítja ki a piac",
+          "az árfolyamot egyetlen rögzített szinthez kötik korlátlan ideig",
+          "az árfolyam kizárólag az állam döntésétől függ"
+        ],
+        correct_answer: "az árfolyam egy meghatározott sávon belül szabadon mozoghat",
+        explanation: "A sávos lebegtetés köztes megoldás, amelynél az árfolyam egy meghatározott sávon belül szabadon mozoghat.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Milyen hatással jár egy valuta felértékelődése (erősödése) az importra?",
+        options: [
+          "olcsóbbá teszi az importot",
+          "drágítja az importot",
+          "nincs hatással az importra",
+          "megszünteti az importot"
+        ],
+        correct_answer: "olcsóbbá teszi az importot",
+        explanation: "A valuta felértékelődése (erősödése) olcsóbbá teszi az importot, mivel kevesebb hazai valutáért lehet ugyanannyi külföldi valutát vásárolni.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Milyen hatással jár egy valuta felértékelődése az exportáló vállalatokra?",
+        options: [
+          "ronthatja a versenyképességüket, mivel termékeik relatíve drágábbá válnak külföldön",
+          "javítja a versenyképességüket",
+          "nincs rájuk hatással",
+          "megszünteti az exporttevékenységet"
+        ],
+        correct_answer: "ronthatja a versenyképességüket, mivel termékeik relatíve drágábbá válnak külföldön",
+        explanation: "A valuta felértékelődése ronthatja az exportáló vállalatok versenyképességét, mivel termékeik relatíve drágábbá válnak a külföldi vásárlók számára.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Miért okozhat importált inflációt egy nemzeti valuta leértékelődése?",
+        options: [
+          "mert a leértékelődés drágítja az importot, ami megemeli a hazai árszínvonalat",
+          "mert a leértékelődés mindig csökkenti az árakat",
+          "mert a leértékelődés megszünteti a külkereskedelmet",
+          "mert a leértékelődés nem befolyásolja az árakat"
+        ],
+        correct_answer: "mert a leértékelődés drágítja az importot, ami megemeli a hazai árszínvonalat",
+        explanation: "A valuta leértékelődése drágítja az importot, ami importált inflációt okozhat, mivel a drágább importált termékek és nyersanyagok megemelik a hazai árszínvonalat.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Mely országok alkalmazhatnak korlátozásokat a valuta konvertibilitására?",
+        options: [
+          "egyes fejlődő vagy zárt gazdaságok",
+          "kizárólag az eurózóna tagjai",
+          "minden modern piacgazdaság",
+          "csak az Európai Unió tagállamai"
+        ],
+        correct_answer: "egyes fejlődő vagy zárt gazdaságok",
+        explanation: "A teljes konvertibilitás a modern piacgazdaságok normális állapota, de egyes fejlődő vagy zárt gazdaságok korlátozásokat alkalmazhatnak a tőkemozgásokra és a valutaváltásra.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Mi jellemzi a közvetett árfolyamjegyzést a közvetlennel szemben?",
+        options: [
+          "a külföldi valuta a változó, a hazai valuta az állandó tényező",
+          "a hazai valuta a változó tényező",
+          "kizárólag a valutára vonatkozik, a devizára nem",
+          "csak fix árfolyamrendszerben alkalmazható"
+        ],
+        correct_answer: "a külföldi valuta a változó, a hazai valuta az állandó tényező",
+        explanation: "A közvetett jegyzésnél — a közvetlen jegyzéssel ellentétben — a külföldi valuta a változó, a hazai valuta az állandó tényező.",
+        difficulty: 3,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Miért kiemelten fontos a devizapiac működése egy nyitott gazdaság, mint Magyarország számára?",
+        options: [
+          "mert az árfolyam-változások közvetlenül befolyásolják a külkereskedelmet, az inflációt és a befektetési döntéseket",
+          "mert csak a turizmust érinti",
+          "mert nincs hatással a hazai gazdaságra",
+          "mert kizárólag az állami költségvetést érinti"
+        ],
+        correct_answer: "mert az árfolyam-változások közvetlenül befolyásolják a külkereskedelmet, az inflációt és a befektetési döntéseket",
+        explanation: "A devizapiac és az árfolyam-változások közvetlenül befolyásolják a külkereskedelmet, az inflációt és a befektetési döntéseket egy nyitott gazdaságban.",
+        difficulty: 3,
+      },
     ],
   },
   {
@@ -351,6 +611,126 @@ A munkajog alapfogalmainak (munkaszerződés, munkaidő, munkabér, felmondás) 
         explanation: "A szakszervezetek és üzemi tanácsok a munkavállalók kollektív érdekeit képviselik a munkáltatóval szemben, akár kollektív szerződés megkötésével is.",
         difficulty: 2,
       },
+      {
+        question_type: "multiple_choice",
+        question_text: "Melyik törvény alapozza meg Magyarországon a munkajogi szabályozást?",
+        options: [
+          "a Munka törvénykönyvéről szóló 2012. évi I. törvény",
+          "a Polgári Törvénykönyv",
+          "az Alaptörvény egyetlen cikkelye",
+          "a fogyasztóvédelemről szóló törvény"
+        ],
+        correct_answer: "a Munka törvénykönyvéről szóló 2012. évi I. törvény",
+        explanation: "A magyar munkajogi szabályozás alapja a Munka törvénykönyvéről szóló 2012. évi I. törvény (Mt.).",
+        difficulty: 1,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Mennyi a teljes napi munkaidő általános mértéke?",
+        options: ["8 óra", "4 óra", "12 óra", "6 óra"],
+        correct_answer: "8 óra",
+        explanation: "A teljes napi munkaidő általános mértéke 8 óra, amit a munkajog szigorúan szabályoz.",
+        difficulty: 1,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Mi a garantált bérminimum?",
+        options: [
+          "a szakképzettséget igénylő munkakörökre vonatkozó, a minimálbérnél magasabb bérküszöb",
+          "a legmagasabb kifizethető bér korlátja",
+          "a nyugdíjak minimális összege",
+          "az állami tisztviselők fizetése"
+        ],
+        correct_answer: "a szakképzettséget igénylő munkakörökre vonatkozó, a minimálbérnél magasabb bérküszöb",
+        explanation: "A garantált bérminimum a szakképzettséget igénylő munkakörökre vonatkozó, a minimálbérnél jellemzően magasabb bérküszöb.",
+        difficulty: 1,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Mi a munkáltató alapvető kötelezettsége a munkaviszonyban?",
+        options: [
+          "a munkavállaló foglalkoztatása és munkabér fizetése",
+          "kizárólag a munkaidő nyilvántartása",
+          "a munkavállaló lakhatásának biztosítása",
+          "a szabadság törvényi mértékének csökkentése"
+        ],
+        correct_answer: "a munkavállaló foglalkoztatása és munkabér fizetése",
+        explanation: "A munkáltató köteles a munkavállalót foglalkoztatni és munkabért fizetni, míg a munkavállaló a munkáltató irányítása szerint köteles munkát végezni.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Mikor alkalmazható azonnali hatályú felmondás a munkaviszonyban?",
+        options: [
+          "súlyos kötelezettségszegés esetén",
+          "kizárólag a próbaidő alatt",
+          "csak a munkáltató kezdeményezésére",
+          "minden munkaviszony megszüntetésekor automatikusan"
+        ],
+        correct_answer: "súlyos kötelezettségszegés esetén",
+        explanation: "Az azonnali hatályú felmondás súlyos kötelezettségszegés esetén alkalmazható, felmondási idő betartása nélkül.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Mi illethet meg egy munkavállalót munkáltatói felmondás esetén, bizonyos feltételek mellett?",
+        options: ["végkielégítés", "automatikus fizetésemelés", "kötelező előléptetés", "élethosszig tartó fizetés"],
+        correct_answer: "végkielégítés",
+        explanation: "Munkáltatói felmondás esetén — bizonyos feltételek mellett — a munkavállalót végkielégítés illetheti meg.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Mit jelent a túlmunka (rendkívüli munkavégzés), és milyen díjazás jár érte?",
+        options: [
+          "a rendes munkaidőn felüli munkavégzés, amely külön díjazással (pótlékkal) jár",
+          "a szabadság alatt végzett munka, amely nem jár díjazással",
+          "a próbaidő alatti munka",
+          "a részmunkaidős foglalkoztatás"
+        ],
+        correct_answer: "a rendes munkaidőn felüli munkavégzés, amely külön díjazással (pótlékkal) jár",
+        explanation: "A túlmunka (rendkívüli munkavégzés) a rendes munkaidőn felüli munkavégzés, amely csak korlátozott mértékben és külön díjazás (pótlék) ellenében rendelhető el.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Mit rögzítenek jellemzően a munkaszerződésben a munkakör és az alapbér mellett?",
+        options: [
+          "a munkavégzés helyét, a munkaviszony kezdetét és a szerződés határozott vagy határozatlan idejét",
+          "kizárólag a munkavállaló családi állapotát",
+          "a korábbi munkahelyek listáját",
+          "a munkáltató logóját"
+        ],
+        correct_answer: "a munkavégzés helyét, a munkaviszony kezdetét és a szerződés határozott vagy határozatlan idejét",
+        explanation: "A munkaszerződésben jellemzően rögzítik a munkavégzés helyét, a munkaviszony kezdetét, valamint hogy határozott vagy határozatlan idejű-e a szerződés.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Mi a kollektív szerződés szerepe?",
+        options: [
+          "az egyéni munkaszerződéseknél kedvezőbb feltételeket állapíthat meg a munkavállalók számára",
+          "kizárólag a munkáltató jogait bővíti",
+          "megszünteti a munkaidő-szabályozást",
+          "helyettesíti az egyéni munkaszerződést minden esetben"
+        ],
+        correct_answer: "az egyéni munkaszerződéseknél kedvezőbb feltételeket állapíthat meg a munkavállalók számára",
+        explanation: "A szakszervezetek és üzemi tanácsok által kötött kollektív szerződések az egyéni munkaszerződéseknél kedvezőbb feltételeket állapíthatnak meg.",
+        difficulty: 3,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Mi a munkaviszony fogalma?",
+        options: [
+          "a munkáltató és a munkavállaló között munkaszerződéssel létrejövő jogviszony, amelyben a munkavállaló a munkáltató irányítása szerint dolgozik",
+          "egy önálló vállalkozói tevékenység",
+          "az állam és az egyén közötti adójogviszony",
+          "a fogyasztó és az eladó közötti szerződés"
+        ],
+        correct_answer: "a munkáltató és a munkavállaló között munkaszerződéssel létrejövő jogviszony, amelyben a munkavállaló a munkáltató irányítása szerint dolgozik",
+        explanation: "A munkaviszony a munkáltató és a munkavállaló között munkaszerződéssel létrejövő jogviszony, amelyben a munkavállaló köteles a munkáltató irányítása szerint munkát végezni.",
+        difficulty: 3,
+      },
     ],
   },
   {
@@ -458,6 +838,131 @@ A közvetlen és közvetett adók, valamint az adózás alapfogalmainak ismerete
         correct_answer: "Nemzeti Adó- és Vámhivatal (NAV)",
         explanation: "A NAV felelős Magyarországon az adók beszedéséért, az adóbevallások feldolgozásáért és az adóellenőrzésekért.",
         difficulty: 1,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Mi az adó fogalma?",
+        options: [
+          "törvény által előírt, kényszer jellegű, ellenszolgáltatás nélküli fizetési kötelezettség",
+          "önkéntes adományozás az államnak",
+          "a vállalatok közötti szerződéses díj",
+          "a bankok által felszámított kezelési költség"
+        ],
+        correct_answer: "törvény által előírt, kényszer jellegű, ellenszolgáltatás nélküli fizetési kötelezettség",
+        explanation: "Az adó olyan, törvény által előírt, kényszer jellegű, ellenszolgáltatás nélküli fizetési kötelezettség, amelyet az állam vet ki az állami feladatok finanszírozására.",
+        difficulty: 1,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Mi az adóalany (adófizető)?",
+        options: [
+          "az a személy vagy szervezet, amelyet a törvény az adó megfizetésére kötelez",
+          "az a dolog, amelyre az adókötelezettség vonatkozik",
+          "az adó mértéke százalékban",
+          "az állami adóhatóság neve"
+        ],
+        correct_answer: "az a személy vagy szervezet, amelyet a törvény az adó megfizetésére kötelez",
+        explanation: "Az adóalany (adófizető) az a személy vagy szervezet, amelyet a törvény az adó megfizetésére kötelez.",
+        difficulty: 1,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Mi az adóalap?",
+        options: [
+          "az adótárgy pénzben vagy természetes mértékegységben kifejezett mennyisége, amely után az adót fizetni kell",
+          "az adó beszedéséért felelős hatóság",
+          "az adófizetés határideje",
+          "az adó törvényi elnevezése"
+        ],
+        correct_answer: "az adótárgy pénzben vagy természetes mértékegységben kifejezett mennyisége, amely után az adót fizetni kell",
+        explanation: "Az adóalap az adótárgy pénzben vagy természetes mértékegységben kifejezett mennyisége, amely után az adót fizetni kell.",
+        difficulty: 1,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Mi az adókulcs (adómérték)?",
+        options: [
+          "az adóalap egységére jutó adó összege, jellemzően százalékban kifejezve",
+          "az adóalany neve",
+          "az adóbevétel teljes összege",
+          "az adóhatóság székhelye"
+        ],
+        correct_answer: "az adóalap egységére jutó adó összege, jellemzően százalékban kifejezve",
+        explanation: "Az adókulcs (adómérték) az adóalap egységére jutó adó összege, amelyet jellemzően százalékban fejeznek ki.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Melyik közvetlen adót vetik ki a vállalkozások nyeresége után?",
+        options: ["a társasági adót", "az általános forgalmi adót", "a jövedéki adót", "a vámot"],
+        correct_answer: "a társasági adót",
+        explanation: "A társasági adó közvetlen adó, amelyet a vállalkozások nyeresége után vetnek ki.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Melyik termékek adóztatására jellemző a jövedéki adó?",
+        options: [
+          "alkohol, dohánytermékek, üzemanyagok",
+          "élelmiszerek általánosan",
+          "szolgáltatások általánosan",
+          "ingatlanok"
+        ],
+        correct_answer: "alkohol, dohánytermékek, üzemanyagok",
+        explanation: "A jövedéki adó egy közvetett adó, amelyet jellemzően az alkohol, a dohánytermékek és az üzemanyagok esetében vetnek ki.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Mit jelent a lineáris (egykulcsos) adózás, és melyik magyar adó ilyen?",
+        options: [
+          "mindenki azonos százalékos adókulccsal adózik, függetlenül a jövedelem nagyságától — Magyarországon az SZJA ilyen",
+          "az adókulcs a jövedelemmel arányosan emelkedik",
+          "az adókulcs a jövedelemmel arányosan csökken",
+          "csak a vállalatokra vonatkozik"
+        ],
+        correct_answer: "mindenki azonos százalékos adókulccsal adózik, függetlenül a jövedelem nagyságától — Magyarországon az SZJA ilyen",
+        explanation: "A lineáris (egykulcsos) adózásnál mindenki azonos százalékos adókulccsal adózik — Magyarországon a személyi jövedelemadó (SZJA) ilyen.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Mi a vámok szerepe a közvetett adók között?",
+        options: [
+          "a külföldről importált termékekre kivetett adóteher",
+          "a hazai bérek adóztatása",
+          "a vállalati nyereség adóztatása",
+          "az ingatlanok adóztatása"
+        ],
+        correct_answer: "a külföldről importált termékekre kivetett adóteher",
+        explanation: "A vámok a külföldről importált termékekre kivetett közvetett adóteher, amely a jövedéki adóhoz hasonlóan a fogyasztókra hárul át.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Mit jelent az adóztatás fiskális funkciója?",
+        options: [
+          "az állami feladatok (pl. oktatás, egészségügy) finanszírozásához szükséges bevétel biztosítását",
+          "a jövedelmi egyenlőtlenségek mérséklését",
+          "bizonyos magatartások szabályozását",
+          "a piaci verseny megszüntetését"
+        ],
+        correct_answer: "az állami feladatok (pl. oktatás, egészségügy) finanszírozásához szükséges bevétel biztosítását",
+        explanation: "A fiskális funkció az állami feladatok — oktatás, egészségügy, honvédelem — finanszírozásához szükséges bevétel biztosítását jelenti.",
+        difficulty: 3,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Melyik példa illusztrálja legjobban az adóztatás szabályozó (ösztönző) funkcióját?",
+        options: [
+          "a magas jövedéki adó a dohányzás visszaszorítására",
+          "az SZJA egykulcsos rendszere",
+          "az ÁFA beszedése minden termékre",
+          "a NAV ellenőrzési tevékenysége"
+        ],
+        correct_answer: "a magas jövedéki adó a dohányzás visszaszorítására",
+        explanation: "A szabályozó (ösztönző) funkció példája a magas jövedéki adó a dohányzás visszaszorítására, vagy az adókedvezmény az innováció ösztönzésére.",
+        difficulty: 3,
       },
     ],
   },
@@ -571,6 +1076,136 @@ A tőzsde és az értékpapírpiac ismerete alapvető a modern piacgazdaság mű
         correct_answer: "milyen könnyen és gyorsan eladható a másodlagos piacon",
         explanation: "A likviditás azt fejezi ki, hogy egy értékpapír mennyire könnyen váltható vissza készpénzre a másodlagos piacon.",
         difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Mi az értékpapír fogalma?",
+        options: [
+          "olyan forgatható okirat, amely valamilyen vagyoni értékű jogot testesít meg",
+          "kizárólag készpénzt jelentő okirat",
+          "az állam által kibocsátott adóigazolás",
+          "egy bank belső nyilvántartási dokumentuma"
+        ],
+        correct_answer: "olyan forgatható okirat, amely valamilyen vagyoni értékű jogot testesít meg",
+        explanation: "Az értékpapír olyan forgatható okirat, amely valamilyen vagyoni értékű jogot (pl. tulajdonjogot vagy hitelezői követelést) testesít meg.",
+        difficulty: 1,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Milyen jogok illetik meg a részvényest?",
+        options: [
+          "osztalékra jogosult, és szavazati jogot gyakorolhat a közgyűlésen",
+          "garantált, fix kamatra jogosult",
+          "az állam felé fennálló adójogosultságra",
+          "kizárólag a vállalat vezetői pozíciójára"
+        ],
+        correct_answer: "osztalékra jogosult, és szavazati jogot gyakorolhat a közgyűlésen",
+        explanation: "A részvényes a vállalat résztulajdonosává válik: jogosult az osztalékra, és szavazati jogot gyakorolhat a közgyűlésen.",
+        difficulty: 1,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Mire jogosult a kötvénytulajdonos?",
+        options: [
+          "a tőke visszafizetésére meghatározott időpontban és rendszeres kamatfizetésre",
+          "a vállalat közgyűlésén szavazati jogra",
+          "osztalékra a vállalat nyereségéből",
+          "a vállalat tulajdonrészére"
+        ],
+        correct_answer: "a tőke visszafizetésére meghatározott időpontban és rendszeres kamatfizetésre",
+        explanation: "A kötvény hitelviszonyt testesít meg: a kötvénytulajdonos a tőke visszafizetésére és rendszeres kamatfizetésre jogosult, tulajdonjog nélkül.",
+        difficulty: 1,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Mit jelent az IPO (tőzsdei bevezetés)?",
+        options: [
+          "amikor egy vállalat elsőként bocsát ki és vezet be értékpapírokat a tőzsdére",
+          "amikor egy vállalat felszámolás alá kerül",
+          "amikor egy kötvény lejár",
+          "amikor egy befektető diverzifikálja portfólióját"
+        ],
+        correct_answer: "amikor egy vállalat elsőként bocsát ki és vezet be értékpapírokat a tőzsdére",
+        explanation: "Az IPO azt jelenti, hogy egy vállalat elsőként bocsát ki és vezet be új értékpapírokat a tőzsdére az elsődleges piacon.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Mi történik a másodlagos piacon?",
+        options: [
+          "a már kibocsátott értékpapírokkal kereskednek a befektetők egymás között",
+          "a vállalatok új értékpapírokat bocsátanak ki",
+          "kizárólag az állam kereskedik",
+          "megszűnik minden korábbi értékpapír"
+        ],
+        correct_answer: "a már kibocsátott értékpapírokkal kereskednek a befektetők egymás között",
+        explanation: "A másodlagos piacon a már kibocsátott értékpapírokkal kereskednek a befektetők egymás között, ami biztosítja azok likviditását.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Mi befolyásolja alapvetően a tőzsdei árfolyamok alakulását?",
+        options: [
+          "a vállalat teljesítménye, a makrogazdasági környezet és a befektetői várakozások",
+          "kizárólag az állami adópolitika",
+          "a munkanélküliségi ráta önmagában",
+          "a fogyasztóvédelmi szabályozás"
+        ],
+        correct_answer: "a vállalat teljesítménye, a makrogazdasági környezet és a befektetői várakozások",
+        explanation: "A tőzsdei árfolyamokat a vállalat teljesítménye, jövőbeli kilátásai, a makrogazdasági környezet (kamatok, infláció) és a befektetői várakozások egyaránt befolyásolják.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Mit fejez ki egy tőzsdeindex, mint például a BÉT BUX indexe?",
+        options: [
+          "a piac egészének átlagos teljesítményét",
+          "egyetlen vállalat árfolyamát",
+          "az állam költségvetési egyenlegét",
+          "a jegybanki alapkamat szintjét"
+        ],
+        correct_answer: "a piac egészének átlagos teljesítményét",
+        explanation: "A tőzsdeindexek, mint a BUX, a piac egészének átlagos teljesítményét összegzik, nem csak egyetlen vállalatét.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Milyen összefüggés jellemző a várható hozam és a kockázat között a tőzsdei befektetéseknél?",
+        options: [
+          "a magasabb várható hozam jellemzően magasabb kockázattal jár együtt",
+          "a magasabb hozam mindig kockázat nélkül elérhető",
+          "nincs összefüggés a kettő között",
+          "a kockázat mindig független a hozamtól"
+        ],
+        correct_answer: "a magasabb várható hozam jellemzően magasabb kockázattal jár együtt",
+        explanation: "A tőzsdei befektetés a magasabb várható hozam mellett jellemzően magasabb kockázattal is jár, mivel az árfolyamok ingadozhatnak.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Miért veszíthet a részvényes a befektetett tőkéjéből?",
+        options: [
+          "mert a részvényes a vállalat esetleges veszteségét is viseli",
+          "mert a részvény mindig garantált hozamot biztosít",
+          "mert a kötvénytulajdonosok mindig elsőbbséget kapnak minden helyzetben",
+          "mert a részvények sosem veszíthetnek értékükből"
+        ],
+        correct_answer: "mert a részvényes a vállalat esetleges veszteségét is viseli",
+        explanation: "A részvényes a vállalat résztulajdonosaként a vállalat esetleges veszteségét is viseli, így a befektetett tőkéje elveszhet.",
+        difficulty: 3,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Miért jár jellemzően kisebb kockázattal a kötvény, mint a részvény?",
+        options: [
+          "mert a kötvény kibocsátója vállalja a tőke visszafizetését és a rendszeres kamatfizetést, függetlenül a vállalat nyereségességétől",
+          "mert a kötvényt sosem lehet elveszíteni",
+          "mert a kötvénytulajdonos résztulajdonossá válik",
+          "mert a kötvény árfolyama sosem ingadozik"
+        ],
+        correct_answer: "mert a kötvény kibocsátója vállalja a tőke visszafizetését és a rendszeres kamatfizetést, függetlenül a vállalat nyereségességétől",
+        explanation: "A kötvény kevesebb kockázattal jár, mint a részvény, mivel a kibocsátó vállalja a tőke visszafizetését és a kamatfizetést, függetlenül attól, hogy a vállalat nyereséges-e.",
+        difficulty: 3,
       },
     ],
   },
@@ -693,6 +1328,136 @@ A fogyasztóvédelem és a fenntartható fogyasztás ismerete gyakorlati szempon
         correct_answer: "egységes, magas szintű fogyasztóvédelmet biztosít a belső piacon, tagállamtól függetlenül",
         explanation: "Az EU fogyasztóvédelmi politikája harmonizált szabályokkal biztosítja a fogyasztók egységes, magas szintű védelmét az egész belső piacon.",
         difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Mi a fogyasztóvédelem célja?",
+        options: [
+          "a fogyasztók gazdasági érdekeinek, testi épségének és biztonságának védelme",
+          "kizárólag a vállalatok profitjának növelése",
+          "a piaci verseny teljes megszüntetése",
+          "az árak folyamatos emelése"
+        ],
+        correct_answer: "a fogyasztók gazdasági érdekeinek, testi épségének és biztonságának védelme",
+        explanation: "A fogyasztóvédelem célja a fogyasztók gazdasági érdekeinek, testi épségének és biztonságának védelme a piaci szereplőkkel szemben.",
+        difficulty: 1,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Mit jelent a fogyasztók biztonsághoz való joga?",
+        options: [
+          "hogy a termékek és szolgáltatások ne veszélyeztessék az egészséget, testi épséget",
+          "hogy minden termék ingyenes legyen",
+          "hogy a fogyasztó korlátlan mennyiséget vásárolhasson",
+          "hogy a reklámok korlátlanul megtéveszthessék a vásárlókat"
+        ],
+        correct_answer: "hogy a termékek és szolgáltatások ne veszélyeztessék az egészséget, testi épséget",
+        explanation: "A biztonsághoz való jog azt jelenti, hogy a termékek és szolgáltatások nem veszélyeztethetik a fogyasztók egészségét vagy testi épségét.",
+        difficulty: 1,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Mit jelent a fogyasztók tájékoztatáshoz való joga?",
+        options: [
+          "a fogyasztó jogosult megismerni a termék minden lényeges tulajdonságát, összetételét, gyártóját",
+          "a fogyasztó nem kaphat információt a termékről",
+          "csak a gyártók jogosultak információra",
+          "a reklámok tartalma nem befolyásolja a fogyasztói jogokat"
+        ],
+        correct_answer: "a fogyasztó jogosult megismerni a termék minden lényeges tulajdonságát, összetételét, gyártóját",
+        explanation: "A tájékoztatáshoz való jog szerint a fogyasztó jogosult megismerni a termék lényeges tulajdonságait, összetételét és gyártóját.",
+        difficulty: 1,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Mit jelent a fogyasztók választás szabadságához való joga?",
+        options: [
+          "a verseny biztosítását, hogy a fogyasztó valódi alternatívák közül választhasson",
+          "azt, hogy a fogyasztó köteles egyetlen márkát választani",
+          "az árak állami rögzítését",
+          "a reklámok teljes betiltását"
+        ],
+        correct_answer: "a verseny biztosítását, hogy a fogyasztó valódi alternatívák közül választhasson",
+        explanation: "A választás szabadságához való jog a verseny biztosítását jelenti, hogy a fogyasztó valódi alternatívák közül választhasson.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Mit jelent a jogorvoslathoz (panasztételhez) való jog?",
+        options: [
+          "jogsérelem esetén a fogyasztó hatékony eljárást indíthat",
+          "a fogyasztó sosem panaszkodhat",
+          "csak a gyártók fordulhatnak bírósághoz",
+          "a fogyasztói jogok érvényesítése kizárólag önkéntes"
+        ],
+        correct_answer: "jogsérelem esetén a fogyasztó hatékony eljárást indíthat",
+        explanation: "A jogorvoslathoz való jog azt jelenti, hogy jogsérelem esetén a fogyasztó hatékony eljárást (panaszt, jogi utat) indíthat.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Hogyan védi az EU fogyasztóvédelmi politikája az online vásárlásokat?",
+        options: [
+          "speciális védelmet biztosít a távollévők közötti szerződésekre",
+          "megtiltja az online vásárlást",
+          "csak a boltokban történő vásárlásra vonatkozik",
+          "nem foglalkozik az online kereskedelemmel"
+        ],
+        correct_answer: "speciális védelmet biztosít a távollévők közötti szerződésekre",
+        explanation: "Az EU fogyasztóvédelmi politikája speciális védelmet biztosít a távollévők közötti szerződésekre, azaz az online vásárlásokra.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Mi a célja a termékbiztonsági előírások uniós harmonizálásának?",
+        options: [
+          "hogy a fogyasztók egységes, magas szintű védelmet kapjanak, függetlenül attól, mely tagállamban vásárolnak",
+          "hogy minden tagállam eltérő szabályokat alkalmazzon",
+          "hogy csak a nagyvállalatokra vonatkozzon",
+          "hogy megszüntesse a termékbiztonsági ellenőrzést"
+        ],
+        correct_answer: "hogy a fogyasztók egységes, magas szintű védelmet kapjanak, függetlenül attól, mely tagállamban vásárolnak",
+        explanation: "A termékbiztonsági előírások harmonizálásának célja, hogy a fogyasztók egységes, magas szintű védelmet kapjanak az egész belső piacon.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Mi a tudatos fogyasztói magatartás egyik alapvető eleme?",
+        options: [
+          "az árak és minőségek összehasonlítása vásárlás előtt",
+          "a reklámok kritikátlan elfogadása",
+          "a lehető legtöbb impulzusvásárlás",
+          "a legdrágább termék automatikus választása"
+        ],
+        correct_answer: "az árak és minőségek összehasonlítása vásárlás előtt",
+        explanation: "A tudatos fogyasztói magatartás egyik eleme az árak és minőségek összehasonlítása vásárlás előtt, ami segít a megalapozott döntésben.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Miért fontos a reklámok kritikus szemlélete a tudatos fogyasztói magatartásban?",
+        options: [
+          "mert segít felismerni és tudatosan kezelni a marketingeszközök hatását a vásárlási döntésekre",
+          "mert minden reklám hamis információt közöl",
+          "mert a reklámok sosem befolyásolják a döntéseket",
+          "mert a reklámok betiltása az egyetlen megoldás"
+        ],
+        correct_answer: "mert segít felismerni és tudatosan kezelni a marketingeszközök hatását a vásárlási döntésekre",
+        explanation: "A reklámok kritikus szemlélete segít a fogyasztóknak felismerni és tudatosan kezelni a marketingeszközök hatását, elkerülve a megalapozatlan vásárlási döntéseket.",
+        difficulty: 3,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Milyen szerepet tölt be az EU a határon átnyúló fogyasztói jogviták rendezésében?",
+        options: [
+          "elősegíti a jogviták rendezését, amikor a fogyasztó egy másik tagállamban vásárol",
+          "megszünteti a határon átnyúló kereskedelmet",
+          "kizárólag a hazai jogviták rendezésével foglalkozik",
+          "nem foglalkozik jogvitákkal"
+        ],
+        correct_answer: "elősegíti a jogviták rendezését, amikor a fogyasztó egy másik tagállamban vásárol",
+        explanation: "Az EU fogyasztóvédelmi politikája elősegíti a határon átnyúló jogviták rendezését, amikor a fogyasztó egy másik tagállamban vásárolt terméket vagy szolgáltatást.",
+        difficulty: 3,
       },
     ],
   },

@@ -123,6 +123,108 @@ Ebben a témakörben a vizsgáztató tipikusan rákérdez a családodra, a szűk
           "Present perfect + 'for' is used for a situation that started in the past and continues now.",
         difficulty: 2,
       },
+      {
+        question_type: "multiple_choice",
+        question_text: "\"Your _____ includes grandparents, aunts, uncles and cousins.\"",
+        options: ["extended family", "immediate family", "generation gap", "household chores"],
+        correct_answer: "extended family",
+        explanation: "'Extended family' refers to relatives beyond parents and siblings, such as grandparents and cousins.",
+        difficulty: 1,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "\"My _____ consists of just my parents and my brother.\"",
+        options: ["immediate family", "extended family", "role model", "peer group"],
+        correct_answer: "immediate family",
+        explanation: "'Immediate family' refers to parents and siblings, as opposed to the wider extended family.",
+        difficulty: 1,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "\"Everyone in our house has to help with the _____, like washing up and vacuuming.\"",
+        options: ["household chores", "entrance exams", "career path", "screen time"],
+        correct_answer: "household chores",
+        explanation: "'Household chores' are everyday domestic tasks like cleaning and washing up.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "\"A talent for music seems to _____ — my mother, my aunt and I all play the piano.\"",
+        options: [
+          "run in the family",
+          "take after the family",
+          "get along with the family",
+          "look up to the family",
+        ],
+        correct_answer: "run in the family",
+        explanation: "'Run in the family' means a trait or talent is shared across generations of relatives.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "\"She was _____ by her grandparents after her parents moved abroad for work.\"",
+        options: ["brought up", "taken after", "looked up", "got along"],
+        correct_answer: "brought up",
+        explanation: "'To be brought up' means to be raised or cared for during childhood.",
+        difficulty: 1,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "\"As an _____, I never had to share my toys with brothers or sisters.\"",
+        options: ["only child", "eldest child", "extended family", "immediate family"],
+        correct_answer: "only child",
+        explanation: "An 'only child' is someone who has no siblings.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Which sentence correctly describes a childhood memory using the past simple?",
+        options: [
+          "When I was little, I shared a room with my sister.",
+          "When I was little, I have shared a room with my sister.",
+          "When I was little, I am sharing a room with my sister.",
+          "When I was little, I share a room with my sister.",
+        ],
+        correct_answer: "When I was little, I shared a room with my sister.",
+        explanation: "The past simple is used for finished actions or states in the past, such as childhood memories.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "Which answer best extends a simple statement with a reason, as recommended for the oral exam?",
+        options: [
+          "I get on well with my sister because we share the same sense of humour and always support each other.",
+          "I get on well with my sister.",
+          "My sister is nice.",
+          "Yes.",
+        ],
+        correct_answer:
+          "I get on well with my sister because we share the same sense of humour and always support each other.",
+        explanation: "Exam tips recommend extending answers with a reason or example rather than stopping at a short statement.",
+        difficulty: 3,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "In a family with three children, the child who was born first is called _____.",
+        options: ["the eldest", "the youngest", "an only child", "a sibling"],
+        correct_answer: "the eldest",
+        explanation: "'The eldest' refers to the oldest child in a family.",
+        difficulty: 3,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "A family that has close, strong relationships between its members is often described as a _____ family.",
+        options: ["close-knit", "extended", "immediate", "distant"],
+        correct_answer: "close-knit",
+        explanation: "'Close-knit' describes a family or group with strong, supportive relationships.",
+        difficulty: 2,
+      },
     ],
   },
   {
@@ -220,6 +322,109 @@ Ide tartozik: milyen iskolába jársz, kedvenc/nem kedvelt tantárgyaid és mié
         explanation: "An 'entrance exam' determines admission to an institution.",
         difficulty: 1,
       },
+      {
+        question_type: "multiple_choice",
+        question_text: "\"Maths and Hungarian are _____ subjects — every student has to take them.\"",
+        options: ["compulsory", "optional", "extracurricular", "elective"],
+        correct_answer: "compulsory",
+        explanation: "'Compulsory' subjects are required, unlike optional or elective ones.",
+        difficulty: 1,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "\"I missed two weeks of school, so now I need to _____ on the material I missed.\"",
+        options: ["catch up", "fall behind", "apply for", "take up"],
+        correct_answer: "catch up",
+        explanation: "'Catch up (on schoolwork)' means to reach the same level as others after falling behind.",
+        difficulty: 1,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "\"My chemistry teacher is very _____ — she always encourages us and helps us when we struggle.\"",
+        options: ["supportive", "strict", "compulsory", "entrance"],
+        correct_answer: "supportive",
+        explanation: "A 'supportive' teacher encourages and helps students, as opposed to a strict one.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "\"I got a good _____ on my last English test — an A minus.\"",
+        options: ["grade", "subject", "curriculum", "chore"],
+        correct_answer: "grade",
+        explanation: "A 'grade' (or mark) is the score or rating given for schoolwork.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "\"I'm going to _____ a scholarship to study abroad next year.\"",
+        options: ["apply for", "apply to", "apply on", "apply about"],
+        correct_answer: "apply for",
+        explanation: "'Apply for' is used with a thing you request, such as a scholarship or job; 'apply to' is used with an institution.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "Which of the following is an example of an extracurricular activity mentioned as helping improve English skills?",
+        options: [
+          "joining the debate club",
+          "taking an entrance exam",
+          "falling behind in a subject",
+          "attending a compulsory lesson",
+        ],
+        correct_answer: "joining the debate club",
+        explanation: "The topic mentions that being part of the school's debate club really helped the speaker's English.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "Which sentence correctly uses 'used to' to describe a past habit that has since changed, as suggested for exam answers?",
+        options: [
+          "I used to find maths difficult, but now I'm more confident.",
+          "I use to find maths difficult, but now I'm more confident.",
+          "I am used to find maths difficult, but now I'm more confident.",
+          "I used finding maths difficult, but now I'm more confident.",
+        ],
+        correct_answer: "I used to find maths difficult, but now I'm more confident.",
+        explanation: "'Used to + infinitive' describes a past habit or state that is no longer true.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "The document that shows what lessons you have on which day is called a _____.",
+        options: ["timetable", "curriculum", "transcript", "syllabus"],
+        correct_answer: "timetable",
+        explanation: "A 'timetable' shows the schedule of lessons for each day.",
+        difficulty: 1,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "Why does the topic guide suggest giving a reason such as 'I like biology because of the teacher's practical examples' rather than just 'I like biology'?",
+        options: [
+          "Because it shows more developed, specific language and reasoning, which examiners reward.",
+          "Because shorter answers are always graded higher.",
+          "Because subject names must never be mentioned alone.",
+          "Because it changes the topic to travel and tourism.",
+        ],
+        correct_answer:
+          "Because it shows more developed, specific language and reasoning, which examiners reward.",
+        explanation: "The exam tips state that mentioning specific subjects and reasons is stronger than a bare statement.",
+        difficulty: 3,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "A secondary school that focuses especially on academic/science subjects, as mentioned in the topic, is called a _____.",
+        options: ["grammar school", "entrance exam", "extracurricular club", "consumer society"],
+        correct_answer: "grammar school",
+        explanation: "The sample answer describes attending a 'grammar school that specialises in science subjects'.",
+        difficulty: 2,
+      },
     ],
   },
   {
@@ -314,6 +519,115 @@ A vizsgáztató kíváncsi arra, hogyan töltöd a szabadidődet, milyen hobbija
         correct_answer: "unwind",
         explanation: "'Unwind' = to relax after being tense or busy.",
         difficulty: 1,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "\"After a few months, she decided to _____ tennis because she didn't enjoy it anymore.\"",
+        options: ["give up", "take up", "get along with", "look up to"],
+        correct_answer: "give up",
+        explanation: "'Give up a hobby' means to stop doing it.",
+        difficulty: 1,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Someone who reads a lot of books is often called a _____.",
+        options: ["bookworm", "couch potato", "workaholic", "night owl"],
+        correct_answer: "bookworm",
+        explanation: "A 'bookworm' is someone who enjoys reading a lot.",
+        difficulty: 1,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "\"Going hiking on weekends helps me _____ from schoolwork and just relax.\"",
+        options: ["switch off", "take up", "give up", "look up"],
+        correct_answer: "switch off",
+        explanation: "'Switch off (from something)' means to stop thinking about it and relax.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "Which sentence correctly uses present perfect to talk about a long-standing interest?",
+        options: [
+          "I've been into photography since I was a kid.",
+          "I am into photography since I was a kid.",
+          "I was into photography since I was a kid.",
+          "I into photography since I was a kid.",
+        ],
+        correct_answer: "I've been into photography since I was a kid.",
+        explanation: "Present perfect ('have been') + 'since' describes a state that started in the past and continues now.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "If a talent or interest is shared across generations of the same family, we say it _____.",
+        options: [
+          "runs in the family",
+          "takes up the family",
+          "gives up the family",
+          "gets along the family",
+        ],
+        correct_answer: "runs in the family",
+        explanation: "'Run in the family' means a trait or hobby is common among relatives across generations.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "In the sample answer, what kind of photography does the speaker especially enjoy?",
+        options: ["street photography", "wildlife photography", "portrait photography", "underwater photography"],
+        correct_answer: "street photography",
+        explanation: "The sample answer says the speaker 'especially enjoys street photography'.",
+        difficulty: 1,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "\"After taking photos, the speaker likes to _____ them afterwards.\"",
+        options: ["edit", "delete", "print", "sell"],
+        correct_answer: "edit",
+        explanation: "The sample answer mentions liking 'to edit the pictures afterwards'.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "Which sentence best follows the exam tip of explaining how you got into a hobby, not just naming it?",
+        options: [
+          "I took up photography two years ago when my dad gave me his old camera.",
+          "I like photography.",
+          "Photography is a hobby.",
+          "I have a camera.",
+        ],
+        correct_answer: "I took up photography two years ago when my dad gave me his old camera.",
+        explanation: "The exam tips recommend explaining how and why you got into a hobby, not just listing it.",
+        difficulty: 3,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "What is the main difference in meaning between 'to take up a hobby' and 'to be into something'?",
+        options: [
+          "'Take up' focuses on starting an activity, while 'be into' describes ongoing enthusiasm or interest.",
+          "They mean exactly the same thing with no difference.",
+          "'Take up' is only used for sports, and 'be into' only for music.",
+          "'Be into' means to dislike something.",
+        ],
+        correct_answer:
+          "'Take up' focuses on starting an activity, while 'be into' describes ongoing enthusiasm or interest.",
+        explanation: "'Take up' marks the beginning of a hobby, whereas 'be into' expresses a general, ongoing interest.",
+        difficulty: 3,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "According to the sample answer, what genre of novels does the speaker usually read before going to bed?",
+        options: ["fantasy novels", "science fiction novels", "romance novels", "historical novels"],
+        correct_answer: "fantasy novels",
+        explanation: "The sample answer says the speaker 'usually reads fantasy novels before going to bed'.",
+        difficulty: 2,
       },
     ],
   },
@@ -410,6 +724,112 @@ Ez a témakör gyakran kapcsolódik képleíráshoz is (egy utazással kapcsolat
         explanation: "'Backpacking' = travelling on a low budget, usually carrying your belongings in a backpack.",
         difficulty: 1,
       },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "A pre-arranged trip that includes flights, hotel and sometimes meals is called a _____.",
+        options: ["package holiday", "backpacking trip", "business trip", "road trip"],
+        correct_answer: "package holiday",
+        explanation: "A 'package holiday' is a pre-organised trip where flights, accommodation and often meals are bundled together.",
+        difficulty: 1,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "\"On our first day in Rome, we went _____ and visited the Colosseum and the Trevi Fountain.\"",
+        options: ["sightseeing", "backpacking", "boarding", "checking in"],
+        correct_answer: "sightseeing",
+        explanation: "'To go sightseeing' means to visit famous or interesting places as a tourist.",
+        difficulty: 1,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "\"It's usually cheaper if you _____ your flight several months in advance.\"",
+        options: ["book", "cancel", "miss", "delay"],
+        correct_answer: "book",
+        explanation: "'To book a flight/hotel' means to reserve it in advance.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "In the sample answer, where did the family stay instead of a big hotel?",
+        options: ["a small guesthouse", "a campsite", "a hostel", "a cruise ship"],
+        correct_answer: "a small guesthouse",
+        explanation: "The sample answer says they 'stayed in a small guesthouse rather than a big hotel'.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "Which sentence correctly uses the past simple to narrate a specific trip, as recommended for the oral exam?",
+        options: [
+          "Two summers ago, we rented a car and explored small towns along the coast.",
+          "Two summers ago, we rent a car and explore small towns along the coast.",
+          "Two summers ago, we have rented a car and explored small towns.",
+          "Two summers ago, we are renting a car and exploring small towns.",
+        ],
+        correct_answer: "Two summers ago, we rented a car and explored small towns along the coast.",
+        explanation: "The past simple is the correct tense for narrating a completed, specific past event.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "If a trip is planned to cost as little money as possible, it can be described as a _____ trip.",
+        options: ["budget", "package", "luxury", "business"],
+        correct_answer: "budget",
+        explanation: "A 'budget trip' is one planned to keep costs as low as possible.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "According to the exam tips, why is it useful to prepare one detailed story about a specific trip rather than only general statements?",
+        options: [
+          "Because examiners reward concrete detail over vague generalities.",
+          "Because general statements are grammatically incorrect.",
+          "Because specific stories are shorter to say.",
+          "Because the topic only allows one sentence answers.",
+        ],
+        correct_answer: "Because examiners reward concrete detail over vague generalities.",
+        explanation: "The exam tips state that examiners reward concrete detail, so a specific story is stronger than general statements.",
+        difficulty: 3,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "What is the key difference between 'off the beaten track' and a 'tourist trap'?",
+        options: [
+          "'Off the beaten track' means quiet and less visited, while a 'tourist trap' is an overcommercialised place aimed at tourists.",
+          "They are two different words for the same touristy, crowded place.",
+          "'Off the beaten track' refers only to airports, while 'tourist trap' refers only to hotels.",
+          "A tourist trap is always cheaper than an off-the-beaten-track destination.",
+        ],
+        correct_answer:
+          "'Off the beaten track' means quiet and less visited, while a 'tourist trap' is an overcommercialised place aimed at tourists.",
+        explanation: "These two expressions describe almost opposite kinds of destinations: quiet/unknown versus crowded/commercial.",
+        difficulty: 3,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "According to the sample answer, which country did the speaker visit two summers ago?",
+        options: ["Croatia", "Italy", "Greece", "Spain"],
+        correct_answer: "Croatia",
+        explanation: "The sample answer describes a trip 'to Croatia with my family two summers ago'.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "\"Instead of joining a tour group, we decided to _____ a car and explore independently.\"",
+        options: ["rent", "book", "catch", "miss"],
+        correct_answer: "rent",
+        explanation: "'To rent a car' means to pay to use a car temporarily, as mentioned in the sample answer.",
+        difficulty: 2,
+      },
     ],
   },
   {
@@ -503,6 +923,115 @@ Ez a témakör gyakran összekapcsolódik a szabadidővel. A vizsgáztató kív�
         options: ["work out", "work on", "work off", "work up"],
         correct_answer: "work out",
         explanation: "'Work out' = to do physical exercise.",
+        difficulty: 1,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "Eating a variety of healthy foods in the right amounts is known as having a _____.",
+        options: ["balanced diet", "sedentary lifestyle", "screen time", "consumer society"],
+        correct_answer: "balanced diet",
+        explanation: "A 'balanced diet' includes the right proportions of different food groups.",
+        difficulty: 1,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "Teenagers are advised to _____ every night to stay healthy and focused at school.",
+        options: ["get enough sleep", "cut down on stress", "work out sugar", "take up junk food"],
+        correct_answer: "get enough sleep",
+        explanation: "'To get enough sleep' means to sleep for a sufficient amount of time each night.",
+        difficulty: 1,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "According to the sample answer, how often does the speaker go jogging?",
+        options: ["three times a week", "every day", "once a month", "twice a week"],
+        correct_answer: "three times a week",
+        explanation: "The sample answer says 'I go jogging three times a week'.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "\"Going for a run really helps me _____ before a stressful exam.\"",
+        options: ["clear my head", "cut down on stress", "get under stress", "fall behind"],
+        correct_answer: "clear my head",
+        explanation: "'Clear my head' means to help oneself think more calmly by relaxing or exercising.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "Which sentence correctly uses 'have to admit' to acknowledge an honest weakness, as suggested for authentic exam answers?",
+        options: [
+          "I have to admit I have a weakness for junk food.",
+          "I have to admitting I have a weakness for junk food.",
+          "I must to admit I have a weakness for junk food.",
+          "I have admit I have a weakness for junk food.",
+        ],
+        correct_answer: "I have to admit I have a weakness for junk food.",
+        explanation: "'Have to admit' is followed by a clause, not a gerund or bare infinitive: 'have to admit (that) I have...'.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "\"I often _____ finishing homework, which leaves me tired the next day.\"",
+        options: ["stay up too late", "wake up early", "work out late", "cut down late"],
+        correct_answer: "stay up too late",
+        explanation: "'Stay up too late' means to go to bed later than one should.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "Why do the exam tips recommend mentioning something you would like to improve, not just positive habits?",
+        options: [
+          "Because it shows more natural, nuanced and reflective English rather than only textbook statements.",
+          "Because examiners only accept negative answers.",
+          "Because positive statements are grammatically wrong.",
+          "Because the topic requires exactly one sentence.",
+        ],
+        correct_answer:
+          "Because it shows more natural, nuanced and reflective English rather than only textbook statements.",
+        explanation: "The exam tips say mentioning something to improve shows more natural, reflective English.",
+        difficulty: 3,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "According to the exam tips, health is described as a natural bridge to which other topics?",
+        options: [
+          "stress and school life",
+          "travel and tourism only",
+          "economy and finances only",
+          "science and technology only",
+        ],
+        correct_answer: "stress and school life",
+        explanation: "The exam tips connect health to stress and school life, linking naturally to other topics.",
+        difficulty: 3,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "\"I have a _____ for chocolate — I always end up eating too much of it.\"",
+        options: ["weakness", "balance", "budget", "chore"],
+        correct_answer: "weakness",
+        explanation: "'To have a weakness for something' means to find it hard to resist.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "What does the speaker in the sample answer say they are trying to work on?",
+        options: [
+          "getting more sleep",
+          "eating more junk food",
+          "doing less exercise",
+          "watching more TV",
+        ],
+        correct_answer: "getting more sleep",
+        explanation: "The sample answer says 'one thing I'm trying to work on is getting more sleep'.",
         difficulty: 1,
       },
     ],

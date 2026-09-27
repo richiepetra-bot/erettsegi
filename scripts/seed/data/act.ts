@@ -101,6 +101,128 @@ Time yourself doing English passages in **9 minutes each** (75 questions / 5 pas
         explanation: "'As a result' signals a cause-effect relationship.",
         difficulty: 1,
       },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "Which is the most concise, ACT-preferred revision of: 'in the event that it rains tomorrow, the game will be postponed'?",
+        options: [
+          "If it rains tomorrow, the game will be postponed.",
+          "In the event that it rains tomorrow, the game will be postponed.",
+          "In the event of rain occurring tomorrow, the game will be postponed.",
+          "Under the circumstance that it rains tomorrow, the game will be postponed.",
+        ],
+        correct_answer: "If it rains tomorrow, the game will be postponed.",
+        explanation: "'If' expresses the same conditional meaning far more concisely than 'in the event that.'",
+        difficulty: 1,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Two sentences express agreeing, similar ideas. Which transition word fits best?",
+        options: ["furthermore", "however", "nevertheless", "on the other hand"],
+        correct_answer: "furthermore",
+        explanation: "'Furthermore' signals addition/agreement; the other options all signal contrast.",
+        difficulty: 1,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Which phrase is redundant and should typically be shortened on ACT English?",
+        options: ["each and every", "each day", "every year", "many students"],
+        correct_answer: "each and every",
+        explanation: "'Each' and 'every' mean the same thing, so pairing them is redundant; ACT favors the more concise 'each' or 'every' alone.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "A paragraph focuses on the health benefits of walking. A sentence about the history of jogging shoes is inserted. Should it be kept?",
+        options: [
+          "No — it doesn't support the paragraph's main idea about walking's health benefits",
+          "Yes — it is interesting and well-written",
+          "Yes — because it mentions a related activity",
+          "No — because it uses transition words",
+        ],
+        correct_answer: "No — it doesn't support the paragraph's main idea about walking's health benefits",
+        explanation: "Relevance to the specific paragraph's focus, not general topic relatedness, determines whether a sentence belongs.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "A sentence begins with 'This process, however, takes several years to complete.' Where must this sentence logically be placed?",
+        options: [
+          "After a sentence that describes the process being referred to",
+          "As the very first sentence of the passage",
+          "Anywhere in the paragraph, since order doesn't matter",
+          "Before the process is ever mentioned",
+        ],
+        correct_answer: "After a sentence that describes the process being referred to",
+        explanation: "The pronoun 'this process' requires an antecedent — a prior sentence describing the process — to make sense.",
+        difficulty: 3,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "All four options below are grammatically correct. Which one does ACT English typically prefer as 'most effective'?",
+        options: [
+          "The results, in short, confirmed the hypothesis.",
+          "The results, when all is said and done, confirmed the hypothesis.",
+          "The results, taking everything into consideration, confirmed the hypothesis.",
+          "The results, in light of all the evidence gathered, confirmed the hypothesis.",
+        ],
+        correct_answer: "The results, in short, confirmed the hypothesis.",
+        explanation: "ACT English favors the shortest, clearest wording when multiple choices are grammatically correct and convey the same idea.",
+        difficulty: 3,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "'The recipe calls for two cups of sugar. _____, many bakers use only one cup for a less sweet result.' Which transition fits best?",
+        options: ["However", "Furthermore", "As a result", "Similarly"],
+        correct_answer: "However",
+        explanation: "The second sentence contrasts with the first (less sugar than called for), so a contrast transition fits best.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "Besides supporting the main idea and avoiding redundancy, what else should you check before adding a new sentence to a paragraph?",
+        options: [
+          "Whether it interrupts the logical flow of the paragraph",
+          "Whether it is the shortest sentence in the paragraph",
+          "Whether it rhymes with the previous sentence",
+          "Whether it contains a transition word",
+        ],
+        correct_answer: "Whether it interrupts the logical flow of the paragraph",
+        explanation: "A sentence can support the main idea and add new information, yet still be wrong to insert if it breaks the paragraph's flow.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "A paragraph already states that the bridge was built in 1932. A later sentence in the same paragraph says, 'The bridge was constructed in 1932, a fact worth repeating.' Should this sentence be kept?",
+        options: [
+          "No — it repeats information already given in the paragraph",
+          "Yes — repetition helps readers remember facts",
+          "Yes — because it uses correct grammar",
+          "No — because it is too short",
+        ],
+        correct_answer: "No — it repeats information already given in the paragraph",
+        explanation: "Redundant sentences that restate already-given information should be deleted, regardless of their grammar.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "How many questions does the ACT English section typically contain, and in how much time?",
+        options: [
+          "75 questions in 45 minutes",
+          "60 questions in 60 minutes",
+          "40 questions in 35 minutes",
+          "50 questions in 50 minutes",
+        ],
+        correct_answer: "75 questions in 45 minutes",
+        explanation: "ACT English has 75 questions to complete in 45 minutes, a faster pace than SAT Writing.",
+        difficulty: 1,
+      },
     ],
   },
   {
@@ -210,6 +332,123 @@ Most ACT Science questions can be answered **directly from the given graph or ta
         correct_answer: "What variable changed between the experiments",
         explanation:
           "Understanding what was varied (and what was held constant) is key to answering comparison questions.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "What are the three passage types found in the ACT Science section?",
+        options: [
+          "Data Representation, Research Summaries, and Conflicting Viewpoints",
+          "Algebra, Geometry, and Trigonometry",
+          "Fiction, Nonfiction, and Poetry",
+          "Biology, Chemistry, and Physics",
+        ],
+        correct_answer: "Data Representation, Research Summaries, and Conflicting Viewpoints",
+        explanation: "These are the three passage formats used throughout ACT Science.",
+        difficulty: 1,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "What is the recommended first step when approaching a Data Representation passage?",
+        options: [
+          "Skip the wall of text and go straight to the figures/tables to understand the axes",
+          "Read every word of the passage text first",
+          "Memorize all the numbers before reading questions",
+          "Skip the passage entirely and guess",
+        ],
+        correct_answer: "Skip the wall of text and go straight to the figures/tables to understand the axes",
+        explanation: "Most Data Representation questions can be answered directly from the figures, so understanding them first saves time.",
+        difficulty: 1,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "A table shows that as water temperature increases from 10°C to 40°C, the amount of dissolved oxygen in the water steadily decreases. Based on this trend, what would you expect at 50°C?",
+        options: [
+          "Even less dissolved oxygen than at 40°C",
+          "The same amount of dissolved oxygen as at 10°C",
+          "More dissolved oxygen than at 40°C",
+          "No way to estimate without outside knowledge",
+        ],
+        correct_answer: "Even less dissolved oxygen than at 40°C",
+        explanation: "Extrapolating the existing decreasing trend, dissolved oxygen should continue to decrease as temperature rises further.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "In an experiment testing how different amounts of sunlight affect plant growth, what is the dependent variable?",
+        options: ["plant growth", "the amount of sunlight", "the type of soil", "the room temperature"],
+        correct_answer: "plant growth",
+        explanation: "The dependent variable is what is measured as a result of the change — here, plant growth, which depends on sunlight.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "Scientist 1 claims a mineral formed from slow cooling of magma deep underground. Scientist 2 claims it formed from rapid cooling at the surface. A new sample shows large, well-formed crystals (which take a long time to grow). Which scientist's view does this new evidence support?",
+        options: ["Scientist 1", "Scientist 2", "Neither scientist", "Both equally"],
+        correct_answer: "Scientist 1",
+        explanation: "Large, well-formed crystals typically require slow cooling, supporting Scientist 1's claim of slow, deep cooling.",
+        difficulty: 3,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Which ACT Science passage type describes 2-3 related experiments?",
+        options: ["Research Summaries", "Data Representation", "Conflicting Viewpoints", "None of these"],
+        correct_answer: "Research Summaries",
+        explanation: "Research Summaries passages describe the setup and results of related experiments.",
+        difficulty: 1,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "A graph shows reaction rate on the y-axis and catalyst concentration on the x-axis. To answer 'what is the reaction rate at a catalyst concentration of 3 mol/L,' what should you do?",
+        options: [
+          "Find the point on the graph directly above 3 mol/L and read its y-value",
+          "Estimate based on outside chemistry knowledge",
+          "Average all the values shown on the graph",
+          "Assume it equals the concentration value itself",
+        ],
+        correct_answer: "Find the point on the graph directly above 3 mol/L and read its y-value",
+        explanation: "Data Representation questions should be answered by looking up the specific point, not by memory or outside knowledge.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "Experiment 1 tests seed germination at 20°C with daily watering. Experiment 2 tests seed germination at 30°C with daily watering. What changed between the two experiments?",
+        options: ["the temperature", "the watering schedule", "the type of seed", "the amount of soil"],
+        correct_answer: "the temperature",
+        explanation: "Watering stayed the same in both; only the temperature differed, making it the variable being compared.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "A table lists mass in kilograms, but one answer choice restates a value in grams using the same number (e.g., a mass of 5 kg is presented as '5 g'). What kind of error does this represent?",
+        options: [
+          "A unit-conversion trap using the correct number but the wrong unit",
+          "A correct and equivalent restatement",
+          "An extrapolation error",
+          "A conflicting viewpoints error",
+        ],
+        correct_answer: "A unit-conversion trap using the correct number but the wrong unit",
+        explanation: "5 kg and 5 g are very different masses — reusing the number with the wrong unit is a classic ACT Science distractor.",
+        difficulty: 3,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "When answering a Conflicting Viewpoints question about which scientist supports a specific new piece of evidence, what is a common mistake?",
+        options: [
+          "Picking the scientist whose view seems scientifically more correct, rather than the one the question asks about",
+          "Reading both scientists' claims before answering",
+          "Comparing the claims directly to the new evidence",
+          "Identifying each scientist's core claim in one line first",
+        ],
+        correct_answer: "Picking the scientist whose view seems scientifically more correct, rather than the one the question asks about",
+        explanation: "The question asks about a specific scientist's perspective, not which view is objectively more scientifically sound.",
         difficulty: 2,
       },
     ],

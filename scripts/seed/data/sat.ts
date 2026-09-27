@@ -112,6 +112,149 @@ When practising, for every question you get wrong, write down **which trap** cau
         explanation: "This is one of the most common SAT distractor patterns.",
         difficulty: 3,
       },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "On SAT Reading, what does extreme language like 'always,' 'never,' or 'completely' in an answer choice usually signal?",
+        options: [
+          "The answer is likely too extreme to be correct; correct answers tend to be more measured",
+          "The answer is definitely correct because it sounds confident",
+          "The passage itself must contain that exact word",
+          "The question is testing vocabulary, not reading comprehension",
+        ],
+        correct_answer:
+          "The answer is likely too extreme to be correct; correct answers tend to be more measured",
+        explanation:
+          "SAT correct answers tend to avoid absolute claims; extreme wording is a common distractor signal.",
+        difficulty: 1,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "A passage states that a new traffic law reduced accidents; an answer choice claims the law actually caused more accidents. What kind of wrong-answer trap is this?",
+        options: ["Reversed logic", "Out of scope", "Half-right", "Extreme language"],
+        correct_answer: "Reversed logic",
+        explanation:
+          "This answer reverses the direction of the claim (cause and effect), which is the definition of a reversed-logic trap.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "A passage states: 'The new policy cut costs by 15%, although it led to a rise in customer complaints.' Which best restates the main claim?",
+        options: [
+          "The policy lowered costs but also increased complaints.",
+          "The policy only increased customer complaints.",
+          "The policy had no effect on costs.",
+          "The policy eliminated all customer complaints.",
+        ],
+        correct_answer: "The policy lowered costs but also increased complaints.",
+        explanation:
+          "This captures both parts of the claim (cost reduction and the complaint increase) without adding unsupported information.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "According to the recommended practice approach for Command of Evidence questions, what should you do after getting one wrong?",
+        options: [
+          "Write down which trap (half-right, out of scope, or reversed logic) caught you",
+          "Immediately move to the next passage without review",
+          "Memorize the passage word for word",
+          "Only review the question stem, not the answer choices",
+        ],
+        correct_answer:
+          "Write down which trap (half-right, out of scope, or reversed logic) caught you",
+        explanation:
+          "Identifying the recurring trap helps you notice patterns in your own mistakes over time.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "What is the main purpose of a Command of Evidence question on the digital SAT?",
+        options: [
+          "To identify which part of the text or data best supports a given claim",
+          "To test spelling and vocabulary definitions",
+          "To summarize the entire passage in one sentence",
+          "To identify the author's biography",
+        ],
+        correct_answer: "To identify which part of the text or data best supports a given claim",
+        explanation:
+          "Command of Evidence questions ask you to find the specific textual or data-based support for a claim.",
+        difficulty: 1,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "A passage argues that a company's new recycling program has been effective. Which piece of evidence would best support this claim?",
+        options: [
+          "Waste sent to landfills dropped by 40% within six months of the program's launch.",
+          "The company's CEO gave a speech praising sustainability in general.",
+          "Recycling programs are common among large companies nationwide.",
+          "The program was more expensive to implement than expected.",
+        ],
+        correct_answer:
+          "Waste sent to landfills dropped by 40% within six months of the program's launch.",
+        explanation:
+          "A concrete, measurable result directly tied to the program is the strongest evidence; the other options are general, irrelevant, or contradict effectiveness.",
+        difficulty: 3,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "A passage claims that regular exercise improves memory. An answer choice states 'Exercise is beneficial for overall health,' which is true but does not address memory specifically. What trap is this?",
+        options: ["Out of scope", "Reversed logic", "Extreme language", "Half-right"],
+        correct_answer: "Out of scope",
+        explanation:
+          "The statement is true in general but doesn't answer what the question specifically asked about (memory).",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "A passage states 'The museum's new exhibit attracted twice as many visitors as last year, though attendance dropped in the final week due to renovations.' An answer choice says: 'The exhibit doubled its visitors and continued gaining attendance every week.' What is wrong with this answer?",
+        options: [
+          "It correctly restates part of the claim but adds an unsupported detail (continuous weekly gains), making it half-right",
+          "It is completely unrelated to the passage",
+          "It uses extreme language not found anywhere in the passage",
+          "It is a perfectly correct restatement of the claim",
+        ],
+        correct_answer:
+          "It correctly restates part of the claim but adds an unsupported detail (continuous weekly gains), making it half-right",
+        explanation:
+          "This is a classic half-right distractor: accurate on the doubling, but wrong on the added claim about continuous gains, which contradicts the final week's drop.",
+        difficulty: 3,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "Before looking at the answer choices for a Command of Evidence question, what should you do first?",
+        options: [
+          "Identify the passage's main claim in your own words",
+          "Guess which answer is longest",
+          "Skip directly to elimination",
+          "Reread the question three times",
+        ],
+        correct_answer: "Identify the passage's main claim in your own words",
+        explanation:
+          "Forming the main claim yourself before reading answers helps you avoid being misled by plausible-sounding distractors.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "Approximately how long is a typical digital SAT Reading & Writing passage for this question type?",
+        options: [
+          "25-150 words, paired with one question",
+          "500-750 words, paired with five questions",
+          "Exactly 100 words every time",
+          "1-2 full pages",
+        ],
+        correct_answer: "25-150 words, paired with one question",
+        explanation:
+          "Digital SAT Reading & Writing passages are short—about 25 to 150 words—each paired with a single question.",
+        difficulty: 1,
+      },
     ],
   },
   {
@@ -231,6 +374,143 @@ For every underlined portion, first ask: **"Is this a complete, grammatically co
           "Testing whether each clause stands as a correct sentence catches most grammar errors quickly.",
         difficulty: 1,
       },
+      {
+        question_type: "multiple_choice",
+        question_text: "Which of the following is a complete sentence rather than a fragment?",
+        options: [
+          "She runs through the park every morning.",
+          "Running through the park every morning.",
+          "Through the park every morning.",
+          "Because she runs through the park every morning.",
+        ],
+        correct_answer: "She runs through the park every morning.",
+        explanation:
+          "The other options lack a subject-verb pair that stands alone, or are subordinate clauses that can't stand alone as sentences.",
+        difficulty: 1,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "According to modern SAT-accepted usage, which pronoun correctly completes: 'Each student must bring ___ own laptop'?",
+        options: ["their", "his", "our", "your"],
+        correct_answer: "their",
+        explanation:
+          "Modern usage accepts singular 'their' when gender is unspecified, matching an antecedent like 'each student.'",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Which sentence uses correct subject-verb agreement?",
+        options: [
+          "The box of old photographs is in the attic.",
+          "The box of old photographs are in the attic.",
+          "The boxes of old photograph is in the attic.",
+          "The box of old photographs were in the attic.",
+        ],
+        correct_answer: "The box of old photographs is in the attic.",
+        explanation:
+          "'Box' is the singular subject, despite the plural 'photographs' that comes between subject and verb.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Which of the following is a run-on sentence?",
+        options: [
+          "I studied all night I still felt unprepared.",
+          "I studied all night; I still felt unprepared.",
+          "I studied all night, and I still felt unprepared.",
+          "Although I studied all night, I still felt unprepared.",
+        ],
+        correct_answer: "I studied all night I still felt unprepared.",
+        explanation:
+          "Two independent clauses joined with no punctuation or conjunction at all form a run-on sentence.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "A semicolon can correctly join two clauses when:",
+        options: [
+          "both clauses are independent and closely related in meaning",
+          "the first clause is a fragment",
+          "the second clause starts with 'because'",
+          "the clauses have nothing in common",
+        ],
+        correct_answer: "both clauses are independent and closely related in meaning",
+        explanation:
+          "A semicolon joins two independent, closely related clauses without needing a conjunction.",
+        difficulty: 1,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Which sentence contains a misplaced modifier?",
+        options: [
+          "Having finished the marathon, the medal was awarded to Elena.",
+          "Having finished the marathon, Elena received her medal.",
+          "After she finished the marathon, Elena received her medal.",
+          "Elena received her medal after finishing the marathon.",
+        ],
+        correct_answer: "Having finished the marathon, the medal was awarded to Elena.",
+        explanation:
+          "The medal did not finish the marathon — the modifier should describe the person, Elena, not the medal.",
+        difficulty: 3,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Which sentence correctly punctuates a restrictive (essential) clause?",
+        options: [
+          "The laptop that I bought last year still works well.",
+          "The laptop, that I bought last year, still works well.",
+          "The laptop that I bought, last year still works well.",
+          "The laptop, that I bought last year still works well.",
+        ],
+        correct_answer: "The laptop that I bought last year still works well.",
+        explanation:
+          "'That I bought last year' is essential information identifying which laptop, so no commas are needed.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Which sentence contains a pronoun-antecedent agreement error?",
+        options: [
+          "The dog wagged their tail happily.",
+          "The dog wagged its tail happily.",
+          "The dogs wagged their tails happily.",
+          "Each dog wagged its tail happily.",
+        ],
+        correct_answer: "The dog wagged their tail happily.",
+        explanation:
+          "'Dog' here is a singular animal with unspecified gender; the standard pronoun is 'its,' not 'their.'",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "What is a comma splice?",
+        options: [
+          "Joining two independent clauses with only a comma and no conjunction",
+          "Using too many commas in a list",
+          "Starting a sentence with a comma",
+          "Using a comma before 'and' in a list",
+        ],
+        correct_answer: "Joining two independent clauses with only a comma and no conjunction",
+        explanation:
+          "A comma alone cannot join two independent clauses — this error is called a comma splice.",
+        difficulty: 1,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "Which revision corrects both the subject-verb agreement error and the misplaced modifier in: 'Rushing to catch the train, the schedules of the commuters was constantly checked'?",
+        options: [
+          "Rushing to catch the train, the commuters constantly checked their schedules.",
+          "Rushing to catch the train, the schedules of the commuters were constantly checked.",
+          "The schedules of the commuters was constantly checked, rushing to catch the train.",
+          "Rushing to catch the train, the commuter's schedule were constantly checked.",
+        ],
+        correct_answer: "Rushing to catch the train, the commuters constantly checked their schedules.",
+        explanation:
+          "This version fixes the misplaced modifier by making 'commuters' the logical subject doing the rushing, and matches the verb 'checked' to that plural subject.",
+        difficulty: 3,
+      },
     ],
   },
   {
@@ -335,6 +615,103 @@ Example: "A gym charges a $30 signup fee plus $15 per month."
         explanation:
           "'Twice a number' = 2n, and '5 less than' that quantity means subtracting 5 from it.",
         difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "In the equation y = mx + b, what does 'm' typically represent in a real-world context?",
+        options: [
+          "the rate of change",
+          "the starting value",
+          "the y-intercept",
+          "the total sum of x and y",
+        ],
+        correct_answer: "the rate of change",
+        explanation: "'m' is the slope — how much y changes per unit of x, i.e. the rate of change.",
+        difficulty: 1,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Solve the system: 2x + y = 11 and x - y = 1. What is the value of x?",
+        options: ["4", "3", "5", "6"],
+        correct_answer: "4",
+        explanation: "Adding the two equations eliminates y: 3x = 12, so x = 4.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "A parking garage charges a $5 flat entry fee plus $3 per hour. Which equation gives the total cost C after h hours?",
+        options: ["C = 3h + 5", "C = 5h + 3", "C = 3h - 5", "C = 8h"],
+        correct_answer: "C = 3h + 5",
+        explanation: "The flat $5 fee is the y-intercept; $3/hour is the slope (rate of change).",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Solve for x: -2(x - 4) = 10",
+        options: ["x = -1", "x = 1", "x = -9", "x = 9"],
+        correct_answer: "x = -1",
+        explanation: "-2(x-4) = -2x + 8 = 10 → -2x = 2 → x = -1.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "A store sells pens for $2 each and notebooks for $5 each. A customer buys a total of 10 items for $29. How many pens did the customer buy?",
+        options: ["7", "3", "5", "8"],
+        correct_answer: "7",
+        explanation:
+          "Setting p + n = 10 and 2p + 5n = 29 and solving gives n = 3 notebooks and p = 7 pens.",
+        difficulty: 3,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "Solve for x: 4x - 8 ≤ 12",
+        options: ["x ≤ 5", "x ≥ 5", "x ≤ -5", "x ≥ -5"],
+        correct_answer: "x ≤ 5",
+        explanation: "4x ≤ 20 → x ≤ 5. Dividing by a positive number does not flip the inequality.",
+        difficulty: 1,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "\"A number increased by 8 is equal to three times the number decreased by 2.\" Which equation represents this, where n is the number?",
+        options: ["n + 8 = 3n - 2", "n - 8 = 3n + 2", "8n = 3n - 2", "n + 8 = 3(n - 2)"],
+        correct_answer: "n + 8 = 3n - 2",
+        explanation:
+          "'Increased by 8' means + 8, and 'three times the number decreased by 2' means 3n - 2.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "A line passes through the points (2, 5) and (4, 11). What is the slope of the line?",
+        options: ["3", "2", "6", "1/3"],
+        correct_answer: "3",
+        explanation: "Slope = (11 - 5) / (4 - 2) = 6 / 2 = 3.",
+        difficulty: 2,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text:
+          "The system y = 4x + 7 and y = 4x + k has no solution for every value of k except:",
+        options: ["k = 7", "k = 4", "k = 0", "k = -7"],
+        correct_answer: "k = 7",
+        explanation:
+          "Both lines have the same slope (4), so they are parallel and never intersect unless they are the exact same line, which happens only when k = 7.",
+        difficulty: 3,
+      },
+      {
+        question_type: "multiple_choice",
+        question_text: "A taxi ride costs C = 2.5m + 4, where m is miles traveled. What does the value 4 represent?",
+        options: [
+          "the base fare before any miles are driven",
+          "the cost per mile",
+          "the total number of miles",
+          "the total fare for a 4-mile trip",
+        ],
+        correct_answer: "the base fare before any miles are driven",
+        explanation: "4 is the y-intercept — the fixed cost when m = 0, i.e. the base fare.",
+        difficulty: 1,
       },
     ],
   },
