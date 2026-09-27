@@ -29,7 +29,7 @@ type RawQuestionRow = {
   topic: {
     id: string;
     title: string;
-    subject: { key: string; name: string; color: string } | null;
+    subject: { id: string; key: string; name: string; color: string; is_elective: boolean } | null;
   } | null;
 };
 
@@ -53,18 +53,26 @@ function balancedSample<T>(groups: T[][], count: number): T[] {
   return shuffle(result);
 }
 
-async function getAllQuestionsWithContext(): Promise<PracticeQuestion[]> {
+/**
+ * A választható tantárgyak közül csak azt engedi át, amit a diák saját maga
+ * kiválasztott - a kötelező tárgyak (és SAT/ACT) kérdései mindig bekerülhetnek.
+ */
+async function getAllQuestionsWithContext(electiveSubjectId: string | null): Promise<PracticeQuestion[]> {
   const supabase = getSupabaseServerClient();
   const { data, error } = await supabase
     .from("quiz_questions")
     .select(
-      "id, topic_id, question_type, question_text, options, correct_answer, explanation, difficulty, order_index, topic:topics(id, title, subject:subjects(key, name, color))"
+      "id, topic_id, question_type, question_text, options, correct_answer, explanation, difficulty, order_index, topic:topics(id, title, subject:subjects(id, key, name, color, is_elective))"
     );
 
   if (error) throw error;
 
   return (data as unknown as RawQuestionRow[])
     .filter((row) => row.topic && row.topic.subject)
+    .filter((row) => {
+      const subject = row.topic!.subject!;
+      return !subject.is_elective || subject.id === electiveSubjectId;
+    })
     .map((row) => ({
       id: row.id,
       topic_id: row.topic_id,
@@ -82,8 +90,11 @@ async function getAllQuestionsWithContext(): Promise<PracticeQuestion[]> {
     }));
 }
 
-export async function getDailyPracticeQuestions(count = 15): Promise<PracticeQuestion[]> {
-  const all = await getAllQuestionsWithContext();
+export async function getDailyPracticeQuestions(
+  electiveSubjectId: string | null,
+  count = 15
+): Promise<PracticeQuestion[]> {
+  const all = await getAllQuestionsWithContext(electiveSubjectId);
   const bySubject = new Map<string, PracticeQuestion[]>();
   for (const q of all) {
     const group = bySubject.get(q.subject_key) ?? [];
@@ -95,9 +106,10 @@ export async function getDailyPracticeQuestions(count = 15): Promise<PracticeQue
 
 export async function getSubjectPracticeQuestions(
   subjectKey: string,
+  electiveSubjectId: string | null,
   count = 15
 ): Promise<PracticeQuestion[]> {
-  const all = await getAllQuestionsWithContext();
+  const all = await getAllQuestionsWithContext(electiveSubjectId);
   const subjectQuestions = all.filter((q) => q.subject_key === subjectKey);
   const byTopic = new Map<string, PracticeQuestion[]>();
   for (const q of subjectQuestions) {
@@ -152,16 +164,17 @@ export async function getWeakTopicStats(
 
 export async function getWeakAreaPracticeQuestions(
   userId: string,
+  electiveSubjectId: string | null,
   count = 15
 ): Promise<PracticeQuestion[]> {
   const weakStats = await getWeakTopicStats(userId);
   const weakTopicIds = weakStats.slice(0, MAX_WEAK_TOPICS).map((w) => w.topicId);
 
   if (weakTopicIds.length < MIN_WEAK_TOPICS_REQUIRED) {
-    return getDailyPracticeQuestions(count);
+    return getDailyPracticeQuestions(electiveSubjectId, count);
   }
 
-  const all = await getAllQuestionsWithContext();
+  const all = await getAllQuestionsWithContext(electiveSubjectId);
   const weakSet = new Set(weakTopicIds);
   const byTopic = new Map<string, PracticeQuestion[]>();
   for (const q of all) {

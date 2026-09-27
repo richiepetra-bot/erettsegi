@@ -1,5 +1,5 @@
 import { getSupabaseServerClient } from "@/lib/supabase/server";
-import { getSubjects } from "@/lib/db/subjects";
+import { getSubjects, filterSubjectsForStudent } from "@/lib/db/subjects";
 import { getTopicsBySubjectId } from "@/lib/db/topics";
 import { getUserProgress } from "@/lib/db/quiz";
 import { getAllTimeStats, getWeakTopicStats } from "@/lib/db/practice-quiz";
@@ -77,18 +77,23 @@ export async function getStudentDashboardData(studentUserId: string): Promise<St
   const supabase = getSupabaseServerClient();
   const { data: studentRow, error: studentError } = await supabase
     .from("app_users")
-    .select("display_name")
+    .select("display_name, elective_subject_id")
     .eq("id", studentUserId)
     .single();
   if (studentError) throw studentError;
+  const { elective_subject_id: studentElectiveSubjectId } = studentRow as {
+    display_name: string;
+    elective_subject_id: string | null;
+  };
 
-  const [subjects, userProgress, allTimeStats, weakStats, activity] = await Promise.all([
+  const [allSubjects, userProgress, allTimeStats, weakStats, activity] = await Promise.all([
     getSubjects(),
     getUserProgress(studentUserId),
     getAllTimeStats(studentUserId),
     getWeakTopicStats(studentUserId),
     getActivitySummary(studentUserId),
   ]);
+  const subjects = filterSubjectsForStudent(allSubjects, studentElectiveSubjectId);
 
   const subjectProgress: StudentSubjectProgress[] = await Promise.all(
     subjects.map(async (subject) => {

@@ -2,7 +2,7 @@ export const dynamic = "force-dynamic";
 
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { getSubjectByKey } from "@/lib/db/subjects";
+import { getSubjectByKey, canAccessSubject } from "@/lib/db/subjects";
 import { getTopicsBySubjectId } from "@/lib/db/topics";
 import { getCurrentUser } from "@/lib/db/users";
 
@@ -20,7 +20,7 @@ export default async function SubjectTopicsPage({
   const { key } = await params;
   const user = await getCurrentUser();
   const subject = await getSubjectByKey(key);
-  if (!subject) notFound();
+  if (!subject || !canAccessSubject(subject, user.elective_subject_id)) notFound();
 
   const topics = await getTopicsBySubjectId(subject.id, user.id);
 

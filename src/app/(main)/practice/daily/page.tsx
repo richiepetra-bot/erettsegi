@@ -1,10 +1,12 @@
 export const dynamic = "force-dynamic";
 
 import { getDailyPracticeQuestions } from "@/lib/db/practice-quiz";
+import { getCurrentUser } from "@/lib/db/users";
 import PracticeQuizClient from "../PracticeQuizClient";
 
 export default async function DailyPracticePage() {
-  const questions = await getDailyPracticeQuestions(15);
+  const user = await getCurrentUser();
+  const questions = await getDailyPracticeQuestions(user.elective_subject_id, 15);
 
   return (
     <PracticeQuizClient

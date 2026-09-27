@@ -1,6 +1,6 @@
 export const dynamic = "force-dynamic";
 
-import { getSubjects } from "@/lib/db/subjects";
+import { getSubjects, filterSubjectsForStudent } from "@/lib/db/subjects";
 import { getExamsWithSubjects } from "@/lib/db/exams";
 import { getCurrentUser } from "@/lib/db/users";
 import { createExamAction, updateExamAction, deleteExamAction } from "./actions";
@@ -23,7 +23,8 @@ const inputClass =
 
 export default async function ExamsPage() {
   const user = await getCurrentUser();
-  const [subjects, exams] = await Promise.all([getSubjects(), getExamsWithSubjects(user.id)]);
+  const [allSubjects, exams] = await Promise.all([getSubjects(), getExamsWithSubjects(user.id)]);
+  const subjects = filterSubjectsForStudent(allSubjects, user.elective_subject_id);
 
   return (
     <div className="space-y-8">

@@ -1,6 +1,6 @@
 export const dynamic = "force-dynamic";
 
-import { getSubjects } from "@/lib/db/subjects";
+import { getSubjects, filterSubjectsForStudent } from "@/lib/db/subjects";
 import { getUserProgress } from "@/lib/db/quiz";
 import { getCurrentUser } from "@/lib/db/users";
 import { levelForXp } from "@/lib/gamification";
@@ -16,7 +16,8 @@ const NAV_ITEMS: NavItem[] = [
 
 export default async function MainLayout({ children }: { children: React.ReactNode }) {
   const user = await getCurrentUser();
-  const [subjects, userProgress] = await Promise.all([getSubjects(), getUserProgress(user.id)]);
+  const [allSubjects, userProgress] = await Promise.all([getSubjects(), getUserProgress(user.id)]);
+  const subjects = filterSubjectsForStudent(allSubjects, user.elective_subject_id);
   const level = levelForXp(userProgress.total_xp);
 
   return (

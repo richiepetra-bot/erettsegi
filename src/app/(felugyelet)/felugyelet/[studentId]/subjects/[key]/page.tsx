@@ -2,9 +2,9 @@ export const dynamic = "force-dynamic";
 
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { getSubjectByKey } from "@/lib/db/subjects";
+import { getSubjectByKey, canAccessSubject } from "@/lib/db/subjects";
 import { getTopicsBySubjectId } from "@/lib/db/topics";
-import { getCurrentUser } from "@/lib/db/users";
+import { getCurrentUser, getUserById } from "@/lib/db/users";
 import { getLinkRole } from "@/lib/db/supervision";
 
 const STATUS_LABELS: Record<string, string> = {
@@ -22,8 +22,9 @@ export default async function SupervisorSubjectTopicsPage({ params }: PageProps)
   const role = await getLinkRole(user.id, studentId);
   if (!role) notFound();
 
+  const student = await getUserById(studentId);
   const subject = await getSubjectByKey(key);
-  if (!subject) notFound();
+  if (!subject || !student || !canAccessSubject(subject, student.elective_subject_id)) notFound();
 
   const topics = await getTopicsBySubjectId(subject.id, studentId);
 

@@ -3,9 +3,9 @@ export const dynamic = "force-dynamic";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { marked } from "marked";
-import { getSubjectByKey } from "@/lib/db/subjects";
+import { getSubjectByKey, canAccessSubject } from "@/lib/db/subjects";
 import { getTopicBySlug } from "@/lib/db/topics";
-import { getCurrentUser } from "@/lib/db/users";
+import { getCurrentUser, getUserById } from "@/lib/db/users";
 import { getLinkRole } from "@/lib/db/supervision";
 
 type PageProps = { params: Promise<{ studentId: string; key: string; topicSlug: string }> };
@@ -17,8 +17,9 @@ export default async function SupervisorTopicDetailPage({ params }: PageProps) {
   const role = await getLinkRole(user.id, studentId);
   if (!role) notFound();
 
+  const student = await getUserById(studentId);
   const subject = await getSubjectByKey(key);
-  if (!subject) notFound();
+  if (!subject || !student || !canAccessSubject(subject, student.elective_subject_id)) notFound();
 
   const topic = await getTopicBySlug(subject.id, topicSlug, studentId);
   if (!topic) notFound();

@@ -105,6 +105,7 @@ export async function acceptInviteAsNewUser(
     email: userData.email,
     display_name: userData.display_name,
     role: userData.role,
+    elective_subject_id: userData.elective_subject_id ?? null,
   };
 
   await linkAndConsumeInvite(found.invite, newUser.id);

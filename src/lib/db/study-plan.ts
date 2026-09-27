@@ -1,7 +1,8 @@
 import { getSupabaseServerClient } from "@/lib/supabase/server";
 import { getExamsWithSubjects } from "@/lib/db/exams";
-import { getSubjects } from "@/lib/db/subjects";
+import { getSubjects, filterSubjectsForStudent } from "@/lib/db/subjects";
 import { getTopicsBySubjectId } from "@/lib/db/topics";
+import { getUserById } from "@/lib/db/users";
 import { getWeakTopicStats } from "@/lib/db/practice-quiz";
 import { daysUntil, EXAM_TYPE_LABELS, LEVEL_LABELS } from "@/lib/gamification";
 import { StudyPlan, StudyPlanTopic, StudyPlanWeek, SubjectStudyPlan } from "@/lib/types";
@@ -54,12 +55,14 @@ export async function toggleStudyPlanCheck(
 }
 
 export async function getStudyPlan(userId: string): Promise<StudyPlan> {
-  const [exams, subjects, weakStats, checkedTopicIds] = await Promise.all([
+  const [exams, allSubjects, weakStats, checkedTopicIds, user] = await Promise.all([
     getExamsWithSubjects(userId),
     getSubjects(),
     getWeakTopicStats(userId),
     getCheckedTopicIds(userId),
+    getUserById(userId),
   ]);
+  const subjects = filterSubjectsForStudent(allSubjects, user?.elective_subject_id ?? null);
 
   const weakTopicIdSet = new Set(weakStats.map((w) => w.topicId));
 

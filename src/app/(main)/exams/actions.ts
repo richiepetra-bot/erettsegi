@@ -2,6 +2,7 @@
 
 import { revalidatePath } from "next/cache";
 import { createExam, updateExam, deleteExam } from "@/lib/db/exams";
+import { getSubjectById, canAccessSubject } from "@/lib/db/subjects";
 import { getCurrentUser } from "@/lib/db/users";
 import { ExamType, Level } from "@/lib/types";
 
@@ -12,8 +13,13 @@ function emptyToNull(value: FormDataEntryValue | null): string | null {
 
 export async function createExamAction(formData: FormData) {
   const user = await getCurrentUser();
+  const subjectId = String(formData.get("subject_id"));
+  const subject = await getSubjectById(subjectId);
+  if (!subject || !canAccessSubject(subject, user.elective_subject_id)) {
+    throw new Error("Ehhez a tantárgyhoz nincs jogosultságod vizsgát felvenni.");
+  }
   await createExam(user.id, {
-    subject_id: String(formData.get("subject_id")),
+    subject_id: subjectId,
     exam_type: String(formData.get("exam_type")) as ExamType,
     level: emptyToNull(formData.get("level")) as Level | null,
     written_date: emptyToNull(formData.get("written_date")),

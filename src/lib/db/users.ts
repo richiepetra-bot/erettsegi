@@ -10,10 +10,17 @@ type UserRow = {
   password_hash: string;
   display_name: string;
   role: AppUserRole;
+  elective_subject_id: string | null;
 };
 
 function toAppUser(row: UserRow): AppUser {
-  return { id: row.id, email: row.email, display_name: row.display_name, role: row.role };
+  return {
+    id: row.id,
+    email: row.email,
+    display_name: row.display_name,
+    role: row.role,
+    elective_subject_id: row.elective_subject_id,
+  };
 }
 
 export async function createUser(
@@ -64,6 +71,16 @@ export async function verifyLogin(email: string, password: string): Promise<AppU
   if (!valid) return null;
 
   return toAppUser(row);
+}
+
+/** A diák saját maga választja ki az 5. (választható) érettségi tantárgyát. */
+export async function setElectiveSubject(userId: string, subjectId: string): Promise<void> {
+  const supabase = getSupabaseServerClient();
+  const { error } = await supabase
+    .from("app_users")
+    .update({ elective_subject_id: subjectId })
+    .eq("id", userId);
+  if (error) throw error;
 }
 
 export async function getUserById(id: string): Promise<AppUser | null> {

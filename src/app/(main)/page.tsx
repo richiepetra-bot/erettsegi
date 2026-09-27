@@ -1,7 +1,7 @@
 export const dynamic = "force-dynamic";
 
 import Link from "next/link";
-import { getSubjects } from "@/lib/db/subjects";
+import { getSubjects, filterSubjectsForStudent } from "@/lib/db/subjects";
 import { getExamsWithSubjects } from "@/lib/db/exams";
 import { getTopicsBySubjectId } from "@/lib/db/topics";
 import { getCurrentUser } from "@/lib/db/users";
@@ -9,7 +9,9 @@ import { daysUntil, formatCountdown, EXAM_TYPE_LABELS, LEVEL_LABELS } from "@/li
 
 export default async function DashboardPage() {
   const user = await getCurrentUser();
-  const [subjects, exams] = await Promise.all([getSubjects(), getExamsWithSubjects(user.id)]);
+  const [allSubjects, exams] = await Promise.all([getSubjects(), getExamsWithSubjects(user.id)]);
+  const subjects = filterSubjectsForStudent(allSubjects, user.elective_subject_id);
+  const hasChosenElective = user.elective_subject_id !== null;
 
   const subjectsWithProgress = await Promise.all(
     subjects.map(async (subject) => {
@@ -109,33 +111,56 @@ export default async function DashboardPage() {
       <section>
         <h2 className="mb-3 text-lg font-extrabold tracking-tight text-slate-900">Tantárgyak</h2>
         <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
+          {!hasChosenElective && (
+            <Link
+              href="/valassz-tantargyat"
+              className="rounded-2xl border-2 border-dashed border-indigo-300 bg-indigo-50 p-4 shadow-sm transition hover:shadow-md hover:-translate-y-0.5"
+            >
+              <p className="font-extrabold tracking-tight text-indigo-700">
+                🎯 Válaszd ki az 5. tantárgyad
+              </p>
+              <p className="mt-1 text-xs text-indigo-600">
+                A választható érettségi tantárgyak közül még nem választottál — kattints a
+                kiválasztáshoz.
+              </p>
+            </Link>
+          )}
           {subjectsWithProgress.map(({ subject, topicCount, masteredCount }) => {
             const pct = topicCount > 0 ? Math.round((masteredCount / topicCount) * 100) : 0;
             return (
-              <Link
+              <div
                 key={subject.id}
-                href={`/subjects/${subject.key}`}
                 className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm transition hover:shadow-md hover:-translate-y-0.5"
               >
-                <div className="flex items-center justify-between">
-                  <p className="font-semibold text-slate-900">{subject.name}</p>
-                  <span
-                    className="h-3 w-3 rounded-full"
-                    style={{ backgroundColor: subject.color }}
-                  />
-                </div>
-                <p className="mt-1 text-xs text-slate-500">
-                  {topicCount === 0
-                    ? "Még nincs feltöltött tétel"
-                    : `${masteredCount} / ${topicCount} elsajátítva`}
-                </p>
-                <div className="mt-2 h-2.5 w-full overflow-hidden rounded-full bg-slate-100">
-                  <div
-                    className="h-full rounded-full"
-                    style={{ width: `${pct}%`, backgroundColor: subject.color }}
-                  />
-                </div>
-              </Link>
+                <Link href={`/subjects/${subject.key}`}>
+                  <div className="flex items-center justify-between">
+                    <p className="font-semibold text-slate-900">{subject.name}</p>
+                    <span
+                      className="h-3 w-3 rounded-full"
+                      style={{ backgroundColor: subject.color }}
+                    />
+                  </div>
+                  <p className="mt-1 text-xs text-slate-500">
+                    {topicCount === 0
+                      ? "Még nincs feltöltött tétel"
+                      : `${masteredCount} / ${topicCount} elsajátítva`}
+                  </p>
+                  <div className="mt-2 h-2.5 w-full overflow-hidden rounded-full bg-slate-100">
+                    <div
+                      className="h-full rounded-full"
+                      style={{ width: `${pct}%`, backgroundColor: subject.color }}
+                    />
+                  </div>
+                </Link>
+                {subject.is_elective && (
+                  <Link
+                    href="/valassz-tantargyat"
+                    className="mt-2 inline-block text-xs font-medium text-indigo-500 hover:underline"
+                  >
+                    választott 5. tantárgy — módosítás
+                  </Link>
+                )}
+              </div>
             );
           })}
         </div>

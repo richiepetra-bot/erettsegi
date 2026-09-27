@@ -14,6 +14,7 @@ export type Subject = {
   color: string;
   icon: string | null;
   sort_order: number;
+  is_elective: boolean;
 };
 
 export type Exam = {
@@ -85,6 +86,7 @@ export type AppUser = {
   email: string;
   display_name: string;
   role: AppUserRole;
+  elective_subject_id: string | null;
 };
 
 export type Invite = {

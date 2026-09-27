@@ -6,7 +6,7 @@ import PracticeQuizClient from "../PracticeQuizClient";
 
 export default async function WeakAreaPracticePage() {
   const user = await getCurrentUser();
-  const questions = await getWeakAreaPracticeQuestions(user.id, 15);
+  const questions = await getWeakAreaPracticeQuestions(user.id, user.elective_subject_id, 15);
 
   return (
     <PracticeQuizClient

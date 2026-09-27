@@ -1,10 +1,13 @@
 export const dynamic = "force-dynamic";
 
 import Link from "next/link";
-import { getSubjects } from "@/lib/db/subjects";
+import { getSubjects, filterSubjectsForStudent } from "@/lib/db/subjects";
+import { getCurrentUser } from "@/lib/db/users";
 
 export default async function PracticeHubPage() {
-  const subjects = await getSubjects();
+  const user = await getCurrentUser();
+  const allSubjects = await getSubjects();
+  const subjects = filterSubjectsForStudent(allSubjects, user.elective_subject_id);
 
   return (
     <div className="space-y-8">
