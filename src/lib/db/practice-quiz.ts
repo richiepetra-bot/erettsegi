@@ -1,5 +1,6 @@
 import { getSupabaseServerClient } from "@/lib/supabase/server";
 import { applyXpAndStreak, XP_PER_CORRECT_ANSWER } from "@/lib/db/quiz";
+import { shuffle } from "@/lib/shuffle";
 import {
   AllTimeStats,
   GroupBreakdown,
@@ -31,15 +32,6 @@ type RawQuestionRow = {
     subject: { key: string; name: string; color: string } | null;
   } | null;
 };
-
-function shuffle<T>(items: T[]): T[] {
-  const arr = [...items];
-  for (let i = arr.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [arr[i], arr[j]] = [arr[j], arr[i]];
-  }
-  return arr;
-}
 
 /** Round-robins across groups (each already shuffled) so the result is spread evenly across them, then shuffles the final order. */
 function balancedSample<T>(groups: T[][], count: number): T[] {
@@ -78,7 +70,7 @@ async function getAllQuestionsWithContext(): Promise<PracticeQuestion[]> {
       topic_id: row.topic_id,
       question_type: row.question_type as PracticeQuestion["question_type"],
       question_text: row.question_text,
-      options: row.options,
+      options: shuffle(row.options),
       correct_answer: row.correct_answer,
       explanation: row.explanation,
       difficulty: row.difficulty,

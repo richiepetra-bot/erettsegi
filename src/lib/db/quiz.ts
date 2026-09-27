@@ -1,4 +1,5 @@
 import { getSupabaseServerClient } from "@/lib/supabase/server";
+import { shuffle } from "@/lib/shuffle";
 import { QuizQuestion, QuizSessionResult, TopicStatus, UserProgress } from "@/lib/types";
 
 export const XP_PER_CORRECT_ANSWER = 10;
@@ -12,7 +13,7 @@ export async function getQuizQuestions(topicId: string): Promise<QuizQuestion[]>
     .order("order_index", { ascending: true });
 
   if (error) throw error;
-  return data as QuizQuestion[];
+  return (data as QuizQuestion[]).map((q) => ({ ...q, options: shuffle(q.options) }));
 }
 
 export async function getUserProgress(): Promise<UserProgress> {
