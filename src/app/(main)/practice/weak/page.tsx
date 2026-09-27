@@ -1,10 +1,12 @@
 export const dynamic = "force-dynamic";
 
 import { getWeakAreaPracticeQuestions } from "@/lib/db/practice-quiz";
+import { getCurrentUser } from "@/lib/db/users";
 import PracticeQuizClient from "../PracticeQuizClient";
 
 export default async function WeakAreaPracticePage() {
-  const questions = await getWeakAreaPracticeQuestions(15);
+  const user = await getCurrentUser();
+  const questions = await getWeakAreaPracticeQuestions(user.id, 15);
 
   return (
     <PracticeQuizClient

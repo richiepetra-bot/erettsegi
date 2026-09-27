@@ -110,14 +110,15 @@ export async function getSubjectPracticeQuestions(
 
 export type WeakTopicStat = { topicId: string; correct: number; total: number; accuracy: number };
 
-/** Accuracy per topic from recent quiz_attempts, unfiltered and unsorted. */
-async function getTopicAccuracyFromRecentAttempts(): Promise<
-  Map<string, { correct: number; total: number }>
-> {
+/** Accuracy per topic from this user's recent quiz_attempts, unfiltered and unsorted. */
+async function getTopicAccuracyFromRecentAttempts(
+  userId: string
+): Promise<Map<string, { correct: number; total: number }>> {
   const supabase = getSupabaseServerClient();
   const { data, error } = await supabase
     .from("quiz_attempts")
     .select("topic_id, is_correct")
+    .eq("user_id", userId)
     .order("answered_at", { ascending: false })
     .limit(RECENT_ATTEMPTS_LIMIT);
   if (error) throw error;
@@ -132,11 +133,12 @@ async function getTopicAccuracyFromRecentAttempts(): Promise<
   return map;
 }
 
-/** Topics with enough attempt history, sorted worst-accuracy-first. Shared by the weak-area quiz, the parent dashboard, and the study plan. */
+/** This user's topics with enough attempt history, sorted worst-accuracy-first. Shared by the weak-area quiz, the supervisor dashboard, and the study plan. */
 export async function getWeakTopicStats(
+  userId: string,
   minAttempts = MIN_ATTEMPTS_FOR_WEAK_TOPIC
 ): Promise<WeakTopicStat[]> {
-  const attemptsByTopic = await getTopicAccuracyFromRecentAttempts();
+  const attemptsByTopic = await getTopicAccuracyFromRecentAttempts(userId);
   return [...attemptsByTopic.entries()]
     .filter(([, stats]) => stats.total >= minAttempts)
     .map(([topicId, stats]) => ({
@@ -148,8 +150,11 @@ export async function getWeakTopicStats(
     .sort((a, b) => a.accuracy - b.accuracy);
 }
 
-export async function getWeakAreaPracticeQuestions(count = 15): Promise<PracticeQuestion[]> {
-  const weakStats = await getWeakTopicStats();
+export async function getWeakAreaPracticeQuestions(
+  userId: string,
+  count = 15
+): Promise<PracticeQuestion[]> {
+  const weakStats = await getWeakTopicStats(userId);
   const weakTopicIds = weakStats.slice(0, MAX_WEAK_TOPICS).map((w) => w.topicId);
 
   if (weakTopicIds.length < MIN_WEAK_TOPICS_REQUIRED) {
@@ -177,11 +182,12 @@ function buildBreakdown(
 }
 
 export async function submitPracticeQuiz(
+  userId: string,
   answers: PracticeAnswer[]
 ): Promise<PracticeSessionResult> {
   const supabase = getSupabaseServerClient();
   if (answers.length === 0) {
-    const { newTotalXp, newStreak } = await applyXpAndStreak(0);
+    const { newTotalXp, newStreak } = await applyXpAndStreak(userId, 0);
     return {
       correctCount: 0,
       totalCount: 0,
@@ -260,6 +266,7 @@ export async function submitPracticeQuiz(
     topicGroups.set(topicId, topicEntry);
 
     return {
+      user_id: userId,
       question_id: questionId,
       topic_id: topicId,
       is_correct: isCorrect,
@@ -275,7 +282,7 @@ export async function submitPracticeQuiz(
   const accuracy = totalCount > 0 ? correctCount / totalCount : 0;
   const xpEarned = correctCount * XP_PER_CORRECT_ANSWER;
 
-  const { newTotalXp, newStreak } = await applyXpAndStreak(xpEarned);
+  const { newTotalXp, newStreak } = await applyXpAndStreak(userId, xpEarned);
 
   return {
     correctCount,
@@ -289,11 +296,12 @@ export async function submitPracticeQuiz(
   };
 }
 
-export async function getAllTimeStats(): Promise<AllTimeStats> {
+export async function getAllTimeStats(userId: string): Promise<AllTimeStats> {
   const supabase = getSupabaseServerClient();
   const { data: attempts, error: attemptsError } = await supabase
     .from("quiz_attempts")
     .select("topic_id, is_correct")
+    .eq("user_id", userId)
     .limit(RECENT_ATTEMPTS_LIMIT);
   if (attemptsError) throw attemptsError;
 

@@ -4,14 +4,16 @@ import Link from "next/link";
 import { getSubjects } from "@/lib/db/subjects";
 import { getExamsWithSubjects } from "@/lib/db/exams";
 import { getTopicsBySubjectId } from "@/lib/db/topics";
+import { getCurrentUser } from "@/lib/db/users";
 import { daysUntil, formatCountdown, EXAM_TYPE_LABELS, LEVEL_LABELS } from "@/lib/gamification";
 
 export default async function DashboardPage() {
-  const [subjects, exams] = await Promise.all([getSubjects(), getExamsWithSubjects()]);
+  const user = await getCurrentUser();
+  const [subjects, exams] = await Promise.all([getSubjects(), getExamsWithSubjects(user.id)]);
 
   const subjectsWithProgress = await Promise.all(
     subjects.map(async (subject) => {
-      const topics = await getTopicsBySubjectId(subject.id);
+      const topics = await getTopicsBySubjectId(subject.id, user.id);
       const mastered = topics.filter((t) => t.progress?.status === "elsajatitott").length;
       return { subject, topicCount: topics.length, masteredCount: mastered };
     })

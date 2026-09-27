@@ -1,7 +1,7 @@
+import { AppUserRole } from "@/lib/types";
+
 const COOKIE_NAME = "erettsegi_session";
 const SESSION_TTL_SECONDS = 60 * 60 * 24 * 30; // 30 nap
-
-export type SessionRole = "student" | "parent";
 
 function getSecret(): string {
   const secret = process.env.AUTH_SECRET;
@@ -26,17 +26,18 @@ async function hmacHex(secret: string, message: string): Promise<string> {
 }
 
 export async function createSessionToken(
-  role: SessionRole
+  role: AppUserRole,
+  userId: string
 ): Promise<{ value: string; maxAge: number }> {
   const expiresAt = Math.floor(Date.now() / 1000) + SESSION_TTL_SECONDS;
-  const payload = `${expiresAt}.${role}`;
+  const payload = `${expiresAt}.${role}.${userId}`;
   const signature = await hmacHex(getSecret(), payload);
   return { value: `${payload}.${signature}`, maxAge: SESSION_TTL_SECONDS };
 }
 
-export type SessionInfo = { role: SessionRole };
+export type SessionInfo = { role: AppUserRole; userId: string };
 
-/** Verifies the token's signature and expiry, and returns its role. Returns null if invalid/expired/malformed. */
+/** Verifies the token's signature and expiry, and returns its role+userId. Returns null if invalid/expired/malformed. */
 export async function getSessionInfo(token: string | undefined): Promise<SessionInfo | null> {
   if (!token) return null;
   const lastDot = token.lastIndexOf(".");
@@ -53,14 +54,13 @@ export async function getSessionInfo(token: string | undefined): Promise<Session
   }
   if (mismatch !== 0) return null;
 
-  const separatorIndex = payload.indexOf(".");
-  if (separatorIndex === -1) return null;
-  const expiresAt = Number(payload.slice(0, separatorIndex));
-  const role = payload.slice(separatorIndex + 1);
+  const [expiresAtStr, role, userId] = payload.split(".");
+  const expiresAt = Number(expiresAtStr);
   if (!Number.isFinite(expiresAt) || expiresAt <= Math.floor(Date.now() / 1000)) return null;
-  if (role !== "student" && role !== "parent") return null;
+  if (role !== "student" && role !== "parent" && role !== "tanar") return null;
+  if (!userId) return null;
 
-  return { role };
+  return { role, userId };
 }
 
 export { COOKIE_NAME };

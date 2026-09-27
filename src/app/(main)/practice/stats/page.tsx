@@ -2,6 +2,7 @@ export const dynamic = "force-dynamic";
 
 import Link from "next/link";
 import { getAllTimeStats } from "@/lib/db/practice-quiz";
+import { getCurrentUser } from "@/lib/db/users";
 
 function accuracyColor(accuracy: number): string {
   if (accuracy >= 0.8) return "text-emerald-600";
@@ -10,7 +11,8 @@ function accuracyColor(accuracy: number): string {
 }
 
 export default async function StatsPage() {
-  const stats = await getAllTimeStats();
+  const user = await getCurrentUser();
+  const stats = await getAllTimeStats(user.id);
   const overallPct = Math.round(stats.overallAccuracy * 100);
 
   return (

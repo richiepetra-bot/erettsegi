@@ -2,6 +2,7 @@
 
 import { revalidatePath } from "next/cache";
 import { createExam, updateExam, deleteExam } from "@/lib/db/exams";
+import { getCurrentUser } from "@/lib/db/users";
 import { ExamType, Level } from "@/lib/types";
 
 function emptyToNull(value: FormDataEntryValue | null): string | null {
@@ -10,7 +11,8 @@ function emptyToNull(value: FormDataEntryValue | null): string | null {
 }
 
 export async function createExamAction(formData: FormData) {
-  await createExam({
+  const user = await getCurrentUser();
+  await createExam(user.id, {
     subject_id: String(formData.get("subject_id")),
     exam_type: String(formData.get("exam_type")) as ExamType,
     level: emptyToNull(formData.get("level")) as Level | null,
@@ -20,11 +22,13 @@ export async function createExamAction(formData: FormData) {
   });
   revalidatePath("/exams");
   revalidatePath("/");
+  revalidatePath("/plan");
 }
 
 export async function updateExamAction(formData: FormData) {
+  const user = await getCurrentUser();
   const id = String(formData.get("id"));
-  await updateExam(id, {
+  await updateExam(user.id, id, {
     exam_type: String(formData.get("exam_type")) as ExamType,
     level: emptyToNull(formData.get("level")) as Level | null,
     written_date: emptyToNull(formData.get("written_date")),
@@ -33,11 +37,14 @@ export async function updateExamAction(formData: FormData) {
   });
   revalidatePath("/exams");
   revalidatePath("/");
+  revalidatePath("/plan");
 }
 
 export async function deleteExamAction(formData: FormData) {
+  const user = await getCurrentUser();
   const id = String(formData.get("id"));
-  await deleteExam(id);
+  await deleteExam(user.id, id);
   revalidatePath("/exams");
   revalidatePath("/");
+  revalidatePath("/plan");
 }

@@ -1,12 +1,25 @@
 import { NextRequest, NextResponse } from "next/server";
 import { COOKIE_NAME, getSessionInfo } from "@/lib/auth/session";
 
-const PUBLIC_PATHS = ["/login", "/api/auth/login"];
+const PUBLIC_PATH_PREFIXES = [
+  "/login",
+  "/register",
+  "/api/auth/login",
+  "/api/auth/register",
+  "/invite/",
+  "/api/invite/",
+];
+const PUBLIC_EXACT_PATHS = ["/login", "/register"];
+
+function isPublicPath(pathname: string): boolean {
+  if (PUBLIC_EXACT_PATHS.includes(pathname)) return true;
+  return PUBLIC_PATH_PREFIXES.some((prefix) => pathname.startsWith(prefix));
+}
 
 export async function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
-  if (PUBLIC_PATHS.some((path) => pathname === path) || pathname.startsWith("/_next")) {
+  if (isPublicPath(pathname) || pathname.startsWith("/_next")) {
     return NextResponse.next();
   }
 
@@ -19,18 +32,24 @@ export async function proxy(request: NextRequest) {
     return NextResponse.redirect(loginUrl);
   }
 
-  const isParentPath = pathname === "/parent" || pathname.startsWith("/parent/");
+  const isSupervisorPath = pathname === "/felugyelet" || pathname.startsWith("/felugyelet/");
+  const isInviteManagementPath = pathname === "/meghivok" || pathname.startsWith("/meghivok/");
 
-  // A szülői nézet csak olvasható és el van zárva a diák felülettől.
-  if (session.role === "parent" && !isParentPath && pathname !== "/api/auth/logout") {
-    return NextResponse.redirect(new URL("/parent", request.url));
+  const isSupervisor = session.role === "parent" || session.role === "tanar";
+
+  // Szülő/tanár csak a felügyeleti nézetét érheti el.
+  if (isSupervisor && !isSupervisorPath && pathname !== "/api/auth/logout") {
+    return NextResponse.redirect(new URL("/felugyelet", request.url));
   }
 
-  // A diák nem érheti el a szülői PIN-hoz kötött nézetet.
-  if (session.role === "student" && isParentPath) {
-    const loginUrl = new URL("/login", request.url);
-    loginUrl.searchParams.set("next", pathname);
-    return NextResponse.redirect(loginUrl);
+  // Diák nem érheti el a felügyeleti (szülői/tanári) nézetet.
+  if (session.role === "student" && isSupervisorPath) {
+    return NextResponse.redirect(new URL("/", request.url));
+  }
+
+  // A meghívó-kezelés (link generálás) csak diáknak való.
+  if (session.role !== "student" && isInviteManagementPath) {
+    return NextResponse.redirect(new URL("/felugyelet", request.url));
   }
 
   return NextResponse.next();

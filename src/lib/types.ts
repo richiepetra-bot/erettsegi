@@ -25,6 +25,7 @@ export type Exam = {
   oral_date: string | null;
   status: ExamStatus;
   notes: string | null;
+  created_at: string;
 };
 
 export type ExamWithSubject = Exam & { subject: Subject };
@@ -69,11 +70,50 @@ export type TopicProgress = {
 };
 
 export type UserProgress = {
-  id: number;
+  user_id: string;
   total_xp: number;
   current_streak: number;
   longest_streak: number;
   last_activity_date: string | null;
+};
+
+export type AppUserRole = "student" | "parent" | "tanar";
+export type SupervisorRole = "parent" | "tanar";
+
+export type AppUser = {
+  id: string;
+  email: string;
+  display_name: string;
+  role: AppUserRole;
+};
+
+export type Invite = {
+  id: string;
+  token: string;
+  student_user_id: string;
+  role: SupervisorRole;
+  created_at: string;
+  used_at: string | null;
+  used_by_user_id: string | null;
+};
+
+export type StudentLink = {
+  id: string;
+  student_user_id: string;
+  linked_user_id: string;
+  role: SupervisorRole;
+  created_at: string;
+};
+
+export type LinkedSupervisor = StudentLink & {
+  supervisor_name: string;
+  supervisor_email: string;
+};
+
+export type LinkedStudentSummary = {
+  studentId: string;
+  displayName: string;
+  role: SupervisorRole;
 };
 
 export type QuizSessionResult = {
@@ -144,16 +184,17 @@ export type AllTimeStats = {
   byTopic: TopicAccuracyStat[];
 };
 
-export type ParentSubjectProgress = {
+export type StudentSubjectProgress = {
   subject: Subject;
   topicCount: number;
   masteredCount: number;
 };
 
-export type ParentDashboardData = {
+export type StudentDashboardData = {
+  studentName: string;
   userProgress: UserProgress;
   level: number;
-  subjectProgress: ParentSubjectProgress[];
+  subjectProgress: StudentSubjectProgress[];
   allTimeStats: AllTimeStats;
   weakTopics: TopicAccuracyStat[];
   daysSinceLastActivity: number | null;
@@ -166,6 +207,7 @@ export type StudyPlanTopic = {
   slug: string;
   subjectKey: string;
   isWeak: boolean;
+  checked: boolean;
 };
 
 export type StudyPlanWeek = {
@@ -173,6 +215,7 @@ export type StudyPlanWeek = {
   startDate: string;
   endDate: string;
   topics: StudyPlanTopic[];
+  isPastDue: boolean;
 };
 
 export type SubjectStudyPlan = {
@@ -182,6 +225,7 @@ export type SubjectStudyPlan = {
   examDate: string;
   examLabel: string;
   weeksRemaining: number;
+  currentWeekIndex: number;
   weeks: StudyPlanWeek[];
   allCaughtUp: boolean;
 };

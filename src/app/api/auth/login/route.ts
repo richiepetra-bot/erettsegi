@@ -1,36 +1,29 @@
 import { NextRequest, NextResponse } from "next/server";
-import { COOKIE_NAME, createSessionToken, SessionRole } from "@/lib/auth/session";
+import { COOKIE_NAME, createSessionToken } from "@/lib/auth/session";
+import { verifyLogin } from "@/lib/db/users";
 
 export async function POST(request: NextRequest) {
   const formData = await request.formData();
-  const pin = String(formData.get("pin") ?? "");
+  const email = String(formData.get("email") ?? "");
+  const password = String(formData.get("password") ?? "");
   const next = String(formData.get("next") ?? "/");
 
-  const studentPin = process.env.APP_PIN;
-  const parentPin = process.env.PARENT_PIN;
-  if (!studentPin) {
-    return NextResponse.json(
-      { error: "Az APP_PIN kornyezeti valtozo nincs beallitva a szerveren." },
-      { status: 500 }
-    );
-  }
+  const user = email && password ? await verifyLogin(email, password) : null;
 
-  let role: SessionRole | null = null;
-  if (pin === studentPin) {
-    role = "student";
-  } else if (parentPin && pin === parentPin) {
-    role = "parent";
-  }
-
-  if (!role) {
+  if (!user) {
     const loginUrl = new URL("/login", request.url);
     loginUrl.searchParams.set("error", "1");
     loginUrl.searchParams.set("next", next);
     return NextResponse.redirect(loginUrl, { status: 303 });
   }
 
-  const { value, maxAge } = await createSessionToken(role);
-  const destination = role === "parent" ? "/parent" : next || "/";
+  const { value, maxAge } = await createSessionToken(user.role, user.id);
+  const destination =
+    user.role === "student"
+      ? next || "/"
+      : next.startsWith("/invite/")
+        ? next
+        : "/felugyelet";
   const response = NextResponse.redirect(new URL(destination, request.url), { status: 303 });
   response.cookies.set(COOKIE_NAME, value, {
     httpOnly: true,

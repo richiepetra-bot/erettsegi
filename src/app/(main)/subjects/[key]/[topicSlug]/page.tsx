@@ -6,6 +6,7 @@ import { marked } from "marked";
 import { getSubjectByKey } from "@/lib/db/subjects";
 import { getTopicBySlug } from "@/lib/db/topics";
 import { getQuizQuestions } from "@/lib/db/quiz";
+import { getCurrentUser } from "@/lib/db/users";
 
 export default async function TopicDetailPage({
   params,
@@ -13,10 +14,11 @@ export default async function TopicDetailPage({
   params: Promise<{ key: string; topicSlug: string }>;
 }) {
   const { key, topicSlug } = await params;
+  const user = await getCurrentUser();
   const subject = await getSubjectByKey(key);
   if (!subject) notFound();
 
-  const topic = await getTopicBySlug(subject.id, topicSlug);
+  const topic = await getTopicBySlug(subject.id, topicSlug, user.id);
   if (!topic) notFound();
 
   const questions = await getQuizQuestions(topic.id);

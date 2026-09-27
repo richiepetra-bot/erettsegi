@@ -2,6 +2,7 @@ export const dynamic = "force-dynamic";
 
 import { getSubjects } from "@/lib/db/subjects";
 import { getExamsWithSubjects } from "@/lib/db/exams";
+import { getCurrentUser } from "@/lib/db/users";
 import { createExamAction, updateExamAction, deleteExamAction } from "./actions";
 
 const EXAM_TYPES: { value: string; label: string }[] = [
@@ -21,7 +22,8 @@ const inputClass =
   "w-full rounded-md border border-slate-300 px-2.5 py-1.5 text-sm outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-100";
 
 export default async function ExamsPage() {
-  const [subjects, exams] = await Promise.all([getSubjects(), getExamsWithSubjects()]);
+  const user = await getCurrentUser();
+  const [subjects, exams] = await Promise.all([getSubjects(), getExamsWithSubjects(user.id)]);
 
   return (
     <div className="space-y-8">

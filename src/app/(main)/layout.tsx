@@ -3,10 +3,12 @@ export const dynamic = "force-dynamic";
 import Link from "next/link";
 import { getSubjects } from "@/lib/db/subjects";
 import { getUserProgress } from "@/lib/db/quiz";
+import { getCurrentUser } from "@/lib/db/users";
 import { levelForXp } from "@/lib/gamification";
 
 export default async function MainLayout({ children }: { children: React.ReactNode }) {
-  const [subjects, userProgress] = await Promise.all([getSubjects(), getUserProgress()]);
+  const user = await getCurrentUser();
+  const [subjects, userProgress] = await Promise.all([getSubjects(), getUserProgress(user.id)]);
   const level = levelForXp(userProgress.total_xp);
 
   return (
@@ -42,6 +44,12 @@ export default async function MainLayout({ children }: { children: React.ReactNo
             >
               Tanulási terv
             </Link>
+            <Link
+              href="/meghivok"
+              className="rounded-md px-3 py-1.5 font-medium text-slate-600 hover:bg-slate-100"
+            >
+              Meghívók
+            </Link>
             {subjects.map((subject) => (
               <Link
                 key={subject.id}
@@ -54,6 +62,7 @@ export default async function MainLayout({ children }: { children: React.ReactNo
           </nav>
 
           <div className="flex items-center gap-3 text-sm">
+            <span className="hidden text-slate-500 sm:inline">{user.display_name}</span>
             <span className="flex items-center gap-1 rounded-full bg-orange-50 px-3 py-1 font-medium text-orange-600">
               🔥 {userProgress.current_streak} napos sorozat
             </span>

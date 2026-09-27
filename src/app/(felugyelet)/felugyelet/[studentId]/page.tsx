@@ -1,6 +1,9 @@
 export const dynamic = "force-dynamic";
 
-import { getParentDashboardData } from "@/lib/db/parent";
+import Link from "next/link";
+import { notFound } from "next/navigation";
+import { getCurrentUser } from "@/lib/db/users";
+import { getLinkRole, getStudentDashboardData, listLinkedStudents } from "@/lib/db/supervision";
 
 function accuracyColor(accuracy: number): string {
   if (accuracy >= 0.8) return "text-emerald-600";
@@ -22,18 +25,36 @@ function activityLabel(daysSince: number | null): string {
   return `${daysSince} napja nem gyakorolt`;
 }
 
-export default async function ParentDashboardPage() {
-  const data = await getParentDashboardData();
+type PageProps = { params: Promise<{ studentId: string }> };
+
+export default async function StudentDetailPage({ params }: PageProps) {
+  const { studentId } = await params;
+  const user = await getCurrentUser();
+
+  const role = await getLinkRole(user.id, studentId);
+  if (!role) notFound();
+
+  const [data, allStudents] = await Promise.all([
+    getStudentDashboardData(studentId),
+    listLinkedStudents(user.id),
+  ]);
   const overallPct = Math.round(data.allTimeStats.overallAccuracy * 100);
 
   return (
     <div className="space-y-8">
-      <div>
-        <h2 className="text-lg font-semibold text-slate-900">Haladás áttekintése</h2>
-        <p className="text-sm text-slate-500">
-          Csak olvasható összegzés: eredményesség, tétel-áttekintés, gyakorlási rendszeresség és
-          gyenge területek.
-        </p>
+      <div className="flex items-center justify-between">
+        <div>
+          <h2 className="text-lg font-semibold text-slate-900">{data.studentName} haladása</h2>
+          <p className="text-sm text-slate-500">
+            Csak olvasható összegzés: eredményesség, tétel-áttekintés, gyakorlási rendszeresség és
+            gyenge területek.
+          </p>
+        </div>
+        {allStudents.length > 1 && (
+          <Link href="/felugyelet" className="text-sm font-medium text-indigo-600 hover:underline">
+            ← Összes diák
+          </Link>
+        )}
       </div>
 
       <section className="grid grid-cols-2 gap-3 sm:grid-cols-4">

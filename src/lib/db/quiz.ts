@@ -16,12 +16,12 @@ export async function getQuizQuestions(topicId: string): Promise<QuizQuestion[]>
   return (data as QuizQuestion[]).map((q) => ({ ...q, options: shuffle(q.options) }));
 }
 
-export async function getUserProgress(): Promise<UserProgress> {
+export async function getUserProgress(userId: string): Promise<UserProgress> {
   const supabase = getSupabaseServerClient();
   const { data, error } = await supabase
     .from("user_progress")
     .select("*")
-    .eq("id", 1)
+    .eq("user_id", userId)
     .single();
 
   if (error) throw error;
@@ -45,8 +45,9 @@ function daysBetween(fromDateStr: string, toDateStr: string): number {
   return Math.round((to - from) / 86_400_000);
 }
 
-/** Applies earned XP to the single user_progress row and updates the daily streak. Shared by topic quizzes and practice quizzes. */
+/** Applies earned XP to the user's progress row and updates the daily streak. Shared by topic quizzes and practice quizzes. */
 export async function applyXpAndStreak(
+  userId: string,
   xpEarned: number
 ): Promise<{ newTotalXp: number; newStreak: number }> {
   const supabase = getSupabaseServerClient();
@@ -54,7 +55,7 @@ export async function applyXpAndStreak(
   const nowIso = now.toISOString();
   const today = nowIso.slice(0, 10);
 
-  const userProgress = await getUserProgress();
+  const userProgress = await getUserProgress(userId);
   let newStreak = userProgress.current_streak;
   if (!userProgress.last_activity_date) {
     newStreak = 1;
@@ -80,7 +81,7 @@ export async function applyXpAndStreak(
       last_activity_date: today,
       updated_at: nowIso,
     })
-    .eq("id", 1);
+    .eq("user_id", userId);
   if (userProgressError) throw userProgressError;
 
   return { newTotalXp, newStreak };
@@ -89,6 +90,7 @@ export async function applyXpAndStreak(
 export type SubmitAnswer = { questionId: string; selectedAnswer: string };
 
 export async function submitQuizSession(
+  userId: string,
   topicId: string,
   answers: SubmitAnswer[]
 ): Promise<QuizSessionResult> {
@@ -106,6 +108,7 @@ export async function submitQuizSession(
     const isCorrect = Boolean(question) && question!.correct_answer === selectedAnswer;
     if (isCorrect) correctCount += 1;
     return {
+      user_id: userId,
       question_id: questionId,
       topic_id: topicId,
       is_correct: isCorrect,
@@ -129,6 +132,7 @@ export async function submitQuizSession(
     .from("topic_progress")
     .select("*")
     .eq("topic_id", topicId)
+    .eq("user_id", userId)
     .maybeSingle();
   if (progressFetchError) throw progressFetchError;
 
@@ -137,6 +141,7 @@ export async function submitQuizSession(
   const bestAccuracy = Math.max(existingProgress?.best_accuracy ?? 0, accuracy * 100);
 
   const { error: progressUpsertError } = await supabase.from("topic_progress").upsert({
+    user_id: userId,
     topic_id: topicId,
     status,
     stars: Math.max(existingProgress?.stars ?? 0, stars),
@@ -147,7 +152,7 @@ export async function submitQuizSession(
   });
   if (progressUpsertError) throw progressUpsertError;
 
-  const { newTotalXp, newStreak } = await applyXpAndStreak(xpEarned);
+  const { newTotalXp, newStreak } = await applyXpAndStreak(userId, xpEarned);
 
   return {
     correctCount,

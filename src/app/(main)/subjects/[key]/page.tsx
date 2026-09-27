@@ -4,6 +4,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getSubjectByKey } from "@/lib/db/subjects";
 import { getTopicsBySubjectId } from "@/lib/db/topics";
+import { getCurrentUser } from "@/lib/db/users";
 
 const STATUS_LABELS: Record<string, string> = {
   nem_kezdett: "Nem kezdett",
@@ -17,10 +18,11 @@ export default async function SubjectTopicsPage({
   params: Promise<{ key: string }>;
 }) {
   const { key } = await params;
+  const user = await getCurrentUser();
   const subject = await getSubjectByKey(key);
   if (!subject) notFound();
 
-  const topics = await getTopicsBySubjectId(subject.id);
+  const topics = await getTopicsBySubjectId(subject.id, user.id);
 
   const grouped = new Map<string, typeof topics>();
   for (const topic of topics) {
