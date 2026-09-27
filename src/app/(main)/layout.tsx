@@ -36,6 +36,12 @@ export default async function MainLayout({ children }: { children: React.ReactNo
             >
               Gyakorlás
             </Link>
+            <Link
+              href="/plan"
+              className="rounded-md px-3 py-1.5 font-medium text-slate-600 hover:bg-slate-100"
+            >
+              Tanulási terv
+            </Link>
             {subjects.map((subject) => (
               <Link
                 key={subject.id}

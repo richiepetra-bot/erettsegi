@@ -143,3 +143,50 @@ export type AllTimeStats = {
   bySubject: SubjectAccuracyStat[];
   byTopic: TopicAccuracyStat[];
 };
+
+export type ParentSubjectProgress = {
+  subject: Subject;
+  topicCount: number;
+  masteredCount: number;
+};
+
+export type ParentDashboardData = {
+  userProgress: UserProgress;
+  level: number;
+  subjectProgress: ParentSubjectProgress[];
+  allTimeStats: AllTimeStats;
+  weakTopics: TopicAccuracyStat[];
+  daysSinceLastActivity: number | null;
+  activeDaysLast30: number;
+};
+
+export type StudyPlanTopic = {
+  id: string;
+  title: string;
+  slug: string;
+  subjectKey: string;
+  isWeak: boolean;
+};
+
+export type StudyPlanWeek = {
+  weekIndex: number;
+  startDate: string;
+  endDate: string;
+  topics: StudyPlanTopic[];
+};
+
+export type SubjectStudyPlan = {
+  subjectKey: string;
+  subjectName: string;
+  subjectColor: string;
+  examDate: string;
+  examLabel: string;
+  weeksRemaining: number;
+  weeks: StudyPlanWeek[];
+  allCaughtUp: boolean;
+};
+
+export type StudyPlan = {
+  subjectPlans: SubjectStudyPlan[];
+  subjectsWithoutExam: { key: string; name: string; color: string }[];
+};

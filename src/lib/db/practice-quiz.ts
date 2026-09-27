@@ -116,7 +116,12 @@ export async function getSubjectPracticeQuestions(
   return balancedSample([...byTopic.values()], count);
 }
 
-export async function getWeakAreaPracticeQuestions(count = 15): Promise<PracticeQuestion[]> {
+export type WeakTopicStat = { topicId: string; correct: number; total: number; accuracy: number };
+
+/** Accuracy per topic from recent quiz_attempts, unfiltered and unsorted. */
+async function getTopicAccuracyFromRecentAttempts(): Promise<
+  Map<string, { correct: number; total: number }>
+> {
   const supabase = getSupabaseServerClient();
   const { data, error } = await supabase
     .from("quiz_attempts")
@@ -125,19 +130,35 @@ export async function getWeakAreaPracticeQuestions(count = 15): Promise<Practice
     .limit(RECENT_ATTEMPTS_LIMIT);
   if (error) throw error;
 
-  const attemptsByTopic = new Map<string, { correct: number; total: number }>();
+  const map = new Map<string, { correct: number; total: number }>();
   for (const row of data as { topic_id: string; is_correct: boolean }[]) {
-    const entry = attemptsByTopic.get(row.topic_id) ?? { correct: 0, total: 0 };
+    const entry = map.get(row.topic_id) ?? { correct: 0, total: 0 };
     entry.total += 1;
     if (row.is_correct) entry.correct += 1;
-    attemptsByTopic.set(row.topic_id, entry);
+    map.set(row.topic_id, entry);
   }
+  return map;
+}
 
-  const weakTopicIds = [...attemptsByTopic.entries()]
-    .filter(([, stats]) => stats.total >= MIN_ATTEMPTS_FOR_WEAK_TOPIC)
-    .sort((a, b) => a[1].correct / a[1].total - b[1].correct / b[1].total)
-    .slice(0, MAX_WEAK_TOPICS)
-    .map(([topicId]) => topicId);
+/** Topics with enough attempt history, sorted worst-accuracy-first. Shared by the weak-area quiz, the parent dashboard, and the study plan. */
+export async function getWeakTopicStats(
+  minAttempts = MIN_ATTEMPTS_FOR_WEAK_TOPIC
+): Promise<WeakTopicStat[]> {
+  const attemptsByTopic = await getTopicAccuracyFromRecentAttempts();
+  return [...attemptsByTopic.entries()]
+    .filter(([, stats]) => stats.total >= minAttempts)
+    .map(([topicId, stats]) => ({
+      topicId,
+      correct: stats.correct,
+      total: stats.total,
+      accuracy: stats.correct / stats.total,
+    }))
+    .sort((a, b) => a.accuracy - b.accuracy);
+}
+
+export async function getWeakAreaPracticeQuestions(count = 15): Promise<PracticeQuestion[]> {
+  const weakStats = await getWeakTopicStats();
+  const weakTopicIds = weakStats.slice(0, MAX_WEAK_TOPICS).map((w) => w.topicId);
 
   if (weakTopicIds.length < MIN_WEAK_TOPICS_REQUIRED) {
     return getDailyPracticeQuestions(count);
