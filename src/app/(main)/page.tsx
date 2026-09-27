@@ -26,6 +26,29 @@ export default async function DashboardPage() {
   return (
     <div className="space-y-10">
       <section>
+        <Link
+          href="/practice/daily"
+          className="flex items-center justify-between rounded-xl bg-gradient-to-r from-indigo-600 to-indigo-500 p-5 text-white shadow-sm transition hover:shadow-md"
+        >
+          <div>
+            <p className="text-lg font-semibold">🗓️ Napi 15 kérdés</p>
+            <p className="mt-1 text-sm text-indigo-100">
+              Vegyes gyorskvíz minden tantárgyból — pár perc, és meglátod, hol állsz.
+            </p>
+          </div>
+          <span className="rounded-md bg-white/15 px-4 py-2 text-sm font-medium">Kezdés →</span>
+        </Link>
+        <div className="mt-3 flex gap-4 text-sm">
+          <Link href="/practice" className="font-medium text-indigo-600 hover:underline">
+            Egyéb gyors felmérők →
+          </Link>
+          <Link href="/practice/stats" className="font-medium text-indigo-600 hover:underline">
+            Hogy állok? →
+          </Link>
+        </div>
+      </section>
+
+      <section>
         <div className="mb-3 flex items-center justify-between">
           <h2 className="text-lg font-semibold text-slate-900">Közelgő vizsgák</h2>
           <Link href="/exams" className="text-sm font-medium text-indigo-600 hover:underline">

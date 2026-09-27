@@ -1,7 +1,7 @@
 import { getSupabaseServerClient } from "@/lib/supabase/server";
 import { QuizQuestion, QuizSessionResult, TopicStatus, UserProgress } from "@/lib/types";
 
-const XP_PER_CORRECT_ANSWER = 10;
+export const XP_PER_CORRECT_ANSWER = 10;
 
 export async function getQuizQuestions(topicId: string): Promise<QuizQuestion[]> {
   const supabase = getSupabaseServerClient();
@@ -44,6 +44,47 @@ function daysBetween(fromDateStr: string, toDateStr: string): number {
   return Math.round((to - from) / 86_400_000);
 }
 
+/** Applies earned XP to the single user_progress row and updates the daily streak. Shared by topic quizzes and practice quizzes. */
+export async function applyXpAndStreak(
+  xpEarned: number
+): Promise<{ newTotalXp: number; newStreak: number }> {
+  const supabase = getSupabaseServerClient();
+  const now = new Date();
+  const nowIso = now.toISOString();
+  const today = nowIso.slice(0, 10);
+
+  const userProgress = await getUserProgress();
+  let newStreak = userProgress.current_streak;
+  if (!userProgress.last_activity_date) {
+    newStreak = 1;
+  } else {
+    const diff = daysBetween(userProgress.last_activity_date, today);
+    if (diff === 0) {
+      newStreak = userProgress.current_streak;
+    } else if (diff === 1) {
+      newStreak = userProgress.current_streak + 1;
+    } else if (diff > 1) {
+      newStreak = 1;
+    }
+  }
+  const newTotalXp = userProgress.total_xp + xpEarned;
+  const newLongestStreak = Math.max(userProgress.longest_streak, newStreak);
+
+  const { error: userProgressError } = await supabase
+    .from("user_progress")
+    .update({
+      total_xp: newTotalXp,
+      current_streak: newStreak,
+      longest_streak: newLongestStreak,
+      last_activity_date: today,
+      updated_at: nowIso,
+    })
+    .eq("id", 1);
+  if (userProgressError) throw userProgressError;
+
+  return { newTotalXp, newStreak };
+}
+
 export type SubmitAnswer = { questionId: string; selectedAnswer: string };
 
 export async function submitQuizSession(
@@ -57,7 +98,6 @@ export async function submitQuizSession(
 
   const now = new Date();
   const nowIso = now.toISOString();
-  const today = nowIso.slice(0, 10);
 
   let correctCount = 0;
   const attemptRows = answers.map(({ questionId, selectedAnswer }) => {
@@ -106,34 +146,7 @@ export async function submitQuizSession(
   });
   if (progressUpsertError) throw progressUpsertError;
 
-  const userProgress = await getUserProgress();
-  let newStreak = userProgress.current_streak;
-  if (!userProgress.last_activity_date) {
-    newStreak = 1;
-  } else {
-    const diff = daysBetween(userProgress.last_activity_date, today);
-    if (diff === 0) {
-      newStreak = userProgress.current_streak;
-    } else if (diff === 1) {
-      newStreak = userProgress.current_streak + 1;
-    } else if (diff > 1) {
-      newStreak = 1;
-    }
-  }
-  const newTotalXp = userProgress.total_xp + xpEarned;
-  const newLongestStreak = Math.max(userProgress.longest_streak, newStreak);
-
-  const { error: userProgressError } = await supabase
-    .from("user_progress")
-    .update({
-      total_xp: newTotalXp,
-      current_streak: newStreak,
-      longest_streak: newLongestStreak,
-      last_activity_date: today,
-      updated_at: nowIso,
-    })
-    .eq("id", 1);
-  if (userProgressError) throw userProgressError;
+  const { newTotalXp, newStreak } = await applyXpAndStreak(xpEarned);
 
   return {
     correctCount,

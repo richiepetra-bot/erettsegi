@@ -85,3 +85,61 @@ export type QuizSessionResult = {
   newTotalXp: number;
   newStreak: number;
 };
+
+export type PracticeMode = "daily" | "subject" | "weak";
+
+export type PracticeQuestion = QuizQuestion & {
+  topic_title: string;
+  subject_key: string;
+  subject_name: string;
+  subject_color: string;
+};
+
+export type PracticeAnswer = { questionId: string; topicId: string; selectedAnswer: string };
+
+export type GroupBreakdown = {
+  key: string;
+  label: string;
+  color: string;
+  correct: number;
+  total: number;
+};
+
+export type PracticeSessionResult = {
+  correctCount: number;
+  totalCount: number;
+  accuracy: number;
+  xpEarned: number;
+  newTotalXp: number;
+  newStreak: number;
+  bySubject: GroupBreakdown[];
+  byTopic: GroupBreakdown[];
+};
+
+export type TopicAccuracyStat = {
+  topicId: string;
+  topicTitle: string;
+  subjectKey: string;
+  subjectName: string;
+  subjectColor: string;
+  attempts: number;
+  correct: number;
+  accuracy: number;
+};
+
+export type SubjectAccuracyStat = {
+  subjectKey: string;
+  subjectName: string;
+  subjectColor: string;
+  attempts: number;
+  correct: number;
+  accuracy: number;
+};
+
+export type AllTimeStats = {
+  totalAttempts: number;
+  totalCorrect: number;
+  overallAccuracy: number;
+  bySubject: SubjectAccuracyStat[];
+  byTopic: TopicAccuracyStat[];
+};
