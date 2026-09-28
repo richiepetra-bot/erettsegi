@@ -1,6 +1,5 @@
 "use server";
 
-import { redirect } from "next/navigation";
 import { revalidatePath } from "next/cache";
 import { getSubjectById } from "@/lib/db/subjects";
 import { setElectiveSubject, getCurrentUser } from "@/lib/db/users";
@@ -12,7 +11,6 @@ export async function chooseElectiveSubjectAction(subjectId: string): Promise<vo
     throw new Error("Ez a tantárgy nem választható.");
   }
   await setElectiveSubject(user.id, subjectId);
-  revalidatePath("/");
-  revalidatePath("/valassz-tantargyat");
-  redirect("/");
+  // "layout" purges the client router cache too, not just this one page.
+  revalidatePath("/", "layout");
 }

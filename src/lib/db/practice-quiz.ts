@@ -53,21 +53,40 @@ function balancedSample<T>(groups: T[][], count: number): T[] {
   return shuffle(result);
 }
 
+const SUPABASE_PAGE_SIZE = 1000;
+
+/** PostgREST caps a single request at 1000 rows by default - page through everything. */
+async function fetchAllQuizQuestionRows(): Promise<RawQuestionRow[]> {
+  const supabase = getSupabaseServerClient();
+  const rows: RawQuestionRow[] = [];
+  let from = 0;
+
+  while (true) {
+    const { data, error } = await supabase
+      .from("quiz_questions")
+      .select(
+        "id, topic_id, question_type, question_text, options, correct_answer, explanation, difficulty, order_index, topic:topics(id, title, subject:subjects(id, key, name, color, is_elective))"
+      )
+      .range(from, from + SUPABASE_PAGE_SIZE - 1);
+    if (error) throw error;
+
+    const page = data as unknown as RawQuestionRow[];
+    rows.push(...page);
+    if (page.length < SUPABASE_PAGE_SIZE) break;
+    from += SUPABASE_PAGE_SIZE;
+  }
+
+  return rows;
+}
+
 /**
  * A választható tantárgyak közül csak azt engedi át, amit a diák saját maga
  * kiválasztott - a kötelező tárgyak (és SAT/ACT) kérdései mindig bekerülhetnek.
  */
 async function getAllQuestionsWithContext(electiveSubjectId: string | null): Promise<PracticeQuestion[]> {
-  const supabase = getSupabaseServerClient();
-  const { data, error } = await supabase
-    .from("quiz_questions")
-    .select(
-      "id, topic_id, question_type, question_text, options, correct_answer, explanation, difficulty, order_index, topic:topics(id, title, subject:subjects(id, key, name, color, is_elective))"
-    );
+  const rows = await fetchAllQuizQuestionRows();
 
-  if (error) throw error;
-
-  return (data as unknown as RawQuestionRow[])
+  return rows
     .filter((row) => row.topic && row.topic.subject)
     .filter((row) => {
       const subject = row.topic!.subject!;

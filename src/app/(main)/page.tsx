@@ -5,10 +5,11 @@ import { getSubjects, filterSubjectsForStudent } from "@/lib/db/subjects";
 import { getExamsWithSubjects } from "@/lib/db/exams";
 import { getTopicsBySubjectId } from "@/lib/db/topics";
 import { getCurrentUser } from "@/lib/db/users";
-import { daysUntil, formatCountdown, EXAM_TYPE_LABELS, LEVEL_LABELS } from "@/lib/gamification";
+import { daysUntil, formatCountdown, firstNameOf, EXAM_TYPE_LABELS, LEVEL_LABELS } from "@/lib/gamification";
 
 export default async function DashboardPage() {
   const user = await getCurrentUser();
+  const firstName = firstNameOf(user.display_name);
   const [allSubjects, exams] = await Promise.all([getSubjects(), getExamsWithSubjects(user.id)]);
   const subjects = filterSubjectsForStudent(allSubjects, user.elective_subject_id);
   const hasChosenElective = user.elective_subject_id !== null;
@@ -27,8 +28,17 @@ export default async function DashboardPage() {
     return da - db;
   });
 
+  const nextUrgentExam = sortedExams.find((exam) => {
+    const days = daysUntil(exam.written_date);
+    return days !== null && days <= 14 && days >= 0;
+  });
+
   return (
     <div className="space-y-10">
+      <h1 className="text-2xl font-extrabold tracking-tight text-slate-900">
+        Szia, {firstName}! 👋
+      </h1>
+
       <section>
         <Link
           href="/practice/daily"
@@ -61,6 +71,13 @@ export default async function DashboardPage() {
             Vizsgák kezelése →
           </Link>
         </div>
+
+        {nextUrgentExam && (
+          <p className="mb-3 rounded-2xl bg-red-50 px-4 py-3 text-sm font-semibold text-red-700">
+            {firstName}, a(z) {nextUrgentExam.subject.name} vizsgád{" "}
+            {formatCountdown(daysUntil(nextUrgentExam.written_date))} van — érdemes rákapcsolni!
+          </p>
+        )}
 
         {sortedExams.length === 0 ? (
           <p className="rounded-2xl border border-dashed border-slate-300 p-6 text-sm text-slate-500">

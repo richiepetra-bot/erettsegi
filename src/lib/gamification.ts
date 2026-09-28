@@ -1,5 +1,11 @@
 const XP_PER_LEVEL = 100;
 
+/** Magyar névsorrend (vezetéknév(ek) + keresztnév) esetén a keresztnév az utolsó szó. */
+export function firstNameOf(displayName: string): string {
+  const parts = displayName.trim().split(/\s+/);
+  return parts[parts.length - 1] || displayName;
+}
+
 export function levelForXp(xp: number): number {
   return Math.floor(xp / XP_PER_LEVEL) + 1;
 }

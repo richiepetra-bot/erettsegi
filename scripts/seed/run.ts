@@ -27,6 +27,25 @@ import { matekFuggvenyekGeometriaTopics } from "./data/matek-fuggvenyek-geometri
 import { matekKoordinatageometriaTopics } from "./data/matek-koordinatageometria";
 import { matekTovabbiTemakTopics } from "./data/matek-tovabbi-temak";
 import { matekTovabbiTemak2Topics } from "./data/matek-tovabbi-temak-2";
+import { informatikaTarsadalomAlapokTopics } from "./data/informatika-tarsadalom-alapok";
+import { informatikaAlkalmazoiIsmeretekTopics } from "./data/informatika-alkalmazoi-ismeretek";
+import { informatikaAlgoritmizalasProgramozasTopics } from "./data/informatika-algoritmizalas-programozas";
+import { biologiaSejtszintuTopics } from "./data/biologia-sejtszintu";
+import { biologiaNovenyekGombakTopics } from "./data/biologia-novenyek-gombak";
+import { biologiaEmberiSzervrendszerekTopics } from "./data/biologia-emberi-szervrendszerek";
+import { biologiaGenetikaEvolucioEkologiaTopics } from "./data/biologia-genetika-evolucio-ekologia";
+import { kemiaAltalanosTopics } from "./data/kemia-altalanos";
+import { kemiaFizikaiSzervetlenTopics } from "./data/kemia-fizikai-szervetlen";
+import { kemiaSzervetlenTopics } from "./data/kemia-szervetlen";
+import { kemiaSzervesKornyezetkemiaTopics } from "./data/kemia-szerves-kornyezetkemia";
+import { fizikaMechanikaTopics } from "./data/fizika-mechanika";
+import { fizikaHoElektromossagTopics } from "./data/fizika-ho-elektromossag";
+import { fizikaElektromagnessegOptikaTopics } from "./data/fizika-elektromagnesseg-optika";
+import { fizikaAtomfizikaKozmoszTopics } from "./data/fizika-atomfizika-kozmosz";
+import { foldrajzKozmikusEsGeoszferakTopics } from "./data/foldrajz-kozmikus-es-geoszferak";
+import { foldrajzLegkorEsVizburokTopics } from "./data/foldrajz-legkor-es-vizburok";
+import { foldrajzTarsadalomfoldrajzTopics } from "./data/foldrajz-tarsadalomfoldrajz";
+import { foldrajzVilagreszekMagyarorszagTopics } from "./data/foldrajz-vilagreszek-magyarorszag";
 import type { TopicSeed } from "./data/angol";
 
 dotenv.config({ path: path.resolve(process.cwd(), ".env.local") });
@@ -88,6 +107,50 @@ const SEED_SETS: { subjectKey: string; topics: TopicSeed[] }[] = [
       ...matekKoordinatageometriaTopics,
       ...matekTovabbiTemakTopics,
       ...matekTovabbiTemak2Topics,
+    ],
+  },
+  {
+    subjectKey: "informatika",
+    topics: [
+      ...informatikaTarsadalomAlapokTopics,
+      ...informatikaAlkalmazoiIsmeretekTopics,
+      ...informatikaAlgoritmizalasProgramozasTopics,
+    ],
+  },
+  {
+    subjectKey: "biologia",
+    topics: [
+      ...biologiaSejtszintuTopics,
+      ...biologiaNovenyekGombakTopics,
+      ...biologiaEmberiSzervrendszerekTopics,
+      ...biologiaGenetikaEvolucioEkologiaTopics,
+    ],
+  },
+  {
+    subjectKey: "kemia",
+    topics: [
+      ...kemiaAltalanosTopics,
+      ...kemiaFizikaiSzervetlenTopics,
+      ...kemiaSzervetlenTopics,
+      ...kemiaSzervesKornyezetkemiaTopics,
+    ],
+  },
+  {
+    subjectKey: "fizika",
+    topics: [
+      ...fizikaMechanikaTopics,
+      ...fizikaHoElektromossagTopics,
+      ...fizikaElektromagnessegOptikaTopics,
+      ...fizikaAtomfizikaKozmoszTopics,
+    ],
+  },
+  {
+    subjectKey: "foldrajz",
+    topics: [
+      ...foldrajzKozmikusEsGeoszferakTopics,
+      ...foldrajzLegkorEsVizburokTopics,
+      ...foldrajzTarsadalomfoldrajzTopics,
+      ...foldrajzVilagreszekMagyarorszagTopics,
     ],
   },
 ];

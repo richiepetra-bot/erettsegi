@@ -603,7 +603,7 @@ Ha a diagram egy táblázat celláira hivatkozik (nem statikus képként van bei
           "A vonaldiagramban nem lehet feliratozni a tengelyeket",
           "A vonaldiagram csak numerikus tengelyeket tud kezelni",
         ],
-        correct_answer: "A vonaldiagram folytonossága folyamatos, időbeli vagy sorrendi kapcsolatot sugall, amely az önálló kategóriák között nem létezik",
+        correct_answer: "A vonal folytonossága folyamatos, időbeli vagy sorrendi kapcsolatot sugall, amely az önálló kategóriák között nem létezik",
         explanation: "A vonaldiagram vizuálisan folytonosságot, trendet sugall, ami félrevezető, ha a kategóriák (pl. iskolák) között nincs valós sorrendi vagy időbeli összefüggés.",
         difficulty: 3,
       },

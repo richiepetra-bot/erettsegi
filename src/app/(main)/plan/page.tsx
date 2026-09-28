@@ -3,11 +3,14 @@ export const dynamic = "force-dynamic";
 import Link from "next/link";
 import { getStudyPlan } from "@/lib/db/study-plan";
 import { getCurrentUser } from "@/lib/db/users";
+import { firstNameOf } from "@/lib/gamification";
 import StudyPlanClient from "./StudyPlanClient";
 
 export default async function StudyPlanPage() {
   const user = await getCurrentUser();
+  const firstName = firstNameOf(user.display_name);
   const plan = await getStudyPlan(user.id);
+  const behindSubjects = plan.subjectPlans.filter((sp) => sp.weeks.some((w) => w.isPastDue));
 
   return (
     <div className="space-y-8">
@@ -18,6 +21,14 @@ export default async function StudyPlanPage() {
           területek alapján — heti bontásban. Pipáld ki, amit átnéztél.
         </p>
       </div>
+
+      {behindSubjects.length > 0 && (
+        <p className="rounded-2xl bg-red-50 px-4 py-3 text-sm font-semibold text-red-700">
+          {firstName}, bekéstél a tervhez képest a(z){" "}
+          {behindSubjects.map((sp) => sp.subjectName).join(", ")} tárgyban — nézd át az alábbi
+          🔴-vel jelölt heteket.
+        </p>
+      )}
 
       {plan.subjectsWithoutExam.length > 0 && (
         <p className="rounded-2xl border-2 border-dashed border-slate-300 p-4 text-sm text-slate-500">
