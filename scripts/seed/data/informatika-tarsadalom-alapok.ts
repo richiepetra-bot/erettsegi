@@ -748,12 +748,12 @@ A fájlrendszer feladata:
 
 ## Hierarchikus mappaszerkezet
 
-A fájlok **mappákba (könyvtárakba)** szervezve, fastruktúrában helyezkednek el. A legfelső szintű mappa a **gyökérkönyvtár** (Windows-on pl. `C:\`, Linuxon `/`). Egy fájl helyét az elérési út (**path**) írja le:
+A fájlok **mappákba (könyvtárakba)** szervezve, fastruktúrában helyezkednek el. A legfelső szintű mappa a **gyökérkönyvtár** (Windows-on pl. "C:\", Linuxon "/"). Egy fájl helyét az elérési út (**path**) írja le:
 
-- **Abszolút elérési út**: a gyökértől indulva írja le a teljes helyet, pl. `C:\Users\Diak\Dokumentumok\dolgozat.docx`.
-- **Relatív elérési út**: az aktuális mappához viszonyítva ad meg egy helyet, pl. `..\Kepek\foto.jpg` (a szülő mappa Kepek almappája).
+- **Abszolút elérési út**: a gyökértől indulva írja le a teljes helyet, pl. "C:\Users\Diak\Dokumentumok\dolgozat.docx".
+- **Relatív elérési út**: az aktuális mappához viszonyítva ad meg egy helyet, pl. "..\Kepek\foto.jpg" (a szülő mappa Kepek almappája).
 
-A **fájlnév kiterjesztése** (a pont utáni rész, pl. `.docx`, `.jpg`, `.pdf`) jelzi az operációs rendszernek, milyen típusú a fájl, és melyik programmal nyitható meg alapértelmezetten.
+A **fájlnév kiterjesztése** (a pont utáni rész, pl. .docx, .jpg, .pdf) jelzi az operációs rendszernek, milyen típusú a fájl, és melyik programmal nyitható meg alapértelmezetten.
 
 ## Hozzáférési jogosultságok
 
@@ -763,7 +763,7 @@ A többfelhasználós rendszerek (és a modern egyfelhasználós rendszerek is) 
 - **írás (write, w)**: a fájl módosítható, törölhető.
 - **végrehajtás (execute, x)**: a fájl programként futtatható.
 
-Linux-alapú rendszerekben ezeket a jogosultságokat külön lehet beállítani a **tulajdonos**, a **csoport** és **mindenki más** számára (pl. `rwxr-xr--`). Windows-on a **NTFS jogosultságok** hasonló, de részletesebb rendszert alkotnak (teljes hozzáférés, módosítás, olvasás, írás stb.), felhasználónként vagy csoportonként beállítva.
+Linux-alapú rendszerekben ezeket a jogosultságokat külön lehet beállítani a **tulajdonos**, a **csoport** és **mindenki más** számára (pl. "rwxr-xr--"). Windows-on a **NTFS jogosultságok** hasonló, de részletesebb rendszert alkotnak (teljes hozzáférés, módosítás, olvasás, írás stb.), felhasználónként vagy csoportonként beállítva.
 
 ## Miért fontosak a jogosultságok?
 

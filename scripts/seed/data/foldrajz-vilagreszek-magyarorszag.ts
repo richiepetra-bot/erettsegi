@@ -401,7 +401,7 @@ Afrika természeti adottságainak és társadalmi-gazdasági helyzetének ismere
           "mert a gyarmati határok mindig egybeestek a természetes tájhatárokkal",
           "mert a független afrikai államok maguk húzták meg határaikat etnikai alapon",
         ],
-        correct_answer: "mert a határokat a gyarmatosító hatalmak gyakran az etnikai-lelki csoportok figyelembevétele nélkül húzták meg",
+        correct_answer: "mert a határokat a gyarmatosító hatalmak gyakran az etnikai-nyelvi csoportok figyelembevétele nélkül húzták meg",
         explanation: "A gyarmatosító európai hatalmak sokszor önkényesen, a helyi etnikai és nyelvi viszonyoktól függetlenül jelölték ki a határokat, ami a függetlenné válás után gyakran etnikai feszültségekhez és konfliktusokhoz vezetett.",
         difficulty: 3,
       },
